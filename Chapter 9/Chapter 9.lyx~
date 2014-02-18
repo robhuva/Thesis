@@ -1,0 +1,268 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip 1cm
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Concluding Remarks and Recomendations for Future Work
+\end_layout
+
+\begin_layout Standard
+This thesis is aimed at establishing a better understanding of tropical
+ cyclone (TC) characteristics in the Fiji, Samoa and Tonga regions (the
+ FST region) during different phases of El Niño Southern Oscillation (ENSO)
+ phenomenon and the Madden-Julian Oscillation (MJO) – the two major modes
+ of natural climate variability in the tropical Pacific.
+ Results derived are then used to formulate sophisticated statistical forecast
+ models to provide forewarning of tropical cyclone strike in the FST region
+ up to three months prior to a cyclone season.
+ A new methodology for predicting the probablistic potential of any existing
+ tropical depression in the region to undergo further development into a
+ tropical cyclone is also developed.
+ In this chapter, we first summarize what we have done in this thesis and
+ then present areas that can potentially form the work of future investigations.
+ 
+\end_layout
+
+\begin_layout Standard
+The major findings associated with research priorities highlighted in the
+ first chapter are summarized as follows.
+\end_layout
+
+\begin_layout Enumerate
+Tropical cyclone genesis positions and tracks in the FST region exhibit
+ a marked interannual variability due to the ENSO phenomenon.
+ During the El Niño phase, for example, TC genesis is enhanced east of the
+ dateline, extending from north of Fiji to over Samoa.
+ The TCs formed during El Niño years take three characteristic paths depending
+ on their mean genesis locations.
+ In the La Niña phase, fewer TCs are observed compared to the El Niño phase
+ and genesis is more common in the west of the region to about 170°E.
+ The TCs formed during La Niña years are often steered over the Fiji islands
+ and Tonga from the Coral Sea region with relatively little or no threat
+ to Samoa.
+ Such variations seen in the ENSO-TC relationship over the FST region are
+ linked to concomitant changes in the large-scale environmental conditions
+ such as low-level relative vorticity, upper-level divergence and environmental
+ vertical wind shear.
+\end_layout
+
+\begin_layout Enumerate
+In addition to TC genesis position and tracks, understanding TC intensity
+ variability due to ENSO is also important.
+ Intensity variability here is inferred from the accumulated cyclone energy
+ (ACE).
+ Overall, results suggest that ACE in the FST region is considerably influenced
+ by the ENSO signal.
+ A substantial contribution to this ENSO signal in ACE comes from the region
+ equatorward of 15°S where TC numbers, lifetime and intensity all play a
+ significant role.
+ However, the ACE-ENSO relationship weakens substantially poleward of 15°S
+ where large-scale environmental variables affecting TC intensity are found
+ to be less favourable in El Niño years than in La Niña years; in the region
+ equatorward of 15°S, the reverse is true.
+ It is found that TCs entering this region poleward of 15°S are able to
+ sustain their intensity for a longer period of time in La Niña years as
+ opposed to TCs entering the region in El Niño years, when they decay more
+ rapidly.
+\end_layout
+
+\begin_layout Enumerate
+The modulation of TC activity in the FST region by the MJO is also investigated.
+ Results suggest strong MJO-TC relationships in the FST region.
+ TC genesis patterns are significantly altered over the FST region with
+ approximately five times more cyclones forming in the active phase than
+ in the inactive phase of the MJO.
+ This modulation is further strengthened during El Niño periods.
+ The large-scale environmental conditions (i.e., low-level relative vorticity,
+ upper-level divergence and vertical wind shear) associated with TC genesis
+ show a distinct pattern of variability for the active and inactive MJO
+ phases.
+ The MJO also has a significant effect on hurricane category and combined
+ gale and storm category cyclones in the FST region.
+ TC tracks also show distinct patterns in different MJO phases.
+\end_layout
+
+\begin_layout Enumerate
+Cyclones in the FST region exhibit a marked year-to-year variability due
+ to the ENSO phenomenon.
+ This ENSO-TC relationship is identifiable prior to a cyclone season through
+ the use of appropriate ENSO indices, thus making it possible to predict
+ TC strike well in advance.
+ Two separate Poisson models are developed using Bayesian processes to predict
+ TC counts in the FST region for the upcoming cyclone season: (i) for cyclones
+ forming within the FST region (FORM) and (ii) for cyclones entering the
+ FST region (ENT).
+ Predictors examined include various ENSO indices and large–scale environmental
+ parameters.
+ Significant preseason correlations are found as early as May-July (about
+ three months in advance).
+ Therefore, May-July predictors are used to make initial predictions and
+ updated predictions are issued later using October-December early cyclone
+ season predictors.
+ These models have substantial skill in predicting TC counts over the FST
+ region, particularly for years associated with El Niño and La Niña conditions.
+ However, no significant skill can be achieved with these models for ENSO-neutra
+l conditions where the model performance is quite variable.
+\end_layout
+
+\begin_layout Enumerate
+In order to improve predictions for TC activity over the FST region for
+ ENSO-neutral years, a simple methodology describing the development of
+ a binary classification model for the prediction of high and low TC activity
+ in the FST region is developed.
+ Results clearly suggest that this model predicts cyclone activity over
+ the FST region with substantial skill during the May-July preseason for
+ all years considered in the analysis – considerable improvement is achieved
+ for ENSO neutral years.
+ 
+\end_layout
+
+\begin_layout Enumerate
+As in other cyclone basins, a number of tropical disturbances form each
+ year in the FST region and only a few develop further into TCs.
+ Several mechanisms have been proposed to explain the way in which a tropical
+ disturbance first becomes a tropical depression and then undergoes further
+ development into a tropical cyclone.
+ Here some major differences are found in large-scale environmental conditions
+ between those depression that eventually develop into TCs and those that
+ do not.
+ Consequently, a statistical model is developed using these large-scale
+ environmental conditions as predictors to forecast the probabilistic potential
+ of a tropical depression to develop further into a tropical cyclone.
+ Results suggest some potential for these models in successfully predicting
+ depressions that are likely to undergo further development into TCs up
+ to 72 hours in advance.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 0.65cm
+\end_inset
+
+In addition, we have uncovered potential areas for some further work.
+ These include, but are not limited to, the following:
+\end_layout
+
+\begin_layout Enumerate
+Various forecast models developed here are purely statistical in nature
+ and they use large-scale environmental conditions as predictors.
+ It may be interesting to compare the skill of these models with that from
+ the dynamical models such as European Centre for Medium-Range Weather Forecasts
+ (ECMWF) system.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Our investigation is confined only to the FST region.
+ Extending the work to the entire southwest tropical Pacific (SWTP) region
+ could form potential future work, in particular developing the prediction
+ schemes for the entire SWTP region.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Events related to the recently-termed El Niño Modoki (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Ashok_et_al_2007"
+
+\end_inset
+
+) have become more frequent over the past few decades than traditional El
+ Niño examined here.
+ The Modoki El Niño is characterized by warm SST anomalies in the central
+ Pacific straddled by cold anomalies to either side.
+ How this phenomenon modulates TC activity is unexplored in this thesis.
+ Therefore, it will be worthwhile in future work to examine the effect of
+ Modoki El Niño on tropical cyclone formation and tracks in the central
+ south Pacific region, which also spans the FST region.
+\end_layout
+
+\begin_layout Enumerate
+One focus of this thesis has been on understanding tropical cyclone characterist
+ics over the FST region in the present climate.
+ How these characteristics are going to change in the future climate as
+ a result of global warming is an important area that can be explored using
+ numerical prediction models.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 0.65cm
+\end_inset
+
+In summary, this project provides a complete and thorough understanding
+ of TC variability (both at intraseasonal and interannual time domain) in
+ the FST region.
+ It adds to the broad body of scientific literature, which is otherwise
+ limited for the FST region on various aspects of TC characteristics.
+ It is also of a significant national benefit by providing a better understandin
+g of TC behavior through its contribution to the improvement of TC forecasting
+ schemes.
+ This may result in significant economic and social benefits in the form
+ of more effective and coordinated preparation for cyclone events.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,204 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Optimised Solutions for The NEM and the Influence of Large-Scale Weather
+ Phenomena
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Summary
+\end_layout
+
+\begin_layout Standard
+This chapter presents....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Like that seen in Huva et al.
+ (2012), this chapter aims to balance the competing needs of reducing the
+ reliance of fossil fuels in the electricity sector and managing the demand
+ for electricty by consumers.
+ However, unlike Huva et al.
+ (2012), the current study encompasses most of eastern and southern Australia,
+ which are the participating states of the National Electricity Market (NEM).
+ The optimal placement of renewable resources and the output of the system
+ as a whole will both give an indication of the large-scale interaction
+ of the wind and solar fields over Australia......
+\end_layout
+
+\begin_layout Section
+Optimisation of the Whole 2010-2011 Period
+\end_layout
+
+\begin_layout Standard
+This section presents the results of optimising all available data for the
+ period 2010-2011.
+ The aim....
+\end_layout
+
+\begin_layout Subsection
+Results Using a Standard Transmission Cost
+\end_layout
+
+\begin_layout Standard
+Using a transimssion cost for high-voltage DC cabling of $1M/Km (reference)
+ the optimal placement of renewable resources is shown below:....
+\end_layout
+
+\begin_layout Subsection
+Identifying Low Renewable Energy Output Events
+\end_layout
+
+\begin_layout Standard
+In order to gauge how the large-scale covariance of the wind and solar fields
+ might adversely affect the solution shown in Fig...
+ a determination of what classified as low output was made...
+\end_layout
+
+\begin_layout Subsubsection
+Analysis of Weather Systems Associated with Low RE Events
+\end_layout
+
+\begin_layout Standard
+Utilising the SOM idenfied in Part 1 of this thesis....
+\end_layout
+
+\begin_layout Subsubsection
+Time Series Analysis of the Low RE Events
+\end_layout
+
+\begin_layout Standard
+In terms of the affect on the electrical system, an important consideration
+ regarding the low renewable energy events outlined above are the return
+ period and duration statistics...
+\end_layout
+
+\begin_layout Section
+Optimisation of the Winters in 2010-2011
+\end_layout
+
+\begin_layout Standard
+The aim of this section is to illuminate the winter-time specific challenges
+ of a NEM comprised of mostly renewable energy resources....
+\end_layout
+
+\begin_layout Section
+Optimisation of the Summers in 2010-2011
+\end_layout
+
+\begin_layout Standard
+Similar to the previous section, this section aims to illustrate the specific
+ challenges that synoptic situations that occur in summer might have on
+ a highly renewable energy dependent NEM....
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+This chapter presents a comprehensive analysis of the covariance of the
+ wind and solar fields via the simulation of an highly renewable energy
+ dependent electrical network for eastern Australia.....
+\end_layout
+
+\end_body
+\end_document
