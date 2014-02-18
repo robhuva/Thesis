@@ -1,0 +1,1596 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\master ../Master.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+A SOM of the Australian Continent
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Continental-SOM"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Standard
+\noindent
+This chapter examines how the mapping of a Self-Organising Map (SOM) back
+ onto the original data set can be improved by using only the variability
+ of Mean Sea-Level Pressure (MSLP) over the Australian continent.
+ Thus this chapter follows the same procedures as the previous chapter,
+ but without the variability over the ocean and with a slightly different
+ domain.
+ The new domain has the dimensions (10.5ºS, 105ºE) → (49.5ºS, 165ºE), which
+ excludes parts of Indonesia and Timor that were included in the analysis
+ of the Australian region.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Som-Cont-Intro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The mask used for filtering out the ocean variability was an altered version
+ of the land-sea mask variable supplied by ECMWF.
+ Using the coastline information available within the Interactive Data Language
+ (IDL) libraries the initial land-sea mask variable, which seemed to not
+ include some parts of the Australian continent as land, was extended to
+ include all grid- boxes that appeared to contain land.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Map-Continent"
+
+\end_inset
+
+ shows the areas that are included as land for the analysis of continental
+ Australia.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/LSM_comp_HIRES_continents_contour.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Map of the extended land-sea mask used for filtering the ERA-Interim ocean
+ variability.
+ Areas coloured orange are included in the analysis of continental Australia.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Map-Continent"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Creating the Continental SOM
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SOM-Cont-Results"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The SOM training for continental Australia was undertaken in the same manner
+ as the training for the Australian region, with the exception that MSLP
+ over the ocean set to zero for all time.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+ shows the results of the SOM training for the continental region.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SOM dimensions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Initial alpha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Initial radius
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Average quantised error (hPa)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3 nodes (3x1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+88.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 nodes (4x2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+74.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15 nodes (5x3)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+66.0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20 nodes (5x4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24 nodes (6x4)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60.9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30 nodes (6x5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35 nodes (7x5)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+57.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42 nodes (7x6)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48 nodes (8x6)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As per Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-training-list"
+
+\end_inset
+
+, except using the continental data.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:SOM-Init-Params"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When graphed the data in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+ show no obvious ‘elbow’ in averaged quantised error with increasing SOM
+ size (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Error-Decay-Cont"
+
+\end_inset
+
+), thus the decision was made to use the index created in the previous analysis
+ (Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Number-of-nodes"
+
+\end_inset
+
+) in order to determine the appropriate SOM size.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Error_decay.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As per Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Decay-of-average"
+
+\end_inset
+
+, except for the continental data from Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Error-Decay-Cont"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As per the regional analysis and based on the maximum in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Graph-of-Equation"
+
+\end_inset
+
+, a 30 node SOM was seen as being the appropriate balance between data represent
+ation and ease of visualisation for continental Australia.
+ Adapting Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Number-of-nodes"
+
+\end_inset
+
+ with the data from Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+ gave Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Number-nodes-SOM-cont"
+
+\end_inset
+
+, which is also modelled in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Graph-of-Equation"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Number_of_nodes.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As per Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Graph-of-Equation"
+
+\end_inset
+
+, except using data from Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Graph-of-Equation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+n=max\left\{ \frac{\mid88hPa-qerror_{n}\mid\cdot(48-n)^{2}}{(qerror_{n}-55.3hPa)\cdot qerror_{n}}\right\} =30\,\, nodes\label{eq:Number-nodes-SOM-cont}
+\end{equation}
+
+\end_inset
+
+The SOM that maximises equation 10 had 30 nodes, initial radius of 5, and
+ initial alpha of 0.5, is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ of the report and was the SOM used in the rest of the analysis.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_MSLP_cont_6x5_alpha0.5_bubble_large.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+6x5 SOM space of ERA-Interim MSLP over the Australian continent.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As can be seen from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ the continental SOM has the characteristic distribution of nodes expected
+ from the earlier analysis and from SOMs in the literature.
+ One corner of the SOM space is occupied by higher pressure, consistent
+ with the subtropical ridge, while the opposite corner is dominated by lower
+ pressure.
+ However, in the case of the continental SOM the SOM nodes that represent
+ the low pressure systems to the south are not readily discernable.
+ Thus the SOM nodes in the lower-right portion of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ may not be as easily interpreted in terms of the weather conditions they
+ represent as the SOM from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Mapping the Continental SOM
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Mapping-the-Cont-SOM"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once the SOM for the continental analysis was determined the SOM nodes could
+ be mapped back on to the data in order to reduce the time series of 30,680
+ MSLP maps to a time series of SOM nodes.
+ The SOM_PAK software was used to map back onto the data and to assign each
+ time step with a BMU, and in keeping with the regional analysis a process
+ for eliminating ‘poor’ matches was undertaken.
+ For the continental analysis the BMUs with the highest and lowest quantised
+ error, or Euclidean distance, are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Worst-Best"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_wrst_bst_b4_filt.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison between the BMUs with the smallest a) and largest b) quantised
+ errors for the SOM from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ a) is a comparison between node 13 and conditions at 1200UTC on April 15
+ 1994 while b) is a comparison between node 24 and conditions at 0600UTC
+ on September 29 1996.
+ The quantised error for a) is 16.6hPa, for b) is 216.4hPa and the horizontal
+ and vertical axes are in units of degrees longitude and latitude, respectively.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Comp-Cont-Worst-Best"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As per the regional analysis the MSLP distribution of the BMU with the lowest
+ quantised error (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Worst-Best"
+
+\end_inset
+
+ a)) was remarkably close to its respective time step.
+ The BMU with the highest quantised error failed to capture the low pressure
+ system approaching south-eastern Australia, which was not surprising given
+ that none of the SOM nodes from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ contain a low pressure system centred over the continent.
+ However, the extent to which low pressure intrusions like that in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Worst-Best"
+
+\end_inset
+
+ b) led to BMUs being filtered out was expected to be less than the number
+ filtered out in the regional analysis.
+ 
+\end_layout
+
+\begin_layout Subsection
+Filtering the Mapping
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Filtering-the-Cont-Mapping"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following the filtering procedure outlined in the regional analysis, BMUs
+ from the continental analysis that had a maximum discrepancy greater than
+ 20hPa were eliminated.
+ The first step of filtering eliminated 572 BMUs leaving 30,108 BMUs and
+ the BMU with the highest quantised error of the remaining BMUs is depicted
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Aftr-Filt1"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_wrst_aft_filt_I.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison between a) node 7 from the SOM depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ and b) the MSLP map from 0000UTC on June 14 2000.
+ The quantised error between a) and b) is 158.4hPa.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Comp-Cont-Aftr-Filt1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The BMU in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Aftr-Filt1"
+
+\end_inset
+
+ appears to have the correct general MSLP characteristics.
+ However, there were still some rather large differences in MSLP in south-west
+ Western Australia and south-eastern Australia.
+ It was decided that these differences in MSLP warranted the next stage
+ of filtering, which was to eliminate the BMUs from the highest 5% of quantised
+ error.
+ In accordance with the regional analysis most of the ‘poorer’ matches can
+ be removed by filtering out only a small percentage of the worst matches,
+ due to the skewed distribution of quantised error (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ordered-BMU-Cont"
+
+\end_inset
+
+).
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_ordered_aft_filt.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Graph of ordered BMU quantised errors for those BMUs that have a maximum
+ discrepancy less than 20hPa.
+ The distribution is for the continental analysis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ordered-BMU-Cont"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+After filtering the BMUs with the highest 5% of quantised error, which removed
+ a further 2,406 BMUs and left 28,602 matches, the BMU with the largest
+ quantised error is shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Aft-Filt2"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_wrst_aft_filt_II.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison between a) node 3 from the SOM depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+ and b) the MSLP map from 1800UTC on June 29 1995.
+ The quantised error between a) and b) is 90.9hPa.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Comp-Cont-Aft-Filt2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To ensure that the remaining BMUs had a similarly accurate MSLP distribution
+ as that seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Aft-Filt2"
+
+\end_inset
+
+ the filtering criterion from the regional analysis that involved the number
+ of grid-points with a discrepancy greater than 4hPa was used again.
+ The BMU in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Comp-Cont-Aft-Filt2"
+
+\end_inset
+
+ had 206 grid-points with a discrepancy between it and its time-step of
+ more than 4hPa.
+ Therefore, of the BMUs that remained after the second stage of filtering,
+ those that had more than 206 grid-points with a discrepancy greater than
+ 4hPa were also eliminated.
+ The third stage of filtering removed a further 30 BMUs and after all three
+ stages of filtering there were 28,572 BMUs out of a possible 30,680 that
+ remained.
+ Given that almost 93% of BMUs passed the filtering procedure of the continental
+ analysis, which indicates the continental SOM is very comprehensive classifier,
+ the number of consecutive time-steps with no SOM node representation was
+ also a lot smaller for the continental analysis (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Consec-Zeros-Aft-Filt"
+
+\end_inset
+
+).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_Consec_zeros_aft_filt.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Histogram of consecutive time-steps without a BMU after final filtering
+ process.
+ BMUs are based on the SOM nodes depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Consec-Zeros-Aft-Filt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The maximum number of time-steps without SOM representation was 21 for the
+ continental analysis, which was less than half the maximum for the regional
+ analysis (48).
+ There was also a slightly higher percentage of consecutive time-steps without
+ SOM node representation that lasted less than one day (80.3%).
+ Once again there was therefore no expectation that statistical testing
+ on monthly, seasonally or yearly time-scales would be adversely affected
+ by the missing data.
+ 
+\end_layout
+
+\begin_layout Subsection
+Analysing the Continental SOM
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Analysing-the-Cont-SOM"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After filtering, the total occurrences of each SOM node for the continental
+ analysis are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Total-Occ"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_surf_total_occ.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Surface plot representing the total occurrences (after filtering) of each
+ SOM node from the SOM depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ The row and column numbers correspond to the rows and columns of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Surf-Total-Occ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The most commonly occurring SOM nodes were nodes 28 and 16, which both involve
+ higher pressures to the south and were similar to the more common nodes
+ from the regional analysis.
+ In terms of the seasonal component to Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Total-Occ"
+
+\end_inset
+
+, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Seasnl-Occ"
+
+\end_inset
+
+ shows the occurrences of each continental SOM node for each of the four
+ seasons.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_cont_surf_all_seasons_occ.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Seasonal occurrences of the SOM nodes depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ Totals are after filtering while a) is summer, b) is autumn, c) is winter
+ and d) is spring.
+ The row and column numbers correspond to the rows and columns of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Surf-Seasnl-Occ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Once again, the continental analysis was able to identify the seasonal tendencie
+s of the Australian region, such that the nodes that occur in summer do
+ not occur in winter.
+ In accordance with the regional analysis the summer nodes involved a weak
+ gradient between lower pressure to the north and higher pressure to the
+ south.
+ The summer-only SOM nodes were indicative of a transition between successive
+ high pressure systems centred to the south of the Australian continent
+ and were thus similar to the summer-only nodes from the regional analysis.
+ The winter-only nodes from the continental analysis involved broad high
+ pressure systems centred at about 35ºS, which also agreed well with the
+ regional analysis.
+ The nodes for spring represented by Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Seasnl-Occ"
+
+\end_inset
+
+ d) and the bi-modal structure of spring along with the autumn nodes presented
+ by Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Seasnl-Occ"
+
+\end_inset
+
+ b) also showed a strong accordance with the regional analysis.
+ Thus the continental analysis, despite the limited domain, was able to
+ produce a set of SOM nodes that corresponded well with the physical reality
+ of the Australian region (see earlier comparison between region SOM and
+ findings from the literature) while at the same time achieved a much more
+ continuous representation of the ERA-Interim data (93% of time-steps had
+ a BMU).
+ With a vastly more complete representation of the data from ERA-interim
+ by the continental SOM a more comprehensive analysis of the concurrent
+ wind and solar conditions associated with each SOM node was possible.
+ 
+\end_layout
+
+\end_body
+\end_document
