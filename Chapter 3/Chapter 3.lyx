@@ -1,0 +1,447 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Self-Organising Maps and Classifying the Synoptic Weather Systems of Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:SOM-Synoptic-Weather-Aus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Standard
+\noindent
+This chapter examines the Self-Organising Map (SOM) and how it is utilised
+ in climatology in general, and then how it has been applied in the context
+ of Australia.
+ This chapter also introduces the reanalysis data used for Part 1 and the
+ performance of the data in comparison to other data sets.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+History of the SOM
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:History-of-the-SOM"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First proposed by Teuvo Kohonen in the late 1980’s the SOM acts in a similar
+ manner to most data reduction techniques in its attempt to synthesise a
+ large multidimensional data-set into a series of discrete, commonly occurring,
+ modes of variability.
+ With its origins in the study of brain activity, the SOM can also be called
+ an artificial neural network due to its 2D grouping of cells that are specifica
+lly tuned by various input signals (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Kohonen1990"
+
+\end_inset
+
+).
+ By successively showing the data to the SOM array and then altering the
+ 2D array to look more like the data, the SOM technique aims to identify
+ specific patterns from within the data that are the most common.
+ 
+\end_layout
+
+\begin_layout Standard
+The seminal use of SOMs in synoptic climatology was by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hewitson2002"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hewitson2002"
+
+\end_inset
+
+ used the SOM technique to categorise a gridded Mean Sea-Level Pressure
+ (MSLP) data-set of the northeast United States into 35 archetypal pressure
+ distributions.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hewitson2002"
+
+\end_inset
+
+ found the SOM to be a very useful method for determining common synoptic
+ regimes as it presented an array of pressure maps that span the data-space
+ and thus a continuum of synoptic maps was produced rather than, say, a
+ group of clusters that have less obvious relationships to one another.
+ Since 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hewitson2002"
+
+\end_inset
+
+ the SOM technique has become increasingly popular in climatology; a field
+ in which it is more popular to find Principle Component based clustering
+ techniques (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sheridan2011"
+
+\end_inset
+
+).
+ Specifically, the SOM has been widely used for the study of pressure patterns
+ that co- occur with precipitation events (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sheridan2011"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Section
+The SOM in Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SOM-in-Aus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In terms of the Australian region, there have been a small number of noteworthy
+ studies that have utilised the SOM technique.
+ For instance, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+ used the ECMWF product ERA-40 to produce a 20 member SOM of MSLP (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Alexander-SOM"
+
+\end_inset
+
+).
+ Other notable studies using the SOM technique in the Australian region
+ include 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hope2006"
+
+\end_inset
+
+, which utilised a 20 member SOM of Western Australian MSLP, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Verdon-Kidd2009"
+
+\end_inset
+
+, which implemented a 20 member SOM of Victorian MSLP.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Alexander SOM.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+SOM nodes for the winter months of 1958-2001 using Mean Sea-Level Pressure
+ data (hPa) from ERA- 40.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Alexander-SOM"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With the results from previous studies in mind it was decided that the SOM
+ would also be a suitable technique for the current study.
+ Substituting precipitation for wind speed or solar irradiance gives a simple
+ indication as to how the use of SOMs from the studies of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hope2006"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Verdon-Kidd2009"
+
+\end_inset
+
+ could be adapted to the current study.
+\end_layout
+
+\begin_layout Section
+Data for Part 1
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Data-for-Part1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The data used in the current study are from the European Centre for Medium-range
+ Weather Forecasts (ECMWF).
+ Specifically, the ERA-Interim product was chosen to conduct the climatology
+ of the Australian region.
+ ERA-Interim is a global reanalysis product that spans the period 1989 to
+ almost current day and which is freely available to non-ECMWF members at
+ 1.5ºLatitude/Longitude spatial resolution (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Berrisford2009"
+
+\end_inset
+
+); although recently the ERA-Interim archive has been extended back to 1979.
+ 
+\end_layout
+
+\begin_layout Standard
+As noted in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Simmons2006"
+
+\end_inset
+
+ reanalysis products are superior to other global products, such as high-resolut
+ion operational forecasting systems, for studies into the long-term climate
+ because reanalyses do not involve the continual adjustment to higher resolution
+ systems that follow improvements in computing power.
+ Rather, reanalysis products offer a stable platform upon which a single
+ version of the data assimilation system is used (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Dee2011"
+
+\end_inset
+
+).
+ It is for this reason that reanalysis products are able to provide a long-term
+ and coherent record of the global atmospheric circulation (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Dee2011"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+The ERA-Interim reanalysis used in the current study is the third global
+ reanalysis that has been produced by ECMWF.
+ As noted in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ ERA-Interim improves upon the previous reanalysis product, ERA-40, in many
+ aspects.
+ For instance, in ERA-Interim the atmospheric model is coupled to an ocean-wave
+ model, which was not the case in ERA-40 (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Berrisford2009"
+
+\end_inset
+
+).
+ ERA-Interim also includes the introduction of 4-dimensional variational
+ analysis (4D-Var) and a variational bias correction scheme for satellite-derive
+d radiances--both of which were not included in ERA-40.
+ As a consequence, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ were able to show that the background departures are smaller in ERA-Interim,
+ which in turn has allowed for improved temporal consistency on synoptic
+ time-scales.
+ In terms of the performance of ECMWF products in comparison observations
+ it was found by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kiss2009"
+
+\end_inset
+
+ that low-level wind speeds from ERA-40 reanalysis and were able to reproduce
+ the appropriate dynamics seen in observations from two wind turbines in
+ Hungary.
+ 
+\end_layout
+
+\end_body
+\end_document
