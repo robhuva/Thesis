@@ -1,0 +1,687 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip 1cm
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\start_of_appendix
+Regression models
+\end_layout
+
+\begin_layout Section
+Poisson model 
+\end_layout
+
+\begin_layout Standard
+A Poisson regression is a special case of generalized linear model (GLM)
+ in which linear predictors are related to the response variable via a canonical
+ link function, such that
+\begin_inset Formula \begin{equation}
+\begin{split}y_{i} & \sim\textrm{Poisson}(\lambda_{i})\quad\textrm{and}\\
+\textrm{ln}(\lambda_{i}) & =\beta_{0}+\mathbf{X}_{i}\boldsymbol{\beta}\end{split}
+\label{eq:A1}\end{equation}
+
+\end_inset
+
+In context of building a Poisson model for cyclone events, 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ represents observed cyclone counts in seasons 
+\begin_inset Formula $i=1,\,...,\, N$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is the mean seasonal TC rates for the 
+\shape italic
+i
+\shape default
+th observation related to the linear predictor model 
+\begin_inset Formula $(\beta_{0}+\mathbf{X}_{i}\boldsymbol{\beta})$
+\end_inset
+
+ via a canonical link function (natural logarithm in this case).
+ The regression parameter 
+\begin_inset Formula $\beta_{0}$
+\end_inset
+
+ represents the intercept and 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ represents the vector of predictor coefficients associated with a row vector
+ of predictor variables 
+\begin_inset Formula $\mathbf{X}_{i}$
+\end_inset
+
+ .
+ In essence, values for regression parameters are assumed fixed but unknown
+ and are determined through a maximum likelihood procedure by maximizing
+ the likelihood function 
+\begin_inset Formula $f(y\mid\boldsymbol{\beta})$
+\end_inset
+
+ for the model (e.g., 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "McDonnell_and_Holbrook_2004"
+
+\end_inset
+
+).
+ An alternative strategy that is adopted here follows 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elsner_and_Jagger_2004"
+
+\end_inset
+
+.
+ This method uses a Bayesian approach in which parameter values are treated
+ not as fixed but as random variables.
+ Inferences concerning the parameters are then obtained by combining our
+ prior belief 
+\begin_inset Formula $f(\boldsymbol{\beta})$
+\end_inset
+
+ with the most frequent likelihood 
+\begin_inset Formula $f(y\mid\boldsymbol{\beta})$
+\end_inset
+
+ using Bayes’s rule, such that
+\begin_inset Formula \begin{equation}
+f(\boldsymbol{\beta}\mid y)\propto f(\boldsymbol{\beta})f(y\mid\boldsymbol{\beta})\label{eq:A2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The posterior distribution 
+\begin_inset Formula $f(\boldsymbol{\beta}\mid y)$
+\end_inset
+
+ is the probability density of 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ conditioned on the cyclone counts 
+\begin_inset Formula $y$
+\end_inset
+
+, and 
+\begin_inset Formula $f(\boldsymbol{\beta})$
+\end_inset
+
+ refers to information about the values of parameters of interest without
+ reference to the data.
+ In practice, evaluating analytical solutions of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:A2"
+
+\end_inset
+
+ is computationally difficult.
+ Therefore, the Markov chain Monte Carlo (MCMC) simulation, as advocated
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elsner_and_Jagger_2004"
+
+\end_inset
+
+, is considered a desirable alternative to obtain the posterior distribution.
+ A widely used MCMC simulation method is the Gibbs sampler.
+ A brief summary of the Gibbs sampler is presented in section (d) below.
+ Details on its application to cyclone events can be found in, for example,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elsner_and_Jagger_2004"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Chu_and_Zhao_2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Probit models
+\end_layout
+
+\begin_layout Subsection*
+1.
+ Predicting high TC activity in the FST region
+\end_layout
+
+\begin_layout Standard
+A probit regression model is considered optimal for analysis of binary response
+ data.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Albert_and_Chib_1993"
+
+\end_inset
+
+ described how a probit regression model can be implemented for binary response
+ data using the Bayesian technique.
+ Here we apply their methodology in the context of predicting high TC activity
+ in the FST region (also refer to 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Chu_et_al_2010"
+
+\end_inset
+
+ for details on the probit regression model for a binary classification
+ problem).
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ be an indicator variable such that 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+ when the TC activity is high and 
+\begin_inset Formula $y_{i}=0$
+\end_inset
+
+ when the activity is low for various years 
+\begin_inset Formula $i=1,\,...,\, N$
+\end_inset
+
+ .
+ If there exists an independent normally distributed latent variable vector
+ 
+\begin_inset Formula $\mathbf{\mathbf{Z}}_{i}$
+\end_inset
+
+ such that:
+\begin_inset Formula \begin{equation}
+\mathbf{Z}_{i}=\mathbf{X}_{i}\mathbf{\beta'+\mathbf{\varepsilon}_{\mathnormal{i}},}\,\mathbf{\varepsilon}_{\mathnormal{i}}\sim i=1,\,...,\, N\end{equation}
+
+\end_inset
+
+then for each year 
+\begin_inset Formula $i$
+\end_inset
+
+, we define a binary class label 
+\begin_inset Formula $Y_{i}=1$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{\mathbf{Z}}_{i}\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{i}=0$
+\end_inset
+
+ if 
+\begin_inset Formula $\mathbf{\mathbf{Z}}_{i}<0$
+\end_inset
+
+, where 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ represents the model coefficient vector associated with the predictor variables
+ 
+\begin_inset Formula $\mathbf{X}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{\mathbf{\varepsilon}}_{i}$
+\end_inset
+
+ is a noise vector assumed to be normally distributed with a mean of 0 and
+ a variance of 1.
+ The 
+\begin_inset Formula $\mathbf{\mathbf{Z}}_{i}$
+\end_inset
+
+ is of course not known since the exact posterior distribution of parameter
+ vector 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ is not known.
+ However, given the data 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+, the exact posterior distribution of regression parameter vector 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ can be simulated via the Gibbs sampling algorithm.
+ Consequently, the values of 
+\begin_inset Formula $\mathbf{\mathbf{Z}}_{i}$
+\end_inset
+
+ , and hence the corresponding binary class label vector 
+\begin_inset Formula $\mathbf{Y}_{i}$
+\end_inset
+
+, can be obtained from a truncated normal distribution such that:
+\begin_inset Formula \begin{eqnarray}
+Z_{i} & \mid & y_{i},\beta\sim N(X_{i}^{T}\beta,\,1)\nonumber \\
+ &  & \textnormal{truncated\,\ at\,\ left\,\ by\,0\,\ if}\, y_{i}=1\\
+Z_{i} & \mid & y_{i},\beta\sim N(X_{i}^{T}\beta,\,1)\nonumber \\
+ &  & \textnormal{truncated\,\ at\,\ right\,\ by\,0\,\ if}\, y_{i}=0\nonumber \end{eqnarray}
+
+\end_inset
+
+The probability of “high TC activity” 
+\begin_inset Formula $P(y_{i}=1)$
+\end_inset
+
+ and the probability of “low TC activity” 
+\begin_inset Formula $P(y_{i}=0)$
+\end_inset
+
+ can therefore be expressed as
+\begin_inset Formula \begin{eqnarray}
+P(y_{i} & = & 1)=\frac{1}{L}\sum_{i=1}^{L}Y_{i}\\
+P(y_{i} & = & 0)=1-P(y_{i}=1)\nonumber \end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the number of output of the Gibbs sampler (
+\begin_inset Formula $L=10,000$
+\end_inset
+
+ in our case).
+ 
+\end_layout
+
+\begin_layout Subsection*
+2.
+ Diagnosing developing and nondeveloping systems
+\end_layout
+
+\begin_layout Standard
+Here we apply similar methodology as in (b) above except in the context
+ of diagnosing developing and nondeveloping systems in the FST region.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ be an indicator variable such that 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+ when a TC is observed and 
+\begin_inset Formula $y_{i}=0$
+\end_inset
+
+ when a TC is not observed for various cases 
+\begin_inset Formula $i=1,\,...,\, N$
+\end_inset
+
+.
+ When making a W24h forecast, for example, all cases associated with DV24
+ are defined 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+, and 
+\begin_inset Formula $y_{i}=0$
+\end_inset
+
+ otherwise (i.e., a TC is likely to form within the 24 hour period if large-scale
+ conditions are similar to DV24 cases, otherwise it will not form).
+ Similarly, for W48h (W72h) forecasts, all cases associated with DV24 and
+ DV48 (DV24, DV48 and DV72) are defined 
+\begin_inset Formula $y_{i}=1$
+\end_inset
+
+, and 
+\begin_inset Formula $y_{i}=0$
+\end_inset
+
+ otherwise.
+ Altogether, 81 developing and 193 nondeveloping cases associated with the
+ W24h scheme are considered.
+ Similarly, 110 developing and 164 nondeveloping cases (122 developing and
+ 152 nondeveloping cases) associated with the W48h scheme (W72h scheme)
+ are analysed.
+ The procedure for truncated normal sampling is then repeated using Eqs.
+ A3-A5 above.
+ 
+\end_layout
+
+\begin_layout Chapter
+Gibbs sampling algorithm
+\end_layout
+
+\begin_layout Standard
+In principal, the Gibbs sampler involves an iterative procedure that generates
+ samples from the posterior distribution by successively using updates from
+ previous samples on the current conditional.
+ Suppose, for example, there are 
+\begin_inset Formula $k$
+\end_inset
+
+ components of 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+, defined as 
+\begin_inset Formula $\boldsymbol{\beta}=[\beta_{1},\,\beta_{2},\,...,\,\beta_{k}]$
+\end_inset
+
+ and 
+\begin_inset Formula $f(\boldsymbol{\beta}\mid y)$
+\end_inset
+
+ be its posterior distribution given the data 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ The Gibbs sampling (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Gelfand_and_Smith_1990"
+
+\end_inset
+
+) then proceeds as follows:
+\end_layout
+
+\begin_layout Standard
+\align left
+1) Select an arbitrary starting point 
+\begin_inset Formula $\boldsymbol{\beta}^{[0]}=[\beta_{1}^{[0]},\,\beta_{2}^{[0]},\,...,\,\beta_{k}^{[0]}]$
+\end_inset
+
+ and set 
+\begin_inset Formula $i=0$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\align left
+2) Generate 
+\begin_inset Formula $\boldsymbol{\beta}^{[i+1]}=[\beta_{1}^{[i+1]},\,\beta_{2}^{[i+1]},\,...,\,\beta_{k}^{[i+1]}]$
+\end_inset
+
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Formula $\boldsymbol{\beta}_{1}^{[i+1]}\sim f(\beta_{1}\mid\beta_{2}^{[i]},\,...,\,\beta_{k}^{[i]},\, y),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Formula $\boldsymbol{\beta}_{2}^{[i+1]}\sim f(\beta_{2}\mid\beta_{1}^{[i+1]},\,\beta_{3}^{[i]},\,...,\,\beta_{k}^{[i]},\, y),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hspace{2cm}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hspace{2cm}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hspace{2cm}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Formula $\boldsymbol{\beta}_{k}^{[1]}\sim f(\beta_{k}\mid\beta_{1}^{[i+1]},...,\,\beta_{k}^{[i+1]},\, y),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+3) Set 
+\begin_inset Formula $i=i+1$
+\end_inset
+
+ and repeat step 2 until the required number of iterations.
+\end_layout
+
+\begin_layout Standard
+In this way, each component of 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ is visited in order and eventually the posterior probability distribution
+ of 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+ conditioned on the data 
+\begin_inset Formula $y$
+\end_inset
+
+ (i.e., 
+\begin_inset Formula $f(\boldsymbol{\beta}\mid y)$
+\end_inset
+
+) can be obtained.
+ The kernel density estimation (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Wilks_2006"
+
+\end_inset
+
+) could then be applied to get a smoother distribution of each parameter
+ 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+.
+ Typically, the sampling is run for a number of iterations until the output
+ is stable.
+ The Gibbs sampling here is performed using the WinBUGS (Windows version
+ of BUGS: Bayesian inference Using Gibbs Sampling) software freely available
+ online (http://www.mrc-bsu.cam.ac.uk/bugs/).
+ This software was developed in the MRC Biostatistics Unit and the Imperial
+ College of Medicine in London.
+\end_layout
+
+\begin_layout Chapter
+Deviance information criterion 
+\end_layout
+
+\begin_layout Standard
+The deviance information criterion (DIC; 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Spiegelhalter_et_al_2002"
+
+\end_inset
+
+) is one of many methods to address model choice problems in the Bayesian
+ framework.
+ It is particularly useful in Bayesian model selection problems where the
+ posterior distributions of the model parameters are obtained by using the
+ MCMC simulation.
+ In general, the conditional distribution of data 
+\begin_inset Formula $y$
+\end_inset
+
+ depends on the parameter vector 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+.
+ From a frequentist point of view, model assessment is based on the deviance,
+ which is the difference in the log-likelihoods between the fitted and the
+ observed values.
+ For Bayesian model selection, DIC comprises two terms: the term that measures
+ goodness-of-fit and a penalty term for increasing model complexity.
+ A brief summary of DIC is presented here (refer to 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Spiegelhalter_et_al_2002"
+
+\end_inset
+
+ for details).
+ Given the posterior distribution of the classical deviance 
+\begin_inset Formula $D$
+\end_inset
+
+ as:
+\begin_inset Formula \begin{equation}
+D(\beta)=-2\textnormal{log}f(y\mid\beta)+2\textnormal{log}f(y),\end{equation}
+
+\end_inset
+
+the goodness-of-fit is then the posterior expectation of 
+\begin_inset Formula $D$
+\end_inset
+
+ such that:
+\begin_inset Formula \begin{equation}
+E_{\beta\mid y}[D]=\bar{D}.\end{equation}
+
+\end_inset
+
+For 
+\begin_inset Formula $y$
+\end_inset
+
+ being conditionally dependent on 
+\begin_inset Formula $\boldsymbol{\beta}$
+\end_inset
+
+, it can be shown that the penality term 
+\begin_inset Formula $p_{D}$
+\end_inset
+
+ can be defined as the difference between posterior mean of the deviance
+ and the deviance evaluated at the posterior mean of the parameters such
+ that:
+\begin_inset Formula \begin{equation}
+p_{D}(\beta)=\bar{D}-D(\bar{\beta})=E_{\beta\mid y}[-2\textnormal{log}f(y\mid\beta)+2\textnormal{log}f(y\mid\bar{\beta}(y))]\end{equation}
+
+\end_inset
+
+Then, DIC can be defined as:
+\begin_inset Formula \begin{equation}
+\textnormal{DIC}=\bar{D}-2p_{D}.\end{equation}
+
+\end_inset
+
+A utility to determine DIC is available in the WinBugs software.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
