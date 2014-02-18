@@ -1,0 +1,1553 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\master ../Master.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Literature Review
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Literature-Review"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Standard
+This chapter presents an introduction to, and literature review of, the
+ synoptic climatology of the Australian region.
+ Included are studies that examine variability through pressure and geopotential
+ height fields, but also studies whose focus is on wind and/or solar variability.
+ The covariability of wind and solar and how the covariability can be influenced
+ by certain synoptic classifications is then explored.
+ 
+\end_layout
+
+\begin_layout Section
+Synoptic Climatology of Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-Synptic-Clim-Aus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On the larger scales (for instance Australia-wide) the weather systems that
+ have the biggest affect on the day-to-day variability of atmospheric variables
+ like wind speed and solar irradiance are the synoptic systems; the synoptic
+ scale encompasses spatial scales from 100’s - 1000’s of kilometres and
+ temporal scales from days to weeks.
+ More commonly visualised by the distribution of high and low pressure centres,
+ the synoptic scale describes the continuity of weather systems that stretch
+ over vast continental-scale distances.
+ The synoptic scale also provides a link between fundamental atmospheric
+ dynamics like the Hadley cell and the pressure systems that affect local
+ weather conditions (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sturman2005"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+In Australia, very contrasting synoptic conditions can often occur simultaneousl
+y across the continent.
+ Stretching from about 10ºS to 44ºS the Australian continent is subject
+ to both tropical weather systems as well as ‘polar outbreaks’ from cold
+ fronts associated with cyclones from the southern hemisphere storm track
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Meteorology2011"
+
+\end_inset
+
+).
+ Much of the Australian continent is classified as desert and can thus experienc
+e prolonged periods of fine/sunny weather while some regions of northern
+ Australia (as well as the west coast of Tasmania) can experience in excess
+ of three metres of rain each year (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Meteorology2009"
+
+\end_inset
+
+).
+ The northern regions of the Australia are considered to only have two seasons
+ each year (wet and dry – according to the position of the monsoon belt)
+ and can often have quite invariant weather during the dry season (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Meteorology2011"
+
+\end_inset
+
+).
+ Most of the population of Australia, however, resides in the more temperate
+ regions where four seasons occur in every year.
+ 
+\end_layout
+
+\begin_layout Standard
+Running through the middle of the continent of Australia is often a ridge
+ of high pressure called the subtropical ridge.
+ The subtropical ridge brings largely fine and sunny weather to regions
+ beneath it and is associated with the descending branch of the Hadley cell
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sturman2005"
+
+\end_inset
+
+).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sinclair1996"
+
+\end_inset
+
+ studied the climatology of such high pressure systems and their prevalence
+ in the southern hemisphere.
+ The author found that there tended to be a wintertime maximum in anticyclonic
+ distribution over the Great Australian Bight.
+ The anticyclones from the Bight then tend to migrate north-eastward over
+ the Australian continent.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sinclair1996"
+
+\end_inset
+
+ also found that high pressure systems often migrated quicker in summer,
+ while there were large numbers of anticyclones in the Tasman Sea for most
+ of the year.
+ 
+\end_layout
+
+\begin_layout Standard
+In the Tasman Sea, south west of New Zealand, is also a common location
+ for so-called ‘blocking highs’.
+ Blocking highs are said to be long-lived high pressure systems (lasting
+ for more than about 5 days) that are associated with an anomalous breakdown
+ in the prevailing westerly flow (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Sinclair1996"
+
+\end_inset
+
+).
+ The decay of the blocking high can also be followed by a re-intensification
+ shortly thereafter (
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Sinclair1996"
+
+\end_inset
+
+).
+ According to geostrophic theory such blocking highs in the Tasman Sea could
+ indicate a prolonged period of onshore flow for eastern/south eastern Australia
+ (although ridging of high pressure from the blocking centre could indicate
+ stable conditions over much of the eastern and central Australian continent
+ instead).
+ 
+\end_layout
+
+\begin_layout Standard
+More recently, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+ interpolated BoM observations via a Self Organising Map (SOM) to also show
+ such high pressure dominated tendencies across Australia.
+ Figure 2 from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+, which uses ERA-40 reanalysis from 1958-2001, clearly depicts the subtropical
+ ridge of high pressure, as well as the maximum in system density through
+ the Great Australian Bight (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Alexander-SOM"
+
+\end_inset
+
+).
+ Further evidence is thus provided to suggest that large sections of the
+ Australian continent are commonly under the influence of high pressure
+ systems, and that consequently there is dominant stable weather regime
+ for the Australian region.
+ 
+\end_layout
+
+\begin_layout Standard
+The more unstable regimes common to the Australian region are normally linked
+ to the passage of low pressure systems and associated cold fronts or troughs.
+ In terms of wind speed, the unstable regimes are potentially more advantageous
+ for the production of wind energy as low pressure systems are inherently
+ associated with higher wind speeds.
+ In Australia there are two main types of low pressure systems that affect
+ the weather: tropical and extra-tropical or mid-latitude cyclones (although
+ transitions between the two types are not uncommon (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Pezza2008"
+
+\end_inset
+
+)).
+ Tropical systems are normally associated with the Inter-Tropical Convergence
+ Zone (ITCZ) and form in bands either side of the convergence zone where
+ factors including low Coriolis force and vertical wind shear are favourable
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sturman2005"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+With respect to the Australian region, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hassim2008"
+
+\end_inset
+
+ have studied trends in tropical cyclones using BoM best track data.
+ The authors found that for the period 1970-2005 there was a steady decline
+ in total cyclone numbers off the east coast of Australia, while off the
+ west coast no significant trend was visible.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hassim2008"
+
+\end_inset
+
+ also found statistically significant downward trends in minimum central
+ pressure (likely to be due to an increased occurrence of the more severe
+ (category 4 and 5) storms).
+ The potential for useful energy to be produced from locations under the
+ influence of tropical cyclones is questionable though as, in particular,
+ wind turbines are shut down at wind speeds beyond about 25 ms
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+.
+ Solar irradiance is also likely to be negatively impacted by the presence
+ of large-scale convection and cloud formation associated with topical storms.
+ In the northern regions of Australia heat lows, which form as a result
+ of continental heating, are also common in summer (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Simmonds2000"
+
+\end_inset
+
+).
+ However, heat lows generally do not have as large a pressure gradient as
+ tropical cyclones (a proxy for wind speed) (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Simmonds2000"
+
+\end_inset
+
+), which most likely means their significance in terms of providing useful
+ wind power is limited.
+ 
+\end_layout
+
+\begin_layout Standard
+The other more common type of cyclone likely to affect wind speed and solar
+ irradiance in Australia is the extratropical cyclone.
+ Extratropical cyclones that affect the Australian continent are commonly
+ linked to the southern hemisphere storm track, which was extensively studied
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Trenberth1991"
+
+\end_inset
+
+ using European Centre for Medium-range Weather Forecasting (ECMWF) reanalysis
+ data.
+ Closely related to meridional temperature gradients, the southern hemisphere
+ storm track is stronger in summer than winter but is always close to 50°S
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Trenberth1991"
+
+\end_inset
+
+).
+ In winter there tends to be a broader storm track (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Trenberth1991"
+
+\end_inset
+
+) indicating a higher likelihood (when compared to summer) that cyclones
+ from the storm track will reach the southern part of the Australian continent
+ during this time.
+ 
+\end_layout
+
+\begin_layout Standard
+In addition to the study of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Trenberth1991"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones1993"
+
+\end_inset
+
+ have shown very similar cyclone characteristics using data from the BoM
+ in conjunction with an automated cyclone tracking scheme.
+ The authors found that the Australian continent is dominated by heat lows
+ and tropical lows during summer, while in winter and spring there tends
+ to be a transition to higher occurrences of extratropical cyclones.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones1993"
+
+\end_inset
+
+ also seem to suggest that the traditional position for blocking highs in
+ summer through the Tasman Sea is often replaced by extratropical cyclones
+ in winter.
+ In somewhat of a follow-up study to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones1993"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Simmonds2000"
+
+\end_inset
+
+ used NCEP-NCAR reanalysis and the Melbourne University cyclone tracking
+ scheme to study the behaviour of extratropical cyclones in the southern
+ hemisphere.
+ Qualitatively similar to that of the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones1993"
+
+\end_inset
+
+ study, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Simmonds2000"
+
+\end_inset
+
+ also found the position of maximum cyclone density to lie between 50º-70ºS,
+ depending on season.
+ Quantitatively though, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Simmonds2000"
+
+\end_inset
+
+ found double the amount of cyclones as previous studies (like 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Jones1993"
+
+\end_inset
+
+), noted as being due to higher resolution data.
+ Given then, the numerous studies all suggesting a storm track or cyclone
+ density maximum at about 50º-60ºS, it is not surprising that there exist
+ studies proposing a significant synoptic mode of variability in this region.
+ 
+\end_layout
+
+\begin_layout Standard
+Commonly referred to as SAM, the Southern Annular Mode describes a large
+ portion of the variability in sea-level pressure for the southern hemisphere.
+ Depicted in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Thompson2000"
+
+\end_inset
+
+ as being the first Empirical Orthogonal Function (EOF-1) of the lower-
+ tropospheric geopotential height fields, SAM also manifests in the wind
+ field.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Watterson2007"
+
+\end_inset
+
+ presented the existence of such a SAM-like mode in the wind by using vertically
+ integrated zonal winds, simulated from 1871-1970 by the Commonwealth Scientific
+ and Industrial Research Organisation (CSIRO) mk3 model.
+ Labeled as a high-latitude mode, EOF-1 of the monthly mean vertically integrate
+d zonal wind showed a distinct peak at about 60ºS which explained 53% of
+ the monthly variance; suggesting a close association with the previously
+ defined storm track (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Watterson2007"
+
+\end_inset
+
+).
+ The structure of the high-latitude mode was also seen to be quite annular
+ (matching the annularity suggested by SAM).
+ EOF-2 (which explained 22% of the monthly variance) was shown not to be
+ significantly annular at all, but rather, more closely linked to the subtropica
+l jet (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Watterson2007"
+
+\end_inset
+
+).
+ In accordance with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Watterson2007"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Iijima2009"
+
+\end_inset
+
+ showed sea-surface wind data from the QuikSCAT satellite that seemed to
+ match the wind patterns suggested by SAM.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Figure 1.jpg
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison between a) QuikSCAT wind speeds and b) NCEP-derived wind speeds
+ of the SAM mode.
+ Colouring represents a) wind curl and b) 750hPa level heights.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Iijima2009"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SAM-wind_curl"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is not surprising though that close associations (like that in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SAM-wind_curl"
+
+\end_inset
+
+) between known synoptic modes of variability and the wind exist as geostrophic
+ theory explains how pressure gradients (and Coriolis force) drive wind
+ speed and direction.
+ But specifically how such synoptic modes affect wind speed variability
+ in Australia is not well published.
+ 
+\end_layout
+
+\begin_layout Section
+Wind Speed over Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-Aus-Wind-Speed"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In an early study into the possible link between large scale climate drivers
+ and wind speed/power in Australia, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ analysed daily synoptic maps from the BoM.
+ For the period 1976-1986 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ compared wind speed/wind run observations from Perth and Esperance with
+ synoptic ‘classes’ in an attempt to measure the relative influence of each
+ synoptic class on wind speed and also potential wind power output.
+ In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ the synoptic classes referred to whether or not an anticyclone or cyclone
+ (and cold front) was the major influence on the weather at the time.
+ The authors found that the most common synoptic states related to high
+ pressure systems either to the west, east or ridging directly above the
+ region of concern (south-west Western Australia (WA)).
+ Consequently the synoptic classes that produce the most power throughout
+ the year were those where an anticyclone is situated to the west and where
+ ridging of high pressure is directly above (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Lyons1989"
+
+\end_inset
+
+).
+ Surprisingly, the authors observed that the synoptic classes involving
+ the highest wind speeds (cyclonic classes) did not produce significant
+ amounts of power on an annual basis.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ noted that the observed lower output from cyclonic classes was partly due
+ to the lower frequency of the cyclonic systems, but also due to the fact
+ that afternoon sea-breezes were generated under anticyclonic conditions--thus
+ making anticyclonic regimes a larger contributor to yearly total power
+ output.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ give a useful examination into how the frequency and distribution of large
+ scale atmospheric patterns modulate wind power output.
+ To determine the synoptic influences on wind speed for the rest of Australia
+ would, however, take a much more comprehensive study (perhaps also with
+ more sophisticated analysis techniques); of the like that is yet to be
+ published.
+ 
+\end_layout
+
+\begin_layout Standard
+Further insights into the wind speed variability over Australia can be made
+ by examining the work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Troccoli2011"
+
+\end_inset
+
+.
+ In their study of BoM observed wind speeds over Australia, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Troccoli2011"
+
+\end_inset
+
+ showed that there have been slight negative trends in wind speeds at 2m
+ (-0.16±0.01% p.a.) and more positive trends at 10m (0.89±0.02% p.a.) for the period
+ 1975-2006; a study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "McVicar2008"
+
+\end_inset
+
+ also showed negative trends in wind speed over Australia, in what they
+ called the ‘stilling phenomenon’.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Troccoli2011"
+
+\end_inset
+
+ also investigated links between wind speed variability and the large scale
+ climatic patterns of ENSO and the Indian Ocean Dipole (IOD).
+ The authors found that there were only weak statistical links between either
+ ENSO or IOD and surface wind speeds (although IOD was shown to be slightly
+ more significant), noting that further investigation is needed to determine
+ any significant links.
+ 
+\end_layout
+
+\begin_layout Standard
+Analysis by the BoM of the Australian Meso-scale Limited Area Prediction
+ System (MesoLAPSPT_125) 10m wind data between 2004 to 2008 can give further
+ insights into the types of average wind conditions expected in the Australian
+ region (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Average-wind-velocity"
+
+\end_inset
+
+).
+ However, it is expected that the maps in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Average-wind-velocity"
+
+\end_inset
+
+ lose a lot of information regarding the common co-occurring patterns during
+ the averaging process.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Figure 2.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Average wind velocity for the Australian region for the months of a) January
+ and b) July.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Meteorology2011a"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Average-wind-velocity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Unfortunately, the extent of publication examining wind speed variability
+ in Australia is quite limited – especially with respect to any links to
+ the large scale variability in the atmosphere.
+ There are more comprehensive studies overseas linking patterns like the
+ North Atlantic Oscillation (NAO) and the Pacific North-American pattern
+ (PNA) to wind speed and wind power variability (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Brayshaw2011"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Klink2007"
+
+\end_inset
+
+) but the extent to which wind speed over the entire Australian continent
+ is influenced by the large scale atmospheric process remains largely undetermin
+ed.
+ 
+\end_layout
+
+\begin_layout Section
+Solar irradiance over Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-Aus-Solar-irradiance"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Of the publications that explore surface solar irradiance at the Earth surface,
+ numerical models are widely used to describe the distribution of incoming
+ and outgoing long- and short-wave components.
+ It is noted by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+ that due to the sparsity of solar irradiance observations, interpolation
+ to larger/global scales is only possible with using model simulations.
+ In Australia, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Liu2001"
+
+\end_inset
+
+ noted that of the some 16,000 weather stations across the continent only
+ 50 have any records of solar radiation, while nearly all stations have
+ daily records of rainfall.
+ 
+\end_layout
+
+\begin_layout Standard
+The components of the total solar radiation emanating from the Sun that
+ are of interest to solar power generation on Earth are the surface Downward
+ Short-wave Radiation (DSR) and Direct Normal Irradiance (DNI).
+ A comprehensive investigation into the global surface radiation budget
+ (which includes DSR) was conducted by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+ using data from the International Satellite Cloud Climatology Project (ISCCP)
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Schiffer1983"
+
+\end_inset
+
+).
+ Modelling for the period 1984-2000, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+ found that DSR in the southern hemisphere (SH) tended to vary much more
+ than the northern hemisphere (NH).
+ The authors noted that this larger amplitude was primarily due to the earth-sun
+ distance being a minimum in the SH summer and a maximum in the SH winter.
+ However, the annual cycle is also modulated by subsidence regions and storm
+ track positioning in the SH (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hatzianastassiou2005"
+
+\end_inset
+
+).
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Figure 3.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Long term (1984-2000) averages of downward short-wave radiation (in Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+) at the Earth's surface for a) January, b) April, c) July and d) October.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:solar-avg-hatz"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With respect to Australia, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-hatz"
+
+\end_inset
+
+ shows the average surface DSR from four months (one for each season from
+ 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hatzianastassiou2005"
+
+\end_inset
+
+).
+ For most of the year it appears as if monthly averaged radiation values
+ greater than 250 Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+ are available for Australia, while the annual cycle seems to be quite large
+ for locations like Victoria.
+ Using observations from Alice Springs (Australia) the average bias in the
+ model used by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+ was found to be -15.86 Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+, while 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gupta1999"
+
+\end_inset
+
+ also found that ISCCP data had an annual cycle that was well matched by
+ observations from the CSIRO station in Aspendale, Victoria.
+ 
+\end_layout
+
+\begin_layout Standard
+To compare with the global model in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+, the BoM figures for average daily solar exposure are shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Figure 4.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Bureau of Meteorology figures of average daily solar exposure for a) January,
+ b) April, c) July and d) October.
+ The values are in MJm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+ and are for the period 1990-2008.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "BureauofMeteorolgy2013"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:solar-avg-bom"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The values in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+ are daily averages in MJm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+ but with conversion to monthly averages in Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+ it appears as if there is good accordance between the BoM and the model
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+.
+ For instance, the maximum colour range in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+ a) represents 312-347Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+, which for much of Western Australia in January is the amount suggested
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+.
+ The winter months also appear to be both qualitatively similar in their
+ representation of the north-south gradient, as well as quantitatively similar
+ given the values over Melbourne represents 69-104 Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+ c), which is about the same range depicted in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hatzianastassiou2005"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of the influence from large-scale climate drivers, the study by
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gupta1999"
+
+\end_inset
+
+ appears to suggested that El Nino is associated with slightly positive
+ DSR anomalies over Australia.
+ Trends in DSR over the last few decades of the 20th century seem to suggest
+ that global DSR has been increasing by 2.4 Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+/decade (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hatzianastassiou2005"
+
+\end_inset
+
+).
+ The global trend in DSR could have even been heightened in Australia given
+ the positive association between subsidence and fine weather, and the evidence
+ suggesting circulations like the Hadley cell have been increasing in strength
+ in recent decades (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Chen2002"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Sohn2010"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Liu2001"
+
+\end_inset
+
+ in their study of Australian observational data found that solar radiation
+ values could be accurately predicted using proxies like rainfall and temperatur
+e, however, little mention was made as to the characteristics of solar radiation
+ for the continent.
+ For Australia it is therefore possible to conclude that there is a large
+ intra-annual cycle in solar radiation across the continent, that DSR could
+ be enhanced under El Nino conditions and that over recent decades the amount
+ of surface DSR may have increased.
+ To make more specific assessments about the variability of solar radiation
+ in Australia would, however, require a much more in-depth investigation.
+ It is part of the purpose of the current study to undertake such a detailed
+ investigation and to thus reveal the potential for Australia to extract
+ energy from solar radiation.
+ 
+\end_layout
+
+\begin_layout Section
+Covariance of wind speed and solar irradiance over Australia
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-Cov-Wind-Solar"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There does not appear to be any study in the literature that directly compares
+ wind speed and solar radiation variability over Australia.
+ Even when considering investigations into only wind speed or only solar
+ radiation variability the depth of research is still poor.
+ Thus an insight into the covariance between wind speed and solar radiation
+ from the literature is only possible by comparing the general characteristics
+ found from research into each variable separately.
+ 
+\end_layout
+
+\begin_layout Standard
+Somewhat unexpectedly, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ observed that instances of high pressure ridging directly above south-west
+ WA were the second most influential synoptic state for positive wind power
+ production in Perth.
+ Yet in general terms anticyclones are the bearer of fine weather and light
+ winds.
+ Therefore, one conclusion that could be made from the work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ is that under the influence of a ridging anticyclone coastal regions can
+ have a positive covariance between wind speed and solar irradiance that
+ is potentially advantageous for hybrid energy production (or rather, that
+ sunny conditions can coincide with windy conditions).
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of the findings from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+, one can also conclude that determinations of wind speed based purely from
+ knowledge of the distribution of pressure are not necessarily very accurate.
+ Knowledge of the local conditions in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lyons1989"
+
+\end_inset
+
+ brought about a better understanding of wind speed variability which most
+ likely would have been missed by a simple analysis of the large scale forcing.
+ Thus one could argue that any conclusions made from analysis of the pressure
+ fields must be qualified by noting the potential influence of local effects.
+ However, the altering of wind speeds by local conditions like the sea-breeze
+ is likely to be less relevant for locations away from an anticyclonic centre
+ (where geostrophic forcing is greater).
+ 
+\end_layout
+
+\begin_layout Standard
+Considering the works of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones1993"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Simmonds2000"
+
+\end_inset
+
+ there should be extratropical cyclones that, particularly in winter-time,
+ will be influencing atmospheric conditions in the southern latitudes of
+ Australia.
+ For example, the southern regions of Australia (~29-44ºS) have a typical
+ cyclone density of close to one cyclone for the whole region during both
+ summer and winter (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Jones1993"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Simmonds2000"
+
+\end_inset
+
+).
+ In terms of the northern regions of Australia, cyclone system densities
+ (most likely tropical and thermal systems) commonly exceed double that
+ of the southern regions (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Jones1993"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Simmonds2000"
+
+\end_inset
+
+).
+ Given then that the low pressure centres are usually associated with cold
+ fronts or troughs and bands of convection it is likely that there would
+ be relatively high winds and below average levels of Downward Shortwave
+ Radiation (DSR), during each of the cyclonic events mentioned above--indicating
+ the strong possibility for a negative covariance to exist between wind
+ speed and solar irradiance for regions under the influence of such cyclonic
+ systems.
+ 
+\end_layout
+
+\begin_layout Standard
+Analysing some of the literature into the potential synoptic influences
+ on wind speed and solar irradiance suggests that anticyclonic regimes may
+ be responsible for driving both a positive and negative covariance between
+ wind speed and solar irradiance, while cyclonic regimes are most likely
+ responsible for a negative covariance.
+ Under anticyclonic regimes, coastal regions may experience both sunny weather
+ and relatively high wind speeds due to local effects and that such a covariance
+ could be advantageous to a hybrid energy system as neither resource is
+ likely to be at a minimum at the same time (assuming day time conditions).
+ However, this analysis of some of the literature is far from being quantitative
+ly robust.
+ A vastly more comprehensive study would still be needed in order to quantify
+ the general covariance of wind speed and solar irradiance over Australia;
+ enabling the determination of the likely effects on renewable energy production.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-Conclusion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given the important contribution that renewable energy is likely to have
+ in Australia (and world-wide) in the future (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "InternationalEnergyAgency2009"
+
+\end_inset
+
+), and given the important advantages achieved by combining renewable resources
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Wright2010"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2013"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Shafiullah2012"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Liu2011"
+
+\end_inset
+
+), it seems pertinent that studies of the complementarity (covariance) of
+ wind and solar energy be conducted.
+ It is thus the aim of the current study to undertake such an investigation
+ for Australia.
+ In particular, the current study aims to focus on the simultaneous wind
+ and solar conditions.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brayshaw2011"
+
+\end_inset
+
+, among others, have shown the influence of the large-scale weather patterns
+ on wind power output, but the extent to which the weather systems may affect
+ wind and solar power concurrently remains largely undetermined.
+ 
+\end_layout
+
+\begin_layout Standard
+In the following sections of this report an introduction to the methods
+ used, climate data-set used and results for Part 1 of this thesis are presented
+ in order to highlight the climatological covariance of wind speed/power
+ and solar irradiance/power over the Australian region.
+ It should be noted at this point, however, that the current report focuses
+ more on the large-scale spatial covariance/spatial distribution of climatologic
+al wind speed/power and solar irradiance over Australia; the term covariance,
+ mentioned throughout, suggests a time-wise comparison of the fields that
+ is not directly addressed in this thesis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
+options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
