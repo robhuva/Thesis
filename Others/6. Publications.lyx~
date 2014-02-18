@@ -1,0 +1,188 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip 1cm
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Publications
+\end_layout
+
+\begin_layout Standard
+This thesis comprises the following manuscripts which are either published,
+ accepted or submitted for publication in international refereed journals.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 3]
+\series default
+ Chand, S.
+ S., and K.
+ J.
+ E.
+ Walsh, 2009: Tropical Cyclone Activity in the Fiji Region: Spatial Patterns
+ and Relationship to Large-Scale Circulation.
+ 
+\shape italic
+Journal of Climate
+\shape default
+, 
+\series bold
+22
+\series default
+, 3877–3893.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 4]
+\series default
+ Chand, S.
+ S., and K.
+ J.
+ E.
+ Walsh, 2010: Influence of ENSO on Tropical Cyclone Intensity in the Fiji
+ Region.
+ 
+\shape italic
+Journal of Climate,
+\shape default
+ doi: 10.1175/2011JCLI4178.1, in press.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 5]
+\series default
+ Chand, S.
+ S., and K.
+ J.
+ E.
+ Walsh, 2010: The Influence of the Madden-Julian Oscillation on Tropical
+ Cyclone Activity in the Fiji Region.
+ 
+\shape italic
+Journal of Climate
+\shape default
+, 
+\series bold
+23
+\series default
+, 868–886.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 6]
+\series default
+ Chand, S.
+ S., K.
+ J.
+ E.
+ Walsh, and J.
+ C.
+ L.
+ Chan, 2010: A Bayesian Regression Approach to Seasonal Prediction of Tropical
+ Cyclones Affecting the Fiji Region.
+ 
+\shape italic
+Journal of Climate
+\shape default
+, 
+\series bold
+23
+\series default
+, 3425–3445.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 7]
+\series default
+ Chand, S.
+ S., and K.
+ J.
+ E.
+ Walsh: An Updated Seasonal Prediction Scheme for Tropical Cyclone Activity
+ in the Fiji Region.
+ In preparation for submission to 
+\shape italic
+Journal of Climate
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+[Chapter 8]
+\series default
+ Chand, S.
+ S., and K.
+ J.
+ E.
+ Walsh, 2010: Forecasting Tropical Cyclone Formation in the Fiji Region:
+ A Probit Regression Approach Using the Bayesian Fitting.
+ 
+\shape italic
+Weather and Forecasting
+\shape default
+, 
+\series bold
+2
+\series default
+6, 150-165.
+\end_layout
+
+\end_body
+\end_document

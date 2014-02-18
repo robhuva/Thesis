@@ -1,0 +1,133 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\bgroup
+\renewcommand\theenumi{(\roman{enumi})}
+\renewcommand\labelenumi{\theenumi}
+\end_preamble
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip 1cm
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+This research project was supported by the Australian Government under the
+ Endeavour Posgraduate Awards Scheme.
+\end_layout
+
+\begin_layout Standard
+My most sincere thanks to my supervisor, Assoc.
+ Professor Kevin Walsh whose broad knowledge of the field always kept me
+ excited about my work.
+ His continued advice and support throughout my PhD candidature led me to
+ achieve progress that I had not initially thought possible.
+ I also extend my appreciation to the two other members of my PhD advisory
+ committe, Professor Ian Simmonds and Dr.
+ Todd Lane, for their guidance.
+ I greatly appreciate Dr.
+ John Bye's initial recomendation to do my PhD research in the School of
+ Earth Sciences at the University of Melbourne.
+ 
+\end_layout
+
+\begin_layout Standard
+I have also met a number of people during my PhD candidature, and in some
+ cases, established successful collaboration links for current and future
+ research.
+ Firstly, many thanks to Professor Johnny Chan of the Guy Carpenter Asia-Pacific
+ Climate Impact Centre, City University of Hong Kong for his collaboration
+ on some of very important work of my thesis.
+ I also thank Professor Neville Nicholls of the University of Monash, Drs.
+ John McBride, Kevin Tory, Elizabeth Ebert and Matthew Wheeler of the Bureau
+ of Meteorology for their feedback on certain aspects of my project.
+\end_layout
+
+\begin_layout Standard
+I would like to thank other people in the School of Earth Sciences.
+ In particular, Professor Janet Hergt, Richard Young, Helen Russell, Kerry
+ Grieser, Beverly Allen and Karina Patrick for their administrative support.
+ I also thank Doug Morrison and Dr.
+ Brett Holman for their computing and technological support.
+ My appreciation to Professor David Karoly for his advice on my future work
+ directions, Kevin Keay and Dr.
+ Frank Drost for their help on the use of data analysis and visualisation
+ tools, Dr.
+ Sally Lavender for her help on numerical modeling implementations on super
+ computers, and Guido Tresoldi for library support.
+ I greatly appreciate the post-graduate coordinator, Dr John Moreau for
+ all his help.
+ I also acknowledge fellow PhD students Muhammad Hassim, John Allen, Julie
+ Arblaster, Rodger Bodman, Luke Garde, Surendra Rauniyar, Michael Stirling,
+ Sarah Goyen, Yuntao Tian and Cambell Watson for their support.
+\end_layout
+
+\begin_layout Standard
+I really appreciate the caring support of the members of the Austraining
+ International Endeavour Awards Program, in particular my case managers
+ Chelsea Berner and Anneliese Elmendrop.
+ I also appreciate the Graduate Research Scholarships Office for partially
+ funding my tuition fees from the Baragwanath scholarship.
+ Thanks also to the Faculty of Science for giving me the prestigious Research
+ Excellence Award.
+ I also acknowledge the Fiji Meteorological Services for providing necessary
+ tropical cyclone data.
+\end_layout
+
+\begin_layout Standard
+I am indebted to the help and sacrifice of my family members, in particular
+ my parents Mr and Mrs Gopi Chand, grandparents Mr and Mrs Har Bali, my
+ wife Ireen and daughter Ira.
+ Finally, I thank God almighty for making my PhD a successful and a memorable
+ one at the University of Melbourne.
+ 
+\end_layout
+
+\end_body
+\end_document
