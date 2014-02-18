@@ -1,0 +1,574 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introduction 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:PhD-Introduction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Standard
+This chapter outlines the motivation, context, aim and structure of the
+ thesis.
+ This thesis demonstrates how the variability of meteorological variables
+ on various spatial and temporal scales might affect a future, highly renewable
+ energy dependent Australia.
+ It is primarily an investigation of the atmospheric modes that either favorably
+ or adversely affect an Australia-wide renewable energy network, but also
+ illustrates the cost competitiveness of a network that takes into account
+ such atmospheric modes and the variability they represent.
+\end_layout
+
+\begin_layout Section
+Motivation
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:PhD-Motivation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+With world energy consumption showing no signs of decreasing--global annual
+ electricity consumption grew by nearly 3.5% p.a.
+ for the period 1998-2008 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "InternationalEnergyAgency2011"
+
+\end_inset
+
+ while projections suggest an average growth rate of 2.2% p.a.
+ for 2009-2035 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "InternationalEnergyAgency2009"
+
+\end_inset
+
+--the need for electricity to be produced via previously underutilised resources
+ is becoming increasingly important.
+ Current energy production is largely sourced from non-renewable resources
+ like coal, oil and gas, which are in limited supply.
+ The production of oil is widely accepted to be peaking or may have even
+ peaked 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sorrell2010"
+
+\end_inset
+
+ while the use of fossil fuels is a key contributor to the world’s anthropogenic
+ carbon dioxide emissions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bernstein2007"
+
+\end_inset
+
+.
+ There is also mounting evidence that the observed increase in concentration
+ of anthropogenic carbon dioxide is linked to the warming of the climate
+ over the 20th century 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bernstein2007"
+
+\end_inset
+
+.
+ Based on the combination of dwindling supply of fossil fuels and the likely
+ negative consequences of further global warming there is thus currently
+ an enhanced impetus to investigate electricity production via non-carbon-intens
+ive and renewable resources.
+ 
+\end_layout
+
+\begin_layout Standard
+With increasing installation of renewable energy technologies across Australia
+ the question as to whether or not technologies such as wind and solar are
+ able to provide stable and reliable energy at large amounts of penetration
+ is therefore quickly becoming a question that needs addressing.
+ To date, most of the research (often undertaken by the wind/solar farm
+ operators themselves) has focused on the local conditions that affect single
+ wind farms or solar stations.
+ Yet the processes in the atmosphere that drive variability on the large-scale
+ are quite different from those that drive the small scale, and will determine
+ the optimal mix and geographical placement of wind and solar farms to meet
+ Australia’s electrical energy needs.
+ 
+\end_layout
+
+\begin_layout Standard
+There currently appears to be no study in the literature that explores the
+ covariability of wind and solar over Australia.
+ Yet the balancing of wind and solar resources across large areas and many
+ different time scales is likely to be an important consideration in the
+ future.
+ Specifically, if Australia is to rely on renewable energy, knowledge of
+ the influence that common large-scale weather patterns have in modulating
+ the relationship between wind and solar will be important.
+ Studies from Sweden (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Widen2011"
+
+\end_inset
+
+) and Spain (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Santos-Alamillos2012"
+
+\end_inset
+
+) have already shown that the spatio-temporal balancing of wind and solar
+ resources can be significantly impacted by specific, and often common,
+ weather regimes.
+ The current study is thus relevant because it addresses the need for a
+ large-scale resources assessment of renewable energy in Australia and in
+ doing so assesses the potential for spatio-temporal balancing of the wind
+ and solar resources--enabling Australia to contribute to a more sustainable
+ energy future for the world.
+ 
+\end_layout
+
+\begin_layout Section
+Context
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:PhD-Context"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For some time there has been a keen interest in using renewable resources
+ for the extraction of energy.
+ Small scale appliances driven by Photovoltaic (PV) cells have been in use
+ since the mid-late 20th century 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Goetzberger2003"
+
+\end_inset
+
+ while it has also become increasingly popular for households to install
+ PV panels for use within the home (nearly 1 million households had rooftop
+ PV at the end of 2012 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Council2012"
+
+\end_inset
+
+).
+ In Australia, large scale installations of solar technology are not very
+ common.
+ In fact, the largest solar installation is a 9.3MW solar thermal power plant
+ operating in New South Wales 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Council2012a"
+
+\end_inset
+
+.
+ Wind power technology has also undergone a dramatic shift over recent decades;
+ growing at 22% p.a.
+ over the last 10 years, wind power is one of the fastest growing technology
+ in the world 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Council2011"
+
+\end_inset
+
+.
+ More than 30% of Denmark’s electricity production comes from wind power
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Council2011"
+
+\end_inset
+
+, while in Australia the state of South Australia has a significant investment
+ in wind power (almost 25% penetration 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Council2012"
+
+\end_inset
+
+).
+ Ultimately though, the inherently variable nature of renewable energy productio
+n prevents any single renewable resource from being used for large scale
+ electrical purposes.
+ 
+\end_layout
+
+\begin_layout Standard
+To overcome issues associated with the high frequency variability of energy
+ sources like wind and solar power, the strategic placement of resources
+ is often explored as a way of smoothing out net energy production.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Archer2007"
+
+\end_inset
+
+ report significant advantages in geographically dispersing wind farms so
+ long as in combination the total area covered by all farms increases.
+ The interconnecting of wind farms does not guarantee that moments of low
+ output are avoided but instead the combined output starts to resemble a
+ single farm with steady wind speeds 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Archer2007"
+
+\end_inset
+
+.
+ To date, however, there is no eminent study that suggests such advantages
+ could be gained by dispersing solar farms; although 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Barnett1998"
+
+\end_inset
+
+ have found that decorrelation between solar measuring stations in the Oklahoma
+ MESONET to occur in the order of 100’s of kilometres, depending cloud cover
+ and the temporal resolution used.
+ In order to gain further steadiness, or reliability in renewable energy
+ output, the combination of different resources like wind and solar is usually
+ explored.
+\end_layout
+
+\begin_layout Standard
+Commonly referred to as a hybrid energy system, the combination of wind
+ and solar energy (along with appropriate back-up energy supply) is widely
+ accepted as one such hybrid system that is effective at producing useful
+ energy for larger scale purposes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Blackburn2010"
+
+\end_inset
+
+.
+ The deficiencies normally associated with either wind or solar are often
+ overcome when they are 2 combined.
+ Solar radiation at some locations, for instance, has a diurnal cycle that
+ is qualitatively quite similar to that of electrical demand (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Budischak2013"
+
+\end_inset
+
+) while wind power has the distinct advantage of being largely independent
+ from the diurnal solar cycle (reference?).
+ When compared to wind or solar as separate sources of energy, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Heide2010"
+
+\end_inset
+
+ found that the seasonal mix of 55% wind and 45% solar was able to meet
+ European electrical demand while also reducing the need for storage by
+ a factor of two.
+ Numerous other studies from countries such as Canada, the United States,
+ China and Greece have also found clear advantages in combining wind and
+ solar (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Hoicka2011"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Blackburn2010"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Chen2010"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Katsigiannis2010"
+
+\end_inset
+
+, respectively).
+ 
+\end_layout
+
+\begin_layout Standard
+In the context of Australia, research in recent years is starting to demonstrate
+ that a large reliance on renewable energy, perhaps even 100%, could be
+ possible in the future without compromising supply to the network.
+ Using data from the Bureau of Meteorology (BoM) 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wright2010"
+
+\end_inset
+
+ have shown that a mixture of 38% concentrating solar thermal, 44% wind
+ power and 18% other back-up sources, spread-out across the continent, could
+ supply all of Australia’s power needs by 2020.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2013"
+
+\end_inset
+
+, which used BoM and Australian Electricity Market Operator (AEMO) data,
+ suggested the mix for a future 100% renewable Australia could be between
+ 46-58% onshore wind power, 13-22% Concentrating Solar Thermal (CST), 15-20%
+ PV, 5-6% Hydro and the remaining 5-6% gas (fueled by biofuels)--as a percentage
+ of total output, and depending on the cost assumptions.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AEMO2013"
+
+\end_inset
+
+ showed that 100% of Australian demand for electricity could be met in the
+ year 2030 by a combination of 20-40% of installed capacity from PV, 7-35%
+ onshore wind, 10-15% CST, 10-15% biogas and then smaller ammounts of capacity
+ from other back-up resources (including hydro, geothermal and biomass).
+ Importantly, both the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AEMO2013"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2013"
+
+\end_inset
+
+ studies were designed to maintain the existing reliability requirements
+ of only 0.002% unserved energy per year.
+ Other studies suggest similar results in terms of the high potential for
+ Australia to integrate large portions of renewable energy into the national
+ electricity mix, but with less definitive renewable energy configurations
+ (see 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Shafiullah2012"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "Liu2011"
+
+\end_inset
+
+).
+ Thus one might conclude from a brief survey of the literature that the
+ prospects of dispersing renewable resources across the Australian continent
+ and achieving a reliable net energy output are quite high.
+ However, most studies in the Australian context use data that are sparse,
+ due to a reliance on observations, and data that span only a couple of
+ years at most--presumably due to computational limitations.
+ Much of the variability of a large-scale renewable network is therefore
+ lost because the data do not resolve appropriate spatial and temporal scales.
+ In order to properly gauge the large-scale and long-term renewable energy
+ potential of Australia a vastly more comprehensive spatio-temporal investigatio
+n is needed.
+ 
+\end_layout
+
+\begin_layout Section
+Aim 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:PhD-Aim"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The aim of the current study is to analyse the covariability of the wind
+ and solar fields across all of Australia in order to reveal the potential
+ for Australia to extract useful renewable energy from both fields.
+ Via a synoptic climatology and a short-term optimisation, the current study
+ will investigate the long and short term large-scale variability of both
+ wind speed/power and solar irradiance/power, including any links to established
+ atmospheric modes of variability for the region.
+ Specifically, if there are synoptic weather regimes that can be identified
+ by the climatology as detrimental to wind and/or solar power output, are
+ these weather regimes also identified as problematic in the optimisation
+ study? And if not, what are the differences between the long-term and short-ter
+m studies that result in such a discrepancy?
+\end_layout
+
+\begin_layout Standard
+It is thus the aim of this PhD to undertake a comprehensive investigation
+ of climatological and meteorological factors that could significantly influence
+ output in a future, highly renewable energy dependent, Australian electricty
+ network.
+ 
+\end_layout
+
+\begin_layout Section
+Thesis outline
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Thesis-outline"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This thesis is made up of two parts.
+ The first part of the thesis defines a synoptic climatology of the Australian
+ region and explores the association between common weather regimes and
+ the wind and solar potential that co-occurs with each regime.
+ Part 2 presents an alternative approach for examining the influence of
+ synoptic regimes by first optimising the wind and solar energy as part
+ of a renewable energy system.
+ Part 2 then goes on to explore the synoptic regimes that lead to poor and/or
+ favourable large-scale renewable output from the optimised system.
+ Following this, there is a discussion of the results from Parts 1 and 2,
+ how they compare/contrast, as well as reasons for any similarities/differences.
+ Finally, conclusion from the thesis are made, including recommendations
+ of future work.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
+options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
