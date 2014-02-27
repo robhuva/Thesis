@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -65,8 +67,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -124,7 +126,7 @@ Introduction
 
 \begin_layout Standard
 When utilising a GA to find the solution to an optimisable problem a cost
- function is required.
+ function is usually required.
  The cost function involves the combination of factors that are influencing
  the problem and is what the GA is attempting to minimise.
  In the case of the current study the cost function is a combination of
@@ -222,8 +224,138 @@ name "sec:Site-Selection-Process"
 \end_layout
 
 \begin_layout Standard
-In order to achieve optimised solutions within reasonable computational
- and time constraints.....
+It is common-place in a lot of studies that involve large meteorological
+ data sets to be mindful of limitations, both in a time-management and computati
+on sense (references?).
+ This study is also not immune to this issue.
+ In particular, the optimisation of all continental locations within the
+ ACCESS domain would be infeasible.
+ It is also not necessary to optimise all locations that contain meteorological
+ data.
+ As seen in Part 1 there are decorrelation lengths that exist in the atmosphere
+ for most fields, in particular the wind speed field, which dictate that
+ adjacent locations have significantly similar time series.
+ Using the knowledge of such a deccorelation length in the wind field it
+ was determined that a sub-selection of available locations be utilised
+ for the optimisation in Part 2.
+ A minimum spacing between available locations in the wind field was determined
+ to be 11 grid points, or roughly 120km.
+ This minimum spacing is considerably shorter than the decorrelation length
+ scale of roughly 1,300km determined in Part 1.
+ It was deemed necessary to utilised a shorter minimum spacing because the
+ temporal resolution of the ACCES data is much finer than that of the ERA-Interi
+m data.
+ The extra variability captured by the hourly ACCESS ouptut should only
+ serve to reduce any interrelatability of adjacent gird points.
+ It was also determined that the computational resources permitted the utilisati
+on of the 'extra' grid-points, even if no significantly new information
+ was gained by doing so.
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of the DSR field, however, no such decorrelation length scale was
+ found in Part 1.
+ This is not to suggest that one location would be a diverse-enough selection
+ for all of Australia—this would mostly likely be unworkable in reality.
+ Instead, and even though two locations in the DSR field that are very near
+ each other might not provide any new information, the limitation on the
+ amount of DSR locations to include was purely computational.
+ As such, it was determined that the minimum separation of available DSR
+ locations would be 21 grid points—or roughly 250km.
+ 
+\end_layout
+
+\begin_layout Standard
+Following the determination of the minimum separation distances in the DSR
+ and wind fields the next step in the site selection process was the elimination
+ of potential locations that were unavailable due to existing land-usages.
+ Knowledge of the existing land-usages across Australia was sourced from
+ the Geoscience Australia GIS data-base.
+ Land-usage that included national parks and urban areas were combined and
+ mapped onto the ACCESS grid.
+ These unavailable locations were then utilised in the site selection process
+ such that a regular grid of locations was formed.
+ The regular grid included the minimum separation distance and did not include
+ an unavailable site—in accordance with a similar process outlined in (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "AEMO2013"
+
+\end_inset
+
+).
+ Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sites_Wind11_Dsr21"
+
+\end_inset
+
+ shows this regular grid of available and separated locations for the wind
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sites_Wind11_Dsr21"
+
+\end_inset
+
+ a)) and solar fields (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sites_Wind11_Dsr21"
+
+\end_inset
+
+ b)).
+ These locations will then be used in the next section as part of the optimisati
+on.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/RegGrid_ACCESS_wind_11_dsr_21_point_exclusion_with_natparks-capad.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Locations from within the ACCESS-A grid chosen for input into the energy
+ model.
+ Red dots in a) represent the wind sites and in b) represent the solar sites.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sites_Wind11_Dsr21"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -262,6 +394,17 @@ name "sec:Energy-Model-Conclusion"
 
 \begin_layout Standard
 This chapter presents the energy model used in Part 2 of the current study...
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
+options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
