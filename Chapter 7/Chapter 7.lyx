@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -65,8 +67,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -109,8 +111,8 @@ Summary
 This chapter gives an overview of how optimisation techniques are utilised
  in the renewable energy literature.
  A review of the Genetic Algorithm (GA) technique and its use in renewable
- energy optimistion is also presented, along with the use of GAs in the
- context for Australia, and then more broadly results from renewable energy
+ energy optimisation is also presented, along with the use of GAs in the
+ context of Australia, and then more broadly results from renewable energy
  optimisation studies of Australia.
  Following this the data utilised in Part 2 (meteorological and electrical)
  and their preparation for use in this thesis is presented.
@@ -152,7 +154,7 @@ key "Banos2011"
 \end_inset
 
  found that since the mid-90s there has been an exponential growth in the
- use of optimistion techniques in RE research.
+ use of optimisation techniques in RE research.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -255,7 +257,7 @@ key "Trutnevyte2013"
 \end_inset
 
  was able to provide policy-makers with various near cost-optimal configurations
- to meet their heating needs.
+ to meet their region's heating needs.
  The region was then able choose which of the cost-effective options they
  preferred.
  In its user-friendly design the EXPANSE methodology is similar to numerous
@@ -289,14 +291,14 @@ key "Connolly2010"
 
 \end_inset
 
- was the broad-brush approach to the energy system.
+ is the broad-brush approach to the energy system.
  While these tools are in general able to provide flexibility to the user
  in terms the many different areas of the energy system that they can simulate--
 including heat, water and transport--this also reduces the ability for these
  tools to analyse complex meteorological data and the effect of variability
  in RE output on the electricity network.
- These tools also seem to not allow the user to determine which type of
- optimisation algorithm is implemented.
+ The common RE simulation tools also seem to not allow the user to determine
+ which type of optimisation algorithm is implemented.
  Rather, the pre-built RE simulation tools come ‘as-is’ and without the
  flexibility in core operation.
  As was mention in 
@@ -306,7 +308,7 @@ key "Budischak2013"
 
 \end_inset
 
- tools like HOMER (the National Renewbale Energy Laboratory (NREL) RE simulation
+ tools like HOMER (the National Renewable Energy Laboratory (NREL) RE simulation
  software) are commonly only applied in small, isolated grid scenarios (perhaps
  the most comprehensive study using one of these tools is the simulation
  of 100% RE for Denmark by 2030 and 2050 seen in 
@@ -320,10 +322,11 @@ key "Lund2009"
  However, and as is the case with this thesis, a larger area is of concern,
  and a greater level of meteorological complexity required in order to properly
  simulate the effect of meteorological variability on the electrical network.
- A greater level of complexity is also being addressed by a growing number
- of researchers via the heuristic optimisation tools--including Genetic
- Algorithms (GAs) and also the aptly named particle swarm optimisation technique
- (
+ The field of RE research is a rapidly evolving area and a similarly high
+ level of complexity is also being addressed by a growing number of researcher.
+ Popular in recent years is the use of the heuristic optimisation tools--includi
+ng Genetic Algorithms (GAs) and also the aptly named particle swarm optimisation
+ technique (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Banos2011"
@@ -332,6 +335,17 @@ key "Banos2011"
 
 ).
  
+\end_layout
+
+\begin_layout Section
+Renewable Energy Simulations
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lit-RE-Simulations"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -501,7 +515,7 @@ key "AEMO2013"
 \end_inset
 
 --the main differences between scenarios being the cost assumptions and
- RE uptake rate--solar technologies dominated that of wind.
+ RE uptake rate--solar technologies dominated wind.
  This domination by solar, which is counter to that of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -604,7 +618,7 @@ key "Elliston2013"
 
 \end_inset
 
- in the Australian context.
+.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -616,9 +630,8 @@ key "Elliston2013"
  RE system was cheaper on an annualised basis than the cost of maintaining
  the current system out to 2030.
  In fact, one could argue that consensus is forming with regards to the
- theory that high penetration of RE (up to 100%) is going to be cheaper
- for society in the future than maintaining the current fossil-fuel based
- systems.
+ idea that high penetration of RE (up to 100%) is going to be cheaper for
+ society in the future than maintaining the current fossil-fuel based systems.
  
 \end_layout
 
@@ -700,7 +713,7 @@ key "Steinke2013"
 
 \end_inset
 
- found in their simulation for Eurpoe that potentially no energy storage
+ found in their simulation for Europe that potentially no energy storage
  would be needed if there was an over-supply of about 30%.
  Similarly, 
 \begin_inset CommandInset citation
@@ -854,7 +867,7 @@ key "Hoevenaars2012"
  analysed the influence of temporal resolution of the meteorological data
  on a high penetration RE simulation by attempting to meet the demand of
  a single off-grid house using various combinations of wind, solar, diesel
- generation and batter back-up.
+ generation and battery back-up.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -886,12 +899,11 @@ key "Hoevenaars2012"
  in the total output from wind at higher temporal resolutions, artificial
  smoothing as a result of the averaging over longer time steps and differences
  in the temporal matching between load and RE output at the varying resolutions.
- 
 \end_layout
 
 \begin_layout Standard
 It is clear from a review of the literature surrounding optimisation and
- its application to high penetration RE studies that there are a lot of
+ its application in high penetration RE studies that there are a lot of
  alternative approaches for addressing similar questions.
  Choice of optimisation technique or tool, data used and their temporal
  resolution, the diversity in geographical location and therefore also the
@@ -920,10 +932,10 @@ key "Elliston2012"
 \end_inset
 
 ).
- The inevitability of oversupply in an RE-based system should not be a burden,
- rather, what to do with the excess energy is simply a technical after-thought
- with many different, but plausible, answers (feathering turbine blades
- or switching off solar inverters, for instance 
+ While the inevitability of oversupply in an RE-based system could be seen
+ as an inefficiency, what to do with the excess energy is simply a technical
+ after-thought with many different, but plausible, answers (feathering turbine
+ blades or switching off solar inverters, for instance 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Budischak2013"
@@ -946,12 +958,12 @@ name "sec:Optim-Lit-ACCESS-Data"
 \end_layout
 
 \begin_layout Standard
-The data used in Part 2 of this thesis come from the Bureau of Meteorology’s
- regional model called ACCESS (the Australian Community Climate and Earth-System
- Simulator).
+The meteorological data used in Part 2 of this thesis come from the Bureau
+ of Meteorology’s regional model called ACCESS (the Australian Community
+ Climate and Earth-System Simulator).
  ACCESS at its core is the same as the UK Met-Office’s Unified Model (UM).
  Built on top of the atmospheric core from the UM is the coupling of an
- ocean model, land-surface moel and sea-ice model 
+ ocean model, land-surface model and sea-ice model 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Bi2013"
@@ -960,7 +972,7 @@ key "Bi2013"
 
 .
  The ACCESS model was a project partnership between CSIRO and Bureau of
- Meteorology whose aim was to provide “…a comprehensive climate modelling
+ Meteorology (BoM) whose aim was to provide “…a comprehensive climate modelling
  capacity to Australian scientists” (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -1023,8 +1035,16 @@ key "Rashid2013"
 
 \end_inset
 
- found that there was a slight easterly bias in the zonally average zonal
- winds between 10ºS and 40ºS.
+ found that there was a slight easterly bias (~2ms
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+) in the zonally average zonal winds between 10ºS and 40ºS.
  However, biases in the order of 2ms
 \begin_inset script superscript
 
@@ -1065,7 +1085,15 @@ key "Bi2013"
 \end_inset
 
  introduced a non-dimensional parameter M, which for values of 1 depicts
- perfect agreement and for values of 0 no skill.
+ perfect agreement and for values of 0 no skill (see Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:M-Definition"
+
+\end_inset
+
+ for the formula).
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1112,8 +1140,51 @@ key "Bi2013"
 
 \end_inset
 
- that the wind speed and DSR fields will not introduce any significant biases
- to the results preseneted later in Part 2.
+ that the use of the wind speed and DSR fields will not introduce any significan
+t biases to the results presented later in Part 2.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{2}{\pi}\arcsin[\frac{1-mse}{(V_{X}+V_{Y}+(G_{X}-G_{Y})^{2}}]\label{eq:M-Definition}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $mse$
+\end_inset
+
+ is the mean square error between the model field 
+\begin_inset Formula $X$
+\end_inset
+
+ and the observed field 
+\begin_inset Formula $Y$
+\end_inset
+
+, and 
+\begin_inset Formula $V$
+\end_inset
+
+ and 
+\begin_inset Formula $G$
+\end_inset
+
+ are the spatial variance and mean of the fields as subscripted (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Bi2013"
+
+\end_inset
+
+).
  
 \end_layout
 
@@ -1122,91 +1193,186 @@ ACCESS Data and Preparation
 \end_layout
 
 \begin_layout Standard
-In order to utilise the ACCESS data we first had to ensure that the data
- were complete.
- As was given from the BoM the data had some hours that were missing from
- the 2010-2011 period.
+In order to utilise the ACCESS data in this thesis the first step was to
+ ensure that the data were complete.
+ The source of the data was the BoM and, as it was given, the data had some
+ hours that were missing from the 2010-2011 period.
  Any hour that was missing was dealt with by assigning the missing value
- ‘NaN’ and the original data padded out to create a 2-year time series that
- was of length 17,520 hours, and that was made up of either output from
- the ACCESS model or was a ‘NaN’.
+ ‘NaN’ and thus the original data were padded out to create a 2-year time
+ series that was of length 17,520 hours--containing either output from the
+ ACCESS model or a ‘NaN’.
  
 \end_layout
 
 \begin_layout Standard
-The ACCESS model also included lcoations that were not of interest to this
+The ACCESS model also included locations that were not of interest to this
  thesis.
- As such these areas, which included Indonesia and East Timor, were filttered
- out and a new area that included just the Australian continent was defined
- (Figure a).
+ As such these areas, which included Indonesia and East Timor, were removed
+ from the domain and a new area that included just the Australian continent
+ was defined (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ACCESS-Domain-Land-Sea"
+
+\end_inset
+
+).
  The Australian continental region was determined using the land-sea mask
  supplied with the ACCESS data.
- The land-sea mask was, however, also filtered from the region seen in Figure
- a because some remote islands were not necessary for the study.
+ The land-sea mask was, however, also filtered from the region seen in Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ACCESS-Domain-Land-Sea"
+
+\end_inset
+
+ due to the inclusion of some remote islands that were not necessary for
+ the study.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/check_access-a_lsm_contour.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Plot of the land-sea mask variable, illustrating the ACCESS model domain
+ utilised in Part 2.
+ Domain derived from the ACCESS-A Austral region and filtered for continental
+ regions of interest.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ACCESS-Domain-Land-Sea"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Once the Australian continental region was defined the next step was to
  extract the wind speed and Downward Shortwave Radiation (DSR) values from
  the output.
- The DSR data was taken as it came, however, the wind speed data needed
- interpolation to 80m—as per Part 1—in order to have wind speed values that
- were at approximate hub-height for the wind speed-power conversion.
+ The DSR data was taken 'as is' and without any post-processing, however,
+ the wind speed data needed interpolation to 80m--as per Part 1--in order
+ to obtain wind speed values that were at approximate hub-height for the
+ wind speed-power conversion.
  The gridding used in the ACCESS model staggered the zonal (u) and meridional
- (v) components of the wind speed via the (….) technique.
- As such, the combination of the u and v components of the wind speed field
- was not straight forward but involved the centering of the two fields to
- be over the coordinate for the surface grid.
- The centring (averaging over the two adjacent points) was also necessary
- in order to interpolate to 80m, which involves using the topography height
- with the height of the pressure levels in order to determine 80m above
- ground level.
- Once centred, the u and v components were combined as per the formula for
- finding the length of a vector from its base coordinates (adding the square-roo
-ts of the sum of squares).
+ (v) components of the wind speed via the Arakawa-C grid staggering approach.
+ The combination of the u and v components of the wind speed field therefore
+ involved the centering of the two fields, matching the coordinate for the
+ surface grid.
+ The centring (averaging over the two adjacent points) was necessary in
+ order to interpolate to 80m, which involved using the topography height
+ on the surface grid and the height of the pressure levels in order to determine
+ 80m above ground level.
+ Once centred, the u and v components were combined to give wind speed,
+ as per the formula for finding the length of a vector from its base coordinates
+ (square-root of the sum of squares).
  
 \end_layout
 
 \begin_layout Standard
 This process of combining the u and v components was completed for all levels
  of the ACCESS model output and all continental locations.
- Then the data were interpolated to 80m via a cubic spline through the vertical
- levels using the height of each level in metres above sea-level (the heights
- given were in geopotential height, which is relative to sea-level) and
- the knowledge of the height above sea-level of the topography from the
- surface files.
- Once completed, a record of the 80m wind speed at each continental location
- of interest (those defined in Figure a) and the corresponding DSR values
- was formed—the wind speed data were now at also at surface locations following
- the centring process.
+ The data were then interpolated to 80m via a cubic spline through the first
+ five vertical levels using the height of each level in metres above sea-level
+ (the heights given were in geopotential height, which is relative to sea-level)
+ and the knowledge of the height above sea-level of the topography from
+ the surface files.
+ A record of the 80m wind speed at each continental location of interest
+ (those defined in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ACCESS-Domain-Land-Sea"
+
+\end_inset
+
+) and the corresponding DSR values was then formed—the 80m wind speed data
+ were now also at surface locations following the centring process.
  
 \end_layout
 
 \begin_layout Standard
 The next step in the preparation of the wind and solar data for input into
- the energy optimistion was the conversion to energy, in the case of wind,
- or energy potential in the case of solar.
- For the wind speed the conversion to power output was conducted in the
- same manner as Part 1 whereby the GE 2.5MW (see figure … from Part 1) wind
- speed power curve was applied to all needed values of hub-height wind speed
- (only those locations utilised following the site selection process outlined
- later).
- The same approach was also used in terms of the input of solar radiation
- data to the energy model.
+ the energy optimisation was the conversion to energy (in the case of wind)
+ or energy potential (in the case of solar).
+ The conversion to power output for the wind speed was conducted in the
+ same manner as Part 1 whereby the GE 2.5MW (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:GE-2.5-Power-Curve"
+
+\end_inset
+
+ from Part 1) wind speed power curve was applied to all needed values of
+ hub-height wind speed (only those locations utilised following the site
+ selection process outlined later).
+ The same approach from Part 1 was also used in terms of the input of solar
+ radiation data to the energy model.
  No pre-determination of the solar energy type (photo-voltaic, concentrating
- solar thermal, utility-scale photo-voltaic or others) was made, simply
+ solar thermal, utility-scale photo-voltaic, or others) was made, simply
  a measure of solar availability was utilised.
  All locations that were chosen for input into the energy model had their
  DSR values at all times converted to a percentage of maximum.
  The maximum was taken as the maximum value of DSR from the ACCESS data
- (INSERT NUMBER).
- This process of solar availability (and then multiplying by the size of
- the installation) was noted in (43) as actually producing very similar
- values of total output to using actual output from a solar installation.
- For instance, 43 noted that observations at the surface provide a good
- estimate of the best-case scenario photovoltaic installation fitted with
- multi-point power tracking technology.
+ (1184.3 Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+
+).
+ This conversion to solar availability (and then multiplying by the size
+ of the installation) was noted in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hoevenaars2012"
+
+\end_inset
+
+ as producing very similar values of total output when compared to using
+ actual output from a solar installation.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hoevenaars2012"
+
+\end_inset
+
+ noted that observations at the surface can provide a good estimate of the
+ best-case scenario photo-voltaic installation fitted with multi-point power
+ tracking technology.
  
 \end_layout
 
@@ -1215,47 +1381,59 @@ Demand Data and Preparation
 \end_layout
 
 \begin_layout Standard
-Another key component to this thesis is the use of demand data in order
- to determine how useful the wind and solar fields might be in meeting some
- sort of demand for the electricity that they provide.
+Another key component to this thesis is the use of demand data.
+ Integral to the usefulness of renewable energy output is the comparison
+ in output with some sort of demand for the electricity that they provide.
  It is a key assumption of this thesis that the combination of wind and
  solar be utilised in some form to provide energy for society and thus any
  features in their combined variance that miss-match that of demand are
  also vitally important.
- The demand data utilised in this thesis come from two main sources—the
- Australian Electrcity Market Operator (AEMO), as per Part 1, and the Western
- Australian Market Operator (insert name…).
- Initially the study examines the whole of Australia in terms of including
- the major population centres (Eastern states and then Perth in WA).
- In order to combine the data from WA and AEMO a conversion from local time
- (AEST and WAST?) to just data at AEST was undertaken.
+ The demand data utilised in this thesis come from two main source--the
+ Australian Electricity Market Operator (AEMO), as per Part 1, and the Independe
+nt Market Operator of Western Australian (IMOWA).
+ Initially, this thesis examines the whole of Australia in terms of the
+ major population centres (eastern states and then Perth in WA).
+ In order to combine the data from IMOWA and AEMO a conversion from local
+ time (AEST and AWST) to all data at AEST was undertaken.
  
 \end_layout
 
 \begin_layout Standard
-Once standardised such that all demand data were in AEDT the so called ‘copper-p
-late’ combination of data was utilised.
- As per previous studies of renewable energy in this region (Elliston….)
- the copper-plate combination involves simply adding together cumulatively
- the data for all locations, and irrespective of whether or not that demand
- is being met by resources in that location.
- Thus the copper-plate technique results in a single time series of demand
- for all of Australia.
- This time series is then used in the Energy Model section to compare with
- possible combinations of wind and solar.
+Once standardised in the temporal domain, the so called ‘copper-plate’ combinati
+on of data was implemented.
+ As per previous studies of renewable energy in this region (for instance
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2012"
+
+\end_inset
+
+) the copper-plate combination involved simply combining the data for all
+ locations--irrespective of whether or not that demand is being met by resources
+ in that location--thus creating a single time series of demand for all
+ of Australia.
+ This time series is then used in the Energy Model section (Chpt.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:The-Energy-Model"
+
+\end_inset
+
+) to compare with possible combinations of wind and solar.
  
 \end_layout
 
 \begin_layout Standard
-Unfortunately there were also some missing data issues with the demand data.
- It should be noted at this point that these missing data were also assigned
- the value of ‘NaN’.
- Thus it was then possible to determine the locations of missing data from
- all data-sets.
- This then allowed for the filtering of all time series to be concordant
- in their coverage of either meteorological or demand data—an important
- consideration for later steps that involve optimising the wind and solar
- fields to meet demand.
+It should be noted there were also some missing data issues with the demand
+ data and these missing data were also assigned the value of ‘NaN’.
+ Following this it was then possible to determine the locations of missing
+ data from all data-sets.
+ Each time series then had their data (either meteorological or demand)
+ filtered such that the temporal coverage was concordant--an important considera
+tion for later steps that involve optimising the wind and solar fields to
+ meet demand.
 \end_layout
 
 \begin_layout Section
@@ -1270,7 +1448,40 @@ name "sec:Conclusion-high-activity"
 \end_layout
 
 \begin_layout Standard
-This chapter presents...
+This chapter presented an overview of the literature in the areas of optimisatio
+n, renewable energy optimisation, and more specifically the area of renewable
+ energy optimisation for Australia.
+ It was shown that many different approaches exist for finding the optimum
+ combination of renewable resources (optimisation type, data used, domain
+ used, etc.).
+ Specifically, there are challenges in finding the strategic combination
+ that maximises the percentage contribution from renewable energy.
+ It was also shown that there exists a high potential for Australia, and
+ even the large areas of the rest of the world, to rely heavily (up to 100%)
+ on renewable technology.
+ However, there is still little known about the specific influences that
+ the common synoptic weather regimes will have on a high renewable energy
+ dependent Australia.
+ While 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2012"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AEMO2013"
+
+\end_inset
+
+ analysed challenging weeks or moments in a season, the specifics regarding
+ the meteorological drivers and their commonness, or not, remains unexplored.
+ This chapter also presented the data utilised in Part 2 of this thesis.
+ In particular, the meteorological and demand data were shown to be relevant
+ to this thesis and the preparation of the data for later use was outlined.
+ 
 \end_layout
 
 \begin_layout Standard
