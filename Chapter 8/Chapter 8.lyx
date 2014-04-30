@@ -109,7 +109,13 @@ Summary
 \begin_layout Standard
 \noindent
 This chapter presents the development of the energy model utilised in Part
- 2 of this study...
+ 2 of this study.
+ The components of the model, some of the costs used and the locations from
+ within the ACCESS-A model grid utilised are outlined.
+ A quasi transmission model is also presented, and the chapter concludes
+ by explaining how the individual components are combined and what the specific
+ combinations imply about the preferred solutions to the electricity system
+ configuration.
 \end_layout
 
 \begin_layout Standard
@@ -125,16 +131,47 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-When utilising a GA to find the solution to an optimisable problem a cost
- function is usually required.
+The energy model utilised in this thesis is part of a collaborative project
+ that involves the Melbourne Energy Institute (University of Melbourne)
+ and the Australian Energy Research Institute at the University of New South
+ Wales.
+ The aim of the model as a whole is to provide a mixture of renewable resources
+ that is as realistic as possible, in terms of its potential to power a
+ future Australia.
+ The optimised problems in this thesis are, however, intentionally less
+ focused on the feasibility of implementing the solutions, in order to maintain
+ the focus on the regional influential meteorological factors.
+ 
+\end_layout
+
+\begin_layout Standard
+In its most basic form the energy model, like all optimisation techniques,
+ simply minimises a cost function.
  The cost function involves the combination of factors that are influencing
  the problem and is what the GA is attempting to minimise.
  In the case of the current study the cost function is a combination of
  costs assigned to each of the technologies that are available to meet demand
- for electrcity in Australia....
- Also site selection, as the problem is more ameanable to optimisation if
- it can be given to the GA in a succinct version...
- The aim of the model as a whole is to....
+ for electricity in Australia (onshore wind, large-scale concentrating solar,
+ pumped hydro storage and gas back-up).
+ The costs for each technology define the order in which the technologies
+ are favoured, the dispatch order, and for all simulations examined in this
+ thesis the effective dispatch order is renewables (wind and solar), followed
+ by hydro and then gas.
+ 
+\end_layout
+
+\begin_layout Standard
+A pre-optimisation site selection process is also undertaken.
+ The optimisation problem is more amenable to optimisation if it can be
+ given to the GA in a succinct version.
+ In the site selection process a sub-selection of all available locations
+ is made.
+ A completely un-restricted optimisation would involve searching the solution-sp
+ace in regions that included unrealistic solutions.
+ Thus, similar to the user-defined costs, the site selection process is
+ part of the idea that the user has some knowledge of the nature of the
+ problem before undertaking the optimisation.
+ 
 \end_layout
 
 \begin_layout Section
@@ -149,7 +186,229 @@ name "sec:Optim-Cost-Function"
 \end_layout
 
 \begin_layout Standard
-The cost function.....
+In this thesis the cost function is defined as being made up of costs from
+ the building and maintenance of renewable energy resources, as well as
+ costs associated with back-up energy supply, and other costs involved in
+ the maintenance of the energy system.
+ The goal of the energy model is to minimise these costs, and in doing so
+ provide information regarding the optimal combination of wind and solar
+ to meet the electrical demand of Australia.
+ Thus, in the optimisation process the model is given not only the value
+ of the cost function but also the installed capacity of the wind and solar
+ resources.
+ The model then at each iteration of its optimisation process determines
+ whether or not it would be more/less cost effective to install more/less
+ wind or solar resources at each available site selected from the ACCESS
+ model grid.
+ As will become more evident later on in the thesis, and based on the costs
+ used in each scenario, the aim of model could be thought of as minimising
+ gas usage.
+ Gas has the highest costs in all scenarios examined in this thesis and
+ thus it is attractive in a cost-cutting sense for the energy model to minimise
+ gas usage wherever possible.
+ The details of the cost function components are outlined in the sections
+ below.
+\end_layout
+
+\begin_layout Subsection
+Renewable energy costs
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Renewable-energy-costs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The costs for the wind and solar resources in this thesis were determined
+ based on the idea that each wind/solar site has an initial installation
+ cost and then costs associated with building and installing the require
+ amount of wind/solar technology.
+ Further to this, and based on an economy of scale, the installation of
+ each new wind turbine or large-scale solar unit should increment such that
+ the increments get progressively smaller and asymptote towards just the
+ manufacturing cost.
+ The asymptotic behaviour of such a total site cost vs.
+ number of units relationship is theoretically the same for both technologies,
+ however the speed of the asymptote will be different for each technology.
+ The gradient behaviour of the relationship between cost and number of installat
+ions can be described by the following relationship: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+gradient\,\, behaviour\sim\frac{a}{b}\int\frac{\sqrt{a+(bn)^{2}}}{n}\,\, dn\label{eq:Gradient-Behaviour}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is clear from Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gradient-Behaviour"
+
+\end_inset
+
+ that the gradient behaviour for an economy of scale follows this relationship
+ because taking the limit of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gradient-Behaviour"
+
+\end_inset
+
+ with respect to 
+\begin_inset Formula $n$
+\end_inset
+
+ tends towards 
+\begin_inset Formula $a$
+\end_inset
+
+ (the capex, below); where the rate at which this tendency occurs is controlled
+ by the parameter 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Once the gradient behaviour was formed it was then possible to integrate
+ the relationship and obtain a formula for the total system cost per new
+ installation (n).
+ The solution to this integration is shown in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Cost-Function-Solution"
+
+\end_inset
+
+ and an example of the function’s behaviour with increasing n is shown in
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Cost-Function-Example"
+
+\end_inset
+
+—this is concordant with the study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2013"
+
+\end_inset
+
+ who suggested that for a study using a GA penalties are best introduced
+ gradually than by a step function.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{a}{b}\int\frac{\sqrt{a+(bn)^{2}}}{n}\,\, dn=\frac{a[\sqrt{a+(bn)^{2}+\sqrt{a}ln(\frac{n}{a+\sqrt{a(a+(bn)^{2}}})}]}{b}\label{eq:Cost-Function-Solution}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where, 
+\begin_inset Formula $a=capex$
+\end_inset
+
+ (the capital expenditure costs), 
+\begin_inset Formula $b=\alpha capex^{3}-\beta capex^{2}+\gamma capex+c$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are tuned constants.
+\end_layout
+
+\begin_layout Standard
+The tuned constants in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Cost-Function-Solution"
+
+\end_inset
+
+ were iteratively determined such that the gradient of wind cost versus
+ number of turbines approached values very close to the manufacturing costs
+ of a turbine for wind at approximately 15 Turbines (Cowling P., Pers.
+ Comm., Jan 23 2013) and for solar at approximately 5 large-scale concentrating
+ units.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/Cost_fnct_exmpl.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example of the solution to Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Cost-Function-Solution"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Cost-Function-Example"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -164,7 +423,40 @@ name "sub:Hydro-Model-Description"
 \end_layout
 
 \begin_layout Standard
-The hydro model....
+The first form of back-up energy supply in the energy model was via pumped
+ hydro power.
+ The hydro model in its simplest form utilises excess energy from the renewable
+ energy resources and ‘pumps’ it up hill for later use when the output from
+ renewables is low.
+ Alternatively if the renewable resources cannot supply enough energy to
+ meet demand the hydro model will ‘release’ water downhill and produce energy
+ from the spinning of large turbines immersed in the downhill pipes.
+ At each iteration of the optimisation of the energy model the hydro model
+ is deployed in a post-facto manner.
+ For each iteration of the optimisation a time series of output from the
+ selected wind and solar installations is produced and thus a time series
+ of the difference between renewable output and demand is also formed.
+ The hydro model takes this difference time series and uses the moments
+ of excess to pump water uphill--up to a pre-determined cap and with a pre-deter
+mined maximum rate.
+ The hydro model, which is also given a pre-determined initial storage level
+ then assesses each point in time in the 2-years of simulation and determines
+ whether or not water needs to be pumped, released, if no action is needed
+ or if no action is possible due to capacity constraints/storage levels.
+ Thus, a time series of hydro electrical output or storage of excess (negative
+ output) is also determined.
+ The cost of the hydro system needed is then a multiple of the maximum capacity
+ needed and pre-determined capital cost in the units of ($M/MW).
+ It should also be noted that the round-trip efficiency of the pumping system
+ utilised in this thesis was 0.8.
+ This efficiency is in accordance with that used by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Elliston2012"
+
+\end_inset
+
+ in their simulation of 100% RE for the NEM.
 \end_layout
 
 \begin_layout Subsection
@@ -179,7 +471,54 @@ name "sub:Gas-Model-Description"
 \end_layout
 
 \begin_layout Standard
-The other back-up resource utilised in the energy model is a gas-fired system...
+The final energy source available in the energy model is the gas-fired back-up
+ system.
+ The gas model is intentionally last in the dispatch order of resources
+ due to the nature of this study, which is focused on determining the likelihood
+ of Australia relying heavily on renewable resources in the future.
+ The gas model is assumed to be have the ability to be fired instantaneously
+ to meet any remaining demand that cannot be met by the combination of wind,
+ solar and hydro.
+ The cost of the gas system is described by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Gas-Cost-Formula"
+
+\end_inset
+
+.
+ Where, 
+\begin_inset Formula $cost_{var}$
+\end_inset
+
+ is the linear combination of pre-defined fuel and carbon prices, 
+\begin_inset Formula $cost_{var\_mult}$
+\end_inset
+
+ is defined as a factor of 1,000 that is implemented in order to reflect
+ the true fuel cost of a gas-fired plant over its lifetime (~20 years, rather
+ than the 2 years being simulated in this thesis), the 
+\begin_inset Formula $max\_cap$
+\end_inset
+
+ is the maximum installed capacity needed and the 
+\begin_inset Formula $capex$
+\end_inset
+
+ is the pre-determined capital cost of installing the gas plant at the required
+ size (units of $M/MW).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Gas\,\, Cost=cost_{var}\cdot cost_{var\_mult}+capex\cdot max\_cap\label{eq:Gas-Cost-Formula}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -194,7 +533,41 @@ name "sub:Transmission-Model-Description"
 \end_layout
 
 \begin_layout Standard
-In the current study, transmission constraints were considered by utilising....
+The incorporation of a transmission cost is utilised in parts of this study
+ in order to reflect the higher cost of connecting remote locations to the
+ existing electrical infrastructure.
+ There is, however, no transmission model that simulates power flow across
+ Australia incorporated in this thesis.
+ It was assumed the incorporation of such a model in the current study would
+ not represent a useful contribution in the study of the covariance of the
+ wind and solar resources over Australia.
+ It was assumed that the addition of power flow would be more of an engineering
+ question than a resource availability question.
+ Instead, the transmission model utilised in this thesis is simply a capital
+ cost that relates to the distance of each wind/solar site’s distance to
+ the nearest capital city.
+ The capital cost utilised was in accordance with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Humpert2012"
+
+\end_inset
+
+ who suggested that high-voltage direct current cabling costs approximately
+ $1M/km to build.
+ High voltage DC transmission lines are the type of cabling commonly used
+ to connect remote locations (which makes up the majority of locations in
+ Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sites_Wind11_Dsr21"
+
+\end_inset
+
+ a) and b)).
+ In this way the transmission model penalises remote locations with an additiona
+l higher cost of installation.
 \end_layout
 
 \begin_layout Subsection
@@ -209,7 +582,20 @@ name "sub:Cost-Function-Evaluation"
 \end_layout
 
 \begin_layout Standard
-As a whole, the cost function in the current study is comprised of....
+The total cost of the whole system at each iteration of the energy model
+ is a combination of installation, connection, manufacturing and fuel costs,
+ as is applicable to each technology.
+ The total cost--to be minimised by the model--is therefore also in dollars.
+ However, these costs (potentially different in each simulation, and outlined
+ later) are not necessarily intended to be realistic.
+ In terms of the optimisation by the GA the most important consideration
+ is whether or not the costs are relatively in proportion and achieve the
+ final goal of also maximising the use of renewable energy in the system.
+ What is important for the optimiser is the effect on the total cost when
+ additional capacity is installed or removed.
+ The relative change in system cost and the advantage/disadvantage in adding/rem
+oving capacity is what determines the competitiveness of such an alternative
+ solution, rather than the total cost of the previously guess.
 \end_layout
 
 \begin_layout Section
@@ -233,9 +619,9 @@ on sense (references?).
  It is also not necessary to optimise all locations that contain meteorological
  data.
  As seen in Part 1 there are decorrelation lengths that exist in the atmosphere
- for most fields, in particular the wind speed field, which dictate that
- adjacent locations have significantly similar time series.
- Using the knowledge of such a deccorelation length in the wind field it
+ for most fields, in particular the wind field, which dictate that adjacent
+ locations have significantly similar time series.
+ Using the knowledge of such a decorrelation length in the wind field it
  was determined that a sub-selection of available locations be utilised
  for the optimisation in Part 2.
  A minimum spacing between available locations in the wind field was determined
@@ -243,12 +629,12 @@ on sense (references?).
  This minimum spacing is considerably shorter than the decorrelation length
  scale of roughly 1,300km determined in Part 1.
  It was deemed necessary to utilised a shorter minimum spacing because the
- temporal resolution of the ACCES data is much finer than that of the ERA-Interi
-m data.
- The extra variability captured by the hourly ACCESS ouptut should only
- serve to reduce any interrelatability of adjacent gird points.
+ temporal resolution of the ACCESS data is much finer than that of the ERA-Inter
+im data.
+ The extra variability captured by the hourly ACCESS output should only
+ serve to reduce any interrelatedness of adjacent gird points.
  It was also determined that the computational resources permitted the utilisati
-on of the 'extra' grid-points, even if no significantly new information
+on of the 'extra' grid-points, even if no significantly different information
  was gained by doing so.
  
 \end_layout
@@ -257,12 +643,12 @@ on of the 'extra' grid-points, even if no significantly new information
 In terms of the DSR field, however, no such decorrelation length scale was
  found in Part 1.
  This is not to suggest that one location would be a diverse-enough selection
- for all of Australia—this would mostly likely be unworkable in reality.
- Instead, and even though two locations in the DSR field that are very near
- each other might not provide any new information, the limitation on the
- amount of DSR locations to include was purely computational.
+ for all of Australia--this would mostly likely be unworkable in reality.
+ Instead, and even though two locations in the DSR field that are very close
+ might not provide any new information, the limitation on the amount of
+ DSR locations to include was purely computational.
  As such, it was determined that the minimum separation of available DSR
- locations would be 21 grid points—or roughly 250km.
+ locations would be 21 grid points--or roughly 250km.
  
 \end_layout
 
@@ -277,7 +663,7 @@ Following the determination of the minimum separation distances in the DSR
  These unavailable locations were then utilised in the site selection process
  such that a regular grid of locations was formed.
  The regular grid included the minimum separation distance and did not include
- an unavailable site—in accordance with a similar process outlined in (
+ an unavailable site--in accordance with a similar process outlined in (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "AEMO2013"
@@ -359,29 +745,6 @@ name "fig:Sites_Wind11_Dsr21"
 \end_layout
 
 \begin_layout Section
-Configuring the Genetic Algorithm
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Configuring-the-GA"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Following a testing process using limited samples of the whole data set,
- the final configuration used throughout the rest of the study is shown
- below:....
-\end_layout
-
-\begin_layout Standard
-Various iteration lengths, base mutation, population sizes...
- were trialled and the convergence of the cost function minimisation tested.
- Larger base mutation rates....
-\end_layout
-
-\begin_layout Section
 Conclusion
 \begin_inset CommandInset label
 LatexCommand label
@@ -393,7 +756,19 @@ name "sec:Energy-Model-Conclusion"
 \end_layout
 
 \begin_layout Standard
-This chapter presents the energy model used in Part 2 of the current study...
+This chapter presented the energy model used in Part 2 of the current study,
+ its components and also the site selection process and transmission model
+ used to narrow the search for viable RE locations around Australia.
+ In combination, the cost function components (the individual resource models)
+ and the sites selected form the degrees of freedom by which the model as
+ a whole is able to move and explore the solution space.
+ Based on the specific GA configurations outlined later, the GA alters the
+ amount and location of RE resources in order to find a more cost minimised
+ solution.
+ In the next chapter simulations of the whole of Australia and then just
+ the NEM region are presented and analysed for what they reveal regarding
+ the covariance of wind and solar across Australia.
+ 
 \end_layout
 
 \begin_layout Standard
