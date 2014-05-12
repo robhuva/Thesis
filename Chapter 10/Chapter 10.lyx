@@ -1,0 +1,193 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman lmodern
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing other 1.5
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3.5cm
+\topmargin 3.5cm
+\rightmargin 3cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Connections Between Parts 1 and 2
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Connections-Parts-1-2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Standard
+\noindent
+In this chapter we examine the results from Parts 1 and 2 of this thesis
+ and describe how the two parts relate, and differ, and then explain any
+ connections between the findings from the two parts.
+ In particular,....
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+In principle this thesis was split into two parts because of the the known
+ differences in atmospheric variability at the various spatio-temporal scales.
+ It was assumed that an investigation into both the short-term/fine-scale
+ and long-term/large-scale variability in RE resources was needed in order
+ to properly assess the renewable potential of Australia.
+ What was found showed that some features from the synoptic climatology
+ in Part 1 that appeared as if they were going to be detrimental to wind
+ and solar output (even in an average sense) were in fact also problematic
+ for the optimised RE networks presented in Part 2.
+ Despite the optimisation process in Part 2 possessing the ability to exploit
+ the decorrelation in the wind field over large distances there were still
+ some large-scale circulation patterns that gave rise to stilling of the
+ winds over vast distances—including heavily populated, and therefore also
+ important, areas of Australia.
+ And that despite the NEM-only simulation being purposefully simplistic
+ (for instance, there was no consideration given to power flow across the
+ transmission network) there would have been no possible optimised network
+ capable of producing enough electricity during the instances of large-scale
+ low wind speeds.
+ 
+\end_layout
+
+\begin_layout Standard
+One conclusion from this thesis might be that Australia could struggle to
+ rely heavily on renewable energy in the future because some of the common
+ weather patterns represented by the SOM produced difficult conditions that
+ even the optimised RE system in Part 2 could not cover.
+ However, this conclusion fails to take into account possibility that these
+ potentially detrimental weather patterns might be quite predictable.
+ It was not part of the scope of this thesis to examine the predictability
+ of low RE weather patterns.
+ What was presented in this thesis could, however, be utilised as a forecasting
+ complement.
+ That is, given an accurate forecast of MSLP it is possible that the results
+ of Part 2 be used to give a first-guess of the likely impact on wind and
+ solar energy across the NEM.
+ This type of use for the results from this thesis illustrates how the incorpora
+tion of a synoptic climatology (derivation of the SOM) and a short-term
+ optimisation can complement.
+ The optimisation identifies problematic (and favourable) conditions across
+ the NEM and the climatology then a identifies the associated large-scale
+ weather types responsible for the particular conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+Planning a future RE network to take into account these instance of extreme
+ stilling over the NEM is unlikely to be a fruitful exercise.
+ After all, the optimisation is designed to meet the demand for energy for
+ the majority of the time.
+ Any solution that the optimisation trials that does not satisfy ‘average’
+ conditions will likely draw on excessive amounts of expensive back-up resources
+, which would not be cost-optimal and thus unlikely to survive to the end
+ of the iterative search process.
+ What is seen from Figure R though is that none of the synoptic regimes
+ have a large negative average RE - demand relationship.
+ That is, on the whole the NEM-only optimisation is able to extract useful
+ energy from all of the common synoptic weather regimes.
+ On the contrary, some of the common synoptic weather patterns are heavily
+ biased towards oversupply in the NEM-only simulation.
+\end_layout
+
+\end_body
+\end_document
