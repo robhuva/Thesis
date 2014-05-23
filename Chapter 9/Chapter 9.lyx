@@ -715,7 +715,7 @@ name "tab:Aus-Wide-Config-Parms"
 
 \begin_layout Standard
 As mentioned earlier the effective dispatch order of the energy model is
- wind and solar, hydro and then finally gas.
+ wind and solar, hydro and then gas.
  Figs.
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -850,7 +850,16 @@ reference "fig:All-Aus-Time-Series"
  Interesting to note, however, is the reliance on only one solar station
  (near Darwin).
  This location is part of a region in north-west Australia that has the
- highest annual solar irradiance of all Australian locations (not shown).
+ highest annual solar irradiance of all Australian locations (as seen earlier
+ in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+).
  In the eyes of the energy model, presumably there is no advantage in connecting
  another solar location.
  Instead, all of the solar energy needed is simply installed in one of the
@@ -859,7 +868,7 @@ reference "fig:All-Aus-Time-Series"
 \end_layout
 
 \begin_layout Standard
-In general, solar appears to be under-utilised.
+In general, solar is seemingly under-utilised.
  There appears to be no advantage in relying more heavily on solar energy.
  This result is repeated throughout the thesis (see later sections) and
  is also concordant with other high renewable energy dependent studies of
@@ -880,8 +889,8 @@ key "Elliston2013"
  RE capacities (due to the vast distances from important load centres),
  is potentially very instructive for the resource assessment of Australia.
  That is, when given the opportunity to install renewable capacity across
- Australia the energy model chose many remote Western Australian locations
- for renewable capacity.
+ Australia the energy model chooses to use many remote Western Australian
+ locations for renewable capacity.
  Consequently, any future scenarios that limit the site selection to eastern
  Australia will have to rely on less diverse and less effective locations.
  The next section explores the implications of this finding by limiting
@@ -903,10 +912,10 @@ name "sec:NEM-Only-Simulations"
 \begin_layout Standard
 This section examines a simulation of the energy model utilising only locations
  from eastern Australia (the NEM).
- It is assumed that the limiting of available sites will produce a more
- realistic map of installed capacities for Australia, thus making later
- conclusions that surround moments of low wind and solar and the most influentia
-l synoptic weather regimes, more realistic.
+ It is assumed that limiting available sites to the south and east will
+ produce a more realistic map of installed capacities for Australia, thus
+ making later conclusions that surround moments of low wind and solar and
+ the most influential synoptic weather regimes, more realistic.
  
 \end_layout
 
@@ -930,8 +939,7 @@ reference "fig:NEM-Only-RegGrid"
 
 \end_inset
 
- a) and b) show the NEM-only set solar and wind of sites to be optimised,
- respectively.
+ a) and b) show the NEM-only solar and wind sites to be optimised.
  The sites were selected based on the state borders of Australia such that
  only sites from the original array that were contained within the borders
  of South Australia, Victoria, Tasmania, New South Wales and Queensland
@@ -1006,7 +1014,7 @@ An important step for later analysis is the identification of synoptic regimes
  1 in order to form relationships between moments of low output from the
  ACCESS-optimised network and the large-scale weather regimes that co-occur.
  In order to utilise the Part 1 SOM, ERA-Interim data for 2010-2011 was
- needed.
+ obtained.
  The assigning of SOM nodes to 2010-2011 ERA-Interim data occurred as per
  Part 1 whereby a filtering process was undertaken to eliminate time steps
  that had ambiguous relationships to the SOM.
@@ -1020,22 +1028,22 @@ An important step for later analysis is the identification of synoptic regimes
  The filtering process with the 2010-2011 ERA-Interim data eliminated just
  over 6% of matches.
  Following this, the mapping from ERA-Interim temporal resolution, which
- is 6-hourly, to ACCESS temporal resolution, which is hourly and not complete,
- was necessary.
- The mapping allows for the assignment of ACCESS time steps with a SOM node
- from the list of filtered BMU from the ERA-Interim data.
+ is 6-hourly, to ACCESS temporal resolution, which is hourly (and also incomplet
+e), was necessary.
+ The mapping allows for the assignment of a SOM node from the list of filtered
+ BMU to each available ACCESS time step.
  The process of matching hourly resolution data to 6-hourly resolution data
  was undertaken by simply allocating blocks of 6 hours from ACCESS that
  were centred on an ERA-Interim time step.
  Given that within any block of 6 ACCESS time steps there is only one hour
  that matches exactly the hour of the ERA-Interim time step some unevenness
- in the 6-hour block was innevitable and the decision was made to implement
- a ‘forward-leaning’ approach.
- The forward leaning approach meant that the previous 2 hours, the hour
- that matched the ERA-Interim time step and the next 3 hours from ACCESS-space
- were deemed to belong to each ERA-interim time step.
- The result of this procedure was the formulation of an hourly-resolved
- series of ERA-Interim derived SOM node occurrences.
+ in the 6-hour block was innevitable.
+ The decision was made to implement a ‘forward-leaning’ approach.
+ The forward leaning approach involved deeming the previous 2 hours, the
+ hour that matched the ERA-Interim time step and the next 3 hours from ACCESS-sp
+ace to belong to each ERA-interim time step.
+ HERERERERERERER The result of this procedure was the formulation of an
+ hourly-resolved series of ERA-Interim derived SOM node occurrences.
  In order to show the remarkably close relationship between wind/solar availabil
 ity for each synoptic regime in Part 1, with that of Part 2, Fig.
  
@@ -2982,19 +2990,788 @@ Nodes 6 and 25
 \end_layout
 
 \begin_layout Standard
-Evident from the earlier analysis of all SOM nodes was the clear bias towards
- oversupply from some of the nodes that were also identified as significantly
- unassociated with very low RE output.
- Nodes 6 and 25 from Fig....
+As can be seen from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nodes25_6_RE-Demand-Histogram"
+
+\end_inset
+
+ a) there is a significant tendancy for node 25 to be associated with oversupply.
+ Earlier analysis of just the very low RE time steps showed that node 25
+ never occurred at a time of very low RE.
+ This is easy to understand when Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nodes25_6_RE-Demand-Histogram"
+
+\end_inset
+
+ a) is taken into account.
+ Node 25 has on average 14GW of oversupply when it occurs and moments where
+ demand is higher than RE for node 25 are very limited.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nodes25_6_RE-Demand-Histogram"
+
+\end_inset
+
+ b) shows a very similar story of oversupply for node 6.
+ On average node 6 is associated with 14.4GW of oversupply, and although
+ the occruence for node 6 is lower than 25, it still shows a very clear
+ bias towards oversupply.
+ Only 16 ime steps are moments of low RE output for node 6.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/Nodes_25_6_histogram_demand-RE.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As per Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Node9-RE-Demand-Histogram"
+
+\end_inset
+
+,except for a) node 25 and b) node 6.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Nodes25_6_RE-Demand-Histogram"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
-Optimisation of the Winters in 2010-2011
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-The aim of this section is to illuminate the winter-time specific challenges
- of a NEM comprised of mostly renewable energy resources....
+The synoptic situation for both node 25 and 6 appears to be quite similar.
+ Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Node25-MSLP-Composite"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Node6-MSLP-Composite"
+
+\end_inset
+
+ show that node 25 and 6 are associated with low pressure intrusions that
+ extend into the southern parts of Austtralia.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Node6-MSLP-Composite"
+
+\end_inset
+
+ suggests that node 6 is a more advanced version of node 25 such that it
+ seems likely node 6 would follow from node 25 in a normal westerly progression
+ of synoptic scale systems in the mid latitudes.
+ Node 6 is associated with a low pressure centred south of Adelaide and
+ an associated front directing cold air to parts of South Australia and
+ Victoria.
+ Higher pressure gradients also suggest that node 6 would be associated
+ with increased wind speeds along the coast of South Australia, much of
+ Victoria and coastal regions of NSW.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/mslp_composite_node25.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MSLP composite for all occurrences of node 25.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Node25-MSLP-Composite"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+While node 25 is less associated with low pressure and cold air it is associated
+ with higher pressure gradients through much of the same regions as node
+ 6.
+ The higher wind speeds are important given the reliance on wind power in
+ the NEM-only simulation.
+ In particular, the regions with installed capacity of wind would benefit
+ greatly from the occurrence of nodes 25 and 6.
+ This benefit is apparent not only in the MSLP plots, but also the oversupply
+ plots shown earlier.
+ 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/mslp_composite_node6.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MSLP composite for all occurrences of node 6.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Node6-MSLP-Composite"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In combination, the analysis from the SOM and the output of the NEM-Only
+ simulation is able to identify common synoptic regimes that are associated
+ with either favourable or detrimental RE conditions.
+ With confidence we can say that a prediction of nodes 9 or 30 has the potential
+ to produce large areas of very low wind speeds across the NEM region.
+ On the other hand a prediction of nodes 25 and 6 is far more likely than
+ not to produce conditions that results in oversupply of wind power in the
+ NEM region.
+ 
+\end_layout
+
+\begin_layout Section
+Seasonal Optimisations
+\end_layout
+
+\begin_layout Standard
+In this section the influence of the different seasons is identified by
+ conducting new optimisations of the NEM region, but using data only from
+ one particular season.
+ The following analysis includes the Austral summer (December, January,
+ February (DJF)) and winter (June, July, August (JJA)).
+ It is assumed that optimising just the data for one particular season will
+ reveal the particular synoptic regimes that prevale in the season and which
+ might also be influencial in that season.
+ For instance, questions—including, is the increase availablility of solar
+ insolation in summer make the NEM less influenced by stilling synoptic
+ regimes—regharding the performance of the NEM-Only simulation that are
+ season-specific can be addressed.
+\end_layout
+
+\begin_layout Standard
+In both the summer-only and winter-only simulations the optimisation is
+ conducted in the same manner as the NEM-Only simulation (same costs, cost
+ function formulation, available resource types…) but with only the data
+ from the 2010-2011 period that fall into that particular season.
+ Splicing of the data from year to year is conducted such that, in the case
+ of winter-only, the end of August of 2010 is followed by the start of June
+ in 2011.
+ Gas costing is also changed slightly in the season specific simulations.
+ The gas cost structure introduced in the NEM-Only simulation had a penalty
+ applied to the fuel costs, which are small for a 2-year simulation but
+ would be a much larger cost over the lifetime of the gas plant.
+ This penalty is (increased?) for the winter and summer only simulations
+ because they are even shorter than the 2-year NEM-only simulation.
+ 
+\end_layout
+
+\begin_layout Subsection
+Optimisation of the Winter months of 2010-2011
+\end_layout
+
+\begin_layout Standard
+Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Installed-Cap"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Time-Series"
+
+\end_inset
+
+ show the installed capacity and time series output for the NEM region optimisat
+ion using the winter ACCESS-A data of 2010-2011.
+ It is immediately obvious from Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Installed-Cap"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Time-Series"
+
+\end_inset
+
+ that the vast majority of installed capacity is located in northern Queensland
+ and only wind is utilised for the winter-only simulation.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:WInter-Only-Simulation-Stats"
+
+\end_inset
+
+ shows that there is an overall reduction in installed capacity of RE (just
+ wind in this case) for the wintertime optimisation.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:WInter-Only-Simulation-Stats"
+
+\end_inset
+
+ also suggests that the reliability of the wind reseources is higher in
+ the wintertime--the capacity factor of the total wind speed time series
+ was 41.2%, 6% higher than the NEM-Only simulation.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/asympt_config_full_NEM_east-states_winter-only_11point_wind_21point_dsr_exclusion_raw_demand.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Installed capacity for the winter-only optimisation of the NEM.
+ Blue squares represent location and size of wind installations, where the
+ largest square represents 13GW.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Winter-Only-Installed-Cap"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/GA_output_asympt_config_full_NEM_east-states_winter-only_dist-penlty.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily-average time series output for the winter-only optimisation of the
+ NEM.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Winter-Only-Time-Series"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solar PV is not utilised at all in the winter-only simulation.
+ The optimisation process found no advantage in installing solar when given
+ only the winter conditions, which on average has lower surface insolation
+ due to the positioning of the Sun.
+ The reliability on the whole is much higher for the winter-only simulation.
+ Despite the winter-only scenario relying solely on wind power, moments
+ of oversupply for winter-only peak at less than half that of the NEM-only
+ simulation using all 2 years.
+ Gas, however, is utilised more in the winter-only simulation--peaking at
+ 18GW and running at 10% capacity factor.
+ Thus the winter-only simulation is able to exploit a more reliable wind
+ resource, but in doing so is explosed to moments of low output that cannot
+ be covered by excess hydro reserves and require large ammounts of gas back-up.
+ Given that the results shown in Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Installed-Cap"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Time-Series"
+
+\end_inset
+
+ are optimised we can also conclude that the cost of installing solar to
+ avoid some of those costly gas peaks is higher than simply paying for the
+ use of the gas.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity (GW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity Factor (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hydro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oversupply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Simulation statistics for the winter-only optimisation.
+ Oversupply is the time series of total output minus demand when total output
+ is greater than demand.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:WInter-Only-Simulation-Stats"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The resource placement seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Only-Installed-Cap"
+
+\end_inset
+
+ can be explained, mostly, by the map of average 80m wind speed seen in
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Averaged-U80"
+
+\end_inset
+
+.
+ Remarkably high average wind speed values are available in the wintertime
+ for northern Queensland.
+ Average wind speeds of nearly 11ms
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+ are wide-spread along the northern coast of Queensland, which in comparison
+ to South Australia (where most of the current NEM wind capacity is installed),
+ is vastly higher and thus why the optimisation sought to install wind capacity
+ (30.6GW/56GW) there.
+ Another conclusion from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Averaged-U80"
+
+\end_inset
+
+ is that some of the installed capacity seen in the NEM-only simulation
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NEM-Only-Installed-Cap"
+
+\end_inset
+
+) is clearly due to just the wintertime data.
+ That is, the installed capacity of wind in northern Queensland for the
+ NEM-only simulation is as a result of a clear wintertime maximum for that
+ region.
+ Significantly, this time of year is also the dry season in the tropics
+ of Australia.
+ A problem that exists in installing wind capacity in the northern parts
+ of Australia is the likelihood (over the lifetime of the wind farm) of
+ exposure to damaging wind speeds from a tropical cyclone.
+ However, what is clear from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Averaged-U80"
+
+\end_inset
+
+ is that the wind speeds responsible for the quality of the wind resource
+ in northern Queensland do not come from the more active wet season.
+ The next section optimises summertime data and the resources placament
+ of this simulation will be shown to explain most of the resource placement
+ of the NEM-only simulation not explained by the wintertime optimisation.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/winter_u80_average_cont.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Winter averaged 80m wind speed using the 2010-2011 ACCESS-A meta-level wind
+ components.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Winter-Averaged-U80"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3002,9 +3779,482 @@ Optimisation of the Summers in 2010-2011
 \end_layout
 
 \begin_layout Standard
-Similar to the previous section, this section aims to illustrate the specific
- challenges that synoptic situations that occur in summer might have on
- a highly renewable energy dependent NEM....
+Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Only-Installed-Cap"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Only-Time-Series"
+
+\end_inset
+
+ show the installed capacity and time series output of the optimised NEM
+ region using summer-only data from the ACCESS-A 2010-2011 period.
+ As suggested earlier what is clear from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Only-Installed-Cap"
+
+\end_inset
+
+ is that the characteristics of the installed capacity from the NEM-only
+ simulation not explained by winter data are explained using the summertime
+ data.
+ As excpected, solar is also utilised in the summer-only simulation, while
+ northern Queensland has no installed capacity of wind power.
+ Rather, South Australia and north-west Tasmania are preferred locations
+ for wind power in the summertime.
+ Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Average-U80"
+
+\end_inset
+
+ illustrates that the preference for South Australian and north-west Tasmanian
+ wind is not necessarily as a result of these regions peaking in the summer
+ (intuitively, this would not make sense and not seen in the average plots)
+ but rather as a result of the average wind speeds dropping off in northern
+ Queensland.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/asympt_config_full_NEM_east-states_summer-only_11point_wind_21point_dsr_exclusion_raw_demand.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Installed capacity for the summer-only optimisation of the NEM region.
+ Blue squares are wind installations that scale according to the largest
+ installation (11.2GW) and the red triangles are solar installations that
+ scale according to the largest (8.5GW).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Summer-Only-Installed-Cap"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/GA_output_asympt_config_full_NEM_east-states_summer-only_dist-penlty.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily averaged output from the summer-only simulation of the NEM region.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Summer-Only-Time-Series"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Summer-Only-Simulation-Stats"
+
+\end_inset
+
+ shows that there is a reduction in the reliance of wind and gas, and an
+ increase (from zero) in the reliance on solar for the summer-only simulation.
+ Oversupply is very similar when comparing the summer to the winter-only
+ simulations, but the reduction in gas usage suggests an overall improved
+ reliability in total RE during summer.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Installed Capacity (GW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity Factor (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+39.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hydro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oversupply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+As per 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:WInter-Only-Simulation-Stats"
+
+\end_inset
+
+, except for the summer-only simulation.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Summer-Only-Simulation-Stats"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+What is clear from Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Averaged-U80"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Average-U80"
+
+\end_inset
+
+ is that the east-coast NEM region has very limited access to average wind
+ speeds greater than the cut-in wind speed of the GE 2.5MW turbine of 3ms
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+, in both summer and winter.
+ This fact is unfortunate when considering the major population centres
+ that the NEM services.
+ What it does suggest though is that a NEM reliant on a large penetration
+ of wind power needs to consider that it could be more cost effective to
+ connect remote, but high average wind speed, locations to the existing
+ powerline infrastructure.
+ It may not be sufficient to simply spread-out wind resources across the
+ NEM in the hope that a diversity in resource can overcome low average output
+ from a single point.
+ What is more intuitive from Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Winter-Averaged-U80"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Summer-Average-U80"
+
+\end_inset
+
+ (and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NEM-Only-Installed-Cap"
+
+\end_inset
+
+) is that the connection of remote locations to the NEM with high wind availabil
+ity, even if the locations are far from population centres, could be part
+ of the optimal solution for high penetration RE.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/summer_u80_average_cont.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Average 80m wind speed for the summer ACCESS-A data of 2010-2011.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Summer-Average-U80"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3012,11 +4262,2020 @@ Optimisation using Larger Transmission Penalties
 \end_layout
 
 \begin_layout Standard
-This section explores the sensitivity of the NEM region to increased distance
- to nearest capital city penalties.
- The idea behind increasing the distance penalties is to reveal which of
- the optimised locations in the existing $1M/Km network are quality enough
- to survive a higher connection cost....
+This section explores the effect on the installed RE capacity (location
+ and size) of increasing the pentalty of connecting to the nearest capital
+ city.
+ The hypothesis for conducting simulations with an increased connection
+ cost is to test the quality of the remote resources.
+ If, for instance, a small increase in penalty for connecting to the nearest
+ capital city was to drastically contract RE resources towards the capital
+ cities this would suggest that the benefit of utilising the higher quality
+ remote reseources is minimal.
+ Contraction of resuorces towards the capital cities would also suggest
+ that an alternative near-optimal configuration to that seen in the NEM-only
+ was possible, but simply not found due to its slight increase in costs
+ (based on the costs used in the NEM-only simulation).
+ In this section three increased costs are tested: $2M/km, $4M/km and $8M/km.
+ In each case the only difference in the configuaration of the energy model
+ is the increased connection cost for each possible RE location in the NEM.
+\end_layout
+
+\begin_layout Subsection
+$2M/km Connection Cost
+\end_layout
+
+\begin_layout Standard
+Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2X-Installed-Capacity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2X-Time-Series"
+
+\end_inset
+
+ depict the installed capacity and time series output using the distance
+ to nearest capital city cost of $2M/km (hereafter referred to the 2X simulation
+).
+ What is clear from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2X-Installed-Capacity"
+
+\end_inset
+
+ is that the increase from $1M/Km to $2M/km has not significantly altered
+ the optimal configuration (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NEM-Only-Installed-Cap"
+
+\end_inset
+
+ for comparison).
+ In the 2X simulation solar PV is still utilised, as is wind in northern
+ Queensland and a variety of southern wind locations.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/asympt_config_full_NEM_east-states_2xdist_11point_wind_21point_dsr_exclusion_raw_demand.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Installed wind (blue squares) and solar (red triangle) capacity and location.
+ Largest square is 17.3GW and the triangle is 4.2GW.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2X-Installed-Capacity"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/GA_output_asympt_config_full_NEM_east-states_2xdist_dist-penlty.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily average time series output for the 2X simulation of the NEM region.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2X-Time-Series"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:2X-Simulation-Stats"
+
+\end_inset
+
+ also illustrates a very negligible difference in total installed capacity
+ of each resource, as well as the capacity factor of those resources in
+ total, when compared to the original NEM-Only simulation.
+ Thus what is clear from the 2X simulation is that the high installed capacity
+ at remote locations in the the NEM-only simulation is a robust solution.
+ Similar locations are utilised in the 2X simulation in spite of a doubling
+ in the transmission penalty for connecting such remote loctaions.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity (GW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity Factor (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+71.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hydro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oversupply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Simulation statistics for the 2X scenario.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:2X-Simulation-Stats"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+$4M/km Connection Cost
+\end_layout
+
+\begin_layout Standard
+In this section the cost of connecting to the nearest capital city for each
+ of the locations in the NEM region of the ACCESS-A grid is further increased
+ to $4M/km (hereafter referred to as the 4X simulation).
+ Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4X-Intsalled-Capacity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4X-Time-Series"
+
+\end_inset
+
+ show the installed capacity and time series output of the optimised solution
+ to the 4X simulation.
+ Immediately obvious from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4X-Intsalled-Capacity"
+
+\end_inset
+
+ is the loss of any solar capacity.
+ Clearly the advantage of having solar connected to the NEM is not enough
+ to warrant the extra cost of connected the previously installed locations.
+ It is surpising though that there appears to be no solar resource close
+ enough to a capital city to warrant some installed capacity.
+ The map of average DSR (shown earlier, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:solar-avg-bom"
+
+\end_inset
+
+) demonstrates that on average the solar resource does not have a large
+ spatial variance across the Australian continent.
+ In turn the output from nearby locations would be expected to correlate
+ highly.
+ Thus the advantage in having any solar installed in the NEM without storage
+ capacity is questionable.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/asympt_config_full_NEM_east-states_4xdist_11point_wind_21point_dsr_exclusion_raw_demand.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Installed wind (blue squares) capacity for the optimised NEM region using
+ the $4M/km connection cost.
+ Largest square is 14.3GW.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4X-Intsalled-Capacity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/GA_output_asympt_config_full_NEM_east-states_4xdist_dist-penlty.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily average time series output of the 4X simulation of the NEM region.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4X-Time-Series"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In terms of the wind installations in the 4X scenario it seems that similar
+ regions are utilised when compared to both the 2X and NEM-only simulations.
+ Most of the wind capacity is installed in northern Queensland, SA and Tasmania
+ in the 4X scenario.
+ There is also a slight increase in total installed wind capacity (Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:4X-Simulation-Stats"
+
+\end_inset
+
+), a small increase in gas usage and a small decrease in oversupply in the
+ 4X scenario when compared to 2X.
+ Despite little change in the performance of the 4X simulation there is
+ a noticeable loss of the smaller wind sites utilised in 2X.
+ Increasing the distance penalty in 4X shows that some of the wind sites
+ utilised in 2X were rather ineffectual.
+ The increased connection penalty and the fact that system reliability is
+ maintained in 4X indicates the contraction of wind resources to larger
+ installations is a cost effective option (assuming a slight increase in
+ gas usage is acceptable).
+ This point is further explored in the next section where the connection
+ cost is increased to $8M/km.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity (GW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity Factor (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35.8 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hyrdo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oversupply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+46.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Simulation statistics for the 4X optimisaton of the NEM region.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:4X-Simulation-Stats"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+$8M/km Connection Cost
+\end_layout
+
+\begin_layout Standard
+Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-Installed-Capacity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-TIme-Series"
+
+\end_inset
+
+ show the installed capacity and time series output of the simulation with
+ the connection cost increased to $8M/km (hereafter referred to as the 8X
+ simulation).
+ What is very obvious from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-Installed-Capacity"
+
+\end_inset
+
+ is that the connection cost of $8M/km has crossed a threshold whereby the
+ optimisation choses to drastically limit the number of wind sites.
+ This contraction of resources to four main regions indicates that any advantage
+ gained by having smaller contributing wind sites in earlier scnearios is
+ lost if the cost of connecting those sites is high enough.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:8X-Simulation-Stats"
+
+\end_inset
+
+ shows that while there is very little change in the total wind capacity
+ installed from 4X to 8X the contraction to four main locations and the
+ subsequent increase in exposure to wind events (including the capturing
+ of a cold front passing through South Australia only once, rather than
+ several times) is covered by an increase use of gas back-up.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/asympt_config_full_NEM_east-states_8xdist_11point_wind_21point_dsr_exclusion_raw_demand.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Installed wind (blue squares) capacity and loation for the 8X optimisation
+ of the NEM region.
+ The largest square represents a GW installation.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:8X-Installed-Capacity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/GA_output_asympt_config_full_NEM_east-states_8xdist_dist-penlty.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Daily average time series output of the optimised 8X NEM region simulation.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:8X-TIme-Series"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparing Tables.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:WInter-Only-Simulation-Stats"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:8X-Simulation-Stats"
+
+\end_inset
+
+ illustrates that the oversupply statistics are relatively unchanged with
+ respect to connection cost.
+ However, the installed gas capacity does increase from 16.7GW in the NEM-only
+ simulation to 24.7GW in the 8X simulation.
+ The increased reliance on gas is also visible when comparing the time series
+ output from the 2X-8X scenarios (Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2X-Time-Series"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4X-Time-Series"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-TIme-Series"
+
+\end_inset
+
+).
+ There is a clear increase in the number and magnitude of moments when RE
+ dips below demand as the connection cost increases.
+ Thus it is possible to conclude that the role of smaller wind installations,
+ and also the solar installation in 2X, is to cover some of the larger dips
+ in wind output from the larger wind installations.
+ And that this loss in diversity of output is covered by an increase in
+ the gas output.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resource
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity (GW)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacity Factor (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Solar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hydro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Oversupply
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+46.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Simulation statistics for the 8X scenario.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:8X-Simulation-Stats"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is also clear is that despite the increase in reliance on gas when
+ the connection cost is increased the difference between RE output and demand
+ for all 2-year scenarios presented is minimal (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RE-Demand-Comparison-All-TransCosts"
+
+\end_inset
+
+).
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RE-Demand-Comparison-All-TransCosts"
+
+\end_inset
+
+ suggests that the NEM region as a whole is affected by the same wind events
+ and that no amount of strategic resource placement is able to avoid exposure
+ to the synoptic scale phenomena.
+ What Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RE-Demand-Comparison-All-TransCosts"
+
+\end_inset
+
+, in combination with Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-Installed-Capacity"
+
+\end_inset
+
+, also shows is that the NEM region can be split into four distinct wind
+ regimes--the four major stations in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:8X-Installed-Capacity"
+
+\end_inset
+
+.
+ These four large stations in the 8X scenario also represent most of the
+ RE variance seen in the earlier 4X, 2X and NEM-only simulations.
+ The four wind regimes can also be identified by Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U80-Decorrelation-Major-Locations"
+
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U80-Decorrelation-Major-Locations"
+
+\end_inset
+
+ illustrates the decorrelation of each of the four major wind locations
+ in 8X, via a point correlation map.
+ Each of the four major wind locations from 8X reach correlation values
+ close to zero at distances equal to their nearest station.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:8X-Wind-Power-Correlation"
+
+\end_inset
+
+ shows that the largest correlation between any of the four large wind installat
+ions from 8X is 0.07 (between the site near Townsville and the site near
+ Brisbane).
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/RE-demand_comparisons_various_dits-penalties.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Comparison of daily average RE - demand for the simulations using four different
+ connection costs.
+ Total cost of the system is indicated in the legend.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RE-Demand-Comparison-All-TransCosts"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/ACCESS_u80_decorrel_large_install_regions.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Box-regressions using the four major installations from the 8X simulation
+ as anchor points.
+ Regressions are of the 80m wind speed for the ACCESS-A 2010-2011 data.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:U80-Decorrelation-Major-Locations"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Further comparison between the base NEM-only scenario and the 8X scenario
+ indicates that three of the four major locations utilised in the 8X were
+ also utilised, but to a lesser extent, in the NEM-only scenario.
+ This finding illustrates the fact that the optimisation is able to identify
+ the independent wind regimes in the standard transmission cost scenario,
+ but that it takes a large increase in transmission costs before the model
+ is 'willing' to sample those regimes at only one location each.
+ Similar decorrelation characteristics can be found if the installations
+ utilised in the NEM-only scenario are group together to form one time series
+ for each 8X region.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:NEM-Only-Cluster-Correlations"
+
+\end_inset
+
+ shows that the each such cluster of smaller stations from the NEM-only
+ is at most correlated to a value of 0.09.
+ Further evicence is thus provided for the existanance of four distinct
+ wind regimes across the NEM region.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Townsville
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Brisbane
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+South Australia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North-west Tasmania
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Townsville
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.071
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.038 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.058 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Brisbane
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.071
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.023 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.001 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+South Australia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.038 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.023 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.043 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North-west Tasmania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.058 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.001 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.043 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlation of wind power output from the four major installations of the
+ 8X simulation.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:8X-Wind-Power-Correlation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\backslash
+resizebox{
+\backslash
+textwidth}{!}{%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Townsville cluster
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Brisbane
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+South Australian cluster
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North-west Tasmanian cluster
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Townsville cluster
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.077 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.025 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.061 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Brisbane
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.077 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.044 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.033 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+South Australian cluster
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.025 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.044 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.091 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+North-west Tasmanian cluster
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.061 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.033 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.091 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Correlations between clusters from the original NEM-only simulation with
+ a connection cost of $1M/km.
+ Each installation from the orignal simulation was assigned to a cluster
+ based on which of the four major locations from the 8X simulation they
+ were nearest to.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:NEM-Only-Cluster-Correlations"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
