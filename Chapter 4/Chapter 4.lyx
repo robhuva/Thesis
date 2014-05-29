@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -38,7 +40,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement H
+\float_placement h
 \paperfontsize 12
 \spacing other 1.5
 \use_hyperref false
@@ -65,8 +67,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -138,11 +140,7 @@ name "sec:SOM-Regnl-Intro"
 This chapter presents the results from training SOMs of various sizes and
  initial values with MSLP data from ERA-Interim, and for the domain covering
  Australia with dimensions (6ºS,105ºE) → (49.5ºS,165ºE).
- 
-\end_layout
-
-\begin_layout Standard
-This chapter is structured as follows.
+ This chapter is structured as follows.
  Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -257,7 +255,7 @@ where
 \end_layout
 
 \begin_layout Standard
-\align block
+\noindent
 The BMU and the nodes that surround the BMU are then altered to look more
  like the data.
  The amount the nodes are altered by is determined by two parameters: namely,
@@ -265,24 +263,51 @@ The BMU and the nodes that surround the BMU are then altered to look more
  The alpha value decreases linearly from an initial value to zero during
  training and the radius value is given the value of the smallest dimension
  size of the SOM in training phase 1.
- The amount that each node is then changed by can be described by equations
- 2 and 3 from 
+ In this thesis the choice was made to utilise a Gaussian approach to node
+ alteration.
+ In the Gaussian approach the alpha and radius values control the decay
+ rate of a Gaussian function, centred on the BMU, such that nodes immediately
+ surrounding the BMU are altered much more than those further away in the
+ SOM space.
+ The amount that each node is altered can be described by equations 2 and
+ 3 from 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Kohonen1995"
 
 \end_inset
 
-:
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray}
-m_{i}(t+1)\,=\, m_{i}(t) & + & h_{ci}(t)\,[\, x(t)-m_{i}(t)\,]\text{{,\,\,\,\ and}}\label{eq:2-node-alteration}\\
-h_{ci}(t)=\alpha(t)\text{{\,\,\,\ if\,\,\,}}i\in & N_{c} & \text{{and\,\,\,}}h_{ci}=0\text{{\,\,\,\ if\,\,\,}}i\notin N_{c}\label{eq:3-Neighbourhood}
-\end{eqnarray}
+\begin{equation}
+\begin{array}{cccc}
+m_{i}(t+1)=m_{i}(t) & + & h_{c}(t)\,[\, x(t)-m_{i}(t)] & ,\,\, and\,\,\end{array}\label{eq:2-Node-Alteration}
+\end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccccc}
+h_{ci}(t)=\alpha(t) & \cdot & \exp(-\frac{\parallel r_{c}-r_{i}\parallel^{2}}{2\sigma^{2}(t)}) & if & i\in N_{c}\begin{array}{ccc}
+and & h_{ci=0} & if\end{array}\begin{array}{c}
+i\notin Nc\end{array}\end{array}\label{eq:3-Gaussian-Function}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -342,7 +367,11 @@ where
 \begin_inset Formula $\alpha(t)$
 \end_inset
 
- is some monotonically decreasing function of 
+ and 
+\begin_inset Formula $\sigma(t)$
+\end_inset
+
+ are monotonically decreasing functions of 
 \begin_inset Formula $t$
 \end_inset
 
@@ -443,6 +472,21 @@ The second training phase is conducted in a similar manner to that of the
  The second training phase could therefore be thought of as a process for
  adding in the finer detail that is missed from the initial training phase.
  
+\end_layout
+
+\begin_layout Standard
+One of the outcomes from the SOM procedure is a matrix of related MSLP distribut
+ions.
+ The size of the matrix (number of nodes in the SOM space) is predetermined
+ by the user and once established the SOM nodes can be mapped back onto
+ the original data (assigning a SOM node to each time step via the BMU method).
+ The mapping of the SOM nodes back onto the original data converts the data
+ into a time series of SOM nodes, allowing for the timewise behaviour of
+ the SOM nodes (weather types) to be examined.
+ In the case of this thesis, the SOM method enables the identification of
+ common charactersitics in an otherwise complicated MSLP dataset, which
+ in turn also enables a study of related variables (wind and solar) and
+ how they vary in association with the common weather types.
 \end_layout
 
 \begin_layout Section
@@ -1750,15 +1794,15 @@ key "Dee2011"
  in the early 1990’s (not shown).
  Assuming a similar error in MSLP (which is derived using the surface pressure,
  average virtual temperature and constants) and considering the equation
- for RMSE in pressure, it was possible to equate the equation for RMSE using
- observations (Equation 
+ for RMSE in pressure, it was possible to equate the RMSE using observations
+ (Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:ERA-RMSE-obs"
 
 \end_inset
 
-) with the equation for RMSE using the BMUs (Equation 
+) with the RMSE using the BMUs (Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:ERA-RMSE-BMU"
