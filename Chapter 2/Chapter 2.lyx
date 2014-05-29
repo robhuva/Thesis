@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \master ../Master.lyx
@@ -66,8 +68,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -92,6 +94,13 @@ name "chap:Literature-Review"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 
 \series bold
@@ -99,17 +108,26 @@ Summary
 \end_layout
 
 \begin_layout Standard
-This chapter presents an introduction to, and literature review of, the
- synoptic climatology of the Australian region.
- Included are studies that examine variability through pressure and geopotential
- height fields, but also studies whose focus is on wind and/or solar variability.
+This chapter presents an introduction to the general circulation of the
+ atmosphere and Australia's regional teleconnections.
+ Following this there is a literature review of the synoptic climatology
+ of the Australian region.
+ Included in the literature review are studies that examine variability
+ through pressure and geopotential height fields, but also studies whose
+ focus is on wind and/or solar variability.
  The covariability of wind and solar and how the covariability can be influenced
  by certain synoptic classifications is then explored.
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Synoptic Climatology of Australia
+Global Circulation and Synoptic Climatology of Australia
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Lit-Synptic-Clim-Aus"
@@ -123,8 +141,8 @@ name "sec:Lit-Synptic-Clim-Aus"
 On the larger scales (for instance Australia-wide) the weather systems that
  have the biggest affect on the day-to-day variability of atmospheric variables
  like wind speed and solar irradiance are the synoptic systems; the synoptic
- scale encompasses spatial scales from 100’s - 1000’s of kilometres and
- temporal scales from days to weeks.
+ scale encompasses spatial scales from 100s-1000s of kilometres and temporal
+ scales from days to weeks.
  More commonly visualised by the distribution of high and low pressure centres,
  the synoptic scale describes the continuity of weather systems that stretch
  over vast continental-scale distances.
@@ -139,6 +157,62 @@ key "Sturman2005"
 
 ).
  
+\end_layout
+
+\begin_layout Standard
+Thermal energy generated in larger quantities at the equator by radiative
+ transfer from the Sun, and through the latent heat release of water vapour
+ in clouds, drives thermally direct circulations, including the Hadley cell.
+ In essence, circulations like the Hadley cell are formed through the need
+ to balance energy and momentum across the Earth.
+ The potential energy gained by the uplift of the Hadley circulation at
+ the equator is converted to kinetic energy and largely dispersed into horizonta
+l flows including the trade winds and mid-latitude westerlies (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Holton2003"
+
+\end_inset
+
+).
+ These zonal flows are also momentum sources (easterly) and sinks (westerly).
+ Momentum generated at the equator is transfered poleward through eddies
+ and this eddy momentum flux is greatest near the mid-latitude jet around
+ 30ºS (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Holton2003"
+
+\end_inset
+
+).
+ The mid-latitude jet is generated as a result of the meridional temperature
+ gradient from equator to pole, which is greatest in the mid-latitudes,
+ and it is the large-scale meander of the jet that can generate Rossby waves
+ (along with planetary Rossby waves generated through friction with the
+ surface of the Earth).
+ The restoring force for a Rossby wave is the background meridional gradient
+ in absolute vorticity--a result of the change in coriolis force with latitude
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Holton2004"
+
+\end_inset
+
+).
+ Any parcel of air displaced meridionally will cause oscillations in the
+ vorticity field, which then propogate in a westward direction with the
+ mean flow (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Holton2004"
+
+\end_inset
+
+).
+ Such propogating oscillations can be visualised on the synoptic scale as
+ high and low pressure systems.
 \end_layout
 
 \begin_layout Standard
@@ -167,7 +241,7 @@ key "Meteorology2009"
 
 ).
  The northern regions of the Australia are considered to only have two seasons
- each year (wet and dry – according to the position of the monsoon belt)
+ each year (wet and dry--according to the position of the monsoon belt)
  and can often have quite invariant weather during the dry season (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -178,12 +252,67 @@ key "Meteorology2011"
 ).
  Most of the population of Australia, however, resides in the more temperate
  regions where four seasons occur in every year.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/Ailie_plot.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Large-scale dynamical influences on, and teleconnections to, south-eastern
+ Australia.
+ Adapted from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gallant2012"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gallant-SE-Aus-Teleconnetions"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Standard
 Running through the middle of the continent of Australia is often a ridge
- of high pressure called the subtropical ridge.
+ of high pressure called the subtropical ridge (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gallant-SE-Aus-Teleconnetions"
+
+\end_inset
+
+).
  The subtropical ridge brings largely fine and sunny weather to regions
  beneath it and is associated with the descending branch of the Hadley cell
  (
@@ -242,24 +371,24 @@ key "Sinclair1996"
 \end_inset
 
 ).
- According to geostrophic theory such blocking highs in the Tasman Sea could
- indicate a prolonged period of onshore flow for eastern/south eastern Australia
- (although ridging of high pressure from the blocking centre could indicate
- stable conditions over much of the eastern and central Australian continent
- instead).
+ According to geostrophic theory such blocking highs in the Tasman Sea would
+ likely produce prolonged periods of onshore flow for eastern/south eastern
+ Australia (although ridging of high pressure from the blocking centre could
+ indicate stable conditions over much of the eastern and central Australian
+ continent instead).
  
 \end_layout
 
 \begin_layout Standard
-More recently, 
+The tendancies of high pressure systems over Australia was also more recently
+ examined using a Self-Organising Map (SOM) by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Alexander2010"
 
 \end_inset
 
- interpolated BoM observations via a Self Organising Map (SOM) to also show
- such high pressure dominated tendencies across Australia.
+.
  Figure 2 from 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -348,7 +477,16 @@ key "Hassim2008"
 
 \end_inset
 
-.
+, while wind speeds beyond 35 ms
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+ would likely result in damage.
  Solar irradiance is also likely to be negatively impacted by the presence
  of large-scale convection and cloud formation associated with topical storms.
  In the northern regions of Australia heat lows, which form as a result
@@ -428,7 +566,7 @@ key "Jones1993"
  have shown very similar cyclone characteristics using data from the BoM
  in conjunction with an automated cyclone tracking scheme.
  The authors found that the Australian continent is dominated by heat lows
- and tropical lows during summer, while in winter and spring there tends
+ and tropical lows during summer, while in winter and spring there tended
  to be a transition to higher occurrences of extratropical cyclones.
  
 \begin_inset CommandInset citation
@@ -437,10 +575,9 @@ key "Jones1993"
 
 \end_inset
 
- also seem to suggest that the traditional position for blocking highs in
- summer through the Tasman Sea is often replaced by extratropical cyclones
- in winter.
- In somewhat of a follow-up study to 
+ also suggested that the traditional position for blocking highs in summer
+ through the Tasman Sea is often replaced by extratropical cyclones in winter.
+ In a follow-up study to 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Jones1993"
@@ -504,9 +641,8 @@ key "Thompson2000"
 
 \end_inset
 
- as being the first Empirical Orthogonal Function (EOF-1) of the lower-
- tropospheric geopotential height fields, SAM also manifests in the wind
- field.
+ as being the first Empirical Orthogonal Function (EOF-1) of the lower-troposphe
+ric geopotential height fields, SAM also manifests in the wind field.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -621,10 +757,10 @@ reference "fig:SAM-wind_curl"
 
 \end_inset
 
-) between known synoptic modes of variability and the wind exist as geostrophic
- theory explains how pressure gradients (and Coriolis force) drive wind
- speed and direction.
- But specifically how such synoptic modes affect wind speed variability
+) between known modes of variability and the wind exist as geostrophic theory
+ explains how pressure gradients (and Coriolis force) drive wind speed and
+ direction.
+ But specifically how such atmospheric modes affect wind speed variability
  in Australia is not well published.
  
 \end_layout
@@ -670,7 +806,7 @@ key "Lyons1989"
  the synoptic classes referred to whether or not an anticyclone or cyclone
  (and cold front) was the major influence on the weather at the time.
  The authors found that the most common synoptic states related to high
- pressure systems either to the west, east or ridging directly above the
+ pressure systems either to the west, east, or ridging directly above the
  region of concern (south-west Western Australia (WA)).
  Consequently the synoptic classes that produce the most power throughout
  the year were those where an anticyclone is situated to the west and where
@@ -836,7 +972,7 @@ name "fig:Average-wind-velocity"
 
 \begin_layout Standard
 Unfortunately, the extent of publication examining wind speed variability
- in Australia is quite limited – especially with respect to any links to
+ in Australia is quite limited--especially with respect to any links to
  the large scale variability in the atmosphere.
  There are more comprehensive studies overseas linking patterns like the
  North Atlantic Oscillation (NAO) and the Pacific North-American pattern
@@ -882,7 +1018,7 @@ key "Hatzianastassiou2005"
 
 \end_inset
 
- that due to the sparsity of solar irradiance observations, interpolation
+ that due to the sparsity of solar irradiance observations, extrapolation
  to larger/global scales is only possible with using model simulations.
  In Australia, 
 \begin_inset CommandInset citation
@@ -898,11 +1034,14 @@ key "Liu2001"
 \end_layout
 
 \begin_layout Standard
-The components of the total solar radiation emanating from the Sun that
- are of interest to solar power generation on Earth are the surface Downward
- Short-wave Radiation (DSR) and Direct Normal Irradiance (DNI).
+The components of the total solar radiation reaching the surface of the
+ Earth that are of interest to solar power generation are the direct normal
+ irradiance (DNI) (needed for concentrating solar power (CSP) and also utilised
+ by Photo-Voltaic (PV) panels) and diffuse radiation (utilised by PV installatio
+ns, but not CSP).
  A comprehensive investigation into the global surface radiation budget
- (which includes DSR) was conducted by 
+ (using Downward Shortwave Radiation (DSR), the combination of direct and
+ diffuse irradiance) was conducted by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hatzianastassiou2005"
@@ -1164,8 +1303,7 @@ reference "fig:solar-avg-bom"
 
 \end_inset
 
- it appears as if there is good accordance between the BoM and the model
- in 
+ indicates there is good agreement between the BoM and the model in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hatzianastassiou2005"
@@ -1199,9 +1337,9 @@ key "Hatzianastassiou2005"
 \end_inset
 
 .
- The winter months also appear to be both qualitatively similar in their
- representation of the north-south gradient, as well as quantitatively similar
- given the values over Melbourne represents 69-104 Wm
+ The winter months are also qualitatively similar in their representation
+ of the north-south gradient, as well as quantitatively similar given the
+ values over Melbourne represents 69-104 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1238,10 +1376,10 @@ key "Gupta1999"
 
 \end_inset
 
- appears to suggested that El Nino is associated with slightly positive
- DSR anomalies over Australia.
- Trends in DSR over the last few decades of the 20th century seem to suggest
- that global DSR has been increasing by 2.4 Wm
+ suggested that El Nino is associated with slightly positive DSR anomalies
+ over Australia.
+ Trends in DSR over the last few decades of the 20th century suggest that
+ global DSR has been increasing by 2.4 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1345,9 +1483,12 @@ key "Lyons1989"
 \end_inset
 
  is that under the influence of a ridging anticyclone coastal regions can
- have a positive covariance between wind speed and solar irradiance that
- is potentially advantageous for hybrid energy production (or rather, that
- sunny conditions can coincide with windy conditions).
+ have a positive covariance between wind speed and solar irradiance (or
+ rather, that sunny conditions can coincide with windy conditions).
+ This type of positive covariance could be advantageous for hybrid energy
+ system.
+ For instance, an hybrid system exposed to a sunny and windy day could disperse
+ excess energy into nightime hours if it incorporated storage.
  
 \end_layout
 
@@ -1432,11 +1573,10 @@ key "Simmonds2000"
 ).
  Given then that the low pressure centres are usually associated with cold
  fronts or troughs and bands of convection it is likely that there would
- be relatively high winds and below average levels of Downward Shortwave
- Radiation (DSR), during each of the cyclonic events mentioned above--indicating
- the strong possibility for a negative covariance to exist between wind
- speed and solar irradiance for regions under the influence of such cyclonic
- systems.
+ be relatively high winds and below average levels of DSR, during each of
+ the cyclonic events mentioned above--indicating the strong possibility
+ for a negative covariance to exist between wind speed and solar irradiance
+ for regions under the influence of such cyclonic systems.
  
 \end_layout
 
@@ -1452,9 +1592,9 @@ Analysing some of the literature into the potential synoptic influences
  likely to be at a minimum at the same time (assuming day time conditions).
  However, this analysis of some of the literature is far from being quantitative
 ly robust.
- A vastly more comprehensive study would still be needed in order to quantify
- the general covariance of wind speed and solar irradiance over Australia;
- enabling the determination of the likely effects on renewable energy production.
+ A more comprehensive study would still be needed in order to quantify the
+ general covariance of wind speed and solar irradiance over Australia; enabling
+ the determination of the likely effects on renewable energy production.
  
 \end_layout
 
@@ -1488,7 +1628,7 @@ key "Wright2010"
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citealp
 key "Elliston2013"
 
 \end_inset
