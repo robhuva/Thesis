@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -65,8 +67,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -107,8 +109,8 @@ Summary
 \begin_layout Standard
 \noindent
 This chapter examines the Self-Organising Map (SOM) and how it is utilised
- in climatology in general, and then how it has been applied in the context
- of Australia.
+ in climatology in general, and how it has been applied in the context of
+ Australia.
  This chapter also introduces the reanalysis data used for Part 1 and the
  performance of the data in comparison to other data sets.
  
@@ -247,7 +249,7 @@ key "Hope2006"
 
 \end_inset
 
-, which utilised a 20 member SOM of Western Australian MSLP, and 
+, which utilised a 20 member SOM of Western Australian MSLP and 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Verdon-Kidd2009"
@@ -308,8 +310,11 @@ name "fig:Alexander-SOM"
 \begin_layout Standard
 With the results from previous studies in mind it was decided that the SOM
  would also be a suitable technique for the current study.
- Substituting precipitation for wind speed or solar irradiance gives a simple
- indication as to how the use of SOMs from the studies of 
+ The SOM's ability to summarise large data sets into a limited number of
+ commonly occuring weather types (via the MSLP field) was identified as
+ being useful for analysing the common wind and solar distributions, as
+ well.
+ In a similar manner to the studies of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Alexander2010"
@@ -330,7 +335,10 @@ key "Verdon-Kidd2009"
 
 \end_inset
 
- could be adapted to the current study.
+ later chapters identify common MSLP patterns.
+ However, instead of analysing the co-occurrence of precipitation, the wind
+ speed or solar irradiance fields are analysed for how they relate to the
+ common weather regimes.
 \end_layout
 
 \begin_layout Section
@@ -426,7 +434,9 @@ key "Dee2011"
 
 \end_inset
 
- were able to show that the background departures are smaller in ERA-Interim,
+ were able to show that the background departures (the analysis system attempts
+ to forecast the next observation, and the the difference between this forecast
+ and the observation is the background departure) are smaller in ERA-Interim,
  which in turn has allowed for improved temporal consistency on synoptic
  time-scales.
  In terms of the performance of ECMWF products in comparison observations
