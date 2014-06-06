@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \master ../Master.lyx
@@ -66,8 +68,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -297,7 +299,7 @@ For the current study, solar capacity was not calculated as a percentage
  of maximum power output, but as a percentage of maximum downward shortwave
  radiation (DSR) levels instead.
  Maximum irradiance was taken as the maximum solar irradiance value for
- all time and space (979.98 Wm
+ all time and space (980 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -413,9 +415,12 @@ reference "fig:6x5-SOM-space-Cont"
 \end_inset
 
 .
- 
+ Colours are from the colour table, which has an increasing blue component
+ for larger wind capacities and a larger red component for increasing DSR
+ capacities.
+
 \lang british
-Colour
+ Colour
 \lang english
  scheme adapted from 
 \begin_inset CommandInset citation
@@ -469,7 +474,7 @@ reference "fig:SOM-Bivar-Wind-Solar"
 
 \end_inset
 
-, which predominantly occured in summer, seemed to have both a high average
+, which predominantly occurred in summer, seemed to have both a high average
  solar radiation and high average wind power capacity in Western Australia
  (WA).
  During winter months it appeared as if concurrently higher values of wind
@@ -660,120 +665,18 @@ reference "fig:Node-20-Wind-Dsr-Cap"
  throughout the data.
  To examine how variable the wind power conditions were for node 20--and
  thus also how detrimental for wind power node 20 can be--a plot of the
- difference between the average 80m wind speed converted to power and the
- average power is shown in Fig.
+ Coefficient of Variance (CoV) is shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Node20-Cap-diff-Wind"
+reference "fig:Node20-CoV-Wind-Dsr"
 
 \end_inset
 
 .
- 
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Node_20_average-u80_power_diff.eps
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Difference between capacity calculated with the average wind speed that
- is then converted to power and the capacity calculated from the wind power
- time series for continental SOM node 20.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Node20-Cap-diff-Wind"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Node20-Cap-diff-Wind"
-
-\end_inset
-
- illustrates that the non-linearity of the wind power curve (Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:GE-2.5-Power-Curve"
-
-\end_inset
-
-) led to the high wind speed areas overestimating the average wind power
- capacity.
- Average wind speeds beyond about 11ms
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--1
-\end_layout
-
-\end_inset
-
- failed to capture the wind power curve plateau.
- The time series of wind power will have contributions from wind speeds
- less than 11ms
-\begin_inset script superscript
-
-\begin_layout Plain Layout
--1
-\end_layout
-
-\end_inset
-
-, which have wind power values much less than the plateau at 2.5MW, thus
- leading to a lower average capacity for the wind power time series.
- The same could not be said for the DSR average capacity values as no power
- conversion for DSR was undertaken in the current study.
- 
-\end_layout
-
-\begin_layout Standard
-Another way to examine the variability around the node 20 average was to
- calculate the Coefficient of Variance (CoV).
  The CoV is the mean of a time series divided by the standard deviation,
  which for low values would indicate regions that have high variability
  relative to the mean, and vice versa for higher CoV.
- It should be noted at this point that splicing together the original 21
- year time series into a time series of node occurrences (in this case node
- 20) does introduce spurious variability based on the splicing, but this
- was seen to have little effect on the standard deviation calculation, and
- thus the CoV calculation (not shown).
  Fig.
  
 \begin_inset CommandInset ref
@@ -784,6 +687,7 @@ reference "fig:Node20-CoV-Wind-Dsr"
 
  shows the wind power and DSR CoV for node 20.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -802,7 +706,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Coefficient of Variance for a) wind power and b) DSR.
+Node 20 Coefficient of Variance for a) wind power and b) DSR.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -951,6 +855,11 @@ reference "fig:Node20-Min-day-Comp-MSLP"
 \end_inset
 
  b).
+ Planning ahead of time for such low capacities would allow a more sophisticated
+ energy system that incorporates other renewables, storage options and back-ups
+ to still meet the demand for electricity.
+ In reality, an electricity network would be designed to include such back-ups
+ and varied resources, rather than simply relying on wind and solar PV power.
  To ensure that 0600UTC on May 15 1997 was indeed an accurate occurrence
  of node 20 Fig.
  
@@ -1096,8 +1005,8 @@ name "fig:Node20-Highest-Combined-Cap"
 \end_layout
 
 \begin_layout Standard
-An unfortunate consequence of the SOM technique, and therefore most data
- synthesis techniques, is the fact that the SOM nodes never occured exactly.
+An unfortunate consequence of the SOM technique, along with most other data
+ synthesis techniques, is the fact that the SOM nodes never occurred exactly.
  Pressure distributions that were different but closely related were said
  to belong to each SOM node, which then allowed for the quite different
  wind and solar capacities (seen in Fig.
@@ -1134,9 +1043,15 @@ reference "fig:Node20-Highest-Combined-Cap"
 \end_inset
 
  also serves as an example of how varied the wind and solar fields can be
- from pressure distributions that are similar.
- It could then be expected that the same might also occur for other SOM
- nodes.
+ from pressure distributions that are similar (it could then be expected
+ that the same might also occur for other SOM nodes).
+ This variance around a given SOM node could be an argument for the use
+ of wind speed and solar irradiance SOMs, as these are the fields of interest.
+ However, the smooth nature of MSLP on synoptic scales makes it much more
+ emenable to a SOM then a field like wind speed (whose variance would be
+ much larger and therefore much harder to summarise in a reasonable number
+ of nodes).
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -2097,7 +2012,7 @@ key "Council2012a"
 
 \end_inset
 
-.).
+.), presumably due to a lack of population to service in the immediate area.
  
 \end_layout
 
@@ -2318,11 +2233,11 @@ key "Dai1999"
 ) and the maximum in the upwards sensible heat flux (diurnal heating that
  was a maximum in the afternoon and also in summer).
  The atmospheric tide theory does not suggest that a high will become a
- low depending on the time of day, which is clearly ridiculous, but it does
- give a physical reason for why there might be a higher probability of the
- winter nodes that were said to occur most often in the morning and the
- summer nodes that were said to occur most often in the afternoon, were
- classed as occurring more often in the morning and afternoon.
+ low depending on the time of day, which is unphysical, but it does give
+ a physical reason for why there might be a higher probability of the winter
+ nodes that were said to occur most often in the morning and the summer
+ nodes that were said to occur most often in the afternoon, were classed
+ as occurring more often in the morning and afternoon.
  That is, the probability of SOM node 30 occurring in the afternoon was
  elevated due to an upwards sensible heat flux, which was then reversed
  in the morning and gives rise to the reduced probability of SOM node 30
@@ -2363,7 +2278,7 @@ Method
 \end_layout
 
 \begin_layout Standard
-Counter to the commona approach to a Monte-Carlo simulation, which involves
+Counter to the common approach to a Monte-Carlo simulation, which involves
  the random reordering of data points in a time series, the method described
  in 
 \begin_inset CommandInset citation
@@ -2664,10 +2579,10 @@ reference "fig:Decorrel-Point-Correlation-Cities"
  different appears to be roughly 1,300km-1,400km.
  Therefore, two wind installations on the Australian continent separated
  by about 1,400km are likely to have unrelated wind speed time series.
- This, of course, does not guarantee independence in output, which would
- require a correlation of -1, but it does give an estimate for the distance
- at which a significant advantage could be gained when considering the separatio
-n of wind power resources across Australia.
+ This, of course, does not guarantee opposing output, which would require
+ a correlation of -1, but it does give an estimate for the distance at which
+ a significant advantage could be gained when considering the separation
+ of wind power resources across Australia.
  Both the steadiness of the net output and the price of electricity produced
  by the separated wind installations could be maximised when considering
  the decorrelation distances suggested by Fig.
