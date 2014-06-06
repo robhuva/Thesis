@@ -132,14 +132,16 @@ In principle this thesis was split into two parts because of the the known
  It was assumed that an investigation into both the short-term/fine-scale
  and long-term/large-scale variability in RE resources was needed in order
  to properly assess the renewable potential of Australia.
+ The climatology in Part 1 represented average conditions--commonly occurring
+ features of the large-scale variability over the Australian continent.
  What was found showed that some features from the synoptic climatology
- in Part 1 that appeared as if they were going to be detrimental to wind
- and solar output (even in an average sense) were in fact also problematic
- for the optimised RE networks presented in Part 2.
+ in Part 1 that were detrimental to wind and solar output (even in an average
+ sense) were in fact also problematic for the optimised RE networks presented
+ in Part 2.
  Despite the optimisation process in Part 2 possessing the ability to exploit
  the decorrelation in the wind field over large distances there were still
- some large-scale circulation patterns that gave rise to stilling of the
- winds over vast distances—including heavily populated, and therefore also
+ some large-scale circulation patterns that resulted in stilling of the
+ winds over vast distances--including heavily populated, and therefore also
  important, areas of Australia.
  And that despite the NEM-only simulation being purposefully simplistic
  (for instance, there was no consideration given to power flow across the
@@ -150,15 +152,50 @@ In principle this thesis was split into two parts because of the the known
 \end_layout
 
 \begin_layout Standard
+Without a more diverse resource mix planning a future RE network to take
+ into account these instance of extreme stilling over the NEM is unlikely
+ to be a fruitful exercise.
+ The optimisation process was designed to meet the demand for energy for
+ the majority of the time.
+ Thus any solution that the optimisation could have trialed that did not
+ satisfy ‘average’ conditions would have drawn on excessive amounts of expensive
+ back-up resources.
+ Excessive use of the back-up resources would not have been cost-optimal
+ and thus would not have survived to the end of the iterative search process.
+ What is seen from Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:All-Nodes-RE-Demand-Hist"
+
+\end_inset
+
+ though is that none of the synoptic regimes have a large negative average
+ RE - demand relationship.
+ That is, on the whole the NEM-only optimisation is able to extract useful
+ energy from all of the common synoptic weather regimes.
+ In fact some of the common synoptic weather patterns are heavily biased
+ towards oversupply in the NEM-only simulation (including those seen in
+ Chpt.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:High-RE-Nodes6-25"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 One conclusion from this thesis might be that Australia could struggle to
  rely heavily on renewable energy in the future because some of the common
  weather patterns represented by the SOM produced difficult conditions that
  even the optimised RE system in Part 2 could not cover.
  However, this conclusion fails to take into account possibility that these
  potentially detrimental weather patterns might be quite predictable.
- It was not part of the scope of this thesis to examine the predictability
- of low RE weather patterns.
- What was presented in this thesis could, however, be utilised as a forecasting
+ Despite the scope of this thesis not including the predictability of low
+ RE weather patterns, what was presented could be utilised as a forecasting
  complement.
  That is, given an accurate forecast of MSLP it is possible that the results
  of Part 2 be used to give a first-guess of the likely impact on wind and
@@ -166,27 +203,10 @@ One conclusion from this thesis might be that Australia could struggle to
  This type of use for the results from this thesis illustrates how the incorpora
 tion of a synoptic climatology (derivation of the SOM) and a short-term
  optimisation can complement.
- The optimisation identifies problematic (and favourable) conditions across
- the NEM and the climatology then a identifies the associated large-scale
- weather types responsible for the particular conditions.
+ The optimisation identified problematic (and favourable) conditions across
+ the NEM and the climatology then enabled the identification of the associated
+ large-scale weather types responsible for the particular conditions.
  
-\end_layout
-
-\begin_layout Standard
-Planning a future RE network to take into account these instance of extreme
- stilling over the NEM is unlikely to be a fruitful exercise.
- After all, the optimisation is designed to meet the demand for energy for
- the majority of the time.
- Any solution that the optimisation trials that does not satisfy ‘average’
- conditions will likely draw on excessive amounts of expensive back-up resources
-, which would not be cost-optimal and thus unlikely to survive to the end
- of the iterative search process.
- What is seen from Figure R though is that none of the synoptic regimes
- have a large negative average RE - demand relationship.
- That is, on the whole the NEM-only optimisation is able to extract useful
- energy from all of the common synoptic weather regimes.
- On the contrary, some of the common synoptic weather patterns are heavily
- biased towards oversupply in the NEM-only simulation.
 \end_layout
 
 \end_body
