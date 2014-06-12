@@ -346,23 +346,6 @@ filename "Chapter 4/Chapter 4.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Chapter 5/Chapter 5.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
 filename "Chapter 6/Chapter 6.lyx"
 
 \end_inset
@@ -432,6 +415,40 @@ filename "Chapter 8/Chapter 8.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "Chapter 9/Chapter 9.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter 10/Chapter 10.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Chapter 11/Chapter 11.lyx"
 
 \end_inset
 
