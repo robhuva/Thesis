@@ -71,7 +71,78 @@ Abstract
 \end_layout
 
 \begin_layout Standard
+In the future Australia will undoubtedly need to rely on significant amounts
+ of Renewable Energy (RE) for electricity.
+ Fossil fuels are inherently non-renewable and their dwindling supply will
+ force the investment in alternatives.
+ There is therefore a need to research how such increased penetrations of
+ RE resources will be managed.
+ Installed across large areas, a National Electricity Market (NEM) with
+ increased contributions from RE will be affected by large-scale scale meteorolo
+gical variability.
+ The synoptic scale (100s-1,000s of km and days-weeks) weather systems are
+ of particular interest.
+ This thesis examines how synoptic scale weather variability might affect
+ a future highly RE dependent Australia using two approaches.
+ Approach one (Part 1 of the thesis) identifies the common synoptic scale
+ weather systems from a reanalysis data set (ERA-Interim) and then analyses
+ the availability of wind and solar energy associated with each weather
+ type.
+ Approach two (Part 2) utilises data from a regional model (ACCESS-A) as
+ part of an energy model that optimises wind and solar energy to meet the
+ demand of Australia.
+ The influence of the weather systems identified in Part 1 on the optimised
+ energy network is then analysed.
+\end_layout
 
+\begin_layout Standard
+Part 1 of this thesis utilises the European Centre for Medium Range Weather
+ Forecasting (ECMWF) reanalysis product ERA-Interim from 1989-2009 and for
+ the Austral region (6ºS,105ºE) → (49.5ºS,165ºE).
+ The Self-Organising Map (SOM) technique is then used to identify commonly
+ occurring features in the ERA-Interim Mean Sea-Level Pressure (MSLP) field.
+ The SOM technique converts the time series of MSLP to a time series of
+ commonly occurring MSLP patterns, or weather types.
+ The weather types are then analysed for their tendency to be associated
+ with either high or low wind and solar potential.
+ Some autumnal MSLP patterns are shown to be associated with very low wind
+ speeds and solar irradiance for most of the Australian continent, while
+ other summertime patterns show good potential for extracting wind and solar
+ energy.
+ Following this an analysis of just the wind field demonstrates that decorrelati
+on in the wind field is reached at a distance of approximately 1,300km.
+\end_layout
+
+\begin_layout Standard
+Part 2 of this thesis focuses on optimising data from the Bureau of Meteorology’
+s high-resolution regional weather model, ACCESS-A, for the period 2010-2011.
+ The ACCESS-A data, in tandem with electrical demand data from the Australian
+ Electricity Market Operator and a Genetic Algorithm, are utilised to investigat
+e the influence of synoptic scale variability on a RE network.
+ By optimising to meet electrical demand the output of both wind and solar
+ installations from locations across the ACCESS-A grid it is shown that
+ some of the weather types identified in Part 1 either adversely or favourably
+ affect net output.
+ A late autumn and a summer weather type are shown to be significantly associate
+d with very low RE output.
+ The persistence and re-occurrence of low RE events shows that most episodes
+ of low RE last for less than 6 hours and such low RE events have a mean
+ return period of more than a week.
+ Increasing the cost of transmission results in installed RE capacity contractin
+g to 4 large wind stations and it is shown that the NEM region exhibits
+ 4 distinct wind regimes.
+ The wind regimes are highly uncorrelated and the minimum distance between
+ regime locations reflects a smaller decorrelation length (884km) than that
+ found in Part 1.
+\end_layout
+
+\begin_layout Standard
+In combination, Parts 1 and 2 of this thesis illustrate some of the issues
+ that a future high penetration RE network might need to overcome.
+ Knowledge of the influence of detrimental/favourable weather phenomena
+ will be critical when designing and/or maintaining a large-scale renewable
+ energy network for Australia--in particular, knowledge of the decorrelation
+ length-scale in the wind field.
 \end_layout
 
 \end_body
