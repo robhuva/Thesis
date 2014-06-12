@@ -110,9 +110,9 @@ Summary
 \noindent
 This chapter examines the common synoptic weather regimes of the Australian
  region by means of a Self-Organising Map (SOM) of the Mean Sea-Level Pressure
- field (MSLP) from the European Centre for Medium-range Weather Forecasts
+ (MSLP) field from the European Centre for Medium-range Weather Forecasts
  (ECMWF) product, ERA-Interim.
- An examination of the SOM technique's effectiveness i is undertaken, along
+ An examination of the SOM technique's effectiveness is undertaken, along
  with the presentation of an improvement to the use of the SOM in this thesis.
 \end_layout
 
@@ -153,15 +153,14 @@ reference "sec:SOM-method"
 
 \end_inset
 
- outlines various datasets and methods used in this study while section
- 
+ outlines the dataset and methods used in this study while section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:SOM-Results"
 
 \end_inset
 
- describes the results.
+ describes the results (both whole and continental domains).
  Finally, a discussion and summary are given in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -214,9 +213,10 @@ key "Kohonen1995"
  presenting the time-steps from the data to be mapped (in this case the
  ERA- Interim MSLP data), followed by a search for the SOM node that best
  matches each data sample.
- The node that best matches (commonly referred to as the Best Matching Unit
- (BMU)) is determined by the Euclidean distance measurement; shown here
- in equation 1 from 
+ The node that best matches (hereafter referred to as the Best Matching
+ Unit (BMU)) is determined by the Euclidean distance measurement; shown
+ here in Eq.
+ 1 from 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Kohonen1995"
@@ -260,7 +260,6 @@ where
 \end_layout
 
 \begin_layout Standard
-\noindent
 The BMU and the nodes that surround the BMU are then altered to look more
  like the data.
  The amount the nodes are altered by is determined by two parameters: namely,
@@ -274,15 +273,15 @@ The BMU and the nodes that surround the BMU are then altered to look more
  rate of a Gaussian function, centred on the BMU, such that nodes immediately
  surrounding the BMU are altered much more than those further away in the
  SOM space.
- The amount that each node is altered can be described by equations 2 and
- 3 from 
+ The amount that each node is altered can be described by Eqs.
+ 2 and 3 from 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Kohonen1995"
 
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Standard
@@ -488,10 +487,10 @@ The outcome of the SOM procedure is a matrix of related MSLP distributions.
  by the user and once established the SOM nodes can be mapped back onto
  the original data (assigning a SOM node to each time step via the BMU method).
  The mapping of the SOM nodes back onto the original data converts the data
- into a time series of SOM nodes (weather types), allowing for the timewise
+ into a time series of SOM nodes (weather types), allowing for the time-wise
  behaviour of common weather types to be examined.
  In the case of this thesis, the SOM method enables the identification of
- common charactersitics in an otherwise complicated MSLP dataset, which
+ common characteristics in an otherwise complicated MSLP dataset, which
  in turn also enables a study of related variables (wind and solar) and
  how they vary in association with the common weather types.
 \end_layout
@@ -524,8 +523,8 @@ The whole domain SOM was created by simply showing all of the available
  However, the continental SOM was created by only presenting the variability
  over the Australian continent.
  The domain for the continental version was also reduced to exclude some
- of the land north of the Australian continent included in the whole domain
- version.
+ of the land north of the Australian continent that was included in the
+ whole domain version.
  The refined domain, (10.5ºS, 105ºE) → (49.5ºS, 165ºE), for the continental
  version is shown in Fig.
  
@@ -586,8 +585,8 @@ The mask used for filtering out the ocean variability was an altered version
  continent, the ECMWF-supplied land-sea mask variable appeared not to include
  some areas of the Australian continent as land.
  The decision was then made to extended the ECMWF land-sea mask variable
- to include all grid-boxes that appeared to contain land in the IDL map
- (as it was of finer detail).
+ to include all grid-boxes that appeared to contain land in the IDL map,
+ which was of finer detail.
 \end_layout
 
 \begin_layout Standard
@@ -1501,7 +1500,7 @@ name "tab:SOM-Init-Params"
 \end_layout
 
 \begin_layout Standard
-Twenty random initialisations for each whole domain SOM of training phase
+Twenty random initialisations for each whole domain SOM in training phase
  1 were also experimented with to test for convergence of the final results.
  The random initialisation, however, was seen to have very little effect
  on the final average quantised error for each radius-alpha combination
@@ -1598,18 +1597,11 @@ key "Sugar1998"
  amount of the data-space represented by all clusters/nodes.
  In terms of the analysis presented in the current study, such an ‘elbow’
  could be determined by graphing the number of nodes versus the average
- quantised error for each SOM size (Figs.
+ quantised error for each SOM size (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Decay-of-average"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Error-Decay-Cont"
 
 \end_inset
 
@@ -1672,16 +1664,8 @@ reference "fig:Decay-of-average"
 
 \end_inset
 
-, there does appear to be a small but noticeable ‘elbow’ in the whole domain
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Decay-of-average"
-
-\end_inset
-
-a graph at point (15, 169.9), which is also seen in the change-in-gradient
+a, there does appear to be a small but noticeable ‘elbow’ in the whole domain
+ graph at point (15, 169.9), which is also seen in the change-in-gradient
  maximum.
  However, and despite the ‘elbow’ from Fig.
  
@@ -1727,7 +1711,8 @@ e of the variation in synoptic patterns over the last 21 years.
  sizes to employ, an index was proposed.
  The current study asserts that an index that takes into account the number
  of nodes used as well as the average quantised error of each SOM size can
- easily be formulated and implemented by Equation 
+ easily be formulated and implemented by Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Number-of-nodes"
@@ -1754,15 +1739,48 @@ where
 \begin_inset Formula $n$
 \end_inset
 
- is the number of nodes and 
+ is the number of nodes, 
+\begin_inset Formula $n_{max}$
+\end_inset
+
+the maximum number of nodes trialled,
 \begin_inset Formula $qerror$
 \end_inset
 
- represents the average quantised error.
+ represents the average quantised error, 
+\begin_inset Formula $qerror_{max}$
+\end_inset
+
+ the maximum 
+\begin_inset Formula $qerror$
+\end_inset
+
+ value, 
+\begin_inset Formula $qerror_{min}$
+\end_inset
+
+ the minimum 
+\begin_inset Formula $qerror$
+\end_inset
+
+ value and 
+\begin_inset Formula $qerror_{n}$
+\end_inset
+
+ the 
+\begin_inset Formula $qerror$
+\end_inset
+
+ value for each 
+\begin_inset Formula $n$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Equation 
+Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Number-of-nodes"
@@ -1786,7 +1804,8 @@ reference "tab:SOM-Init-Params"
 
 \end_inset
 
- reduces Equation 
+ reduces Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Number-of-nodes"
@@ -1820,7 +1839,8 @@ n=max\left\{ \frac{(88hPa-qerror_{n})\cdot(48-n)^{2}}{(qerror_{n}-55.3hPa)\cdot 
 \end_layout
 
 \begin_layout Standard
-Both equations 
+Both Eqs.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Eq4-solution"
@@ -1836,7 +1856,8 @@ reference "eq:Number-Nodes-SOM-Cont"
 
  explain that a SOM with 30 nodes has the ‘optimum’ balance between the
  competing factors of SOM size and SOM error for their respective domains.
- When graphed, the maximum at 30 nodes for Equations 
+ When graphed, the maximum at 30 nodes for Eqs.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Eq4-solution"
@@ -1858,14 +1879,14 @@ reference "fig:Graph-of-Equation"
 
 \end_inset
 
- and 
+a and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:SOM-Cont-Graph-of-Equation"
+reference "fig:Graph-of-Equation"
 
 \end_inset
 
-).
+b).
 \begin_inset Float figure
 placement H
 wide false
@@ -1886,7 +1907,8 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Graph of Equation 
+a) Graph of Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Eq4-solution"
@@ -1900,8 +1922,7 @@ reference "tab:SOM-training-list"
 
 \end_inset
 
-.
- 
+ and b) graph of E 
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Graph-of-Equation"
@@ -1922,7 +1943,8 @@ name "fig:Graph-of-Equation"
 \end_layout
 
 \begin_layout Standard
-Using the results from Equations 
+Using the results from Eqs.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Eq4-solution"
@@ -2417,7 +2439,7 @@ reference "fig:SOM-Comp-Cont-Worst-Best"
 
 \end_inset
 
-b was repeated throughout the data-set was not a trivial question to answer.
+b repeated throughout the data-set was not a trivial question to answer.
 \end_layout
 
 \begin_layout Subsection
@@ -2603,7 +2625,7 @@ reference "fig:SOM-Cont-Ordered-Histo"
 
  reveal, the distribution of quantised error is quite positively skewed
  and has only a small portion of BMUs with error greater than about 200hPa
- for the whole domain and 100 for the continental domain (less than half
+ for the whole domain and 100hPa for the continental domain (less than half
  the respective maxima).
  Thus Figs.
  
@@ -2626,7 +2648,7 @@ reference "fig:SOM-Cont-Ordered-Histo"
 \end_layout
 
 \begin_layout Standard
-As a starting point, Figure 17a) from 
+As a starting point, Figure 17a from 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Dee2011"
@@ -2639,14 +2661,16 @@ key "Dee2011"
  Assuming a similar error in MSLP (which is derived using the surface pressure,
  average virtual temperature and constants) and considering the equation
  for RMSE in pressure, it was possible to equate the RMSE using observations
- (Equation 
+ (Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:ERA-RMSE-obs"
 
 \end_inset
 
-) with the RMSE using the BMUs (Equation 
+) with the RMSE using the BMUs (Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:ERA-RMSE-BMU"
@@ -2656,16 +2680,26 @@ reference "eq:ERA-RMSE-BMU"
 )--the resulting value could then be thought of as a minimum threshold for
  keeping BMUs.
  Noting the existence of the Euclidean distance term in the numerator of
- Equation 
+ Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:ERA-RMSE-BMU"
 
 \end_inset
 
- and using the value of 1.75hPA for RMSE obs, it was argued that any BMU
- with a Euclidean distance (quantised error) less than 61.4hPa was within
- the error of the ERA-Interim reanalysis and thus should be kept.
+ and using the value of 1.75hPA for RMSE
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+obs
+\end_layout
+
+\end_inset
+
+, it was argued that any BMU with a Euclidean distance (quantised error)
+ less than 61.4hPa was within the error of the ERA-Interim reanalysis and
+ thus should be kept.
  The quantised error value of 61.4hPa was thus a minimum criterion to be
  used.
  However, only three of the BMUs for the Austral domain had a quantised
@@ -2732,7 +2766,7 @@ where
 With nearly all BMUs having a quantised error larger than the error of the
  ERA-Interim reanalysis, an analysis of the maximum discrepancy (largest
  single grid-point error) across the domain for each BMU and its respective
- time-step was conducted in order to determine how many BMUs to discount
+ time-step was conducted in order to help determine how many BMUs to discount
  as ‘matches’.
  The analysis of the maximum discrepancy for all whole domain BMUs revealed
  a mean maximum discrepancy of 16.9hPa--the smallest maximum discrepancy
@@ -2753,10 +2787,11 @@ reference "fig:SOM-ordered-histo"
  eliminate the BMUs with a maximum discrepancy greater than or equal to
  20hPa; 20hPa was chosen as the cut-off value because it represented a balance
  between keeping as many matches as possible (to aid later statistical analyses)
- and not keeping matches that had very obvious differences.
+ and not keeping matches that had very obvious MSLP differences.
  Choosing a cut-off criterion that was based on analysing single grid-point
- errors also gave some insight into the distribution of errors, which is
- aggregated and missed by the quantised error measurement.
+ errors also gave some insight into the spatial distribution of errors,
+ which is not possible using the quantised errror measurement due to the
+ aggregation of error.
  This initial filtering of the BMUs left 22,962 matches out of a total 30,680
  for the whole domain, and left 30,108 matches for the continental domain.
  The whole domain BMU with the largest quantised error from the BMUs that
@@ -2768,7 +2803,8 @@ reference "fig:SOM-Comp-Aft-Filt-1"
 
 \end_inset
 
- and for the continental domain is depicted in Fig, 
+ and for the continental domain is depicted in Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SOM-Comp-Cont-Aftr-Filt1"
@@ -2942,7 +2978,7 @@ reference "fig:SOM-Ordered-histo-after-filt1"
 
 \end_inset
 
-b) revealed much the same behaviour seen in Fig.
+b) revealed much the same behaviour seen in Figs.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2950,14 +2986,22 @@ reference "fig:SOM-ordered-histo"
 
 \end_inset
 
- a) and thus the decision was made to eliminate BMUs with quantised errors
- in the highest 5% (quantised error above 200.2hPa).
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Ordered-Histo"
+
+\end_inset
+
+, and thus the decision was made to eliminate BMUs with quantised errors
+ in the highest 5%.
  The amount of BMUs left after this second filtering was 21,814 for the
  whole domain and 28,602 for the continental domain.
  Obvious, already, was the fact that the continental domain was far out-performi
-ng the whole domain SOM.
+ng the whole domain SOM in terms of the number of matches that were surviving
+ the filtering.
  The continental domain SOM had many more BMU whose pressure distributions
- closely matched their SOM node, thus enhancing later statistical analysis
+ closely matched their SOM node, thus also enhancing later statistical analysis
  involving the occurrence of SOM nodes.
 \begin_inset Float figure
 wide false
@@ -3127,9 +3171,9 @@ name "fig:SOM-Comp-Cont-Aft-Filt2"
 \end_layout
 
 \begin_layout Standard
-As the second filtering criterion uses the quantised error measurement as
- a delimiter, it was then decided that a final criterion be utilised to
- ensure that the remaining BMUs were accurate enough across the entire domain.
+As the second filtering criterion relies upon the quantised error measurement,
+ it was then decided that a final criterion be utilised to ensure that the
+ remaining BMUs were accurate enough across the entire domain.
  The final filtering criterion involved calculating the number of grid-points
  from the BMU seen in Figs.
  
@@ -3149,7 +3193,7 @@ reference "fig:SOM-Comp-Cont-Aft-Filt2"
  were more than 4hPa different from their respective MSLP map from ERA-Interim
  (585 grid-points in the whole domain and 206 grid points in the continental
  domain).
- The BMUs from the remaining 21,814/28,602 matches that had more than 585
+ The BMUs from the remaining 21,814/28,602 matches that had more than 585/206
  grid points with an error greater than 4hPa were then eliminated.
  This final criterion was used as a method for checking the characteristics
  of the domain missed by the quantised error measurement and left a total
@@ -3159,8 +3203,7 @@ reference "fig:SOM-Comp-Cont-Aft-Filt2"
 \end_layout
 
 \begin_layout Standard
-To measure the frequency of occurrence of the BMUs through time, as well
- as for the measurement of other statistical quantities, the remaining BMUs
+To determine the occurrence of the BMUs through time, the remaining BMUs
  were compared with the original set of 30,680 and a BMU from the original
  30,680 that was eliminated through filtering was given a missing value.
  The 21 years of BMUs was then reduced to a time series of filtered BMUs
@@ -3234,11 +3277,11 @@ reference "fig:SOM-Consec-Zeros-Aft-Filt"
 
 \end_inset
 
- shows that although there were some prolonged moments of missing data,
+a shows that although there were some prolonged moments of missing data,
  which extend for more than a few days at a time, the majority (78%) of
  consecutive time-steps without a matching BMU had a period less than a
  day for the whole domain.
- The continental domain, with many more BMU surviving filtering, did much
+ The continental domain, with many more BMUs surviving filtering, did much
  better in this respect with 98% of periods with consecutive missing time
  steps having a length of less than a day.
  The maximum period without data was 12 days in length for the whole domain
@@ -3470,7 +3513,8 @@ reference "fig:MSLP-12day-SOM-Failure"
 \end_inset
 
 --appears quite anomalous.
- To give a perspective on the meteorological conditions during 12B90, Fig.
+ To give an insight into the surface meteorological conditions during 12B90,
+ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3611,7 +3655,7 @@ reference "fig:6x5-SOM-space"
 
 \end_inset
 
-.
+ (whole domain).
  
 \begin_inset Float table
 wide false
@@ -3619,7 +3663,8 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\align left
+\noindent
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="7">
 <features tabularvalignment="middle">
@@ -4104,7 +4149,7 @@ reference "fig:6x5-SOM-space"
 
 \end_inset
 
-.
+ (whole domain).
  The numbers are as a percentage of the total number of BMUs after filtering
  (21,300) and the row and column numbers correspond to the rows and columns
  of Fig.
@@ -4150,7 +4195,15 @@ reference "fig:SOM-Surf-Total-Occ"
 
 \end_inset
 
-.
+ (whole domain) and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Total-Occ"
+
+\end_inset
+
+ (continental domain).
  
 \begin_inset Float figure
 wide false
@@ -4212,6 +4265,63 @@ name "fig:SOM-Surf-Total-Occ"
 \end_inset
 
 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/rhuva/Robert/Final Thesis/Chapter 5/Figures/SOM_cont_surf_total_occ.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Surface plot representing the total occurrences (after filtering) of each
+ SOM node from the SOM depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ The row and column numbers correspond to the rows and columns of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Surf-Total-Occ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4223,19 +4333,22 @@ reference "fig:SOM-Surf-Total-Occ"
 
 \end_inset
 
-/ Table 
+ or Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SOM-Total-Occ"
 
 \end_inset
 
- show that the more commonly occurring SOM nodes were those that involved
- high pressure systems located in either the Bight or south of Perth.
+ show that the more commonly occurring whole domain SOM nodes were those
+ that involved high pressure systems located in either the Bight or south
+ of Perth.
+ Similarly, the most commonly occurring continental SOM nodes were nodes
+ 28 and 16, which both involve higher pressures to the south.
  Least common were the SOM nodes that involved low pressure intrusions south
- of Victoria or South Australia, although this statistic was easily explained
- given the fast-moving nature of low pressure systems in comparison to high
- pressure systems (
+ of Victoria or South Australia (both whole and continental domains), although
+ this statistic was easily explained given the fast-moving nature of low
+ pressure systems in comparison to high pressure systems (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Sturman2005"
@@ -4243,8 +4356,8 @@ key "Sturman2005"
 \end_inset
 
 ).
- A more interesting result was the fact that the SOM technique, in this
- case, was able to identify the seasonality of the Australian region.
+ A more important result was the fact that the SOM technique, in this case,
+ was able to identify the seasonality of the Australian region.
  
 \begin_inset Float figure
 wide false
@@ -4307,14 +4420,79 @@ name "fig:SOM-Surf-Seasnl-Occ"
 \end_inset
 
 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/rhuva/Robert/Final Thesis/Chapter 5/Figures/SOM_cont_surf_all_seasons_occ.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Seasonal occurrences of the SOM nodes depicted in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ Totals are after filtering while a) is summer, b) is autumn, c) is winter
+ and d) is spring.
+ The row and column numbers correspond to the rows and columns of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SOM-Cont-Surf-Seasnl-Occ"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-As can be seen from Fig.
+As can be seen from both Figs.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:SOM-Surf-Seasnl-Occ"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Cont-Surf-Seasnl-Occ"
 
 \end_inset
 
@@ -4443,7 +4621,16 @@ reference "fig:SOM-Transition-and-Stationary"
  a).
  The use of 6-hourly MSLP data in the current study has most likely led
  to less linear paths being traced out across the SOM space, thus leading
- to a less consistently unidirectional transition plot.
+ to a less consistently unidirectional transition plot (which is evident
+ in the high percentage of no transitions seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Transition-and-Stationary"
+
+\end_inset
+
+b).
  Analysis of MSLP data at 12-hourly or daily intervals, like that in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -4471,20 +4658,17 @@ name "sec:SOM-Conclusion"
 Despite the limitations of the SOM technique, which appear to be similar
  to the problems encountered with most data synthesis techniques, a SOM
  of the MSLP in the Australian region was able to identify commonly occurring
- and previously identified MSLP pressure patterns or synoptic regimes.
+ and previously identified MSLP pressure patterns, or synoptic regimes (whole
+ domain).
  Using the MSLP field, even though it may not have an immediately obvious
  connection to the wind and solar fields, for categorising the weather into
- common types or regimes was an important process towards identifying commonly
- co-occurring wind and solar conditions.
+ regimes was an important process towards identifying commonly co-occurring
+ wind and solar conditions.
  Converting the continuous time series of ERA-Interim weather conditions
- into a time series of 30 SOM nodes allowed for an analysis of the wind
+ into a time series of 30 SOM nodes will allow for an analysis of the wind
  and solar conditions under each SOM node.
- However, keeping in mind that the purpose of the current study is to investigat
-e the climatology of wind and solar over Australia and to evaluate the potential
- large-scale power output from the wind and solar fields, it is proposed
- that a filtering of ocean grid points from the ERA-Interim domain be undertaken.
- In the current study there is no expectation that offshore locations be
- utilised for wind or solar power as the vast majority of the Australian
+ In the current study there is also no expectation that offshore locations
+ be utilised for wind or solar power as the vast majority of the Australian
  coastline has steep ocean floor gradients (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -4493,9 +4677,15 @@ key "Diesendorf2006"
 \end_inset
 
 ).
- But importantly, the filtering of ocean grid-points rids the domain of
- a large source of error (for instance, the transient low pressure centre
- seen in Fig.
+ Thus filtering of the ocean MSLP data was also undertaken and an alternative
+ continental SOM presented.
+ The continental analysis, despite the limited domain, was able to produce
+ a set of SOM nodes that corresponded well with the physical reality of
+ the Australian region, while at the same time achieved a much more continuous
+ representation of the ERA-Interim data (93% of time-steps had a BMU).
+ Importantly, the filtering of ocean grid-points rids the domain of a large
+ source of error (for instance, the transient low pressure centre seen in
+ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4504,8 +4694,9 @@ reference "fig:SOM-comp-worst-before"
 \end_inset
 
  b).
- The next chapter explores creating a SOM using a land-sea mask to rid the
- domain of MSLP variability.
+ With a vastly more complete representation of the data from ERA-interim
+ by the continental SOM a more comprehensive analysis of the concurrent
+ wind and solar conditions associated with each SOM node is possible.
  
 \end_layout
 
