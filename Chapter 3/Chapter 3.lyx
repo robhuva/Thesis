@@ -200,7 +200,7 @@ key "Sheridan2011"
 
 ).
  Specifically, the SOM has been widely used for the study of pressure patterns
- that co- occur with precipitation events (
+ that co-occur with precipitation events (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Sheridan2011"
@@ -259,6 +259,7 @@ key "Verdon-Kidd2009"
 , which implemented a 20 member SOM of Victorian MSLP.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -311,7 +312,7 @@ name "fig:Alexander-SOM"
 With the results from previous studies in mind it was decided that the SOM
  would also be a suitable technique for the current study.
  The SOM's ability to summarise large data sets into a limited number of
- commonly occuring weather types (via the MSLP field) was identified as
+ commonly occurring weather types (via the MSLP field) was identified as
  being useful for analysing the common wind and solar distributions, as
  well.
  In a similar manner to the studies of 
