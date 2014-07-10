@@ -115,10 +115,10 @@ This chapter presents an analysis of the covariance of the wind and solar
 \lang british
 utilising
 \lang english
- the SOM from 
+ the continental SOM from 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Continental-SOM"
+reference "sec:SOM-Results"
 
 \end_inset
 
@@ -190,6 +190,7 @@ key "REN212013"
 ).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -365,7 +366,7 @@ name "sec:Cov-Results-and-Discussion"
 \end_layout
 
 \begin_layout Standard
-Using the time series of SOM node occurrence the wind and solar capacity
+Using the time series of SOM node occurrences the wind and solar capacity
  factors were calculated for each SOM node and the results are shown in
  Fig.
  
@@ -378,6 +379,7 @@ reference "fig:SOM-Bivar-Wind-Solar"
 .
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -540,7 +542,7 @@ reference "fig:Nodes-of-Interest-MSLP"
 
 \end_inset
 
- b))--was largely characterised by low average wind power and DSR capacities
+b)--was largely characterised by low average wind power and DSR capacities
  for most of the Australian continent (Fig.
  
 \begin_inset CommandInset ref
@@ -552,6 +554,7 @@ reference "fig:Node-20-Wind-Dsr-Cap"
 ).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -596,6 +599,7 @@ name "fig:Nodes-of-Interest-MSLP"
 
 
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -642,7 +646,7 @@ name "fig:Node-20-Wind-Dsr-Cap"
 \begin_layout Standard
 With average wind power and DSR capacities below 0.3 for close to the entire
  Australian continent, continental SOM node 20, or rather a ridging high
- centred East of Victoria appeared to be quite detrimental for large-scale
+ centred East of Victoria, appeared to be quite detrimental for large-scale
  wind and solar power production.
  Fig.
  
@@ -778,6 +782,7 @@ reference "fig:Node20-Lowest-Combined-Cap"
  and solar resource availability of Australia.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -854,7 +859,7 @@ reference "fig:Node20-Min-day-Comp-MSLP"
 
 \end_inset
 
- b).
+b.
  Planning ahead of time for such low capacities would allow a more sophisticated
  energy system that incorporates other renewables, storage options and back-ups
  to still meet the demand for electricity.
@@ -872,6 +877,7 @@ reference "fig:Node20-Min-day-Comp-MSLP"
  compares the pressure distributions of node 20 and 0600UTC on May 15 1997.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -959,6 +965,7 @@ reference "fig:Node20-Max-day-Comp-MSLP"
  wind and solar conditions, in spite of the same SOM node classification.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1047,10 +1054,10 @@ reference "fig:Node20-Highest-Combined-Cap"
  that the same might also occur for other SOM nodes).
  This variance around a given SOM node could be an argument for the use
  of wind speed and solar irradiance SOMs, as these are the fields of interest.
- However, the smooth nature of MSLP on synoptic scales makes it much more
- emenable to a SOM then a field like wind speed (whose variance would be
- much larger and therefore much harder to summarise in a reasonable number
- of nodes).
+ However, the continuous nature of MSLP variability on synoptic scales makes
+ it much more amenable to a SOM than a field like wind speed (whose variance
+ would be much larger and therefore much harder to summarise in a reasonable
+ number of nodes).
  
 \begin_inset Float figure
 placement H
@@ -1095,7 +1102,7 @@ name "fig:Node20-Max-day-Comp-MSLP"
 \end_layout
 
 \begin_layout Standard
-The SOM node that averages the highest combined wind and solar capacities,
+The SOM node that averaged the highest combined wind and solar capacities,
  node 24, had average wind power and DSR capacities described in Fig.
  
 \begin_inset CommandInset ref
@@ -1112,6 +1119,7 @@ reference "fig:Node24-Wind-Dsr-Cap"
  to study.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1157,29 +1165,7 @@ name "fig:Node24-Wind-Dsr-Cap"
 \end_layout
 
 \begin_layout Standard
-Plots of the difference between a power conversion of the average wind speed
- and the average of the wind power time series and of the CoV, like that
- in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Node20-Cap-diff-Wind"
-
-\end_inset
-
- and Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Node20-CoV-Wind-Dsr"
-
-\end_inset
-
-, for node 24 showed much the same behaviour for node 24.
- That is, high wind speed areas were associated with an overestimation by
- the wind power derived from the average wind speed and also associated
- with higher values of the CoV (not shown).
- With these similarities in mind Fig.
+Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1189,56 +1175,7 @@ reference "fig:Node24-Highest-Combined-Cap"
 
  follows on from the earlier analysis of node 20 by depicting the occurrence
  of node 24 that had the highest combined wind power and DSR capacities.
- 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Node_24_max_capacity-wind.eps
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-a) Wind power capacity and b) DSR capacity for the occurrence of continental
- SOM node 24 that leads to the highest combined capacity (0600UTC January
- 16 2008).
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Node24-Highest-Combined-Cap"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The pressure distribution associated with the wind and solar capacities
+ The pressure distribution associated with the wind and solar capacities
  in Fig.
  
 \begin_inset CommandInset ref
@@ -1255,8 +1192,8 @@ reference "fig:Node24-Max-day-Comp-MSLP"
 
 \end_inset
 
- b)) indicates a fairly deep high pressure system centred at about 125ºE
- and 40ºS, which is essentially just a deeper version of node 24 (Fig.
+b) indicates a fairly deep high pressure system centred at about 125ºE and
+ 40ºS, which is essentially just a deeper version of node 24 (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1264,7 +1201,7 @@ reference "fig:Node24-Max-day-Comp-MSLP"
 
 \end_inset
 
- a)).
+a).
  Onshore winds at the time of maximum wind and solar availability for node
  24 explain the generally higher wind power capacities seen in Fig.
  
@@ -1326,8 +1263,49 @@ reference "fig:Node24-Max-day-Comp-MSLP"
 
  could explain some of the low wind power tendencies associated with the
  minimum in DSR.
- 
 \begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/Node_24_max_capacity-wind.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+a) Wind power capacity and b) DSR capacity for the occurrence of continental
+ SOM node 24 that leads to the highest combined capacity (0600UTC January
+ 16 2008).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Node24-Highest-Combined-Cap"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1394,7 +1372,7 @@ reference "fig:Node24-Lowest-Combined-Cap"
 
 \end_inset
 
- a) suggests that despite there being maxima at other locations in Fig.
+a suggests that despite there being maxima at other locations in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1402,7 +1380,7 @@ reference "fig:Node24-Highest-Combined-Cap"
 
 \end_inset
 
- a) high wind power capacities for the central coast of WA were a persistent
+a high wind power capacities for the central coast of WA were a persistent
  pattern for the majority of node 24 occurrences.
  For the central coast of WA 89% of node 24 occurrences had a peak wind
  power capacity value greater than 0.7 and 79% had an average wind power
@@ -1416,7 +1394,7 @@ reference "fig:Node24-Wind-Dsr-Cap"
 
 \end_inset
 
- a).
+a.
  Similar results were also obtained for the DSR capacity values, except
  the persistence was even higher due to the smooth nature of the DSR data.
  The fact that such a high percentage of occurrences for node 24 had high
@@ -1425,6 +1403,7 @@ reference "fig:Node24-Wind-Dsr-Cap"
  in much the same manner as the low output occurrence for node 20.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1502,7 +1481,7 @@ reference "fig:Node24-Lowest-Combined-Cap"
 
 \end_inset
 
- b) and perhaps also the higher wind power capacity values in the wake of
+b and perhaps also the higher wind power capacity values in the wake of
  the trough (Fig.
  
 \begin_inset CommandInset ref
@@ -1511,9 +1490,10 @@ reference "fig:Node24-Lowest-Combined-Cap"
 
 \end_inset
 
- a).
+a).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1561,7 +1541,7 @@ name "fig:Node24-Min-day-Comp-MSLP"
 \begin_layout Standard
 Both nodes 20 and 24 have proven useful in terms of their representation
  of co-located and concurrent wind and solar minima or maxima, however,
- node 18 could also be seen as useful in that it had maxima in the wind
+ node 18 could also be seen as useful because it had maxima in the wind
  and solar fields that were not co-located (Fig.
  
 \begin_inset CommandInset ref
@@ -1576,6 +1556,7 @@ reference "fig:Node18-Wind-Dsr-Cap"
  were not co-located.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1634,8 +1615,8 @@ reference "fig:Node18-High-Regions"
 
 \end_inset
 
- describes the boundaries of the two maxima, which were then used as per
- the previous analyses of node 20 and 24.
+ describes the boundaries of the two maxima regions, which were then used
+ in a similar manner to the previous analyses of node 20 and 24.
  
 \begin_inset Float figure
 placement H
@@ -1783,6 +1764,7 @@ name "fig:Node18-High-Cap-Regions"
 
 
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1885,6 +1867,7 @@ reference "fig:Node18-Min-day-Comp-MSLP"
  and DSR capacity maps as a first guess of the wind and solar availability
  of the Australian region.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -2073,6 +2056,7 @@ reference "fig:Time-of-Day-SOM-Occ"
  processes was then calculated based on the top 50 (unusually high) and
  bottom 50 (unusually low) occurrences, out of the 10,000.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -2140,7 +2124,7 @@ reference "fig:Time-of-Day-SOM-Occ"
  SOM node 30, for instance, had almost half of its occurrences at 0600UTC,
  and then only 5% at 0000UTC.
  There also appeared to be division in the SOM space such that the nodes
- that occured significantly more often at 0000UTC occured significantly
+ that occurred significantly more often at 0000UTC occurred significantly
  less often at 0600UTC, and vice versa.
  With reference to Fig.
  
@@ -2150,7 +2134,7 @@ reference "fig:SOM-Cont-Surf-Seasnl-Occ"
 
 \end_inset
 
- the nodes that occured most often at 0000UTC in Fig.
+ the nodes that occurred most often at 0000UTC in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2158,7 +2142,7 @@ reference "fig:Time-of-Day-SOM-Occ"
 
 \end_inset
 
- were also the so-called winter-only nodes and the nodes that occured most
+ were also the so-called winter-only nodes and the nodes that occurred most
  often at 0600UTC were the so-called summer-only nodes.
  It is most likely that such biases in the occurrence rate of some of the
  SOM nodes was due, at least in part, by atmospheric tides.
@@ -2238,10 +2222,9 @@ key "Dai1999"
  nodes that were said to occur most often in the morning and the summer
  nodes that were said to occur most often in the afternoon, were classed
  as occurring more often in the morning and afternoon.
- That is, the probability of SOM node 30 occurring in the afternoon was
- elevated due to an upwards sensible heat flux, which was then reversed
- in the morning and gives rise to the reduced probability of SOM node 30
- occurring then.
+ The probability of SOM node 30 occurring in the afternoon was elevated
+ due to an upwards sensible heat flux, which was then reversed in the morning
+ and gives rise to the reduced probability of SOM node 30 occurring then.
  
 \end_layout
 
@@ -2255,8 +2238,8 @@ In this section the ERA-Interim data were analysed for how well, or not,
  The term decorrelation relates to the distance at which two points in the
  domain have a significantly different time series to be considered unrelated.
  Here, certain locations were correlated with the rest of the domain and
- then a statistical significance was obtained for each correlation value
- in the domain.
+ then statistical significance was obtained for each correlation value in
+ the domain.
  A type of Monte-Carlo simulation, described in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2309,8 +2292,9 @@ o method but also because the autocorrelation of a time series is a defining
  feature of most meteorological fields.
  The relatively coarse temporal and spatial resolution of the ERA-Interim
  data means that the wind and solar fields that the current study utilises
- tend to be quite smooth and thus commonly exhibit autocorrelations that
- do not reach near zero values for lags less than 3 or 4 time steps.
+ tend to be quite smooth.
+ Thus these fields commonly exhibit autocorrelations that do not reach near
+ zero values for lags less than 3 or 4 time steps.
  The mathematical interpretation of the 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2433,7 +2417,7 @@ In the three steps described above the original series
 \begin_inset Formula $a_{j}$
 \end_inset
 
- is broken down into its Fourier components, whose phase is then randomised
+ is divided into its Fourier components, whose phase is then randomised
  by 
 \begin_inset Formula $\theta_{k}$
 \end_inset
@@ -2496,11 +2480,12 @@ reference "fig:Decorrel-Point-Correlation-Cities"
  A correlation was said to be significantly close to zero at the 5% confidence
  level if it was less than the 500th member of the absolute value of the
  collection of correlations at each grid-point.
- Therefore, negative correlations or correlations that were significantly
- close to zero were the measures of whether or not two locations had 80m
- wind speed time series that were unrelated.
+ Negative correlations or correlations that were significantly close to
+ zero were the measures of whether or not two locations had 80m wind speed
+ time series that were unrelated, or alternatively anticorrelated.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -2615,7 +2600,7 @@ name "sec:Cov-Conclusion"
 \begin_layout Standard
 This chapter examined the covariance of the wind and solar fields from ERA-Inter
 im by categorising the weather of the Australian region into SOM nodes and
- analysing the wind and solar conditions that co-occured with the regimes.
+ analysing the wind and solar conditions that co-occurred with the regimes.
  Node 20 (high pressure centred east of Victoria) was identified as being
  associated with low capacity of both wind and solar, node 24 (high pressure
  centred well south of Perth) associated with co-located high capacity of
@@ -2629,7 +2614,7 @@ th some examples of very high/low output--they were not exclusively high/low
 \end_layout
 
 \begin_layout Standard
-Time-of-day biases in the occurrence of the SOM nodes was also examined.
+Time-of-day biases in the occurrence of the SOM nodes were also examined.
  It was found that there was an elevated chance of certain nodes occurring
  at specific times of day based on atmospheric tide theory, but this was
  seen as unlikely to dictate that a particular node was favourable/poor
