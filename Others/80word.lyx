@@ -3,6 +3,11 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\bgroup
+\renewcommand\theenumi{(\roman{enumi})}
+\renewcommand\labelenumi{\theenumi}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -66,73 +71,21 @@
 
 \begin_body
 
-\begin_layout Chapter*
-Publications
+\begin_layout Title
+Robert Huva 80 word PhD thesis summary
 \end_layout
 
 \begin_layout Standard
-This thesis contains method that is also published in the following manuscript,
- accepted on March 14 2014 for publication in the 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-it
-\end_layout
-
-\end_inset
-
- International Journal of Climatology
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-[Chapter 4]
-\series default
- Huva , R., R.
- Dargaville, and P.
- Rayner, 2014: The impact of filtering self-organizing maps: a case study
- with Australian pressure and rainfall.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-{
-\backslash
-it
-\end_layout
-
-\end_inset
-
- International Journal of Climatology
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-, doi:10.1002/joc.4008.
+This thesis explores implications of the large-scale covariance of wind
+ and solar for a future Australian grid.
+ A climatological study using ERA-Interim reanalysis identifies synoptic
+ regimes that are favourable/detrimental to the availability of Renewable
+ Energy (RE).
+ An energy model optimises RE installation location and size using ACCESS-A
+ model data to meet electrical demand.
+ Climatologically derived low RE regimes are subsequently found to be challengin
+g for the energy model, while decorrelation in the wind field is identified
+ at ~800-1,400km.
 \end_layout
 
 \end_body
