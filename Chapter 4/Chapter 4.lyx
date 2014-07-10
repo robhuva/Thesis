@@ -209,9 +209,9 @@ key "Kohonen1995"
 
 \end_inset
 
- for a more rigorous description of the algorithm) is conducted by sequentially
+ for a more rigorous derivation of the algorithm) is conducted by sequentially
  presenting the time-steps from the data to be mapped (in this case the
- ERA- Interim MSLP data), followed by a search for the SOM node that best
+ ERA-Interim MSLP data), followed by a search for the SOM node that best
  matches each data sample.
  The node that best matches (hereafter referred to as the Best Matching
  Unit (BMU)) is determined by the Euclidean distance measurement; shown
@@ -407,14 +407,14 @@ where
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:2-node-alteration"
+reference "eq:2-Node-Alteration"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:3-Neighbourhood"
+reference "eq:3-Gaussian-Function"
 
 \end_inset
 
@@ -606,7 +606,7 @@ reference "tab:SOM-Init-Params"
 
 \end_inset
 
- the continental domain results from the two phases of training described
+ the continental domain results following the two phases of training described
  earlier.
  The term “averaged quantised error” refers to the Euclidean distance between
  each time step in the data and its respective Best Matching SOM node (BMU),
@@ -1472,7 +1472,8 @@ Average quantised error (hPa)
 \begin_inset Caption
 
 \begin_layout Plain Layout
-As per Table 
+As per Table.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SOM-training-list"
@@ -1507,13 +1508,12 @@ Twenty random initialisations for each whole domain SOM in training phase
  (all differences were in the range of ±2.94hPa for the whole domain).
  It is thought that even though various random initialisations were explored,
  the final run length (306,800) is sufficiently large enough to produce
- approximately the same SOM space in spite of any differences in starting
- position.
+ approximately the same SOM space in spite of any differences in initialisation.
  
 \end_layout
 
 \begin_layout Standard
-After the formation of the list of ‘best’ SOMs in Tables.
+After forming the list of ‘best’ SOMs in Tables.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1675,7 +1675,7 @@ reference "fig:Decay-of-average"
 
 \end_inset
 
-, other studies from the Australian region (for instance 
+a, other studies from the Australian region (for instance 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Alexander2010"
@@ -1915,14 +1915,31 @@ reference "eq:Eq4-solution"
 
 \end_inset
 
- using the values from Table 
+ using the values from Table.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SOM-training-list"
 
 \end_inset
 
- and b) graph of E 
+ and b) graph of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Number-Nodes-SOM-Cont"
+
+\end_inset
+
+ using values from Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Init-Params"
+
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Graph-of-Equation"
@@ -1973,7 +1990,7 @@ reference "tab:SOM-Init-Params"
 
 \end_inset
 
- were chosen to represent the 21 year period 1979-2009 of ERA-Interim MSLP
+ were chosen to represent the 21 year period 1989-2009 of ERA-Interim MSLP
  variability for the whole domain Austral region (Fig.
  
 \begin_inset CommandInset ref
@@ -2056,7 +2073,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-6x5 SOM space of ERA-Interim MSLP over the Australian continent.
+6x5 SOM space of the 1989-2009 ERA-Interim MSLP over the Australian continent.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2185,7 +2202,7 @@ key "Kohonen1995"
  was reduced to a time series of just 30 SOM nodes, or synoptic classes.
  However, given the smooth nature of the SOM and the SOM’s ability to span
  the data-space, there were no time steps in the ERA-Interim reanalysis
- has a BMU that matched exactly.
+ that had an exactly matching BMU.
  Thus it was necessary to implement a method for determining whether each
  of the 30,680 BMUs were indeed an accurate match.
  The process of checking the BMUs also ensured that the purpose of the current
@@ -2212,7 +2229,7 @@ reference "fig:SOM-comp-worst-before"
 
 \end_inset
 
- shows the whole domain, and Fig.
+ shows for the whole domain, and Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2220,8 +2237,8 @@ reference "fig:SOM-Comp-Cont-Worst-Best"
 
 \end_inset
 
- the continental domain, BMUs with the smallest and largest quantised errors
- alongside their respective time steps.
+ for the continental domain, the BMUs with the smallest and largest quantised
+ errors alongside their respective time steps.
  
 \begin_inset Float figure
 wide false
@@ -2413,8 +2430,8 @@ reference "fig:SOM-Comp-Cont-Worst-Best"
 
 \end_inset
 
-b), there were still instances where low pressures systems that did not
- look like any of the SOM nodes from Fig.
+b, there were still instances where low pressures systems that did not look
+ like any of the SOM nodes from Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2779,7 +2796,7 @@ reference "fig:SOM-ordered-histo"
 
 \end_inset
 
- b), the histogram of maximum discrepancies for the whole domain was also
+b, the histogram of maximum discrepancies for the whole domain was also
  quite positively skewed with the mode at 9hPa but the mean and median at
  16.9hPa and 16.1hPa, respectively (not shown).
  It was then thought that a relatively easy way to identify BMUs that had
@@ -2790,7 +2807,7 @@ reference "fig:SOM-ordered-histo"
  and not keeping matches that had very obvious MSLP differences.
  Choosing a cut-off criterion that was based on analysing single grid-point
  errors also gave some insight into the spatial distribution of errors,
- which is not possible using the quantised errror measurement due to the
+ which is not possible using the quantised error measurement due to the
  aggregation of error.
  This initial filtering of the BMUs left 22,962 matches out of a total 30,680
  for the whole domain, and left 30,108 matches for the continental domain.
@@ -2960,9 +2977,9 @@ reference "fig:SOM-Comp-Cont-Aftr-Filt1"
 
 \end_inset
 
- revealed that indeed some of the other ‘poorer’ matches had pressure distributi
-ons indicative of largely different weather conditions across much of the
- southern and south-eastern Australian continent (not shown).
+ revealed that indeed some of the other ‘poorer’ matches still had pressure
+ distributions indicative of largely different weather conditions across
+ much of the southern and south-eastern Australian continent (not shown).
  Analysing the distribution of quantised errors after filtering (Figs.
  
 \begin_inset CommandInset ref
@@ -2994,7 +3011,7 @@ reference "fig:SOM-Cont-Ordered-Histo"
 \end_inset
 
 , and thus the decision was made to eliminate BMUs with quantised errors
- in the highest 5%.
+ in the highest 5% (the 'worst' 5%).
  The amount of BMUs left after this second filtering was 21,814 for the
  whole domain and 28,602 for the continental domain.
  Obvious, already, was the fact that the continental domain was far out-performi
@@ -3172,8 +3189,9 @@ name "fig:SOM-Comp-Cont-Aft-Filt2"
 
 \begin_layout Standard
 As the second filtering criterion relies upon the quantised error measurement,
- it was then decided that a final criterion be utilised to ensure that the
- remaining BMUs were accurate enough across the entire domain.
+ which aggregates the error of the domain, it was then decided that a final
+ criterion be utilised to ensure that the remaining BMUs were accurate enough
+ with respect to the entire domain.
  The final filtering criterion involved calculating the number of grid-points
  from the BMU seen in Figs.
  
@@ -3190,9 +3208,9 @@ reference "fig:SOM-Comp-Cont-Aft-Filt2"
 
 \end_inset
 
- were more than 4hPa different from their respective MSLP map from ERA-Interim
- (585 grid-points in the whole domain and 206 grid points in the continental
- domain).
+ that were more than 4hPa different from their respective MSLP map from
+ ERA-Interim (585 grid-points in the whole domain and 206 grid points in
+ the continental domain).
  The BMUs from the remaining 21,814/28,602 matches that had more than 585/206
  grid points with an error greater than 4hPa were then eliminated.
  This final criterion was used as a method for checking the characteristics
@@ -3246,7 +3264,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Histogram of consecutive time-steps without a BMU after final filtering
+Histogram of consecutive time-steps without a BMU after the final filtering
  process for a) the whole domain and b) the continental domain.
  
 \begin_inset CommandInset label
@@ -3387,7 +3405,7 @@ reference "fig:MSLP-12day-SOM-Failure"
 
 \end_inset
 
- depicts the pressure distributions for the 12 day period of concern – 1800UTC
+ depicts the pressure distributions for the 12 day period of concern--1800UTC
  on June 24 1990 to 1200UTC on July 6 1990 (hereafter referred to as 12B90).
  As can be seen from Fig.
  
@@ -3512,7 +3530,7 @@ reference "fig:MSLP-12day-SOM-Failure"
 
 \end_inset
 
---appears quite anomalous.
+--was quite anomalous.
  To give an insight into the surface meteorological conditions during 12B90,
  Fig.
  
@@ -3581,7 +3599,7 @@ reference "fig:12B90-Precip-Temp-Anom"
 
 \end_inset
 
- a) Perth was anomalously dry and cool during 12B90.
+a Perth was anomalously dry and cool during 12B90.
  Using the period of 1961-1990 the average daily rainfall for Perth during
  the days of 12B90 is about 6mm per day but only one day of rainfall totaling
  2.4mm was recorded during 12B90.
@@ -3603,7 +3621,7 @@ reference "fig:12B90-Precip-Temp-Anom"
 
 \end_inset
 
- b) reveals a largely anomalously wet and cool-to-cold period during 12B90.
+b reveals a largely anomalously wet and cool-to-cold period during 12B90.
  When considering the low pressure intrusions possible due to the position
  of the blocking high in Fig.
  
@@ -3639,7 +3657,8 @@ name "sub:Analysis-of-Regional"
 
 \begin_layout Standard
 To give an indication as to the most commonly occurring SOM nodes after
- filtering, Table 
+ filtering, Table.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SOM-Total-Occ"
@@ -4233,7 +4252,7 @@ reference "fig:6x5-SOM-space"
 
 \end_inset
 
-.
+ (whole domain).
  The row and column numbers correspond to the rows and columns of Fig.
  
 \begin_inset CommandInset ref
@@ -4294,7 +4313,7 @@ reference "fig:6x5-SOM-space-Cont"
 
 \end_inset
 
-.
+ (continental domain).
  The row and column numbers correspond to the rows and columns of Fig.
  
 \begin_inset CommandInset ref
@@ -4333,7 +4352,8 @@ reference "fig:SOM-Surf-Total-Occ"
 
 \end_inset
 
- or Table 
+ or Table.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SOM-Total-Occ"
@@ -4386,7 +4406,7 @@ reference "fig:6x5-SOM-space"
 
 \end_inset
 
-.
+ (whole domain).
  Totals are after filtering while a) is summer, b) is autumn, c) is winter
  and d) is spring.
  The row and column numbers correspond to the rows and columns of Fig.
@@ -4448,7 +4468,7 @@ reference "fig:6x5-SOM-space-Cont"
 
 \end_inset
 
-.
+ (continental domain).
  Totals are after filtering while a) is summer, b) is autumn, c) is winter
  and d) is spring.
  The row and column numbers correspond to the rows and columns of Fig.
@@ -4549,7 +4569,7 @@ reference "fig:SOM-Transition-and-Stationary"
 
 \end_inset
 
- a)) and it was thought this could have been because the SOM used was too
+a) and it was thought this could have been because the SOM used was too
  large and therefore containing too many intermediary synoptic states.
  
 \begin_inset Float figure
@@ -4583,7 +4603,7 @@ reference "fig:6x5-SOM-space"
 
 \end_inset
 
-.
+ (whole domain).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -4618,7 +4638,7 @@ reference "fig:SOM-Transition-and-Stationary"
 
 \end_inset
 
- a).
+a.
  The use of 6-hourly MSLP data in the current study has most likely led
  to less linear paths being traced out across the SOM space, thus leading
  to a less consistently unidirectional transition plot (which is evident
@@ -4693,7 +4713,7 @@ reference "fig:SOM-comp-worst-before"
 
 \end_inset
 
- b).
+b).
  With a vastly more complete representation of the data from ERA-interim
  by the continental SOM a more comprehensive analysis of the concurrent
  wind and solar conditions associated with each SOM node is possible.
