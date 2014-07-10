@@ -46,6 +46,13 @@
 \bgroup
 \renewcommand\theenumi{(\roman{enumi})}
 \renewcommand\labelenumi{\theenumi}
+
+%URL line breaking:
+\usepackage[hyphens]{url}
+
+%Letting text flow over the page
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -95,8 +102,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -130,7 +137,7 @@ filename "Others/1. Title.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Others/2. Dedication.lyx"
+filename "Others/2. Preface.lyx"
 
 \end_inset
 
