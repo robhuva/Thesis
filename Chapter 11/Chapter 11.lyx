@@ -93,8 +93,247 @@ name "chap:Conclusions-Future-Work"
 
 \end_layout
 
+\begin_layout Section
+Future Work
+\end_layout
+
 \begin_layout Standard
-The main conclusions of this thesis are:
+It is recommended that some key research questions not addressed in this
+ thesis require further examination.
+ In particular, the following points:
+\end_layout
+
+\begin_layout Description
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+1.
+ Simulations that include the use of non-weather-dependent Renewable Energy
+ (RE) resources.
+\end_layout
+
+\begin_layout Standard
+Point 1 will allow for an increase in the reliance on RE without the further
+ exposure to atmospheric variability.
+ This is an important consideration if the aim of a future Australian electricit
+y network is to rely heavily--potentially 100%--on RE resources.
+\end_layout
+
+\begin_layout Description
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+2.
+ An investigation into the possibility, or not, that the drivers of demand
+ and RE output are correlated.
+\end_layout
+
+\begin_layout Standard
+Point 2 is an important aspect of the variability in RE that would have
+ been addressed in this thesis had time permitted.
+ For instance, a question that arises from the consideration of point 2
+ is whether or not it was possible that some of the high demand days in
+ Part 2 were offset by high output from RE.
+ And then if so, what the meteorological reasons were for such a relationship.
+\end_layout
+
+\begin_layout Description
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+3.
+ An investigation into the implications of projected climate change on resource
+ availability and any changes to the relationship between wind and solar.
+\end_layout
+
+\begin_layout Standard
+Point 3 arises from the expectation that shifts in the nature and positioning
+ of weather systems occur in the future due to anthropogenic climate change.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Purich2013"
+
+\end_inset
+
+ note an expected southward shift in the position of the subtropical ridge
+ while 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Barnes2013"
+
+\end_inset
+
+ note a similar shift in the mid-latitude storm track.
+ With these points in mind it is reasonable to suggest that some of the
+ weather regimes analysed in this thesis also exhibit changes in their positioni
+ng.
+ A question that arises from this point would be: does this type of latitudinal
+ shift in the climatological positioning of weather systems then alter the
+ resource availability in the NEM region? And if so, how quickly this happens
+ will be important.
+ A change in resource availability that occurs too quickly might result
+ in stranded assets.
+ A region that was once identified as having a superior RE resource might
+ cease to have such a quality resource.
+ In this case, contributions from other, or even new installations, would
+ be needed in order to maintain supply.
+ This last point would be quite costly.
+ 
+\end_layout
+
+\begin_layout Standard
+Another consequence of climate change is the increased likelihood of extremes
+ (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "C.B.2012"
+
+\end_inset
+
+).
+ It would be important to investigate the implication of having more extreme
+ behaviour in RE output on an electrical network that relies on RE to meet
+ demand.
+ In particular, similar to point 2, if the extremes in the weather also
+ cause more demand for electricity.
+ Extreme cold or warm would likely to result in much higher demand for electrici
+ty in order to keep homes and businesses at comfortable temperatures.
+ Furthermore, would an increase in extreme RE output put new and significant
+ stresses on the electrical network? This too could be costly and thus requires
+ investigation.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+In this thesis it has been shown that the potential for Australia to extract
+ useful energy from the wind and solar fields is high.
+ By approaching the question of how the wind and solar resources vary at
+ various spatio-temporal resolutions from two different angles it was concluded
+ that a high reliance on Renewable Energy (RE) in the National Electricity
+ Market region is possible, but that there were some large-scale features
+ (synoptic weather patterns and decorrelation length scales) of the atmosphere
+ over Australia that need to be taken into account when designing and operating
+ such an RE-based network.
+ 
+\end_layout
+
+\begin_layout Standard
+By utilising a Self-Organising Map (SOM) of the ERA-Interim 1989-2009 Mean
+ Sea-Level Pressure (MSLP) field over Australia a series of commonly occurring
+ features of the synoptic scale MSLP were determined.
+ The time series of MSLP from ERA-Interim was then converted to a time series
+ of archetypal weather patterns.
+ Some of the common regimes were then shown to produce concurrently high
+ wind and solar output, while others were associated with, on average, limited
+ wind and solar potential.
+ Analysis of just the wind field from ERA-Interim showed that decorrelation
+ was reached by spatial separation of approximately 1,300-1,400km.
+ 
+\end_layout
+
+\begin_layout Standard
+Following this an energy model was built.
+ The energy model was given wind and solar data for 2010-2011 from the ACCESS-A
+ regional model and historical demand data from the Australian Electricity
+ Market Operator.
+ When given the chance to optimise the whole of Australia the energy model
+ chose to install most of the RE in remote Western Australia (WA).
+ Available locations to optimised were then limited to the NEM region because
+ no realistic penalty could be applied to deter the energy model from using
+ such unrealistic WA locations.
+ A base NEM-only scenario was then produced.
+ The NEM-only scenario with standard transmission costs showed some preference
+ for locations closer to the capital cities.
+ However, the largest wind installation (northern Queensland) and the only
+ solar installation from the base NEM-only scenario were still long distances
+ from the nearest demand centre.
+ 
+\end_layout
+
+\begin_layout Standard
+By conducting optimisations of data from just the Austral summer and winter
+ it was revealed that some very distinct summer-only and winter-only features
+ were responsible for the distribution of resources seen in the base scenario.
+ In particular, the non-use of north Queensland in the summer-only optimisation
+ showed that the north Queensland wind resources is a wintertime (dry season)
+ only phenomenon.
+ The lack of installed solar capacity in the wintertime optimisation also
+ showed that the standard transmission cost was too large a cost impediment
+ to justify any use of solar Photovoltaics in the wintertime.
+ Scenarios of the whole 2010-2011 period that utilised increased transmission
+ penalties also revealed that the solar resource, without storage, was not
+ good enough to justify significantly larger connection costs.
+ The scenarios with increased connection costs also resulted in the contraction
+ of wind resources to 4 distinct regions (north Queensland, Brisbane, north-west
+ Tasmania and South Australia).
+ The 4 wind regimes were then shown to be highly uncorrelated, reinforcing
+ their usefulness in combining to meet demand, but also providing an optimisatio
+n-based decorrelation length scale of approximately 884km.
 \end_layout
 
 \end_body
