@@ -126,7 +126,7 @@ This chapter gives an overview of how optimisation techniques are utilised
 \end_layout
 
 \begin_layout Section
-Use of optimisation techniques in renewable energy research
+Use of Optimisation Techniques in Renewable Energy Research
 \end_layout
 
 \begin_layout Standard
@@ -181,7 +181,7 @@ n of solutions at the end.
  solution spaces given their smaller degrees of freedom.
  As such, the trajectory-based approaches are susceptible to finding local
  minima, rather than global minima.
- Population-based approaches somewhat avoid this pit-fall given their larger
+ Population-based approaches largely avoid this pit-fall given their higher
  degrees of freedom.
  However, the population of solutions at the end of a population-based optimisat
 ion can be more ambiguous than the single answer given by the trajectory
@@ -309,8 +309,8 @@ key "Budischak2013"
 \end_inset
 
  tools like HOMER (the National Renewable Energy Laboratory (NREL) RE simulation
- software) are commonly only applied in small, isolated grid scenarios (perhaps
- the most comprehensive study using one of these tools is the simulation
+ software) are commonly only applied in small, isolated grid scenarios (one
+ of the most comprehensive studies using one of these tools is the simulation
  of 100% RE for Denmark by 2030 and 2050 seen in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1482,17 +1482,6 @@ key "AEMO2013"
  In particular, the meteorological and demand data were shown to be relevant
  to this thesis and the preparation of the data for later use was outlined.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
-options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
-
-\end_inset
-
-
 \end_layout
 
 \end_body
