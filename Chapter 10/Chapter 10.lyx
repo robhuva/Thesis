@@ -83,10 +83,10 @@
 \begin_body
 
 \begin_layout Chapter
-Connections Between Parts 1 and 2
+Discussion
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:Connections-Parts-1-2"
+name "chap:Discussion"
 
 \end_inset
 
@@ -108,10 +108,17 @@ Summary
 
 \begin_layout Standard
 \noindent
-In this chapter we examine the results from Parts 1 and 2 of this thesis
- and describe how the two parts relate, and differ, and then explain any
- connections between the findings from the two parts.
- In particular,....
+In this chapter we examine the results from Parts 1 and 2 of this thesis,
+ describe how the two parts relate, and differ, and then explain any connections
+ between the findings from the two parts.
+ In particular, consideration is given to the different aims of each section
+ and how the two parts combine to give a comprehensive picture of the covariance
+ in wind and solar over Australia.
+ Discussion of how the results are reliant on the cost and technology assumption
+s, as well as the data used is also presented.
+ The effect that including different technologies and assumptions would
+ have had on the results is then discussed.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -123,21 +130,28 @@ In this chapter we examine the results from Parts 1 and 2 of this thesis
 \end_layout
 
 \begin_layout Section
-Discussion
+Connections Between Parts 1 and 2
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Connections-Between-Parts1-2"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 In principle this thesis was split into two parts because of the the known
  differences in atmospheric variability at the various spatio-temporal scales.
  It was assumed that an investigation into both the short-term/fine-scale
- and long-term/large-scale variability in RE resources was needed in order
+ and long-term/large-scale variability of RE resources was needed in order
  to properly assess the renewable potential of Australia.
- The climatology in Part 1 represented average conditions--commonly occurring
+ The climatology in Part 1 presented average conditions--commonly occurring
  features of the large-scale variability over the Australian continent.
- What was found showed that some features from the synoptic climatology
- in Part 1 that were detrimental to wind and solar output (even in an average
- sense) were in fact also problematic for the optimised RE networks presented
- in Part 2.
+ What was subsequently found in Part 2 showed that some features from the
+ synoptic climatology in Part 1 that were detrimental to wind and solar
+ output (even in an average sense) were in fact also problematic for the
+ optimised RE networks.
  Despite the optimisation process in Part 2 possessing the ability to exploit
  the decorrelation in the wind field over large distances there were still
  some large-scale circulation patterns that resulted in stilling of the
@@ -152,16 +166,15 @@ In principle this thesis was split into two parts because of the the known
 \end_layout
 
 \begin_layout Standard
-Without a more diverse resource mix planning a future RE network to take
+Without a more diverse resource mix, planning a future RE network to take
  into account these instance of extreme stilling over the NEM is unlikely
  to be a fruitful exercise.
- The optimisation process was designed to meet the demand for energy for
+ The optimisation process was designed to meet the electricity demand for
  the majority of the time.
- Thus any solution that the optimisation could have trialed that did not
- satisfy ‘average’ conditions would have drawn on excessive amounts of expensive
- back-up resources.
- Excessive use of the back-up resources would not have been cost-optimal
- and thus would not have survived to the end of the iterative search process.
+ Any solution that the optimisation could have trialled that did not satisfy
+ ‘average’ conditions would have drawn on excessive amounts of expensive
+ back-up resources, which would not have been cost-optimal and such a solution
+ would not have survived to the end of the iterative search process.
  What is seen from Fig.
  
 \begin_inset CommandInset ref
@@ -188,6 +201,98 @@ reference "sub:High-RE-Nodes6-25"
 \end_layout
 
 \begin_layout Standard
+Part 2 of this thesis identified that the region surrounding node 9 was
+ significantly associated with very low RE output.
+ It was stated then that node 9 in conjunction with surrounding nodes presented
+ a sub-grouping of similar looking MSLP patterns, responsible for occasions
+ of large-scale low wind speed across much of the NEM region.
+ Part 1 of this thesis in its examination of the long-term association between
+ the SOM nodes and wind/solar availability examined in detail node 20 as
+ exhibiting low wind and solar potential for most of the Australian continent.
+ However, analysis of node 9 and surrounding nodes from Part 1 reveals that
+ this region of the SOM also exhibits low wind and solar potential for the
+ NEM states (not shown).
+ Part 1 therefore gives some supporting evidence that node 9, and similar
+ looking nodes, are potentially detrimental to a largely wind-based NEM
+ network.
+ What it also indicates is that the 2-year, high resolution, optimisation
+ is supported by the climatology of 21 years.
+ In fact, node 9 wind capacity values that average ~0.15 for the NEM region
+ from Part 1 are likely more detrimental to wind output than the findings
+ from Part 2.
+ Part 2, while identifying the node 9 region of the SOM as being significantly
+ associated with very low RE output, showed that node 9 on average was not
+ associated with low RE output (average of +3.1GW).
+ The difference between the low capacity values in Part 1 and the average
+ of 3.1GW undersupply for Part 2 concerns the timing of the output.
+ It is likely that the size of the wind installations and the connection
+ of installations across vast distances in the NEM-only simulation allowed
+ for the net output to still meet demand on average for node 9.
+ What the capacity values in Part 1 do indicate, however, is that the identifica
+tion of node 9 as associated with low RE (specifically low wind power potential)
+ was unlikely to be an artifact of the relatively small 2 year ACCESS-A
+ sample.
+ That is, the climatologically low average wind potential of node 9 gives
+ support to the possibility that node 9 can also be associated with instances
+ of very low wind output from the optimised network in Part 2.
+\end_layout
+
+\begin_layout Standard
+Another link between Parts 1 and 2 of this thesis yet to be explored is
+ the association between the Part 1 decorrelation length scale and Part
+ 2 high connection cost optimisation.
+ Part 1 of this thesis found that decorrelation in the wind field could
+ be reached at a distance of approximately 1,300-1,400km.
+ The decorrelation length implies that on average 2 wind installations separated
+ by this distance will have unrelated wind power output time series.
+ This finding was important because of the possibility to minimise moments
+ of very low net output.
+ Wind installations with independent output are much more likely to combine
+ to form a less variable net output than those whose time series are related
+ and reach maxima/minima in output at the same times.
+ This decorrelation length scale relates to the 8X scenario from Part 2.
+ When pushed to contract resources by a very high connection cost the energy
+ model in Part 2 was able to determine that 4 large but distant wind installatio
+ns were sufficient to meet most of the demand for the NEM in 2010-2011.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RE-Demand-Comparison-All-TransCosts"
+
+\end_inset
+
+ showed that most of the variability in wind output from across the NEM
+ region was captured by these 4 large installations (by means of a comparison
+ to the other simulations were the energy model had smaller cost impediments
+ to install resources in many different locations).
+ Moreover Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:8X-Wind-Power-Correlation"
+
+\end_inset
+
+ showed that the output from these 4 large installations were highly uncorrelate
+d.
+ Thus the distances between these 4 large stations provides an optimisation-base
+d decorrelation length scale.
+ The minimum separation distance between the 4 large wind installations
+ of the 8X scenario was on average 884km.
+ This separation distance is much smaller than the comparative figure from
+ Part 1 of 1,300-1,400km.
+ However, this was not unexpected.
+ It was expected that the increased temporal resolution of the ACCESS-A
+ data (hourly) when compared to the ERA-Interim data (6-hourly) would capture
+ more of the spatial variability in the wind field.
+ Capturing more of the temporal variability at each location in space would
+ provide a greater degree of independence in output, thus resulting in less
+ correlation of adjacent locations and a smaller decorrelation length.
+ 
+\end_layout
+
+\begin_layout Standard
 One conclusion from this thesis might be that Australia could struggle to
  rely heavily on renewable energy in the future because some of the common
  weather patterns represented by the SOM produced difficult conditions that
@@ -197,15 +302,78 @@ One conclusion from this thesis might be that Australia could struggle to
  Despite the scope of this thesis not including the predictability of low
  RE weather patterns, what was presented could be utilised as a forecasting
  complement.
- That is, given an accurate forecast of MSLP it is possible that the results
- of Part 2 be used to give a first-guess of the likely impact on wind and
- solar energy across the NEM.
- This type of use for the results from this thesis illustrates how the incorpora
-tion of a synoptic climatology (derivation of the SOM) and a short-term
- optimisation can complement.
+ Given an accurate forecast of MSLP it is possible that the results of Part
+ 2 be used to give a first-guess of the likely impact on wind and solar
+ energy across the NEM.
+ Utilising the results in this way illustrates how the incorporation of
+ a synoptic climatology (derivation of the SOM) and a short-term optimisation
+ complement.
  The optimisation identified problematic (and favourable) conditions across
  the NEM and the climatology then enabled the identification of the associated
  large-scale weather types responsible for the particular conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+An important consideration yet to be discussed in this thesis is the fact
+ that the demand data were predetermined.
+ In fact, all of the data concerning the optimisation were known a priori,
+ which would be a significant advantage when operating an RE network.
+ In reality the ability of RE to meet demand is affected by the quality
+ of forecasts of both RE and demand.
+ The operator of the NEM, AEMO, forecasts demand data in order to determine
+ how much supply is needed in each trading interval.
+ A poor forecast of demand, for instance, would rely more heavily on easily
+ dispatchable generation (in this case hydro storage and gas), while the
+ reverse is true for a good forecast.
+ Thus a NEM that has the configuration of wind and solar suggested by the
+ NEM-only simulation would in reality rely more heavily on storage and gas
+ back-up than is seen in Chpt.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Optimised-Solutions-for-NEM"
+
+\end_inset
+
+.
+ To this end the results in Chpt.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Optimised-Solutions-for-NEM"
+
+\end_inset
+
+ need to be considered as a best-case scenario.
+ For a realistic demand forecast the reliance on back-up resources and storage
+ would be higher.
+\end_layout
+
+\begin_layout Standard
+It would be possible to conduct an optimisation that included a non-perfect
+ forecast of demand.
+ An optimiser that is being fed demand data with a small random component
+ would imitate reality and likely result in the use of more back-up resources.
+ Further to this it would be possible to operate a financial model for each
+ resource centre--as part of a new simulation.
+ The inclusion of a financial model would also ensure that each installation
+ was financially viable and would likely concentrate resources away from
+ the smaller RE stations.
+\end_layout
+
+\begin_layout Standard
+Reductions in the amount of back-up storage needed would be possible with
+ the inclusion of RE resources that are independent of the weather.
+ If the aim is to design a NEM network that has the highest possible penetration
+ of RE then an important consideration would be the addition of weather
+ independent RE resources.
+ For instance, geothermal energy, biomass and even solar thermal with storage
+ are dispatchable RE resources that would need consideration in order to
+ increase the percentage of demand met by RE.
+ It is entirely possible that the moments of large-scale RE unavailability
+ seen in the NEM-only scenario could be avoided given the co-location of
+ enough of these distaptchable RE alternatives.
  
 \end_layout
 
