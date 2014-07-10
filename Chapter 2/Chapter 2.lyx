@@ -139,7 +139,7 @@ name "sec:Lit-Synptic-Clim-Aus"
 
 \begin_layout Standard
 On the larger scales (for instance Australia-wide) the weather systems that
- have the biggest affect on the day-to-day variability of atmospheric variables
+ have the largest affect on the day-to-day variability of atmospheric variables
  like wind speed and solar irradiance are the synoptic systems; the synoptic
  scale encompasses spatial scales from 100s-1000s of kilometres and temporal
  scales from days to weeks.
@@ -192,7 +192,7 @@ key "Holton2003"
  (along with planetary Rossby waves generated through friction with the
  surface of the Earth).
  The restoring force for a Rossby wave is the background meridional gradient
- in absolute vorticity--a result of the change in coriolis force with latitude
+ in absolute vorticity--a result of the change in Coriolis force with latitude
  (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -202,7 +202,7 @@ key "Holton2004"
 
 ).
  Any parcel of air displaced meridionally will cause oscillations in the
- vorticity field, which then propogate in a westward direction with the
+ vorticity field, which then propagate in a westward direction with the
  mean flow (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -211,7 +211,7 @@ key "Holton2004"
 \end_inset
 
 ).
- Such propogating oscillations can be visualised on the synoptic scale as
+ Such propagating oscillations can be visualised on the synoptic scale as
  high and low pressure systems.
 \end_layout
 
@@ -253,6 +253,7 @@ key "Meteorology2011"
  Most of the population of Australia, however, resides in the more temperate
  regions where four seasons occur in every year.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -313,9 +314,9 @@ reference "fig:Gallant-SE-Aus-Teleconnetions"
 \end_inset
 
 ).
- The subtropical ridge brings largely fine and sunny weather to regions
- beneath it and is associated with the descending branch of the Hadley cell
- (
+ The subtropical ridge is responsible for largely fine and sunny weather
+ to regions beneath it and is associated with the descending branch of the
+ Hadley cell (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Sturman2005"
@@ -380,7 +381,7 @@ key "Sinclair1996"
 \end_layout
 
 \begin_layout Standard
-The tendancies of high pressure systems over Australia was also more recently
+The tendencies of high pressure systems over Australia was also more recently
  examined using a Self-Organising Map (SOM) by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -761,7 +762,7 @@ reference "fig:SAM-wind_curl"
  explains how pressure gradients (and Coriolis force) drive wind speed and
  direction.
  But specifically how such atmospheric modes affect wind speed variability
- in Australia is not well published.
+ over Australia is not well published.
  
 \end_layout
 
@@ -918,6 +919,7 @@ reference "fig:Average-wind-velocity"
  the averaging process.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -997,7 +999,7 @@ ed.
 \end_layout
 
 \begin_layout Section
-Solar irradiance over Australia
+Solar Irradiance over Australia
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Lit-Aus-Solar-irradiance"
@@ -1079,6 +1081,7 @@ key "Hatzianastassiou2005"
 ).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1214,6 +1217,7 @@ reference "fig:solar-avg-bom"
 .
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1303,7 +1307,7 @@ reference "fig:solar-avg-bom"
 
 \end_inset
 
- indicates there is good agreement between the BoM and the model in 
+ there is good agreement between the BoM and the model in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hatzianastassiou2005"
@@ -1319,7 +1323,7 @@ reference "fig:solar-avg-bom"
 
 \end_inset
 
- a) represents 312-347Wm
+a represents 312-347Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1356,7 +1360,7 @@ reference "fig:solar-avg-bom"
 
 \end_inset
 
- c), which is about the same range depicted in 
+c, which is about the same range depicted in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hatzianastassiou2005"
@@ -1441,7 +1445,7 @@ e, however, little mention was made as to the characteristics of solar radiation
 \end_layout
 
 \begin_layout Section
-Covariance of wind speed and solar irradiance over Australia
+Covariance of Wind Speed and Solar Irradiance over Australia
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Lit-Cov-Wind-Solar"
@@ -1488,7 +1492,7 @@ key "Lyons1989"
  This type of positive covariance could be advantageous for hybrid energy
  system.
  For instance, an hybrid system exposed to a sunny and windy day could disperse
- excess energy into nightime hours if it incorporated storage.
+ excess energy into nighttime hours if it incorporated storage.
  
 \end_layout
 
@@ -1577,7 +1581,6 @@ key "Simmonds2000"
  the cyclonic events mentioned above--indicating the strong possibility
  for a negative covariance to exist between wind speed and solar irradiance
  for regions under the influence of such cyclonic systems.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1667,7 +1670,7 @@ key "Brayshaw2011"
 \end_layout
 
 \begin_layout Standard
-In the following sections of this report an introduction to the methods
+In the following sections of this thesis an introduction to the methods
  used, climate data-set used and results for Part 1 of this thesis are presented
  in order to highlight the climatological covariance of wind speed/power
  and solar irradiance/power over the Australian region.
