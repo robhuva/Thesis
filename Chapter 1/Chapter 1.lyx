@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -38,7 +40,6 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
 \paperfontsize 12
 \spacing other 1.5
 \use_hyperref false
@@ -65,8 +66,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -138,7 +139,7 @@ key "InternationalEnergyAgency2009"
 
 \end_inset
 
---the need for electricity to be produced via previously underutilised resources
+ the need for electricity to be produced via previously underutilised resources
  is becoming increasingly important.
  Current energy production is largely sourced from non-renewable resources
  like coal, oil and gas, which are in limited supply.
@@ -182,8 +183,22 @@ With increasing installation of renewable energy technologies across Australia
  able to provide stable and reliable energy at large amounts of penetration
  is therefore quickly becoming a question that needs addressing.
  To date, most of the research (often undertaken by the wind/solar farm
- operators themselves) has focused on the local conditions that affect single
- wind farms or solar stations.
+ operators themselves using software like 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Vestas2014"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Vestas2014a"
+
+\end_inset
+
+) has focused on the local conditions that affect single wind farms or solar
+ stations.
  Yet the processes in the atmosphere that drive variability on the large-scale
  are quite different from those that drive the small scale, and will determine
  the optimal mix and geographical placement of wind and solar farms to meet
@@ -248,7 +263,7 @@ key "Goetzberger2003"
 \end_inset
 
  while it has also become increasingly popular for households to install
- PV panels for use within the home (nearly 1 million households had rooftop
+ PV panels for use by the home (nearly 1 million households had rooftop
  PV at the end of 2012 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -259,8 +274,8 @@ key "Council2012"
 ).
  In Australia, large scale installations of solar technology are not very
  common.
- In fact, the largest solar installation is a 9.3MW solar thermal power plant
- operating in New South Wales 
+ In fact, the largest solar installation is a 10MW solar thermal power plant
+ operating in Western Australia 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Council2012a"
@@ -270,7 +285,7 @@ key "Council2012a"
 .
  Wind power technology has also undergone a dramatic shift over recent decades;
  growing at 22% p.a.
- over the last 10 years, wind power is one of the fastest growing technology
+ over the last 10 years, wind power is one of the fastest growing technologies
  in the world 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -333,7 +348,7 @@ key "Barnett1998"
 
 \end_inset
 
- have found that decorrelation between solar measuring stations in the Oklahoma
+ have found decorrelation between solar measuring stations in the Oklahoma
  MESONET to occur in the order of 100’s of kilometres, depending cloud cover
  and the temporal resolution used.
  In order to gain further steadiness, or reliability in renewable energy
@@ -354,7 +369,7 @@ key "Blackburn2010"
 
 .
  The deficiencies normally associated with either wind or solar are often
- overcome when they are 2 combined.
+ overcome when they are combined.
  Solar radiation at some locations, for instance, has a diurnal cycle that
  is qualitatively quite similar to that of electrical demand (
 \begin_inset CommandInset citation
@@ -364,8 +379,15 @@ key "Budischak2013"
 \end_inset
 
 ) while wind power has the distinct advantage of being largely independent
- from the diurnal solar cycle (reference?).
- When compared to wind or solar as separate sources of energy, 
+ from the diurnal solar cycle (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "AEMO2013a"
+
+\end_inset
+
+).
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Heide2010"
@@ -374,7 +396,7 @@ key "Heide2010"
 
  found that the seasonal mix of 55% wind and 45% solar was able to meet
  European electrical demand while also reducing the need for storage by
- a factor of two.
+ a factor of two (when compared to wind-only or solar-only scenarios).
  Numerous other studies from countries such as Canada, the United States,
  China and Greece have also found clear advantages in combining wind and
  solar (
@@ -444,7 +466,7 @@ key "AEMO2013"
 
  showed that 100% of Australian demand for electricity could be met in the
  year 2030 by a combination of 20-40% of installed capacity from PV, 7-35%
- onshore wind, 10-15% CST, 10-15% biogas and then smaller ammounts of capacity
+ onshore wind, 10-15% CST, 10-15% biogas and then smaller amounts of capacity
  from other back-up resources (including hydro, geothermal and biomass).
  Importantly, both the 
 \begin_inset CommandInset citation
@@ -523,7 +545,7 @@ m studies that result in such a discrepancy?
 \begin_layout Standard
 It is thus the aim of this PhD to undertake a comprehensive investigation
  of climatological and meteorological factors that could significantly influence
- output in a future, highly renewable energy dependent, Australian electricty
+ output in a future, highly renewable energy dependent, Australian electricity
  network.
  
 \end_layout
@@ -546,21 +568,16 @@ This thesis is made up of two parts.
  the wind and solar potential that co-occurs with each regime.
  Part 2 presents an alternative approach for examining the influence of
  synoptic regimes by first optimising the wind and solar energy as part
- of a renewable energy system.
+ of an energy model (whose aim is to increase the reliance of the electricity
+ network on wind and solar).
  Part 2 then goes on to explore the synoptic regimes that lead to poor and/or
  favourable large-scale renewable output from the optimised system.
+ The sensitivity of the results from the optimisation are tested by varying
+ the inputs and cost assumptions.
  Following this, there is a discussion of the results from Parts 1 and 2,
  how they compare/contrast, as well as reasons for any similarities/differences.
  Finally, conclusion from the thesis are made, including recommendations
  of future work.
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body
