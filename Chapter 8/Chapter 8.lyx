@@ -137,7 +137,7 @@ The energy model utilised in this thesis is part of a collaborative project
  Wales.
  The aim of the model as a whole is to provide a least cost combination
  of technologies (primarily renewable technologies) that satisfy a particular
- target (carbon emission refuction, renewable energy percentage, reliability,
+ target (carbon emission reduction, renewable energy percentage, reliability,
  etc.).
  The optimised problems in this thesis are, however, intentionally less
  focused on the feasibility of implementing the solutions, in order to maintain
@@ -237,8 +237,8 @@ A pre-optimisation site selection process is also undertaken.
  given to the GA in a succinct version.
  In the site selection process a sub-selection of all available locations
  is made.
- A completely un-restricted optimisation would involve searching the solution-sp
-ace in regions that included unrealistic solutions.
+ A completely unrestricted optimisation would involve searching the solution-spa
+ce in regions that included unrealistic solutions.
  Thus, similar to the user-defined costs, the site selection process is
  part of the concept that the user has some knowledge of the nature of the
  problem before undertaking the optimisation.
@@ -269,7 +269,8 @@ In this thesis the cost function is defined as being made up of costs from
  and solar resources.
  At each iteration of the optimisation process the GA determines whether
  or not it would be more/less cost effective to install more/less wind or
- solar resources at each available site selected from the ACCESS model grid.
+ solar resources at each available site selected from the ACCESS-A model
+ grid.
  As will become more evident later on in the thesis, and based on the costs
  used in each scenario, the aim of energy model could be thought of as minimisin
 g gas usage.
@@ -622,10 +623,10 @@ A transmission cost is utilised in parts of this study in order to reflect
  It was assumed the incorporation of such a model in the current study would
  likely distract from the study of the covariance of the wind and solar
  resources.
- It was assumed that the addition of power flow would be more of an engineering
- question than a resource availability question (for instance power flow
- would introduce restirctions to do with nodes in the network and not the
- quality of the resource on its own).
+ The addition of power flow would also be more of an engineering question
+ than a resource availability question (for instance power flow would introduce
+ restrictions to do with nodes in the network and not the quality of the
+ resource on its own).
  Instead, the transmission model utilised in this thesis is simply a capital
  cost that relates to the distance of each wind/solar site to the nearest
  capital city.
@@ -704,7 +705,7 @@ It is sensible for a study that involves large meteorological data sets
  to be mindful of limitations, both in a time-management and computation
  sense.
  In particular, the optimisation in this thesis of all continental locations
- within the ACCESS domain would be infeasible.
+ within the ACCESS-A domain would be infeasible.
  It is also not necessary to optimise all locations that contain meteorological
  data.
  As seen in Part 1 there are decorrelation lengths that exist in the atmosphere
@@ -717,14 +718,9 @@ It is sensible for a study that involves large meteorological data sets
  to be 11 grid points, or roughly 120km.
  This minimum spacing is considerably shorter than the decorrelation length
  scale of roughly 1,300km determined in Part 1.
- It was deemed necessary to utilise a shorter minimum spacing because the
- temporal resolution of the ACCESS data is much finer than that of the ERA-Inter
-im data.
- The extra variability captured by the hourly ACCESS output should only
- serve to reduce any interrelatedness of adjacent gird points.
- It was also determined that the computational resources permitted the utilisati
-on of the 'extra' grid-points, even if no significantly different information
- was gained by doing so.
+ It was deemed possible to utilise a shorter minimum spacing because the
+ computational resources permitted the utilisation of the 'extra' grid-points,
+ even if no significantly different information was gained by doing so.
  
 \end_layout
 
@@ -748,7 +744,7 @@ Following the determination of the minimum separation distances in the DSR
  Knowledge of the existing land-usages across Australia was sourced from
  the Geoscience Australia GIS data-base.
  Land-usage that included national parks and urban areas were combined and
- mapped onto the ACCESS grid.
+ mapped onto the ACCESS-A grid.
  These unavailable locations were then utilised in the site selection process
  such that a regular grid of locations was formed.
  The regular grid included the minimum separation distance and did not include
