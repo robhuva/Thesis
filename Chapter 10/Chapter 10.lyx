@@ -154,9 +154,9 @@ In principle this thesis was split into two parts because of the the known
  optimised RE networks.
  Despite the optimisation process in Part 2 possessing the ability to exploit
  the decorrelation in the wind field over large distances there were still
- some large-scale circulation patterns that resulted in stilling of the
- winds over vast distances--including heavily populated, and therefore also
- important, areas of Australia.
+ some large-scale circulation patterns that resulted in low wind speeds
+ over vast distances (stilling of the wind field)--including heavily populated,
+ and therefore also important, areas of Australia.
  And that despite the NEM-only simulation being purposefully simplistic
  (for instance, there was no consideration given to power flow across the
  transmission network) there would have been no possible optimised network
@@ -217,14 +217,20 @@ Part 2 of this thesis identified that the region surrounding node 9 was
  network.
  What it also indicates is that the 2-year, high resolution, optimisation
  is supported by the climatology of 21 years.
- In fact, node 9 wind capacity values that average ~0.15 for the NEM region
- from Part 1 are likely more detrimental to wind output than the findings
- from Part 2.
- Part 2, while identifying the node 9 region of the SOM as being significantly
- associated with very low RE output, showed that node 9 on average was not
- associated with low RE output (average of +3.1GW).
+ 
+\end_layout
+
+\begin_layout Standard
+However, Node 9 wind capacity values average ~0.15 for the NEM region from
+ Part 1.
+ 0.15 is a low average capacity value for such a large region as the NEM
+ and is likely to be more detrimental to wind output than the findings from
+ Part 2.
+ While identifying the node 9 region of the SOM as being significantly associate
+d with very low RE output, Part 2 also showed that node 9 on average was
+ not associated with low RE output (average of +3.1GW).
  The difference between the low capacity values in Part 1 and the average
- of 3.1GW undersupply for Part 2 concerns the timing of the output.
+ of 3.1GW oversupply for Part 2 also concerns the timing of the output.
  It is likely that the size of the wind installations and the connection
  of installations across vast distances in the NEM-only simulation allowed
  for the net output to still meet demand on average for node 9.
@@ -278,18 +284,44 @@ reference "tab:8X-Wind-Power-Correlation"
 d.
  Thus the distances between these 4 large stations provides an optimisation-base
 d decorrelation length scale.
- The minimum separation distance between the 4 large wind installations
- of the 8X scenario was on average 884km.
+ 
+\end_layout
+
+\begin_layout Standard
+Of the 4 large wind installations in the 8X scenario the average distance
+ to the nearest wind installations was 884km.
  This separation distance is much smaller than the comparative figure from
  Part 1 of 1,300-1,400km.
- However, this was not unexpected.
- It was expected that the increased temporal resolution of the ACCESS-A
- data (hourly) when compared to the ERA-Interim data (6-hourly) would capture
- more of the spatial variability in the wind field.
- Capturing more of the temporal variability at each location in space would
- provide a greater degree of independence in output, thus resulting in less
- correlation of adjacent locations and a smaller decorrelation length.
+ Further to this comparison of the 80m wind field point correlation maps
+ from ERA-Interim (Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Decorrel-Point-Correlation-Cities"
+
+\end_inset
+
+) and ACCESS-A (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U80-Decorrelation-Major-Locations"
+
+\end_inset
+
+) suggest very similar spatial correlation characterictics.
+ The difference in these two figures is likely due to a couple of considerations.
+ Firstly, the domain for Part 2 is restricted to the NEM region.
+ A separation distance of 1,400km for the NEM would likely exclude many
+ locations that are effective at meeting demand, thus why this was not seen
+ in Part 2.
+ Secondly, the relationship with demand of the optimised locations in Part
+ 2 is important.
+ A location that correlates well with demand is preferrable to a location
+ that is further away from its neighbour but is less related to demand.
+ Lastly, the difference in data set would have some impact on the relationship.
+ However, the difference in data set is unlikely to consistently impact
+ the spatial correlation of the wind field.
 \end_layout
 
 \begin_layout Standard
@@ -351,18 +383,6 @@ reference "chap:Optimised-Solutions-for-NEM"
 \end_layout
 
 \begin_layout Standard
-It would be possible to conduct an optimisation that included a non-perfect
- forecast of demand.
- An optimiser that is being fed demand data with a small random component
- would imitate reality and likely result in the use of more back-up resources.
- Further to this it would be possible to operate a financial model for each
- resource centre--as part of a new simulation.
- The inclusion of a financial model would also ensure that each installation
- was financially viable and would likely concentrate resources away from
- the smaller RE stations.
-\end_layout
-
-\begin_layout Standard
 Reductions in the amount of back-up storage needed would be possible with
  the inclusion of RE resources that are independent of the weather.
  If the aim is to design a NEM network that has the highest possible penetration
@@ -373,7 +393,7 @@ Reductions in the amount of back-up storage needed would be possible with
  increase the percentage of demand met by RE.
  It is entirely possible that the moments of large-scale RE unavailability
  seen in the NEM-only scenario could be avoided given the co-location of
- enough of these distaptchable RE alternatives.
+ enough of these dispatchable RE alternatives.
  
 \end_layout
 
