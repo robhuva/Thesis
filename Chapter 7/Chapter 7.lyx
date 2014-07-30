@@ -226,9 +226,9 @@ key "Banos2011"
  at least one objective, and not worse in all other objectives.
  In this way, the user is able to determine how near-optimal solutions relate
  to each other.
- Using this approach the user is able to make a better informed choice for
- the ‘optimum’ where the ordering of objectives might be controversial or
- ambiguous 
+ Using the PMO approach the user is able to make a better informed choice
+ for the ‘optimum’ where the ordering of objectives might be controversial
+ or ambiguous 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Banos2011"
@@ -240,7 +240,7 @@ key "Banos2011"
 
 \begin_layout Standard
 Another way of avoiding the aggregation-based issues associated with the
- cost function was proposed by Trutnevyte in 
+ cost function was proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Trutnevyte2013"
@@ -292,16 +292,16 @@ key "Connolly2010"
 \end_inset
 
  is the broad-brush approach to the energy system.
- While these tools are in general able to provide flexibility to the user
- in terms the many different areas of the energy system that they can simulate--
-including heat, water and transport--this also reduces the ability for these
- tools to analyse complex meteorological data and the effect of variability
- in RE output on the electricity network.
- The common RE simulation tools also seem to not allow the user to determine
+ While these tools are able to provide flexibility to the user in terms
+ the many different areas of the energy system that they can simulate--including
+ heat, water and transport--this also reduces the ability for these tools
+ to analyse complex meteorological data and the effect of variability in
+ RE output on the electricity network.
+ The common RE simulation tools also appear to not allow the user to determine
  which type of optimisation algorithm is implemented.
  Rather, the pre-built RE simulation tools come ‘as-is’ and without the
  flexibility in core operation.
- As was mention in 
+ As was mentioned in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Budischak2013"
@@ -421,7 +421,7 @@ key "Elliston2013"
 
  utilised combinations of large-scale wind, Photo-Voltaics (PV), Concentrating
  Solar Thermal (CST) and biofuel gas turbines to meet the NEM electrical
- for the year of 2030.
+ demand for the year of 2030.
  As opposed to 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -429,15 +429,16 @@ key "Elliston2012"
 
 \end_inset
 
-, 
+, which up-scaled existing wind installations and chose a select few new
+ locations for solar power, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Elliston2013"
 
 \end_inset
 
- was able to incorporate a basic transmission model into their GA-optimised
- simulation.
+ was able to incorporate a basic transmission model into a GA-optimised
+ simulation, which was able to search for various possible configurations.
  The transmission model brought about a greater level of complexity but
  also allowed for the simulation of energy exchange across adjacent NEM
  regions--as is the case in the current operation of the NEM.
@@ -530,7 +531,7 @@ key "Wright2010"
 
 \end_inset
 
-, is presumably due to the diversity in solar technologies available in
+, is most likely due to the diversity in solar technologies available in
  their model (which included both utility-scale and rooftop PV as well as
  CST).
  A key point made by 
@@ -644,16 +645,38 @@ key "Budischak2013"
 \end_inset
 
  found that without subsidies (for any energy resource type) 90% RE by 2030
- was projected to have cheaper electricity prices for the PJM region (interconne
-cted north-eastern states of the USA).
- In their simulation of 99.9% RE 
+ was projected to have cheaper electricity prices than 30% RE case for the
+ PJM region (interconnected north-eastern states of the USA).
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Budischak2013"
 
 \end_inset
 
- also found price parity when compared to no RE by 2030.
+ took a different approach to optimising when compared to most of the studies
+ outlined thus far.
+ In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Budischak2013"
+
+\end_inset
+
+ the optimisation was conducted via a linear programming approach whereby
+ a matrix solver searches through all possible combinations or resources
+ (limited to 70 evenly spaced possible capacity values for each resource).
+ While computationally very expensive, the advantage of the linear programming
+ approach is the guarantee that the global minimum of values tested will
+ be found.
+ In their simulation of 99.9% RE by 2030 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Budischak2013"
+
+\end_inset
+
+ found price parity when compared current electricity prices.
  Again, this finding is corroborated by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -687,8 +710,8 @@ key "Steinke2013"
 
 \end_inset
 
- found only a slight increase in electricity prices were needed in order
- to achieve 100% RE for Europe.
+ found only a slight increase in electricity prices from current prices
+ were needed in order to achieve 100% RE for Europe.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -769,10 +792,17 @@ key "Elliston2012"
 
 \end_inset
 
- and 
+, 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AEMO2013"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mason2010"
 
 \end_inset
 
@@ -804,18 +834,26 @@ key "Budischak2013"
 
 \end_inset
 
- explored up to 10% of demand for energy as being flexible (moved to other
- times of the day when total system demand is less).
- 
+ and 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Budischak2013"
+key "AEMO2013"
 
 \end_inset
 
- found that the ability to shift non-critical demand, particularly from
- peak times, greatly assisted future high penetrations of RE to meet reliability
- standards.
+ explored up to 10% of demand for energy as being flexible (moved to other
+ times of the day when total system demand is less).
+ Both studies found that the ability to shift non-critical demand, particularly
+ from peak times, greatly assisted future high penetrations of RE to meet
+ reliability standards, while 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mason2010"
+
+\end_inset
+
+ found that load shifting was a more attractive option than the installation
+ of more peaking capacity for a 100% RE dependent New Zealand.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -959,7 +997,7 @@ name "sec:Optim-Lit-ACCESS-Data"
 
 \begin_layout Standard
 The meteorological data used in Part 2 of this thesis come from the Bureau
- of Meteorology’s regional model called ACCESS (the Australian Community
+ of Meteorology’s (BoM's) regional model called ACCESS (the Australian Community
  Climate and Earth-System Simulator).
  ACCESS at its core is the same as the UK Met-Office’s Unified Model (UM).
  Built on top of the atmospheric core from the UM is the coupling of an
@@ -971,9 +1009,9 @@ key "Bi2013"
 \end_inset
 
 .
- The ACCESS model was a project partnership between CSIRO and Bureau of
- Meteorology (BoM) whose aim was to provide “…a comprehensive climate modelling
- capacity to Australian scientists” (
+ The ACCESS model was a project partnership between CSIRO and BoM whose
+ aim was to provide “…a comprehensive climate modelling capacity to Australian
+ scientists” (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Rashid2013"
@@ -989,7 +1027,10 @@ key "Bi2013"
 \end_inset
 
 ).
- 
+ ACCESS is also the model now used by BoM for its regional and local operational
+ forecasts.
+ In this thesis, the analyses used to start each of the BoM's forecast runs
+ have been analysed.
 \end_layout
 
 \begin_layout Standard
@@ -1035,7 +1076,7 @@ key "Rashid2013"
 
 \end_inset
 
- found that there was a slight easterly bias (~2ms
+ found that there was a slight easterly bias (0-2ms
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1044,8 +1085,8 @@ key "Rashid2013"
 
 \end_inset
 
-) in the zonally average zonal winds between 10ºS and 40ºS.
- However, biases in the order of 2ms
+) in the zonally average zonal winds between 10ºS and 30ºS.
+ However, biases in the order of 0-2ms
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -1054,94 +1095,27 @@ key "Rashid2013"
 
 \end_inset
 
- over a given latitudinal circle, even if for the Australian region, are
- not seen as significant enough to influence the results of this thesis.
- 
-\end_layout
-
-\begin_layout Standard
+ over a whole latitudinal circle, even if for the Australian region, are
+ not seen as significant enough to influence the results of this thesis--particu
+larly given the studies of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Bi2013"
-
-\end_inset
-
- also examined the performance of ACCESS.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Bi2013"
-
-\end_inset
-
- assessed the similarities between ACCESS output for the radiation fields
- and the ISCCP (International Satellite Cloud Climatology Project), as well
- as many of other major fields of the atmosphere.
- As part of their assessment process 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Bi2013"
-
-\end_inset
-
- introduced a non-dimensional parameter M, which for values of 1 depicts
- perfect agreement and for values of 0 no skill (see Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:M-Definition"
-
-\end_inset
-
- for the formula).
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Bi2013"
-
-\end_inset
-
- reported globally average values of M for the Downward Short-wave Radiation
- (DSR) field at the surface reaching about 0.85—only a slightly smaller value
- of M than the surface air temperature, which is normally considered a fundament
-al atmospheric variable to be able to predict.
- In fact, in general 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Bi2013"
-
-\end_inset
-
- found that ACCESS was either close to the available observations/reanalysis
- estimations or had performances that were comparable to other CMIP5 (Coupled
- Climate Intercomparison Project phase 5) models—part of the purpose of
- the ACCESS project was to contribute to the CMIIP5 archive (
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Rashid2013"
-
-\end_inset
-
-).
- Thus from a brief survey of the literature introducing and examining the
- ACCESS project it appears as if the output from ACCESS will be suitable
- for application in this thesis.
- Specifically, it can be inferred from both 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Rashid2013"
 
 \end_inset
 
  and 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Bi2013"
+key "Rashid2013"
 
 \end_inset
 
- that the use of the wind speed and DSR fields will not introduce any significan
-t biases to the results presented later in Part 2.
+ use the global version of ACCESS, rather than the regional, which is of
+ finer resolution.
+ Further to this the data used in this thesis are the analyses, which are
+ assimilated with observations and thus less influenced by the global model
+ biases.
  
 \end_layout
 
@@ -1188,25 +1162,129 @@ key "Bi2013"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ also examined the performance of ACCESS.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ assessed the similarities between ACCESS output for the radiation fields
+ and the ISCCP (International Satellite Cloud Climatology Project), as well
+ as many of other major atmospheric fields.
+ As part of their assessment process 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ introduced a non-dimensional parameter M, which for values of 1 depicts
+ perfect agreement and for values of 0 no skill (see Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:M-Definition"
+
+\end_inset
+
+ for the formula of M).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ reported globally average values of M for the Downward Short-wave Radiation
+ (DSR) field at the surface reaching about 0.85--only a slightly smaller
+ value of M than the surface air temperature, which is normally considered
+ a fundamental atmospheric variable to be able to predict.
+ In fact, in general 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ found that ACCESS was either close to the available observations/reanalysis
+ estimations or had performances that were comparable to other CMIP5 (Coupled
+ Climate Intercomparison Project phase 5) models--part of the purpose of
+ the ACCESS project was to contribute to the CMIIP5 archive (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Rashid2013"
+
+\end_inset
+
+).
+ A study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Puri2013"
+
+\end_inset
+
+ also found steady increases in regional forecasting skill of MSLP over
+ the last 25 years, but in particular large gains in skill in recent years
+ following the introduction of the ACCESS model.
+ Thus from a brief survey of the literature introducing and examining the
+ ACCESS project it appears as if the output from ACCESS will be suitable
+ for application in this thesis.
+ Specifically, it can be inferred from the works of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rashid2013"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Bi2013"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Puri2013"
+
+\end_inset
+
+ that the use of the ACCESS data will not introduce any significant biases
+ to the results presented later in Part 2.
+ 
+\end_layout
+
 \begin_layout Subsection
 ACCESS Data and Preparation
 \end_layout
 
 \begin_layout Standard
-In order to utilise the ACCESS data in this thesis the first step was to
- ensure that the data were complete.
+In order to utilise the ACCESS-A (the Australian regional domain from within
+ ACCESS-Global) data in this thesis the first step was to ensure that the
+ data were complete.
  The source of the data was the BoM and, as it was given, the data had some
  hours that were missing from the 2010-2011 period.
  Any hour that was missing was dealt with by assigning the missing value
  ‘NaN’ and thus the original data were padded out to create a 2-year time
  series that was of length 17,520 hours--containing either output from the
- ACCESS model or a ‘NaN’.
+ ACCESS-A model or a ‘NaN’.
  
 \end_layout
 
 \begin_layout Standard
-The ACCESS model also included locations that were not of interest to this
- thesis.
+The ACCESS-A model also included locations that were not of interest to
+ this thesis.
  As such these areas, which included Indonesia and East Timor, were removed
  from the domain and a new area that included just the Australian continent
  was defined (Fig.
@@ -1219,7 +1297,7 @@ reference "fig:ACCESS-Domain-Land-Sea"
 
 ).
  The Australian continental region was determined using the land-sea mask
- supplied with the ACCESS data.
+ supplied with the ACCESS-A data.
  The land-sea mask was, however, also filtered from the region seen in Fig.
  
 \begin_inset CommandInset ref
@@ -1251,7 +1329,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Plot of the land-sea mask variable, illustrating the ACCESS model domain
+Plot of the land-sea mask variable, illustrating the ACCESS-A model domain
  utilised in Part 2.
  Domain derived from the ACCESS-A Austral region and filtered for continental
  regions of interest.
@@ -1278,7 +1356,7 @@ name "fig:ACCESS-Domain-Land-Sea"
 Once the Australian continental region was defined the next step was to
  extract the wind speed and Downward Shortwave Radiation (DSR) values from
  the output.
- The DSR data was taken 'as is' and without any post-processing, however,
+ The DSR data was taken `as is' and without any post-processing, however,
  the wind speed data needed interpolation to 80m--as per Part 1--in order
  to obtain wind speed values that were at approximate hub-height for the
  wind speed-power conversion.
@@ -1299,7 +1377,7 @@ Once the Australian continental region was defined the next step was to
 
 \begin_layout Standard
 This process of combining the u and v components was completed for all levels
- of the ACCESS model output and all continental locations.
+ of the ACCESS-A model output and all continental locations.
  The data were then interpolated to 80m via a cubic spline through the first
  five vertical levels using the height of each level in metres above sea-level
  (the heights given were in geopotential height, which is relative to sea-level)
@@ -1314,7 +1392,7 @@ reference "fig:ACCESS-Domain-Land-Sea"
 
 \end_inset
 
-) and the corresponding DSR values was then formed—the 80m wind speed data
+) and the corresponding DSR values was then formed--the 80m wind speed data
  were now also at surface locations following the centring process.
  
 \end_layout
@@ -1332,8 +1410,8 @@ reference "fig:GE-2.5-Power-Curve"
 
 \end_inset
 
- from Part 1) wind speed power curve was applied to all needed values of
- hub-height wind speed (only those locations utilised following the site
+ from Part 1) wind speed power curve was applied to all required values
+ of hub-height wind speed (only those locations utilised following the site
  selection process outlined later).
  The same approach from Part 1 was also used in terms of the input of solar
  radiation data to the energy model.
@@ -1342,7 +1420,7 @@ reference "fig:GE-2.5-Power-Curve"
  a measure of solar availability was utilised.
  All locations that were chosen for input into the energy model had their
  DSR values at all times converted to a percentage of maximum.
- The maximum was taken as the maximum value of DSR from the ACCESS data
+ The maximum was taken as the maximum value of DSR from the ACCESS-A data
  (1184.3 Wm
 \begin_inset script superscript
 
@@ -1390,11 +1468,11 @@ Another key component to this thesis is the use of demand data.
  also vitally important.
  The demand data utilised in this thesis come from two main source--the
  Australian Electricity Market Operator (AEMO), as per Part 1, and the Independe
-nt Market Operator of Western Australian (IMOWA).
+nt Market Operator of Western Australia (IMOWA).
  Initially, this thesis examines the whole of Australia in terms of the
  major population centres (eastern states and then Perth in WA).
  In order to combine the data from IMOWA and AEMO a conversion from local
- time (AEST and AWST) to all data at AEST was undertaken.
+ time (AEST and AWST) to all data at AEST was conducted.
  
 \end_layout
 
