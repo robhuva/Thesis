@@ -7,6 +7,10 @@
 \bgroup
 \renewcommand\theenumi{(\roman{enumi})}
 \renewcommand\labelenumi{\theenumi}
+
+%Letting text flow over the page
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -56,8 +60,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -76,8 +80,50 @@ Acknowledgments
 \end_layout
 
 \begin_layout Standard
-Text.
- 
+This thesis was funded by a Melbourne Research Scholarship whose departmental
+ component was supplied by the bursary afforded to Roger Dargaville from
+ the Melbourne Energy Institute (MEI).
+\end_layout
+
+\begin_layout Standard
+I would first and foremost like to acknowledge the support--intellectual,
+ spiritual and monetary--of my supervisors, Roger Dargaville and Peter Rayner.
+ No doubt the work would not have been possible without your guidance and
+ for this I am forever grateful.
+ To the other members of my PhD advisory committee, Todd Lane and John Moreau,
+ thank you for your input to the project and your support as well.
+ I would also like to acknowledge the Australian Renewable Energy Association
+ grant no.
+ 002489 and MEI for providing the funds that allowed me to attend the necessary
+ international conferences.
+\end_layout
+
+\begin_layout Standard
+Setting up and getting the the Self-Organising Map working was made remarkably
+ easy due to the generous help of Petteri Uotila of the CSIRO, and for this
+ I am thankful.
+ Marcelle Gannon was integral in the latter stages of this thesis for her
+ help in managing the Genetic Algorithm (GA) code, while I also acknowledge
+ the work of Stephen Thomas in writing the original GA code.
+ I would like to thank the IT staff (principally Brett Holman and Doug Morrison)
+ for their help with various IT issues over the years, but in particular
+ with their efforts in the wake of server crashes.
+\end_layout
+
+\begin_layout Standard
+To my close Family (Denise, Ronald and Amy) and friends (Stuart, Lyndon
+ and Jenny) thank you for the integral roles that you have played over the
+ years.
+ Your unwavering support kept me sane and allowed me to work more effectively
+ while at uni.
+ To the other members of the Melbourne Academy of Sustainability and Society
+ (MASS--specifically Katrin, Sam and Sophie) thank you for your support,
+ PhD insights and for the intellectual stimulation you provided away from
+ this thesis.
+ And lastly thank you to the current (Jan, Daniel, Lotta, Ben and Adam)
+ and past (Linden, Helen, Erin, Andrea and Sara) room 311 office-mates,
+ along with many other fellow Postgrads of the department for your banter
+ and friendship.
 \end_layout
 
 \end_body
