@@ -83,7 +83,7 @@
 \begin_body
 
 \begin_layout Chapter
-Conclusions and Future Work
+Future Work and Conclusions
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Conclusions-Future-Work"
@@ -98,8 +98,8 @@ Future Work
 \end_layout
 
 \begin_layout Standard
-It is recommended that some key research questions not addressed in this
- thesis require further examination.
+There are some key research questions not addressed in this thesis that
+ require further examination.
  In particular, the following points:
 \end_layout
 
@@ -129,7 +129,7 @@ It is recommended that some key research questions not addressed in this
 
 1.
  Simulations that include the use of non-weather-dependent Renewable Energy
- (RE) resources.
+ (RE) resources (for instance, geothermal, biomass and pumped hydro).
 \end_layout
 
 \begin_layout Standard
@@ -164,8 +164,8 @@ y network is to rely heavily--potentially 100%--on RE resources.
 \end_inset
 
 2.
- An investigation into the possibility, or not, that the drivers of demand
- and RE output are correlated.
+ An investigation into whether the drivers of demand and RE output are correlate
+d.
 \end_layout
 
 \begin_layout Standard
@@ -265,21 +265,87 @@ ty in order to keep homes and businesses at comfortable temperatures.
  
 \end_layout
 
-\begin_layout Section
-Conclusions
+\begin_layout Description
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+4.
+ Simulations using imperfect demand forecasts and financial models.
 \end_layout
 
 \begin_layout Standard
-In this thesis it has been shown that the potential for Australia to extract
- useful energy from the wind and solar fields is high.
- By approaching the question of how the wind and solar resources vary at
- various spatio-temporal resolutions from two different angles it was concluded
- that a high reliance on Renewable Energy (RE) in the National Electricity
- Market region is possible, but that there were some large-scale features
- (synoptic weather patterns and decorrelation length scales) of the atmosphere
- over Australia that need to be taken into account when designing and operating
- such an RE-based network.
- 
+Point 4 involves the optimiser being fed demand data with a small random
+ component.
+ The random component to demand would imitate reality and likely result
+ in the use of more back-up resources.
+ Further to this it would be possible to operate a financial model for each
+ resource centre--as part of a new simulation.
+ The inclusion of a financial model would also ensure that each installation
+ was financially viable and would likely concentrate resources away from
+ the smaller RE stations.
+\end_layout
+
+\begin_layout Description
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+5.
+ Analysis of excluded time steps and their relationship to RE output.
+\end_layout
+
+\begin_layout Standard
+During the process of assigning SOM-based weather types to the 2010-2011
+ period some hours had no weather type assigned because of an ambiguous
+ relationship to the SOM.
+ What was not explored in this thesis is the relationship of these excluded
+ time steps with RE output, and also RE-Demand.
+ It is possible with further analysis to reveal if some of these excluded
+ hours were important hours for the NEM (i.e.
+ for reasons of over or undersupply).
+\end_layout
+
+\begin_layout Section
+Conclusions
 \end_layout
 
 \begin_layout Standard
@@ -334,6 +400,31 @@ By conducting optimisations of data from just the Austral summer and winter
  The 4 wind regimes were then shown to be highly uncorrelated, reinforcing
  their usefulness in combining to meet demand, but also providing an optimisatio
 n-based decorrelation length scale of approximately 884km.
+\end_layout
+
+\begin_layout Standard
+While it was possible to conclude from just the analysis in Part 1 that
+ some synoptic regimes had the potential to be problematic for RE output,
+ integral to the analysis was the optimisation in Part 2.
+ Part 2 enabled the identification of specific moments in time where RE
+ output was diminished.
+ Such specifics were impossible to determine from solely the climatology.
+ In tandem the two parts combine to allow for both the analysis of conditions
+ that are challenging for RE output and the synoptic causes.
+ 
+\end_layout
+
+\begin_layout Standard
+In this thesis it has been shown that the potential for Australia to extract
+ useful energy from the wind and solar fields is high.
+ By approaching the question of how the wind and solar resources vary at
+ various spatio-temporal resolutions from two different approaches it was
+ concluded that a high reliance on RE in the National Electricity Market
+ region is possible, but that there were some large-scale features (synoptic
+ weather patterns and decorrelation length scales) of the atmosphere over
+ Australia that need to be taken into account when designing and operating
+ such an RE-based network.
+ 
 \end_layout
 
 \end_body
