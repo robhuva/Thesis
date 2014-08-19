@@ -151,9 +151,9 @@ name "sec:Covariance-Intro-Methods"
 \end_layout
 
 \begin_layout Standard
-In the current study the decision was made to analyse wind and solar capacities,
- rather than analyse the raw fields, as this was seen as the easiest way
- to compare the two variables.
+In the current study the decision was made to analyse wind and solar capacities
+ (instantaneous or average percentage of maximum), rather than analyse the
+ raw fields, as this was seen as the easiest way to compare the two variables.
  Wind and solar capacities were used as an indicative measure of the likely
  operating percentage of a renewable energy installation at each location
  without a pre-determination about the size or type of installation.
@@ -314,10 +314,10 @@ For the current study, solar capacity was not calculated as a percentage
  types of solar power (solar thermal, photo-voltaic, concentrating solar
  thermal etc.).
  It should be noted, however, that the irradiance data from ERA-Interim
- are 3-hourly accumulated values.
- The accumulated values were taken as 3 hour blocks either side of each
+ are three-hourly accumulated values.
+ The accumulated values were taken as three hour blocks either side of each
  time-step of the analysis fields, and these values were then averaged.
- The solar capacity at any one point in time was then a percentage of 979.98
+ The solar capacity at any one point in time was then a percentage of 980
  Wm
 \begin_inset script superscript
 
@@ -328,7 +328,7 @@ For the current study, solar capacity was not calculated as a percentage
 \end_inset
 
  and the solar capacity factor was the accumulated irradiance as a percentage
- of what would have been accumulated had the irradiance been 979.98 Wm
+ of what would have been accumulated had the irradiance been 980 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -340,7 +340,7 @@ For the current study, solar capacity was not calculated as a percentage
 at all times.
  It was assumed that any type of solar installation would have been operating
  at capacity on December 12 1995 (0000UTC) at 151.5ºE and 30ºS, and thus
- using 979.98 Wm
+ using 980 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -377,7 +377,17 @@ reference "fig:SOM-Bivar-Wind-Solar"
 \end_inset
 
 .
+ Fig.
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SOM-Bivar-Wind-Solar"
+
+\end_inset
+
+ illustrates the average wind power and solar capacity factor at each grid
+ point on the Australian continent when each of the SOM pressure distributions
+ were said to occur in the 1989-2009 ERA-Interim data.
 \begin_inset Float figure
 placement H
 wide false
@@ -492,7 +502,7 @@ reference "fig:SOM-Bivar-Wind-Solar"
  appears to have low capacity factors for both wind and solar across virtually
  the entire Australian continent.
  The exception for winter was perhaps northern Australia during a high in
- the Bight regime (node 1 or 2 from Fig.
+ the Bight regime (node one or two from Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -529,7 +539,7 @@ reference "fig:SOM-Bivar-Wind-Solar"
 \end_layout
 
 \begin_layout Standard
-SOM node 20--classified by a high pressure system 
+SOM node 20---classified by a high pressure system 
 \lang british
 centred
 \lang english
@@ -542,7 +552,7 @@ reference "fig:Nodes-of-Interest-MSLP"
 
 \end_inset
 
-b)--was largely characterised by low average wind power and DSR capacities
+b)---was largely characterised by low average wind power and DSR capacities
  for most of the Australian continent (Fig.
  
 \begin_inset CommandInset ref
@@ -667,8 +677,8 @@ reference "fig:Node-20-Wind-Dsr-Cap"
 
  are unlikely to occur in exactly that form, nor at exactly the same time
  throughout the data.
- To examine how variable the wind power conditions were for node 20--and
- thus also how detrimental for wind power node 20 can be--a plot of the
+ To examine how variable the wind power conditions were for node 20---and
+ thus also how detrimental for wind power node 20 can be---a plot of the
  Coefficient of Variance (CoV) is shown in Fig.
  
 \begin_inset CommandInset ref
@@ -777,7 +787,7 @@ reference "fig:Node20-Lowest-Combined-Cap"
 
 \end_inset
 
---when a ridging high pressure system is centred east of Victoria--could
+---when a ridging high pressure system is centred east of Victoria---could
  therefore be thought of as a worst case scenario for the large-scale wind
  and solar resource availability of Australia.
  
@@ -1080,7 +1090,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Comparison between the MSLP for a) continental SOM node 20 and b) 0000UTC
- November 24 19996.
+ November 24 1996.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1234,7 +1244,7 @@ reference "fig:Node24-Highest-Combined-Cap"
  not in comparison with other areas.
  The DSR capacities for the best case scenario of node 24 appeared to match
  the average map in a much more consistent manner than the wind power capacity
- map--with the exception of central Queensland and New South Wales.
+ map---with the exception of central Queensland and New South Wales.
  The minimum in DSR for Fig.
  
 \begin_inset CommandInset ref
@@ -1987,8 +1997,8 @@ The SOM node analysis also highlighted some potentially advantageous persistent
  The SOM analysis therefore identified the central coast of WA as a particularly
  good wind resource.
  However, publicly available figures suggest this wind resource is yet to
- be utilised--only one wind farm of significant size has been built in this
- area of the WA coast (89MW Alinta wind farm, near Geraldton; 
+ be utilised---only one wind farm of significant size has been built in
+ this area of the WA coast (89MW Alinta wind farm, near Geraldton; 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Council2012a"
@@ -2084,8 +2094,8 @@ reference "fig:6x5-SOM-space-Cont"
 \end_inset
 
 ) at a) 0000UTC, b) 0600UTC, c) 1200UTC and d) 1800UTC.
- Numbers in orange represent significant values using a two-tailed Monte-
- Carlo simulation at the 1% confidence range.
+ Numbers in orange represent significant values using a two-tailed Monte-Carlo
+ simulation at the one percent confidence range.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2224,7 +2234,8 @@ key "Dai1999"
  as occurring more often in the morning and afternoon.
  The probability of SOM node 30 occurring in the afternoon was elevated
  due to an upwards sensible heat flux, which was then reversed in the morning
- and gives rise to the reduced probability of SOM node 30 occurring then.
+ and gives rise to the reduced probability of SOM node 30 occurring at that
+ time.
  
 \end_layout
 
@@ -2249,10 +2260,20 @@ key "Ebisuzaki1997"
 
 , was utilised to determine the significance of a correlation for a given
  significance level.
+ The 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ebisuzaki1997"
+
+\end_inset
+
+ method was utilised because of the auto-correlation that exists in the
+ wind field, which is not conserved in the normal Monte-Carlo approach of
+ reordering time steps.
  In this section, however, only the wind field was considered.
- The representation of DSR in ERA-Interim, even at 3-hourly intervals, was
- too smooth to obtain significantly different time series anywhere in the
- continental domain (not shown).
+ The representation of DSR in ERA-Interim, even at three-hourly intervals,
+ was too smooth to obtain significantly different time series anywhere in
+ the continental domain (not shown).
  
 \end_layout
 
@@ -2290,11 +2311,33 @@ key "Ebisuzaki1997"
  method; not only because this is not guaranteed with the traditional Monte-Carl
 o method but also because the autocorrelation of a time series is a defining
  feature of most meteorological fields.
- The relatively coarse temporal and spatial resolution of the ERA-Interim
+ Commonly, the approach for dealing with autocorrelated data is to sub-sample
+ the time series every few data points, depending on the level of autocorrelatio
+n.
+ The sub-sampling allows the user to include only data that are independent
+ of the previous time step.
+ The process of sub-sampling, however, also reduces the degrees of freedom
+ in the time series, which can affect later statistical testing.
+ This thesis does not utilise the sub-sampling process but instead employs
+ the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ebisuzaki1997"
+
+\end_inset
+
+ method to create many versions of a time series with the same level of
+ autocorrelation, and then the versions are used for testing statistical
+ significance.
+ 
+\end_layout
+
+\begin_layout Standard
+The relatively coarse temporal and spatial resolution of the ERA-Interim
  data means that the wind and solar fields that the current study utilises
  tend to be quite smooth.
  Thus these fields commonly exhibit autocorrelations that do not reach near
- zero values for lags less than 3 or 4 time steps.
+ zero values for lags less than three or four time steps.
  The mathematical interpretation of the 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2302,7 +2345,7 @@ key "Ebisuzaki1997"
 
 \end_inset
 
- method is described in the following 3 steps, taken from the paper.
+ method is described in the following three steps, taken from the paper.
  
 \end_layout
 
@@ -2605,9 +2648,9 @@ im by categorising the weather of the Australian region into SOM nodes and
  associated with low capacity of both wind and solar, node 24 (high pressure
  centred well south of Perth) associated with co-located high capacity of
  wind and solar, and node 18 (high pressure centred just south of Perth)
- as being associated with dispersed areas oh high wind and solar capacity.
- It was found that while these nodes were on average low/high capacity nodes--wi
-th some examples of very high/low output--they were not exclusively high/low
+ as being associated with dispersed areas of high wind and solar capacity.
+ It was found that while these nodes were on average low/high capacity nodes---w
+ith some examples of very high/low output---they were not exclusively high/low
  weather systems.
  Rather, there was a varied association, centred about a high/low average,
  between weather system and wind and solar potential.
@@ -2636,11 +2679,26 @@ key "Ebisuzaki1997"
  Using point correlations as examples, rather than a matrix of cross-correlation
 s, it was found that the average separation needed for two locations to
  lose their significant association was on the order of 1,300-1,400km.
- Although it should be noted that this length is dependent on the temporal
- resolution of the data (6-hourly for ERA-Interim).
- Higher resolution data would likely result in a smaller length due to the
- variance missed by the current 6-hourly resolution.
- 
+ Although it should be noted that this length could be dependent on the
+ temporal resolution of the data (six-hourly for ERA-Interim).
+ Higher resolution data might result in a smaller length due to the variance
+ missed by the current six-hourly resolution.
+\end_layout
+
+\begin_layout Standard
+In the next part to this thesis the covariance of wind and solar is explored
+ via an optimised energy system.
+ For the majority of Part 2 the focus is on just the eastern states of Australia
+ (the National Electricity Network (NEM) region), as opposed to the whole
+ country.
+ The two parts of the thesis are linked in later chapters and the difference
+ in domain size (whole country versus NEM) is noted.
+ Part 1 necessitates that a large domain encompassing the whole country
+ be used in order to capture the synoptic scale.
+ However, Part 2 explores in detail the variability only over the NEM region
+ because this is the likely location for future wind and solar capacities.
+ The influence of the larger synoptic scale systems on the NEM-wide variability
+ in wind and solar is then analysed.
 \end_layout
 
 \end_body
