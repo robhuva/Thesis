@@ -132,8 +132,8 @@ Use of Optimisation Techniques in Renewable Energy Research
 \begin_layout Standard
 Renewable Energy (RE) studies often utilise optimisation techniques when
  trying to solve for the optimum combination of resources to meet a required
- goal--this might be increasing the penetration of renewable resources or
- reducing carbon emissions from the electricity sector.
+ goal---this might be increasing the penetration of renewable resources
+ or reducing carbon emissions from the electricity sector.
  Optimisation techniques offer the advantage of being able to incorporate
  computer resources to solve complicated and multi-faceted problems in a
  relatively short amount of time.
@@ -218,7 +218,7 @@ key "Banos2011"
 
 \end_inset
 
- offered an alternative approach--namely the Pareto-based Multi-objective
+ offered an alternative approach---namely the Pareto-based Multi-objective
  Optimisation (PMO) technique.
  The PMO technique differs from the cost function aggregation approach in
  its ordering of potential solutions.
@@ -293,8 +293,8 @@ key "Connolly2010"
 
  is the broad-brush approach to the energy system.
  While these tools are able to provide flexibility to the user in terms
- the many different areas of the energy system that they can simulate--including
- heat, water and transport--this also reduces the ability for these tools
+ the many different areas of the energy system that they can simulate---includin
+g heat, water and transport---this also reduces the ability for these tools
  to analyse complex meteorological data and the effect of variability in
  RE output on the electricity network.
  The common RE simulation tools also appear to not allow the user to determine
@@ -323,10 +323,11 @@ key "Lund2009"
  and a greater level of meteorological complexity required in order to properly
  simulate the effect of meteorological variability on the electrical network.
  The field of RE research is a rapidly evolving area and a similarly high
- level of complexity is also being addressed by a growing number of researcher.
- Popular in recent years is the use of the heuristic optimisation tools--includi
-ng Genetic Algorithms (GAs) and also the aptly named particle swarm optimisation
- technique (
+ level of complexity is also being addressed by a growing number of researcher
+ papers.
+ Popular in recent years is the use of the heuristic optimisation tools---includ
+ing Genetic Algorithms (GAs) and also the aptly named particle swarm optimisatio
+n technique (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Banos2011"
@@ -411,7 +412,7 @@ key "Elliston2013"
 \end_inset
 
  showed that 100% RE for the NEM is likely to maintain the existing reliability
- standards--0.002% unserved energy per year.
+ standards---0.002% unserved energy per year.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -441,10 +442,10 @@ key "Elliston2013"
  simulation, which was able to search for various possible configurations.
  The transmission model brought about a greater level of complexity but
  also allowed for the simulation of energy exchange across adjacent NEM
- regions--as is the case in the current operation of the NEM.
+ regions---as is the case in the current operation of the NEM.
  As a result of the diversity in resource availability across the NEM region
  (the NEM includes the states of South Australia, Tasmania, Victoria, New
- South Wales (plus ACT) and Queensland as its 5 regions) 
+ South Wales (plus ACT) and Queensland as its five regions) 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Elliston2013"
@@ -472,7 +473,7 @@ key "AEMO2013"
 
 \end_inset
 
- in many ways--most strikingly in the use of 100% RE for the NEM, but also
+ in many ways---most strikingly in the use of 100% RE for the NEM, but also
  in the use of 2030 as a possible date for the 100% RE system.
  The authors of 
 \begin_inset CommandInset citation
@@ -482,8 +483,8 @@ key "AEMO2013"
 \end_inset
 
  (the Australian Electricity Market Operator (AEMO)) undertook a study that
- included 4 future scenarios--100% RE in the NEM by 2030 or 2050, and with
- either slow or fast uptake of RE technology.
+ included four future scenarios---100% RE in the NEM by 2030 or 2050, and
+ with either slow or fast uptake of RE technology.
  The mandate from the Australian Federal Government, who commissioned the
  research in 
 \begin_inset CommandInset citation
@@ -500,7 +501,7 @@ key "Elliston2013"
 \end_inset
 
 , the current reliability standards be maintained.
- The mandate was fulfilled in all 4 scenarios in 
+ The mandate was fulfilled in all four scenarios in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "AEMO2013"
@@ -515,8 +516,8 @@ key "AEMO2013"
 
 \end_inset
 
---the main differences between scenarios being the cost assumptions and
- RE uptake rate--solar technologies dominated wind.
+---the main differences between scenarios being the cost assumptions and
+ RE uptake rate---solar technologies dominated wind.
  This domination by solar, which is counter to that of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -542,7 +543,7 @@ key "AEMO2013"
 \end_inset
 
  was the finding that diversity in generation is the key for future 100%
- RE electricity systems--not just diversity in generation type, but also
+ RE electricity systems---not just diversity in generation type, but also
  diversity in generation location as the output from RE is location-dependent.
  
 \begin_inset CommandInset citation
@@ -601,9 +602,9 @@ key "AEMO2013"
 
 \end_inset
 
- reported roughly a doubling in the wholesale electricity prices by 2030--where
+ reported roughly a doubling in the wholesale electricity prices by 2030---where
  the wholesale electricity price is the price of electricity as sold by
- the generators in the wholesale market--but only a small increase in retail
+ the generators in the wholesale market---but only a small increase in retail
  prices of 6¢/kWh (roughly 23%).
  This finding by 
 \begin_inset CommandInset citation
@@ -692,8 +693,8 @@ key "Steinke2013"
 
 \end_inset
 
- presented a comprehensive 8-year study at hourly resolution for the whole
- of Europe.
+ presented a comprehensive eight year study at hourly resolution for the
+ whole of Europe.
  By incorporating gridded meteorological data from the WEPROG (Weather and
  Energy PROGnoses) data set 
 \begin_inset CommandInset citation
@@ -778,7 +779,7 @@ key "Budischak2013"
 \end_inset
 
  that these targets can be used as stepping stones on a path to a much more
- RE reliant energy system--with the potential added advantage of maintaining
+ RE reliant energy system---with the potential added advantage of maintaining
  a system that is always cheaper than the carbon-intensive alternatives.
  
 \end_layout
@@ -815,7 +816,7 @@ key "Budischak2013"
 \end_inset
 
  noted that there are four known ways to manage variable generation in an
- electricity grid--all of which have been mentioned thus far.
+ electricity grid---all of which have been mentioned thus far.
  These suggested options are geographical expansion (or grid extension),
  diversifying resources, storage and fossil fuel back-up (
 \begin_inset CommandInset citation
@@ -825,7 +826,7 @@ key "Budischak2013"
 \end_inset
 
 ).
- However, there also exists two other possible options--demand-side management
+ However, there also exists two other possible options---demand-side management
  and load-shifting.
  
 \begin_inset CommandInset citation
@@ -870,9 +871,9 @@ key "Elliston2012"
 
 \end_inset
 
- found that only a 5% reduction in the highest 6 demand peaks in the year
+ found that only a 5% reduction in the highest six demand peaks in the year
  would have been sufficient to bring RE supply and the demand for electricity
- into balance for all hours--exceeding the reliability standard of 99.998%
+ into balance for all hours---exceeding the reliability standard of 99.998%
  served energy.
  It was suggested by 
 \begin_inset CommandInset citation
@@ -923,7 +924,7 @@ key "Hoevenaars2012"
 
 \end_inset
 
- noted that an optimal configuration utilising the 1 minute data was not
+ noted that an optimal configuration utilising the one minute data was not
  an optimal configuration when utilised with the 10 minute data set of the
  same conditions.
  It was suggested by 
@@ -933,7 +934,7 @@ key "Hoevenaars2012"
 
 \end_inset
 
- that such results were possible due to three main factors--an increase
+ that such results were possible due to three main factors---an increase
  in the total output from wind at higher temporal resolutions, artificial
  smoothing as a result of the averaging over longer time steps and differences
  in the temporal matching between load and RE output at the varying resolutions.
@@ -949,7 +950,7 @@ It is clear from a review of the literature surrounding optimisation and
  and at various amounts of RE penetration, inclusion of storage and even
  the exploitation of demand shifting are just some of the options for assisting
  higher levels of RE into an energy system.
- What is clear, however, is that high levels of penetration--up to 100%--are
+ What is clear, however, is that high levels of penetration---up to 100%---are
  achievable and are not a matter of discovering a new resource capable of
  supplementing our current centralised electricity system.
  As noted in 
@@ -960,8 +961,8 @@ key "Elliston2012"
 \end_inset
 
 , having a large number of near-constant base-load generators is not necessary
- to meet demand--it is simply the prevailing approach.
- What is key is having enough capacity in dispatchable generation--this
+ to meet demand---it is simply the prevailing approach.
+ What is key is having enough capacity in dispatchable generation---this
  is the linchpin for high RE electricity systems (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -1096,8 +1097,8 @@ key "Rashid2013"
 \end_inset
 
  over a whole latitudinal circle, even if for the Australian region, are
- not seen as significant enough to influence the results of this thesis--particu
-larly given the studies of 
+ not seen as significant enough to influence the results of this thesis---partic
+ularly given the studies of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Bi2013"
@@ -1187,8 +1188,8 @@ key "Bi2013"
 
 \end_inset
 
- introduced a non-dimensional parameter M, which for values of 1 depicts
- perfect agreement and for values of 0 no skill (see Eq.
+ introduced a non-dimensional parameter M, which for values of one depicts
+ perfect agreement and for values of zero no skill (see Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1205,7 +1206,7 @@ key "Bi2013"
 \end_inset
 
  reported globally average values of M for the Downward Short-wave Radiation
- (DSR) field at the surface reaching about 0.85--only a slightly smaller
+ (DSR) field at the surface reaching about 0.85---only a slightly smaller
  value of M than the surface air temperature, which is normally considered
  a fundamental atmospheric variable to be able to predict.
  In fact, in general 
@@ -1217,7 +1218,7 @@ key "Bi2013"
 
  found that ACCESS was either close to the available observations/reanalysis
  estimations or had performances that were comparable to other CMIP5 (Coupled
- Climate Intercomparison Project phase 5) models--part of the purpose of
+ Climate Intercomparison Project phase 5) models---part of the purpose of
  the ACCESS project was to contribute to the CMIIP5 archive (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -1276,9 +1277,9 @@ In order to utilise the ACCESS-A (the Australian regional domain from within
  The source of the data was the BoM and, as it was given, the data had some
  hours that were missing from the 2010-2011 period.
  Any hour that was missing was dealt with by assigning the missing value
- ‘NaN’ and thus the original data were padded out to create a 2-year time
- series that was of length 17,520 hours--containing either output from the
- ACCESS-A model or a ‘NaN’.
+ ‘NaN’ and thus the original data were padded out to create a two-year time
+ series that was of length 17,520 hours---containing either output from
+ the ACCESS-A model or a ‘NaN’.
  
 \end_layout
 
@@ -1357,7 +1358,7 @@ Once the Australian continental region was defined the next step was to
  extract the wind speed and Downward Shortwave Radiation (DSR) values from
  the output.
  The DSR data was taken `as is' and without any post-processing, however,
- the wind speed data needed interpolation to 80m--as per Part 1--in order
+ the wind speed data needed interpolation to 80m---as per Part 1---in order
  to obtain wind speed values that were at approximate hub-height for the
  wind speed-power conversion.
  The gridding used in the ACCESS model staggered the zonal (u) and meridional
@@ -1392,8 +1393,8 @@ reference "fig:ACCESS-Domain-Land-Sea"
 
 \end_inset
 
-) and the corresponding DSR values was then formed--the 80m wind speed data
- were now also at surface locations following the centring process.
+) and the corresponding DSR values was then formed---the 80m wind speed
+ data were now also at surface locations following the centring process.
  
 \end_layout
 
@@ -1466,7 +1467,7 @@ Another key component to this thesis is the use of demand data.
  solar be utilised in some form to provide energy for society and thus any
  features in their combined variance that miss-match that of demand are
  also vitally important.
- The demand data utilised in this thesis come from two main source--the
+ The demand data utilised in this thesis come from two main sources---the
  Australian Electricity Market Operator (AEMO), as per Part 1, and the Independe
 nt Market Operator of Western Australia (IMOWA).
  Initially, this thesis examines the whole of Australia in terms of the
@@ -1488,9 +1489,9 @@ key "Elliston2012"
 \end_inset
 
 ) the copper-plate combination involved simply combining the data for all
- locations--irrespective of whether or not that demand is being met by resources
- in that location--thus creating a single time series of demand for all
- of Australia.
+ locations---irrespective of whether or not that demand is being met by
+ resources in that location---thus creating a single time series of demand
+ for all of Australia.
  This time series is then used in the Energy Model section (Chpt.
  
 \begin_inset CommandInset ref
@@ -1509,9 +1510,9 @@ It should be noted there were also some missing data issues with the demand
  Following this it was then possible to determine the locations of missing
  data from all data-sets.
  Each time series then had their data (either meteorological or demand)
- filtered such that the temporal coverage was concordant--an important considera
-tion for later steps that involve optimising the wind and solar fields to
- meet demand.
+ filtered such that the temporal coverage was concordant---an important
+ consideration for later steps that involve optimising the wind and solar
+ fields to meet demand.
 \end_layout
 
 \begin_layout Section
