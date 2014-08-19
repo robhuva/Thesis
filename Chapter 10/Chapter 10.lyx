@@ -108,9 +108,10 @@ Summary
 
 \begin_layout Standard
 \noindent
-In this chapter we examine the results from Parts 1 and 2 of this thesis,
- describe how the two parts relate, and differ, and then explain any connections
- between the findings from the two parts.
+In this chapter examination of the results from Parts 1 and 2 of this thesis
+ is presented, along with a description of how the two parts relate, and
+ differ, and then an explanation of any connections between the findings
+ from the two parts.
  In particular, consideration is given to the different aims of each section
  and how the two parts combine to give a comprehensive picture of the covariance
  in wind and solar over Australia.
@@ -146,7 +147,7 @@ In principle this thesis was split into two parts because of the the known
  It was assumed that an investigation into both the short-term/fine-scale
  and long-term/large-scale variability of RE resources was needed in order
  to properly assess the renewable potential of Australia.
- The climatology in Part 1 presented average conditions--commonly occurring
+ The climatology in Part 1 presented average conditions---commonly occurring
  features of the large-scale variability over the Australian continent.
  What was subsequently found in Part 2 showed that some features from the
  synoptic climatology in Part 1 that were detrimental to wind and solar
@@ -155,13 +156,13 @@ In principle this thesis was split into two parts because of the the known
  Despite the optimisation process in Part 2 possessing the ability to exploit
  the decorrelation in the wind field over large distances there were still
  some large-scale circulation patterns that resulted in low wind speeds
- over vast distances (stilling of the wind field)--including heavily populated,
+ over vast distances (stilling of the wind field)---including heavily populated,
  and therefore also important, areas of Australia.
  And that despite the NEM-only simulation being purposefully simplistic
  (for instance, there was no consideration given to power flow across the
- transmission network) there would have been no possible optimised network
- capable of producing enough electricity during the instances of large-scale
- low wind speeds.
+ transmission network) there would have been no possible optimised network,
+ using just wind and PV power, capable of producing enough electricity during
+ the instances of large-scale low wind speeds.
  
 \end_layout
 
@@ -189,7 +190,7 @@ reference "fig:All-Nodes-RE-Demand-Hist"
  energy from all of the common synoptic weather regimes.
  In fact some of the common synoptic weather patterns are heavily biased
  towards oversupply in the NEM-only simulation (including those seen in
- Chpt.
+ Sec.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -201,46 +202,46 @@ reference "sub:High-RE-Nodes6-25"
 \end_layout
 
 \begin_layout Standard
-Part 2 of this thesis identified that the region surrounding node 9 was
- significantly associated with very low RE output.
- It was stated then that node 9 in conjunction with surrounding nodes presented
- a sub-grouping of similar looking MSLP patterns, responsible for occasions
- of large-scale low wind speed across much of the NEM region.
+Part 2 of this thesis identified that the region of the SOM surrounding
+ node nine was significantly associated with very low RE output.
+ It was stated then that node nine in conjunction with surrounding nodes
+ presented a sub-grouping of similar looking MSLP patterns, responsible
+ for occasions of large-scale low wind speed across much of the NEM region.
  Part 1 of this thesis in its examination of the long-term association between
  the SOM nodes and wind/solar availability examined in detail node 20 as
  exhibiting low wind and solar potential for most of the Australian continent.
- However, analysis of node 9 and surrounding nodes from Part 1 reveals that
- this region of the SOM also exhibits low wind and solar potential for the
- NEM states (not shown).
- Part 1 therefore gives some supporting evidence that node 9, and similar
+ However, analysis of node nine and surrounding nodes from Part 1 reveals
+ that this region of the SOM also exhibits low wind and solar potential
+ for the NEM states (not shown).
+ Part 1 therefore gives some supporting evidence that node nine, and similar
  looking nodes, are potentially detrimental to a largely wind-based NEM
  network.
- What it also indicates is that the 2-year, high resolution, optimisation
+ What it also indicates is that the two-year, high resolution, optimisation
  is supported by the climatology of 21 years.
  
 \end_layout
 
 \begin_layout Standard
-However, Node 9 wind capacity values average ~0.15 for the NEM region from
- Part 1.
+However, node nine wind capacity values average ~0.15 for the NEM region
+ from Part 1.
+ The climatologically low average wind potential of node nine gives support
+ to the possibility that node nine can also be associated with instances
+ of very low wind output from the optimised network in Part 2.
  0.15 is a low average capacity value for such a large region as the NEM
  and is likely to be more detrimental to wind output than the findings from
  Part 2.
- While identifying the node 9 region of the SOM as being significantly associate
-d with very low RE output, Part 2 also showed that node 9 on average was
- not associated with low RE output (average of +3.1GW).
+ In fact node nine on average was not associated with low RE output (average
+ of +3.1GW) for Part 2.
  The difference between the low capacity values in Part 1 and the average
  of 3.1GW oversupply for Part 2 also concerns the timing of the output.
  It is likely that the size of the wind installations and the connection
  of installations across vast distances in the NEM-only simulation allowed
- for the net output to still meet demand on average for node 9.
+ for the net output to still meet demand on average for node nine.
  What the capacity values in Part 1 do indicate, however, is that the identifica
-tion of node 9 as associated with low RE (specifically low wind power potential)
- was unlikely to be an artifact of the relatively small 2 year ACCESS-A
- sample.
- That is, the climatologically low average wind potential of node 9 gives
- support to the possibility that node 9 can also be associated with instances
- of very low wind output from the optimised network in Part 2.
+tion of node nine as associated with low RE (specifically low wind power
+ potential) was unlikely to be an artifact of the relatively small two year
+ ACCESS-A sample.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -249,8 +250,8 @@ Another link between Parts 1 and 2 of this thesis yet to be explored is
  2 high connection cost optimisation.
  Part 1 of this thesis found that decorrelation in the wind field could
  be reached at a distance of approximately 1,300-1,400km.
- The decorrelation length implies that on average 2 wind installations separated
- by this distance will have unrelated wind power output time series.
+ The decorrelation length implies that on average two wind installations
+ separated by this distance will have unrelated wind power output time series.
  This finding was important because of the possibility to minimise moments
  of very low net output.
  Wind installations with independent output are much more likely to combine
@@ -258,8 +259,9 @@ Another link between Parts 1 and 2 of this thesis yet to be explored is
  and reach maxima/minima in output at the same times.
  This decorrelation length scale relates to the 8X scenario from Part 2.
  When pushed to contract resources by a very high connection cost the energy
- model in Part 2 was able to determine that 4 large but distant wind installatio
-ns were sufficient to meet most of the demand for the NEM in 2010-2011.
+ model in Part 2 was able to determine that four large but distant wind
+ installations were sufficient to meet most of the demand for the NEM in
+ 2010-2011.
  Fig.
  
 \begin_inset CommandInset ref
@@ -269,7 +271,7 @@ reference "fig:RE-Demand-Comparison-All-TransCosts"
 \end_inset
 
  showed that most of the variability in wind output from across the NEM
- region was captured by these 4 large installations (by means of a comparison
+ region was captured by these four large installations (by means of a comparison
  to the other simulations were the energy model had smaller cost impediments
  to install resources in many different locations).
  Moreover Table.
@@ -280,15 +282,15 @@ reference "tab:8X-Wind-Power-Correlation"
 
 \end_inset
 
- showed that the output from these 4 large installations were highly uncorrelate
-d.
- Thus the distances between these 4 large stations provides an optimisation-base
-d decorrelation length scale.
+ showed that the correlations of the output from these four large installations
+ were very low, demonstrating independence.
+ Thus the distances between these four large stations provides an optimisation-b
+ased decorrelation length scale.
  
 \end_layout
 
 \begin_layout Standard
-Of the 4 large wind installations in the 8X scenario the average distance
+Of the four large wind installations in the 8X scenario the average distance
  to the nearest wind installations was 884km.
  This separation distance is much smaller than the comparative figure from
  Part 1 of 1,300-1,400km.
