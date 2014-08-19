@@ -110,9 +110,9 @@ Summary
 This chapter presents optimisations of Renewable Energy (RE) output to meet
  the demand of Australia (initially) and the National Electricity Market
  (NEM).
- In this chapter we define the scenarios examined, how they are informative
- and their implication regarding the covariance of wind and solar across
- Australia.
+ In this chapter the scenarios examined are defined, how the scenarios are
+ informative and their implication regarding the covariance of wind and
+ solar across Australia.
  The sensitivity of the results and their conclusions with respect to the
  covariance of wind and solar energy are then tested by varying the parameters
  of, and inputs to, the optimisation.
@@ -155,13 +155,13 @@ key "Huva2012"
 \end_inset
 
 , which focused on the state of Victoria, the current study first encompasses
- all of Australia and then most of the eastern and southern Australia states
+ all of Australia and then most of the eastern and southern Australian states
  (the participating states of the NEM).
  The optimal placement of renewable resources and the output of the system
  as a whole will both give an indication of the large-scale interaction
  of the wind and solar fields over Australia.
  The optimised placement of resources will indicate separation distances
- for resource diversity and balancing of output across the whole 2 years,
+ for resource diversity and balancing of output across the whole two years,
  while the analysis of the output from the optimised system will reveal
  particular weather phenomena that are likely to be important for system
  maintenance in the future.
@@ -739,7 +739,7 @@ reference "tab:Aus-Wide-Config-Parms"
 
 \end_inset
 
- and following a 100-member, 10000 iteration search of the solution space
+ and following a 100-member, 10,000 iteration search of the solution space
  Fig.
  
 \begin_inset CommandInset ref
@@ -878,8 +878,8 @@ reference "fig:All-Aus-Time-Series"
 \end_inset
 
  is the use of very remote locations in Western Australia (WA).
- It is concluded that these locations in WA have very complementary resources--a
-nd thus minimise the gas usage in the model (cost effective given the high
+ It is concluded that these locations in WA have very complementary resources---
+and thus minimise the gas usage in the model (cost effective given the high
  costs of gas).
  Interesting to note, however, is the reliance on only one solar station
  (near Darwin).
@@ -1060,7 +1060,7 @@ name "sub:ACCESS-ERA-Mapping"
 An important step for later analysis was the identification of synoptic
  regimes as they occurred in 2010-2011.
  Part 2 identifies the occurrence of 30 synoptic weather regimes by utilising
- the results from Part 1--the 30-node SOM that was created from ERA-Interim
+ the results from Part 1---the 30-node SOM that was created from ERA-Interim
  MSLP data.
  It was necessary to assign all ACCESS-A time steps with a SOM node from
  Part 1 in order to form relationships between moments of low output from
@@ -1078,8 +1078,8 @@ In order to utilise the Part 1 SOM, ERA-Interim data for 2010-2011 was obtained.
  was assigned to each ERA-Interim time step in 2010-2011.
  A filtering process was also undertaken to eliminate time steps that had
  ambiguous relationships to the SOM.
- The level of filtering used in Part 2 involve the elimination of BMUs that
- had a single-point discrepancy of more than 20hPa, a further elimination
+ The level of filtering used in Part 2 involved the elimination of BMUs
+ that had a single-point discrepancy of more than 20hPa, a further elimination
  of the worst 5% of remaining BMU and a final checking procedure with a
  4hPa exceedance threshold (refer to Section.
  
@@ -1097,13 +1097,13 @@ reference "sub:Filtering-the-Mapping"
 
 \begin_layout Standard
 Following this, the mapping from ERA-Interim temporal resolution, which
- is 6-hourly, to ACCESS temporal resolution, which is hourly (and also incomplet
-e), was necessary.
+ is six-hourly, to ACCESS temporal resolution, which is hourly (and also
+ incomplete), was necessary.
  The mapping allows for the assignment of a SOM node from the list of filtered
  BMU to each available ACCESS-A time step.
- The process of matching hourly resolution data to 6-hourly resolution data
- was undertaken by simply allocating blocks of 6 hours from ACCESS-A that
- were centred on an ERA-Interim time step (see Fig.
+ The process of matching hourly resolution data to six-hourly resolution
+ data was undertaken by simply allocating blocks of six hours from ACCESS-A
+ that were centred on an ERA-Interim time step (see Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1112,13 +1112,13 @@ reference "fig:ERA-ACCESS-TS-Map"
 \end_inset
 
  for a graphical example).
- Given that within any block of 6 ACCESS-A time steps there is only one
+ Given that within any block of six ACCESS-A time steps there is only one
  hour that matches exactly the hour of the ERA-Interim time step some unevenness
- in the 6-hour block was inevitable.
+ in the six-hour block was inevitable.
  The decision was made to implement a ‘forward-leaning’ approach.
- The forward leaning approach involved assigning the previous 2 hours, the
- hour that matched the ERA-Interim time step and the next 3 hours from ACCESS-sp
-ace to each ERA-interim time step.
+ The forward leaning approach involved assigning the previous two hours,
+ the hour that matched the ERA-Interim time step and the next three hours
+ from ACCESS-space to each ERA-interim time step.
 \begin_inset Float figure
 placement H
 wide false
@@ -1195,7 +1195,7 @@ reference "fig:SOM-Bivar-Wind-Solar"
  ACCESS-A data.
  That is, in the ACCESS-A data the summer-only nodes have, in general, regions
  of high concurrent wind and solar capacities and the region that encompasses
- nodes 8, 9, 14, 15 and 21 has very limited wind and solar availability.
+ nodes eight, nine, 14, 15 and 21 has very limited wind and solar availability.
 \begin_inset Float figure
 placement H
 wide false
@@ -1274,7 +1274,7 @@ reference "fig:NEM-Only-RegGrid"
 ).
  Although it was possible to present many different simulations with similar
  configurations, what is presented in this section is a representative simulatio
-n using the 2-years of data available from the ACCESS-A model.
+n using the two-years of data available from the ACCESS-A model.
  What was found in this study, and the study by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1642,7 +1642,7 @@ key "Elliston2013"
 
 \end_inset
 
- studies--providing confidence in their realism.
+ studies---providing confidence in their realism.
  Figs.
  
 \begin_inset CommandInset ref
@@ -1659,8 +1659,8 @@ reference "fig:NEM-Only-Time-Series"
 \end_inset
 
  illustrate the installed capacities and time series output from the optimised
- solution, respectively--an optimised solution was the minimum value from
- the 10000 iterations, and where 10000 iterations was seen to be enough
+ solution, respectively---an optimised solution was the minimum value from
+ the 10,000 iterations, and where 10,000 iterations was seen to be enough
  to converge on an effectively un-changing cost function value (not shown).
  What is clear from Fig.
  
@@ -1795,7 +1795,7 @@ An event was deemed to be a collection of consecutive low RE time steps.
 
 \begin_deeper
 \begin_layout Itemize
-The next low RE time step is within 6 hours of the previous low RE time
+The next low RE time step is within six hours of the previous low RE time
  step 
 \end_layout
 
@@ -1804,8 +1804,8 @@ OR
 \end_layout
 
 \begin_layout Itemize
-A time step is within 6 hours of the nearest low RE time step and only just
- failed the original criterion of being more than 20% below demand.
+A time step is within six hours of the nearest low RE time step and only
+ just failed the original criterion of being more than 20% below demand.
  The definition of only just failing was deemed to be a time step where
  the combined RE output was more than 15% below demand.
  
@@ -1847,7 +1847,7 @@ key "AEMO2013"
  was that which used the most gas back-up.
  AEMO's definition is intuitively similar to that outline above given that
  the moments of low RE output would also correlate well with increased gas
- usage to cover the gaps in RE--although modulated depending on the state
+ usage to cover the gaps in RE---although modulated depending on the state
  of the hydro reserves.
  Once the low RE time steps and events from the NEM-only simulation were
  identified the next step was to analyse their relationship to the large-scale
@@ -1961,7 +1961,7 @@ name "fig:Low-RE-SOM-Percentage-Plot"
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Significance testing was undertaken via the bootstrapping/Monte-Carlo approach
  (Chapter 5.3.3 from 
 \begin_inset CommandInset citation
@@ -1979,7 +1979,7 @@ key "Wilks2011"
  The new time series was then filtered such that the same moments in time
  that were eliminated in the original filtering process were also eliminated
  in the randomised version.
- 10,000 random version were then created and for each node (1-30) it was
+ 10,000 random versions were then created and for each node (1-30) it was
  possible to create a distribution (one member for each random version)
  of the percentage occurrence with low RE time steps.
  If the measured percentage occurrence was in either tail of the distribution
@@ -1991,11 +1991,11 @@ key "Wilks2011"
 \begin_layout Standard
 In particular, there are some SOM nodes that appear to never co-occur with
  very low RE for the NEM-only simulation.
- Nodes 6 and 25 significantly never co-occur with the lowest RE output.
+ Nodes six and 25 significantly never co-occur with the lowest RE output.
  However, of more interest are perhaps those nodes that are significantly
  associated with very low RE output.
- For instance, there is a region of the SOM (nodes 8, 9, 10, 15) that represents
- almost half of all of the very low RE time steps.
+ For instance, there is a region of the SOM (nodes eight, nine, 10, 15)
+ that represents almost half of all of the very low RE time steps.
  Given the smooth nature of the SOM these nodes represent similar MSLP distribut
 ions and therefore represent a sub-set of similar synoptic regimes from
  within the SOM that are significantly associated with nearly half of all
@@ -2011,15 +2011,16 @@ reference "fig:Low-RE-SOM-Percentage-Plot"
  is that of node 30, which at 9.1% of the lowest RE time steps is also statistica
 lly significant.
  Node 30, as was seen in Part 1, is a summer-time node and is also quite
- far removed from the significant sub-set of nodes (8, 9, 10 and 15).
- In the next section we further analyse two nodes that were significantly
- associated with very low RE for the NEM-only simulation—nodes 9 and 30,
- as these are the two most significant.
+ far removed from the significant sub-set of nodes (eight, nine, 10 and
+ 15).
+ In the next section further analysis of two nodes that were significantly
+ associated with very low RE for the NEM-only simulation is presented---nodes
+ nine and 30, as these are the two most significant.
  
 \end_layout
 
 \begin_layout Subsubsection
-Node 9 analysis
+Node nine analysis
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Node9-Low-RE"
@@ -2030,8 +2031,8 @@ name "sub:Node9-Low-RE"
 \end_layout
 
 \begin_layout Standard
-The next two sections analyse nodes 9 and 30 and their relationship to very
- low renewable energy output.
+The next two sections analyse nodes nine and 30 and their relationship to
+ very low renewable energy output.
  In particular, any meteorological reasons for why these synoptic regimes
  are problematic for the optimised NEM-only simulation.
 \begin_inset Float figure
@@ -2055,7 +2056,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-MSLP composite of node 9 events that co-occur with very low RE output.
+MSLP composite of node nine events that co-occur with very low RE output.
  Stippling indicates features that are statistically significantly different
  from the long-term (ERA-Interim 1989-2009) average of MSLP using a two-tailed
  test at 0.05.
@@ -2083,8 +2084,8 @@ name "fig:Node9-Low-RE-MSLP-Composite"
 \end_layout
 
 \begin_layout Standard
-Above is the MSLP composite for SOM Node 9 when it is said to co-occur with
- very low RE output (Fig.
+Above is the MSLP composite for SOM node nine when it is said to co-occur
+ with very low RE output (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2093,7 +2094,7 @@ reference "fig:Node9-Low-RE-MSLP-Composite"
 \end_inset
 
 ).
- Similar to the map of Node 9 from the SOM of Part 1 (Fig.
+ Similar to the map of node nine from the SOM of Part 1 (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2101,7 +2102,7 @@ reference "fig:6x5-SOM-space-Cont"
 
 \end_inset
 
-) the composite of very low RE for Node 9 is characterised by a relatively
+) the composite of very low RE for node nine is characterised by a relatively
  weak centre of high pressure just off the coast of Western Australia and
  occurs predominantly in late Austral Autumn (May-June).
  Stippling in Fig.
@@ -2124,7 +2125,7 @@ key "Wilks2011"
 \end_inset
 
  (one mean from the 1989-2009 period and the other from the very low RE
- grouping of node 9).
+ grouping of node nine).
 \begin_inset Float figure
 placement H
 wide false
@@ -2143,8 +2144,8 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Composite 80m wind speed for the occurrences of node 9 that co-occur with
- very low RE output in the NEM-only simulation.
+Composite 80m wind speed for the occurrences of node nine that co-occur
+ with very low RE output in the NEM-only simulation.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Node9-LowRE-U80-Composite"
@@ -2169,7 +2170,7 @@ name "fig:Node9-LowRE-U80-Composite"
 \end_layout
 
 \begin_layout Standard
-In fact, the map of node 9 in Fig.
+In fact, the map of node nine in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2177,8 +2178,8 @@ reference "fig:Node9-Low-RE-MSLP-Composite"
 
 \end_inset
 
- shows relatively weak pressure gradients over most of the Australian domain--mo
-st of which are significant features.
+ shows relatively weak pressure gradients over most of the Australian domain---m
+ost of which are significant features.
  The weak pressure gradients could be an artifact of the averaging process
  undertaken when producing the composite.
  However, short of showing each member of the composite or a figure of the
@@ -2191,9 +2192,9 @@ reference "fig:Node9-LowRE-U80-Composite"
 
 \end_inset
 
---it was expected that given the relationship between large-scale pressure
+---it was expected that given the relationship between large-scale pressure
  and the geostrophic wind there might also be weak wind speeds associated
- with the very low RE occurrences of node 9.
+ with the very low RE occurrences of node nine.
  As is seen in Fig.
  
 \begin_inset CommandInset ref
@@ -2203,22 +2204,22 @@ reference "fig:Node9-LowRE-U80-Composite"
 \end_inset
 
  there are indeed very weak average wind speeds across most of the eastern
- part of Australia during very low RE node 9.
+ part of Australia during very low RE node nine.
  The availability of wind speeds above the cut-in of 3m/s is remarkably
  low.
  In an average sense it would actually be expected that an occurrence of
- very low RE node 9 might produce almost no power across eastern Australia.
+ very low RE node nine might produce almost no power across eastern Australia.
  This is significant given the positioning of resources for the NEM-only
  simulation.
- It appears as if the low pressure gradients associated with node 9, and
- in particular very low RE node 9, are quite detrimental for the optimised
- resources from the NEM-only simulation.
+ It appears as if the low pressure gradients associated with node nine,
+ and in particular very low RE node nine, are quite detrimental for the
+ optimised resources from the NEM-only simulation.
  The emphasis here being that the resources allocated by the energy model
  are optimised.
  Thus there appears to be no net advantage in the model avoiding this type
- of stilling weather pattern--the very low RE node 9 is likely not a significant
- enough portion of the hours in 2010-2011 to warrant changing the resource
- allocation to accommodate it.
+ of stilling weather pattern---the very low RE node nine is likely not a
+ significant enough portion of the hours in 2010-2011 to warrant changing
+ the resource allocation to accommodate it.
  
 \begin_inset Float figure
 placement H
@@ -2238,10 +2239,10 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Distribution of RE - demand when node 9 occurs in the NEM-only simulation.
+Distribution of RE - demand when node nine occurs in the NEM-only simulation.
  Histogram density indicates the number of hours in the NEM-only simulation
- where node 9 is either over or under producing with RE in comparison to
- demand.
+ where node nine is either over or under producing with RE in comparison
+ to demand.
  Distribution characteristics appear top-right where Sk is Skewness, Mn
  is Mean and Md is Median.
 \begin_inset CommandInset label
@@ -2264,8 +2265,8 @@ name "fig:Node9-RE-Demand-Histogram"
 \end_layout
 
 \begin_layout Standard
-To investigate the characteristics of node 9 and its influence on all hours
- in the 2-year simulation Fig.
+To investigate the characteristics of node nine and its influence on all
+ hours in the two-year simulation Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2273,7 +2274,7 @@ reference "fig:Node9-RE-Demand-Histogram"
 
 \end_inset
 
- illustrates the distribution of RE - demand when node 9 is said to occur.
+ illustrates the distribution of RE - demand when node nine is said to occur.
  As can be seen from Fig.
  
 \begin_inset CommandInset ref
@@ -2282,8 +2283,8 @@ reference "fig:Node9-RE-Demand-Histogram"
 
 \end_inset
 
- there is actually no real bias suggesting node 9 is particularly detrimental,
- even on average.
+ there is actually no real bias suggesting node nine is particularly detrimental
+, even on average.
  Fig.
  
 \begin_inset CommandInset ref
@@ -2292,9 +2293,9 @@ reference "fig:Node9-RE-Demand-Histogram"
 
 \end_inset
 
- shows the skewness of RE - demand for node 9 is almost 0 and the mean and
- median are also in close association.
- In this instance the predictive power of node 9 is limited.
+ shows the skewness of RE - demand for node nine is almost zero and the
+ mean and median are also in close association.
+ In this instance the predictive power of node nine is limited.
  The spread of possible values seen in Fig.
  
 \begin_inset CommandInset ref
@@ -2303,10 +2304,10 @@ reference "fig:Node9-RE-Demand-Histogram"
 
 \end_inset
 
- suggests that the variance around node 9 is large and both extremes (oversupply
- and undersupply) are possible.
- The importance of node 9 is the occurrence of the very low output potential,
- which is identified by the version of node 9 seen in Fig.
+ suggests that the variance around node nine is large and both extremes
+ (oversupply and undersupply) are possible.
+ The importance of node nine is the occurrence of the very low output potential,
+ which is identified by the version of node nine seen in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2315,7 +2316,7 @@ reference "fig:Node9-Low-RE-MSLP-Composite"
 \end_inset
 
  with very low pressure gradients.
- Thus the conclusions for node 9 are:
+ Thus the conclusions for node nine are:
 \end_layout
 
 \begin_layout Itemize
@@ -2323,16 +2324,16 @@ The association with very low RE is significant
 \end_layout
 
 \begin_layout Itemize
-Node 9 has the potential to be detrimental to wind power for nearly the
+Node nine has the potential to be detrimental to wind power for nearly the
  entire NEM region
 \end_layout
 
 \begin_layout Itemize
-However node 9 is not always associated with very low RE--Node 9 is also
- associated with oversupply.
+However node nine is not always associated with very low RE---node nine
+ is also associated with oversupply.
  Oversupply of RE also involves the relative production of solar and wind.
  For instance, solar is less directly influenced by MSLP gradients, indicating
- that weak pressure gradients from node 9 could also lead to RE oversupply.
+ that weak pressure gradients from node nine could also lead to RE oversupply.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2349,9 +2350,9 @@ name "sub:Node30-Low-RE"
 \begin_layout Standard
 Node 30 was also seen as being significantly associated with very low RE
  output from the NEM-only simulation (9.1% of very low RE hours, slightly
- less than the 11.4% seen for node 9).
+ less than the 11.4% seen for node nine).
  However, node 30 is from a different region of the SOM and represents a
- different synoptic regime to node 9.
+ different synoptic regime to node nine.
  Node 30 is characterised by lower pressure over WA (Fig.
  
 \begin_inset CommandInset ref
@@ -2425,7 +2426,7 @@ key "Sturman2005"
 
 ).
  Continental heat lows form as a result of convection that is triggered
- by heating of the continent--hence the association with summer.
+ by heating of the continent---hence the association with summer.
  The low pressure centred over WA represents a break between successive
  high pressure systems, which are visible in the eastern and western edges
  of the domain (Fig.
@@ -2437,10 +2438,10 @@ reference "fig:Node30-Low-RE-MSLP-Composite"
 \end_inset
 
 ).
- Node 30, as per node 9, is also characterised by low pressure gradients
+ Node 30, as per node nine, is also characterised by low pressure gradients
  across the Austral domain.
  In fact, the pressure gradients for very low RE node 30 are actually weaker
- than that seen for very low RE node 9.
+ than that seen for very low RE node nine.
  Again, this results in, on average, large-scale stilling over the NEM region
  (Fig.
  
@@ -2452,7 +2453,7 @@ reference "fig:Node30-LowRE-U80-Composite"
 
 ).
  The weak 80m wind speeds seen for very low RE node 30 appear to be quite
- similar to node 9--in spite of any difference in weather type and MSLP
+ similar to node nine---in spite of any difference in weather type and MSLP
  distribution.
  For very low RE node 30 there is limited access to average wind speeds
  above about 5 ms
@@ -2485,10 +2486,10 @@ reference "fig:NEM-Only-Installed-Cap"
 
 , which shows the allocation of resources for the NEM-only simulation, had
  the largest installation of wind speed in northern Queensland.
- This region, for both very low RE node 9 and node 30, is particularly subject
- to average wind speeds less than the cut-in.
- It is concluded that this is why these occurrences of nodes 9 and 30 are
- identified as very low RE.
+ This region, for both very low RE node nine and node 30, is particularly
+ subject to average wind speeds less than the cut-in.
+ It is concluded that this is why these occurrences of nodes nine and 30
+ are identified as very low RE.
  However, an important point to make is that Figs.
  
 \begin_inset CommandInset ref
@@ -2527,8 +2528,8 @@ reference "fig:Node9-LowRE-U80-Composite"
 
  would be detrimental for almost any arrangement of resources across the
  NEM.
- Thus, if a somewhat simplistic, or ‘best-case scenario’ simulation--like
- that of the NEM-only simulation--fails to accommodate these stilling synoptic
+ Thus, if a somewhat simplistic, or ‘best-case scenario’ simulation---like
+ that of the NEM-only simulation---fails to accommodate these stilling synoptic
  regimes than surely a more sophisticated simulation (that would also be
  more limited in its choices for resource allocation) would also perform
  poorly under these conditions, as well as others.
@@ -2635,9 +2636,9 @@ name "fig:Node30-RE-Demand-Histogram"
 
 \begin_layout Standard
 The distribution of RE - demand for all occurrences of node 30 shows more
- of a significant bias towards very low RE than node 9 with a median of
- -1.4GW and a mean of 0GW, but again no conclusion that node 30 is significantly
- more associated, on the whole, with very low RE than high (Fig.
+ of a significant bias towards very low RE than node nine with a median
+ of -1.4GW and a mean of 0GW, but again no conclusion that node 30 is significant
+ly more associated, on the whole, with very low RE than high (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2665,10 +2666,10 @@ reference "fig:All-Nodes-RE-Demand-Hist"
 \end_inset
 
 ).
- For instance, nodes 6 and 25 were seen as never occurring with very low
+ For instance, nodes six and 25 were seen as never occurring with very low
  RE for the NEM-only simulation.
  These nodes also have a mean over-supply (when considering all occurrences
- from the 2 years) of about 14.5GW and very limited occurrences of under-supply.
+ from the two years) of about 14.5GW and very limited occurrences of under-supply.
  Other nodes that were also significantly un-associated, but in a non-zero
  sense, with very low RE output have very high means in terms of oversupply
  (Fig.
@@ -2680,10 +2681,10 @@ reference "fig:All-Nodes-RE-Demand-Hist"
 \end_inset
 
 ).
- These nodes include node 19 (mean of 13.9GW) and node 4 (mean of 9.5GW).
+ These nodes include node 19 (mean of 13.9GW) and node four (mean of 9.5GW).
  While oversupply is more manageable for an RE-based energy network than
- undersupply, the extent to which nodes 6 and 25 are associated with oversupply
- is remarkable; these nodes are analysed in section 
+ undersupply, the extent to which nodes six and 25 are associated with oversuppl
+y is remarkable; these nodes are analysed in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:High-RE-Nodes6-25"
@@ -2749,8 +2750,9 @@ name "sub:Low-RE-TimeSeries-Analysis"
 In terms of the affect on the electrical system, an important consideration
  regarding the very low renewable energy events outlined above are the return
  period and duration statistics.
- In this section we analyse the temporal characteristics of the very low
- RE events--extended periods of very low RE output (see section 
+ In this section analysis of the temporal characteristics of the very low
+ RE events is presented---extended periods of very low RE output (see section
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Low-RE-Definition"
@@ -2836,15 +2838,15 @@ reference "fig:Low-RE-Event-Length-Histogram"
  illustrates that there is a large positive skewness in the event duration
  as well as a separation between mean and median.
  The distribution of event lengths suggests that events longer than about
- 10 hours are quite rare--the median is 4 hours.
+ 10 hours are quite rare---the median is four hours.
  However, given the reliability standards of today’s NEM (99.998% of hours
- met) any event longer than 10 hours would likely pose significant issues--parti
-cularly at peak times.
+ met) any event longer than 10 hours would likely pose significant issues---part
+icularly at peak times.
  It is clear that the distribution is skewed by some extreme events that
  last for, in the worst case, 52 hours.
  This is not to suggest that there was no power available to the NEM for
- in excess of 2 days--the definition of an event is a collection of days
- where the RE output is more than 20% below demand--but it does suggest
+ in excess of two days---the definition of an event is a collection of days
+ where the RE output is more than 20% below demand---but it does suggest
  that there is limited supply in some instances for prolonged periods.
  In fact, the hydro reserves would likely run out during the 52 hour event
  and the system would then have to rely on expensive gas back-up to meet
@@ -2914,20 +2916,20 @@ reference "fig:Low-RE-Event-Return-Period-Histogram"
  In particular the ability of the energy system to manage the next moment
  of low RE output is aided by a longer return period with increased pumped
  hydro reservoir levels.
- The median return period for a very low RE event is close to 2 days at
- 45 hours (due to the relatively more common return periods of about 2 days
- or less) while the average is closer to 7 days (171.8 hours).
+ The median return period for a very low RE event is close to two days at
+ 45 hours (due to the relatively more common return periods of about two
+ days or less) while the average is closer to seven days (171.8 hours).
  The analysis of return periods suggests that the NEM-only system does in
- fact have periods during the 2 years that have relatively high reliability
+ fact have periods during the two years that have relatively high reliability
  from RE.
  That is, there are some events that are separated by in excess of 20 days
  and even one instance where the system went over 116 days without having
  extended very low RE.
  While oversupply might be inevitable for an RE-based electricity system,
  oversupply will always be less of an issue than under-supply.
- Oversupply is an issue that can be dealt with by a range of solutions--includin
-g curtailment, load shifting and electric car charging, or other types of
- storage (like that explore in 
+ Oversupply is an issue that can be dealt with by a range of solutions---includi
+ng curtailment, load shifting and electric car charging, or other types
+ of storage (like that explored in 
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Budischak2013"
@@ -3014,11 +3016,11 @@ reference "fig:Low-RE-SOM-Percentage-Plot"
  average plots, which aggregate across all low RE events.
  The definition of a transition requires that the transition (persistence)
  be made within the same very low RE event and that the transition (persistence)
- occur to a new (the same) SOM node in 6-hourly ERA-Interim space.
+ occur to a new (the same) SOM node in six-hourly ERA-Interim space.
  For instance, the persistence on a node is not considered to occur in ACCESS-A
- space if there is no transition made from hour to hour--a transition, or
- not, can only occur across the 6-hourly blocks, and, can only be to a SOM
- node occurrence that was not filtered out.
+ space if there is no transition made from hour to hour---a transition,
+ or not, can only occur across the six-hourly blocks, and, can only be to
+ a SOM node occurrence that was not filtered out.
  As can be seen from Fig.
  
 \begin_inset CommandInset ref
@@ -3037,7 +3039,7 @@ reference "fig:Low-RE-SOM-Transition-Plot"
 
 \end_inset
 
- that is approximately 6 nodes apart indicates a transition down/up the
+ that is approximately six nodes apart indicates a transition down/up the
  SOM space, rather than across, and is due to the smooth nature of the SOM.
  Neighbouring SOM nodes are, by definition, closely related to each other
  and thus a transition to a neighbour is by design more likely.
@@ -3049,7 +3051,7 @@ reference "fig:Low-RE-SOM-Transition-Plot"
 
 \end_inset
 
- is that nodes 9 and 30 are some of the most persistent.
+ is that nodes nine and 30 are some of the most persistent.
  These nodes were seen as being significantly associated with very low RE
  output and Fig.
  
@@ -3113,7 +3115,7 @@ reference "fig:All-ERA-SOM-Transitions"
 
 \end_inset
 
- shows the persistence during the whole 2 year period.
+ shows the persistence during the whole two year period.
  Fig.
  
 \begin_inset CommandInset ref
@@ -3124,10 +3126,10 @@ reference "fig:All-ERA-SOM-Transitions"
 
  clearly illustrates that node 30 is by far the most persistent node of
  any of the SOM nodes.
- This indicates that node 30 is in general a slow moving synoptic regime--giving
- an explanation for its persistent during very low RE events as well.
- Node 9 is, however, the most persistent node during very low RE events.
- Yet the persistence of node 9 in general is not as marked as node 30.
+ This indicates that node 30 is in general a slow moving synoptic regime---givin
+g an explanation for its persistence during very low RE events as well.
+ Node nine is, however, the most persistent node during very low RE events.
+ Yet the persistence of node nine in general is not as marked as node 30.
  Thus the southerly high pressure centre outline in Fig.
  
 \begin_inset CommandInset ref
@@ -3136,7 +3138,7 @@ reference "fig:Node9-Low-RE-MSLP-Composite"
 
 \end_inset
 
- for node 9 has a tendency, at times, of being more persistent.
+ for node nine has a tendency, at times, of being more persistent.
  This observation can help explain the region of significance seen in Fig.
  
 \begin_inset CommandInset ref
@@ -3165,9 +3167,9 @@ reference "fig:All-ERA-SOM-Transitions"
 
 \end_inset
 
- suggests this region (nodes 8, 9, 10, and 15) is not particularly persistent
- on the whole, but that its persistence is among the highest during very
- low RE events (Fig.
+ suggests this region (nodes eight, nine, 10, and 15) is not particularly
+ persistent on the whole, but that its persistence is among the highest
+ during very low RE events (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3176,13 +3178,13 @@ reference "fig:Low-RE-SOM-Transition-Plot"
 \end_inset
 
 ).
- Thus the southerly high seen for node 9 can not only persist for longer
+ Thus the southerly high seen for node nine can not only persist for longer
  than average but also transition to neighbouring nodes during a very low
  RE event.
 \end_layout
 
 \begin_layout Subsubsection
-Nodes 6 and 25
+Nodes six and 25
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:High-RE-Nodes6-25"
@@ -3223,11 +3225,11 @@ reference "fig:Nodes25_6_RE-Demand-Histogram"
 
 \end_inset
 
-b shows a very similar story of oversupply for node 6.
- On average node 6 is associated with 14.4GW of oversupply, and although
- node 6 is less common than node 25, it still shows a very clear bias towards
- oversupply.
- Only 16 time steps are moments of RE below demand for node 6.
+b shows a very similar story of oversupply for node six.
+ On average node six is associated with 14.4GW of oversupply, and although
+ node six is less common than node 25, it still shows a very clear bias
+ towards oversupply.
+ Only 16 time steps are moments of RE below demand for node six.
  
 \begin_inset Float figure
 placement H
@@ -3255,7 +3257,7 @@ reference "fig:Node9-RE-Demand-Histogram"
 
 \end_inset
 
-,except for a) node 25 and b) node 6.
+,except for a) node 25 and b) node six.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Nodes25_6_RE-Demand-Histogram"
@@ -3280,7 +3282,7 @@ name "fig:Nodes25_6_RE-Demand-Histogram"
 \end_layout
 
 \begin_layout Standard
-The synoptic situation for both node 25 and 6 appears to be quite similar.
+The synoptic situation for both node 25 and six appears to be quite similar.
  Figs.
  
 \begin_inset CommandInset ref
@@ -3296,7 +3298,7 @@ reference "fig:Node6-MSLP-Composite"
 
 \end_inset
 
- show that node 25 and 6 are associated with low pressure intrusions that
+ show that node 25 and six are associated with low pressure intrusions that
  extend into the southern parts of Australia.
  Fig.
  
@@ -3306,10 +3308,10 @@ reference "fig:Node6-MSLP-Composite"
 
 \end_inset
 
- suggests that node 6 is a more advanced version of node 25 such that it
- seems likely node 6 would follow from node 25 in a normal westerly progression
- of synoptic scale systems in the mid latitudes (although this is not seen
- in Fig.
+ suggests that node six is a more advanced version of node 25 such that
+ it seems likely node six would follow from node 25 in a normal westerly
+ progression of synoptic scale systems in the mid latitudes (although this
+ is not seen in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3318,10 +3320,11 @@ reference "fig:All-ERA-SOM-Transitions"
 \end_inset
 
 ).
- Node 6 is associated with low pressure centred south of Adelaide and an
- associated front directing cold air to parts of South Australia and Victoria.
- Relatively higher pressure gradients also indicate that node 6 would be
- associated with increased wind speeds along the coast of South Australia,
+ Node six is associated with low pressure centred south of Adelaide and
+ an associated front directing cold air to parts of South Australia and
+ Victoria.
+ Relatively higher pressure gradients also indicate that node six would
+ be associated with increased wind speeds along the coast of South Australia,
  much of Victoria and coastal regions of NSW.
  
 \begin_inset Float figure
@@ -3369,11 +3372,11 @@ name "fig:Node25-MSLP-Composite"
 \begin_layout Standard
 While node 25 is less associated with low pressure and cold air it is associated
  with higher pressure gradients through much of the same regions as node
- 6.
+ six.
  The higher wind speeds are important given the reliance on wind power in
  the NEM-only simulation.
  In particular, the regions with installed capacity of wind would benefit
- greatly from the occurrence of nodes 25 and 6.
+ greatly from the occurrence of nodes 25 and six.
  This benefit is apparent not only in the MSLP plots, but also the oversupply
  plots shown earlier.
  
@@ -3395,7 +3398,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-MSLP composite for all occurrences of node 6.
+MSLP composite for all occurrences of node six.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Node6-MSLP-Composite"
@@ -3423,13 +3426,13 @@ name "fig:Node6-MSLP-Composite"
 Thus, analysis of SOM node behaviour in combination with the output of the
  NEM-Only simulation has been shown to identify common synoptic regimes
  that are associated with either favourable or detrimental RE conditions.
- Analysis presented in this section indicates that nodes 9 and 30 are significan
-tly associated with very low RE and have the potential to produce large
- areas of very low wind speeds across the NEM region.
- A prediction of nodes 9 or 30, however does not guarantee very low RE as
- 9.1% of node 9 and 6.5% of node 30 occurrences were associated with very
- low RE.
- Alternatively, it was shown that a prediction of nodes 25 and 6 is far
+ Analysis presented in this section indicates that nodes nine and 30 are
+ significantly associated with very low RE and have the potential to produce
+ large areas of very low wind speeds across the NEM region.
+ A prediction of nodes nine or 30, however does not guarantee very low RE
+ as 9.1% of node nine and 6.5% of node 30 occurrences were associated with
+ very low RE.
+ Alternatively, it was shown that a prediction of nodes 25 and six is far
  more likely than not to produce conditions that result in oversupply of
  wind power in the NEM region.
  
@@ -3471,10 +3474,10 @@ In both the summer-only and winter-only simulations the optimisation is
  in 2011.
  Gas costing is also altered slightly in the season specific simulations.
  The gas cost structure introduced in the NEM-Only simulation had a penalty
- applied to the fuel costs, which are small for a 2-year simulation but
+ applied to the fuel costs, which are small for a two-year simulation but
  would be much larger over the lifetime of the gas plant.
  This penalty is increased for the winter and summer only simulations because
- they are shorter than the 2-year NEM-only simulation.
+ they are shorter than the two-year NEM-only simulation.
  
 \end_layout
 
@@ -3543,7 +3546,7 @@ reference "tab:WInter-Only-Simulation-Stats"
 \end_inset
 
  also suggests that the reliability of the wind resources is higher in the
- wintertime--the capacity factor of the total wind speed time series was
+ wintertime---the capacity factor of the total wind speed time series was
  41.2%, 6% higher than the NEM-Only simulation.
 \begin_inset Float figure
 placement H
@@ -3641,7 +3644,7 @@ Solar PV is not utilised in the winter-only simulation.
  The reliability on the whole is much higher for the winter-only simulation.
  Despite the winter-only scenario relying solely on wind power, moments
  of oversupply for winter-only peak at less than half that of the NEM-only
- simulation using all 2 years (Table.
+ simulation using all two years (Table.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3650,8 +3653,8 @@ reference "tab:Oversupp-Comp-Base-Winter"
 \end_inset
 
 ).
- Gas, however, is utilised more in the winter-only simulation--peaking at
- 18GW and running at 10% capacity factor.
+ Gas, however, is utilised more in the winter-only simulation---peaking
+ at 18GW and running at 10% capacity factor.
  Thus the winter-only simulation is able to exploit a more reliable wind
  resource, but in doing so is exposed to moments of low output that cannot
  be covered by excess hydro reserves and require large amounts of gas back-up.
@@ -3670,9 +3673,9 @@ reference "fig:Winter-Only-Time-Series"
 
 \end_inset
 
- are optimised we can also conclude that the cost of installing solar to
- avoid some of those costly gas peaks is higher than simply paying for the
- use of the gas.
+ are optimised it can also be concluded that the cost of installing solar
+ to avoid some of those costly gas peaks is higher than simply paying for
+ the use of the gas.
 \begin_inset Float table
 placement H
 wide false
@@ -4175,9 +4178,9 @@ reference "fig:Summer-Average-U80"
 
  illustrates that the preference for South Australian and north-west Tasmanian
  wind is not necessarily as a result of these regions peaking in the summer
- (intuitively, this would not make sense and not seen in the average plots)
- but rather as a result of the average wind speeds dropping off in northern
- Queensland.
+ (intuitively, this would not make sense and is not seen in the average
+ plots) but rather as a result of the average wind speeds dropping off in
+ northern Queensland.
  
 \begin_inset Float figure
 placement H
@@ -4463,7 +4466,8 @@ Gas
 \begin_inset Caption
 
 \begin_layout Plain Layout
-As per 
+As per Table.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:WInter-Only-Simulation-Stats"
@@ -4767,7 +4771,7 @@ name "fig:Summer-Average-U80"
 \begin_layout Standard
 Another distinction to make is the southern shift in solar capacity in the
  summer-only scenario when compared to the base NEM-only simulation.
- In the NEM-only simulation the optimisation chose to install the the only
+ In the NEM-only simulation the optimisation chose to install all of the
  solar capacity in south-west Queensland.
  Fig.
  
@@ -4855,8 +4859,8 @@ This section explores the effect on the installed RE capacity (location
  city.
  The increased transmission penalties do not take into account power flow
  considerations, including voltage and node limitations, but are used as
- a guide for the optimser to choose locations closer to the load centres
- (as per previous simulations).
+ a guide for the GA to choose locations closer to the load centres (as per
+ previous simulations).
  The hypothesis for conducting simulations with an increased connection
  cost is to test the quality of the remote resources.
  If, for instance, a small increase in penalty for connecting to the nearest
@@ -4910,7 +4914,7 @@ reference "fig:2X-Installed-Capacity"
 
 \end_inset
 
- is that the increase from $1M/Km to $2M/km has not significantly altered
+ is that the increase from $1M/km to $2M/km has not significantly altered
  the optimal configuration (see Fig.
  
 \begin_inset CommandInset ref
@@ -5392,7 +5396,7 @@ reference "fig:4X-Intsalled-Capacity"
 
  is the loss of any solar capacity.
  Clearly the advantage of having solar connected to the NEM is not enough
- to warrant the extra cost of connected the previously installed locations.
+ to warrant the extra cost of connecting the previously installed locations.
  It is surprising though that there appears to be no solar resource close
  enough to a capital city to warrant some installed capacity.
  The map of average DSR (Fig.
@@ -5943,7 +5947,7 @@ reference "tab:8X-Simulation-Stats"
  installed from 4X to 8X the contraction to four main locations and the
  subsequent increase in exposure to wind events (including the capturing
  of a cold front passing through South Australia only once, rather than
- several times) is covered by an increase use of gas back-up.
+ several times) is covered by an increased use of gas back-up.
 \begin_inset Float figure
 placement H
 wide false
@@ -6462,7 +6466,7 @@ name "tab:Oversupp-Comp-Base-2X-4X-8X"
 \begin_layout Standard
 What is also clear is that despite the increase in reliance on gas when
  the connection cost is increased the difference between RE output and demand
- for all 2-year scenarios presented is minimal (Fig.
+ for all two-year scenarios presented is minimal (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6499,7 +6503,7 @@ reference "fig:8X-Installed-Capacity"
 \end_inset
 
 , also shows is that the NEM region can be split into four distinct wind
- regions--the four major stations in Fig.
+ regions---the four major stations in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
