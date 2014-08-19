@@ -175,7 +175,7 @@ reference "fig:Huva-etal-2012-Model-Output"
  wind, large-scale concentrating solar, pumped hydro storage and gas fired
  back-up).
  The costs for each technology define the order in which the technologies
- are favoured--the dispatch order.
+ are favoured---the dispatch order.
  For all simulations examined in this thesis the effective dispatch order
  is renewables (wind and solar), followed by hydro and then gas.
  
@@ -295,7 +295,7 @@ name "sub:Renewable-energy-costs"
 \begin_layout Standard
 The costs for the wind and solar resources in this thesis were determined
  based on the idea that each wind/solar site has an initial installation
- cost and then costs associated with building and installing the require
+ cost and then costs associated with building and installing the required
  amount of wind/solar technology.
  Further to this, and based on an economy of scale, the installation of
  each new wind turbine or large-scale solar unit should increment such that
@@ -379,7 +379,7 @@ reference "fig:Cost-Function-Example"
 
 \end_inset
 
---this is concordant with the study by 
+---this is concordant with the study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Elliston2013"
@@ -434,8 +434,8 @@ reference "eq:Cost-Function-Solution"
  were iteratively determined such that the gradient of wind cost versus
  number of turbines approached values very close to the manufacturing costs
  of a turbine for wind at approximately 15 Turbines (Cowling P., Pers.
- Comm., Jan 23 2013) and for solar at approximately 5 large-scale concentrating
- units.
+ Comm., Jan 23 2013) and for solar at approximately five large-scale concentratin
+g units.
 \begin_inset Float figure
 placement H
 wide false
@@ -518,11 +518,15 @@ The first form of back-up energy supply in the energy model was via pumped
  For each iteration of the optimisation a time series of output from the
  selected wind and solar installations is produced and thus a time series
  of the difference between renewable output and demand is also formed.
- The hydro model takes this difference time series and uses the moments
- of excess to pump water uphill--up to a pre-determined cap and with a pre-deter
-mined maximum rate.
+ 
+\end_layout
+
+\begin_layout Standard
+The hydro model takes the difference time series and uses the moments of
+ excess to pump water uphill---up to a pre-determined cap and with a pre-determi
+ned maximum rate.
  The hydro model, which is also given a pre-determined initial storage level
- then assesses each point in time in the 2-years of simulation and determines
+ then assesses each point in time in the two-years of simulation and determines
  whether or not water needs to be pumped, released, if no action is needed
  or if no action is possible due to capacity constraints/storage levels.
  Thus, a time series of hydro electrical output or storage of excess (negative
@@ -558,7 +562,7 @@ The final energy source available in the energy model is the gas-fired back-up
  The gas model is intentionally last in the dispatch order of resources
  due to the nature of this study, which is focused on determining the likelihood
  of Australia relying heavily on renewable resources in the future.
- The gas model is assumed to be have the ability to be fired instantaneously
+ The gas model is assumed to have the ability to be fired instantaneously
  to meet any remaining demand that cannot be met by the combination of wind,
  solar and hydro.
  The cost of the gas system is described by Eq.
@@ -580,7 +584,7 @@ reference "eq:Gas-Cost-Formula"
 
  is defined as a factor of roughly 1,000 that is implemented in order to
  reflect the true fuel cost of a gas-fired plant over its lifetime (~20
- years, rather than the 2 years being simulated in this thesis), the 
+ years, rather than the two years being simulated in this thesis), the 
 \begin_inset Formula $max\_cap$
 \end_inset
 
@@ -728,12 +732,12 @@ It is sensible for a study that involves large meteorological data sets
 In terms of the Downward Shortwave Radiation (DSR) field, however, no such
  decorrelation length scale was found in Part 1.
  This is not to suggest that one location would be a diverse-enough selection
- for all of Australia--this would mostly likely be unworkable in reality.
+ for all of Australia---this would mostly likely be unworkable in reality.
  Instead, and even though two locations in the DSR field that are very close
  might not provide any new information, the limitation on the amount of
  DSR locations to include was purely computational.
  As such, it was determined that the minimum separation of available DSR
- locations would be 21 grid points--or roughly 250km.
+ locations would be 21 grid points---or roughly 250km.
  
 \end_layout
 
@@ -748,7 +752,8 @@ Following the determination of the minimum separation distances in the DSR
  These unavailable locations were then utilised in the site selection process
  such that a regular grid of locations was formed.
  The regular grid included the minimum separation distance and did not include
- an unavailable site--in accordance with a similar process outlined in (
+ an unavailable site---in accordance with a similar process outlined in
+ (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "AEMO2013"
@@ -849,8 +854,7 @@ This chapter presented the energy model used in Part 2 of the current study,
  and the sites selected form the degrees of freedom by which the model as
  a whole is able to move and explore the solution space.
  Based on the specific GA configurations outlined later, the GA alters the
- amount and location of RE resources in order to find a more cost minimised
- solution.
+ amount and location of RE resources in order to find cost minimised solutions.
  In the next chapter simulations of the whole of Australia and then just
  the NEM region are presented and analysed for what they reveal regarding
  the covariance of wind and solar across Australia.
