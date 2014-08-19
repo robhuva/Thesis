@@ -115,7 +115,7 @@ This chapter presents an introduction to the general circulation of the
  Included in the literature review are studies that examine variability
  through pressure and geopotential height fields, but also studies whose
  focus is on wind and/or solar variability.
- The covariability of wind and solar and how the covariability can be influenced
+ The covariability of wind and solar and how the covariability can be driven
  by certain synoptic classifications is then explored.
 \end_layout
 
@@ -138,11 +138,11 @@ name "sec:Lit-Synptic-Clim-Aus"
 \end_layout
 
 \begin_layout Standard
-On the larger scales (for instance Australia-wide) the weather systems that
- have the largest affect on the day-to-day variability of atmospheric variables
- like wind speed and solar irradiance are the synoptic systems; the synoptic
- scale encompasses spatial scales from 100s-1000s of kilometres and temporal
- scales from days to weeks.
+On continental spatial scales (i.e.
+ the size of Australia) the synoptic systems have the largest affect on
+ the day-to-day variability of atmospheric variables like wind speed and
+ solar irradiance; the synoptic scale encompasses spatial scales from 100s-1000s
+ of kilometres and temporal scales from days to weeks.
  More commonly visualised by the distribution of high and low pressure centres,
  the synoptic scale describes the continuity of weather systems that stretch
  over vast continental-scale distances.
@@ -160,7 +160,7 @@ key "Sturman2005"
 \end_layout
 
 \begin_layout Standard
-Thermal energy generated in larger quantities at the equator by radiative
+Thermal energy generated in large quantities at the equator by radiative
  transfer from the Sun, and through the latent heat release of water vapour
  in clouds, drives thermally direct circulations, including the Hadley cell.
  In essence, circulations like the Hadley cell are formed through the need
@@ -240,8 +240,8 @@ key "Meteorology2009"
 \end_inset
 
 ).
- The northern regions of the Australia are considered to only have two seasons
- each year (wet and dry--according to the position of the monsoon belt)
+ The northern regions of Australia are considered to only have two seasons
+ each year (wet and dry---according to the position of the monsoon belt)
  and can often have quite invariant weather during the dry season (
 \begin_inset CommandInset citation
 LatexCommand citealp
@@ -333,8 +333,15 @@ key "Sinclair1996"
 
  studied the climatology of such high pressure systems and their prevalence
  in the southern hemisphere.
- The author found that there tended to be a wintertime maximum in anticyclonic
- distribution over the Great Australian Bight.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sinclair1996"
+
+\end_inset
+
+ found that there tended to be a wintertime maximum in anticyclonic distribution
+ over the Great Australian Bight.
  The anticyclones from the Bight then tend to migrate north-eastward over
  the Australian continent.
  
@@ -351,10 +358,10 @@ key "Sinclair1996"
 \end_layout
 
 \begin_layout Standard
-In the Tasman Sea, south west of New Zealand, is also a common location
- for so-called ‘blocking highs’.
+The Tasman Sea, south west of New Zealand, is also a common location for
+ so-called ‘blocking highs’.
  Blocking highs are said to be long-lived high pressure systems (lasting
- for more than about 5 days) that are associated with an anomalous breakdown
+ for more than about five days) that are associated with an anomalous breakdown
  in the prevailing westerly flow (
 \begin_inset CommandInset citation
 LatexCommand citealt
@@ -408,10 +415,10 @@ reference "fig:Alexander-SOM"
 \end_inset
 
 ).
- Further evidence is thus provided to suggest that large sections of the
- Australian continent are commonly under the influence of high pressure
- systems, and that consequently there is dominant stable weather regime
- for the Australian region.
+ Further evidence is provided to suggest that large sections of the Australian
+ continent are commonly under the influence of high pressure systems, and
+ that consequently there is dominant stable weather regime for the Australian
+ region.
  
 \end_layout
 
@@ -420,7 +427,8 @@ The more unstable regimes common to the Australian region are normally linked
  to the passage of low pressure systems and associated cold fronts or troughs.
  In terms of wind speed, the unstable regimes are potentially more advantageous
  for the production of wind energy as low pressure systems are inherently
- associated with higher wind speeds.
+ associated with higher wind speeds---large pressure gradients near the
+ centre of low pressure systems drive higher geostrophic wind speeds.
  In Australia there are two main types of low pressure systems that affect
  the weather: tropical and extra-tropical or mid-latitude cyclones (although
  transitions between the two types are not uncommon (
@@ -466,7 +474,7 @@ key "Hassim2008"
 
  also found statistically significant downward trends in minimum central
  pressure (likely to be due to an increased occurrence of the more severe
- (category 4 and 5) storms).
+ (category four and five storms).
  The potential for useful energy to be produced from locations under the
  influence of tropical cyclones is questionable though as, in particular,
  wind turbines are shut down at wind speeds beyond about 25 ms
@@ -489,7 +497,8 @@ key "Hassim2008"
 
  would likely result in damage.
  Solar irradiance is also likely to be negatively impacted by the presence
- of large-scale convection and cloud formation associated with topical storms.
+ of large-scale convection and cloud formation associated with tropical
+ storms.
  In the northern regions of Australia heat lows, which form as a result
  of continental heating, are also common in summer (
 \begin_inset CommandInset citation
@@ -758,11 +767,11 @@ reference "fig:SAM-wind_curl"
 
 \end_inset
 
-) between known modes of variability and the wind exist as geostrophic theory
- explains how pressure gradients (and Coriolis force) drive wind speed and
- direction.
- But specifically how such atmospheric modes affect wind speed variability
- over Australia is not well published.
+) between known modes of variability in related fields and the wind field
+ exist.
+ Geostrophic theory explains how pressure gradients (and Coriolis force)
+ drive wind speed and direction, but specifically how such atmospheric modes
+ affect wind speed variability over Australia is not extensively published.
  
 \end_layout
 
@@ -831,7 +840,7 @@ key "Lyons1989"
 
  noted that the observed lower output from cyclonic classes was partly due
  to the lower frequency of the cyclonic systems, but also due to the fact
- that afternoon sea-breezes were generated under anticyclonic conditions--thus
+ that afternoon sea-breezes were generated under anticyclonic conditions---thus
  making anticyclonic regimes a larger contributor to yearly total power
  output.
  
@@ -868,8 +877,8 @@ key "Troccoli2011"
 \end_inset
 
  showed that there have been slight negative trends in wind speeds at 2m
- (-0.16±0.01% p.a.) and more positive trends at 10m (0.89±0.02% p.a.) for the period
- 1975-2006; a study by 
+ (-0.16±0.01% p.a.) and larger positive trends at 10m (0.89±0.02% p.a.) for the
+ period 1975-2006; a study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "McVicar2008"
@@ -974,7 +983,7 @@ name "fig:Average-wind-velocity"
 
 \begin_layout Standard
 Unfortunately, the extent of publication examining wind speed variability
- in Australia is quite limited--especially with respect to any links to
+ in Australia is quite limited---especially with respect to any links to
  the large scale variability in the atmosphere.
  There are more comprehensive studies overseas linking patterns like the
  North Atlantic Oscillation (NAO) and the Pacific North-American pattern
@@ -1474,9 +1483,9 @@ key "Lyons1989"
 
 \end_inset
 
- observed that instances of high pressure ridging directly above south-west
- WA were the second most influential synoptic state for positive wind power
- production in Perth.
+ observed that due to the sea-breeze effect instances of high pressure ridging
+ directly above south-west WA were the second most influential synoptic
+ state for positive wind power production in Perth.
  Yet in general terms anticyclones are the bearer of fine weather and light
  winds.
  Therefore, one conclusion that could be made from the work of 
@@ -1489,7 +1498,7 @@ key "Lyons1989"
  is that under the influence of a ridging anticyclone coastal regions can
  have a positive covariance between wind speed and solar irradiance (or
  rather, that sunny conditions can coincide with windy conditions).
- This type of positive covariance could be advantageous for hybrid energy
+ This type of positive covariance could be advantageous for an hybrid energy
  system.
  For instance, an hybrid system exposed to a sunny and windy day could disperse
  excess energy into nighttime hours if it incorporated storage.
@@ -1517,7 +1526,7 @@ key "Lyons1989"
  likely would have been missed by a simple analysis of the large scale forcing.
  Thus one could argue that any conclusions made from analysis of the pressure
  fields must be qualified by noting the potential influence of local effects.
- However, the altering of wind speeds by local conditions like the sea-breeze
+ However, the modifying of wind speeds by local conditions like the sea-breeze
  is likely to be less relevant for locations away from an anticyclonic centre
  (where geostrophic forcing is greater).
  
@@ -1539,8 +1548,7 @@ key "Simmonds2000"
 \end_inset
 
  there should be extratropical cyclones that, particularly in winter-time,
- will be influencing atmospheric conditions in the southern latitudes of
- Australia.
+ influence atmospheric conditions in the southern latitudes of Australia.
  For example, the southern regions of Australia (~29-44ºS) have a typical
  cyclone density of close to one cyclone for the whole region during both
  summer and winter (
@@ -1578,7 +1586,7 @@ key "Simmonds2000"
  Given then that the low pressure centres are usually associated with cold
  fronts or troughs and bands of convection it is likely that there would
  be relatively high winds and below average levels of DSR, during each of
- the cyclonic events mentioned above--indicating the strong possibility
+ the cyclonic events mentioned above---indicating the strong possibility
  for a negative covariance to exist between wind speed and solar irradiance
  for regions under the influence of such cyclonic systems.
 \end_layout
@@ -1591,8 +1599,8 @@ Analysing some of the literature into the potential synoptic influences
  responsible for a negative covariance.
  Under anticyclonic regimes, coastal regions may experience both sunny weather
  and relatively high wind speeds due to local effects and that such a covariance
- could be advantageous to a hybrid energy system as neither resource is
- likely to be at a minimum at the same time (assuming day time conditions).
+ could be advantageous to a hybrid energy system if storage was incorporated
+ and excess energy dispersed into the nighttime.
  However, this analysis of some of the literature is far from being quantitative
 ly robust.
  A more comprehensive study would still be needed in order to quantify the
