@@ -136,7 +136,7 @@ There are some key research questions not addressed in this thesis that
 Point 1 will allow for an increase in the reliance on RE without the further
  exposure to atmospheric variability.
  This is an important consideration if the aim of a future Australian electricit
-y network is to rely heavily--potentially 100%--on RE resources.
+y network is to rely heavily---potentially 100%---on RE resources.
 \end_layout
 
 \begin_layout Description
@@ -294,12 +294,12 @@ ty in order to keep homes and businesses at comfortable temperatures.
 \end_layout
 
 \begin_layout Standard
-Point 4 involves the optimiser being fed demand data with a small random
- component.
+Point 4 would involve the optimiser being fed demand data that contained
+ a small random component.
  The random component to demand would imitate reality and likely result
  in the use of more back-up resources.
  Further to this it would be possible to operate a financial model for each
- resource centre--as part of a new simulation.
+ resource centre---as part of a new simulation.
  The inclusion of a financial model would also ensure that each installation
  was financially viable and would likely concentrate resources away from
  the smaller RE stations.
@@ -342,6 +342,12 @@ During the process of assigning SOM-based weather types to the 2010-2011
  It is possible with further analysis to reveal if some of these excluded
  hours were important hours for the NEM (i.e.
  for reasons of over or undersupply).
+ Comparison of the results from such a study with that found in this thesis
+ would be useful in order to reveal any differences between the influence
+ on RE output from common weather patterns, as opposed to extremes.
+ Although it should be noted that over 93% of time steps had a SOM node
+ match that survived filtering in the continental case, leaving a small
+ population of extreme samples to examine.
 \end_layout
 
 \begin_layout Section
@@ -369,9 +375,9 @@ Following this an energy model was built.
  Market Operator.
  When given the chance to optimise the whole of Australia the energy model
  chose to install most of the RE in remote Western Australia (WA).
- Available locations to optimised were then limited to the NEM region because
- no realistic penalty could be applied to deter the energy model from using
- such unrealistic WA locations.
+ Available locations to be optimised were then limited to the NEM region
+ because no realistic penalty could be applied to deter the energy model
+ from using such unrealistic WA locations.
  A base NEM-only scenario was then produced.
  The NEM-only scenario with standard transmission costs showed some preference
  for locations closer to the capital cities.
@@ -382,22 +388,23 @@ Following this an energy model was built.
 \end_layout
 
 \begin_layout Standard
-By conducting optimisations of data from just the Austral summer and winter
- it was revealed that some very distinct summer-only and winter-only features
- were responsible for the distribution of resources seen in the base scenario.
+By conducting optimisations using data from either the Austral summer and
+ winter it was revealed that some very distinct summer-only and winter-only
+ features were responsible for the distribution of resources seen in the
+ base scenario.
  In particular, the non-use of north Queensland in the summer-only optimisation
  showed that the north Queensland wind resources is a wintertime (dry season)
  only phenomenon.
  The lack of installed solar capacity in the wintertime optimisation also
  showed that the standard transmission cost was too large a cost impediment
- to justify any use of solar Photovoltaics in the wintertime.
+ to justify any use of solar photovoltaics in the wintertime.
  Scenarios of the whole 2010-2011 period that utilised increased transmission
  penalties also revealed that the solar resource, without storage, was not
  good enough to justify significantly larger connection costs.
  The scenarios with increased connection costs also resulted in the contraction
- of wind resources to 4 distinct regions (north Queensland, Brisbane, north-west
- Tasmania and South Australia).
- The 4 wind regimes were then shown to be highly uncorrelated, reinforcing
+ of wind resources to four distinct regions (north Queensland, Brisbane,
+ north-west Tasmania and South Australia).
+ The four wind regimes were then shown to be highly uncorrelated, reinforcing
  their usefulness in combining to meet demand, but also providing an optimisatio
 n-based decorrelation length scale of approximately 884km.
 \end_layout
