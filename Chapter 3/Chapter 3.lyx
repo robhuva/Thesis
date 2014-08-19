@@ -108,9 +108,9 @@ Summary
 
 \begin_layout Standard
 \noindent
-This chapter examines the Self-Organising Map (SOM) and how it is utilised
- in climatology in general, and how it has been applied in the context of
- Australia.
+This chapter examines the Self-Organising Map (SOM) technique and how it
+ is utilised in climatology in general, and how it has been applied in the
+ context of Australia.
  This chapter also introduces the reanalysis data used for Part 1 and the
  performance of the data in comparison to other data sets.
  
@@ -146,9 +146,17 @@ key "Kohonen1990"
 \end_inset
 
 ).
- By successively showing the data to the SOM array and then altering the
- 2D array to look more like the data, the SOM technique aims to identify
- specific patterns from within the data that are the most common.
+ By successively 
+\begin_inset Quotes eld
+\end_inset
+
+showing
+\begin_inset Quotes erd
+\end_inset
+
+ the data to the SOM array and then altering the 2D array to look more like
+ the data, the SOM technique aims to identify specific patterns from within
+ the data that are the most common.
  
 \end_layout
 
@@ -360,7 +368,7 @@ The data used in the current study are from the European Centre for Medium-range
  of the Australian region.
  ERA-Interim is a global reanalysis product that spans the period 1989 to
  almost current day and which is freely available to non-ECMWF members at
- 1.5ºLatitude/Longitude spatial resolution (
+ 1.5º Latitude/Longitude spatial resolution (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Berrisford2009"
@@ -427,7 +435,7 @@ key "Berrisford2009"
 ).
  ERA-Interim also includes the introduction of 4-dimensional variational
  analysis (4D-Var) and a variational bias correction scheme for satellite-derive
-d radiances--both of which were not included in ERA-40.
+d radiances---both of which were not included in ERA-40.
  As a consequence, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -435,12 +443,18 @@ key "Dee2011"
 
 \end_inset
 
- were able to show that the background departures (the analysis system attempts
- to forecast the next observation, and the the difference between this forecast
- and the observation is the background departure) are smaller in ERA-Interim,
- which in turn has allowed for improved temporal consistency on synoptic
- time-scales.
- In terms of the performance of ECMWF products in comparison observations
+ were able to show improved temporal consistency on synoptic time-scales.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ were also able to show that the background departures, defined as being
+ the difference between the forecast of the next observation and the observation
+, are smaller in ERA-Interim.
+ In terms of the performance of ECMWF products in comparison to observations
  it was found by 
 \begin_inset CommandInset citation
 LatexCommand citet
