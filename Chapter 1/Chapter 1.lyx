@@ -122,7 +122,7 @@ name "sec:PhD-Motivation"
 \end_layout
 
 \begin_layout Standard
-With world energy consumption showing no signs of decreasing--global annual
+With world energy consumption showing no signs of decreasing---global annual
  electricity consumption grew by nearly 3.5% p.a.
  for the period 1998-2008 
 \begin_inset CommandInset citation
@@ -171,16 +171,16 @@ key "Bernstein2007"
 
 .
  Based on the combination of dwindling supply of fossil fuels and the likely
- negative consequences of further global warming there is thus currently
- an enhanced impetus to investigate electricity production via non-carbon-intens
-ive and renewable resources.
+ negative consequences of further global warming there is currently an enhanced
+ impetus to investigate electricity production via non-carbon-intensive
+ and renewable resources.
  
 \end_layout
 
 \begin_layout Standard
 With increasing installation of renewable energy technologies across Australia
  the question as to whether or not technologies such as wind and solar are
- able to provide stable and reliable energy at large amounts of penetration
+ able to provide stable and reliable energy at high levels of penetration
  is therefore quickly becoming a question that needs addressing.
  To date, most of the research (often undertaken by the wind/solar farm
  operators themselves using software like 
@@ -235,7 +235,7 @@ key "Santos-Alamillos2012"
  The current study is thus relevant because it addresses the need for a
  large-scale resources assessment of renewable energy in Australia and in
  doing so assesses the potential for spatio-temporal balancing of the wind
- and solar resources--enabling Australia to contribute to a more sustainable
+ and solar resources---enabling Australia to contribute to a more sustainable
  energy future for the world.
  
 \end_layout
@@ -263,8 +263,8 @@ key "Goetzberger2003"
 \end_inset
 
  while it has also become increasingly popular for households to install
- PV panels for use by the home (nearly 1 million households had rooftop
- PV at the end of 2012 
+ PV panels for use by the home (nearly 1 million Australian households had
+ rooftop PV at the end of 2012 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Council2012"
@@ -349,8 +349,8 @@ key "Barnett1998"
 \end_inset
 
  have found decorrelation between solar measuring stations in the Oklahoma
- MESONET to occur in the order of 100’s of kilometres, depending cloud cover
- and the temporal resolution used.
+ MESONET to occur in the order of 100’s of kilometres, depending on cloud
+ cover and the temporal resolution used.
  In order to gain further steadiness, or reliability in renewable energy
  output, the combination of different resources like wind and solar is usually
  explored.
@@ -455,8 +455,8 @@ key "Elliston2013"
 , which used BoM and Australian Electricity Market Operator (AEMO) data,
  suggested the mix for a future 100% renewable Australia could be between
  46-58% onshore wind power, 13-22% Concentrating Solar Thermal (CST), 15-20%
- PV, 5-6% Hydro and the remaining 5-6% gas (fueled by biofuels)--as a percentage
- of total output, and depending on the cost assumptions.
+ PV, 5-6% Hydro and the remaining 5-6% gas (fueled by biofuels), depending
+ on the cost assumptions.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -502,12 +502,12 @@ key "Liu2011"
 \end_inset
 
 ).
- Thus one might conclude from a brief survey of the literature that the
- prospects of dispersing renewable resources across the Australian continent
- and achieving a reliable net energy output are quite high.
+ One might conclude from a brief survey of the literature that the prospects
+ of dispersing renewable resources across the Australian continent and achieving
+ a reliable net energy output are quite high.
  However, most studies in the Australian context use data that are sparse,
  due to a reliance on observations, and data that span only a couple of
- years at most--presumably due to computational limitations.
+ years at most (due to computational limitations).
  Much of the variability of a large-scale renewable network is therefore
  lost because the data do not resolve appropriate spatial and temporal scales.
  In order to properly gauge the large-scale and long-term renewable energy
@@ -543,7 +543,7 @@ m studies that result in such a discrepancy?
 \end_layout
 
 \begin_layout Standard
-It is thus the aim of this PhD to undertake a comprehensive investigation
+It is therefore the aim of this PhD to undertake a comprehensive investigation
  of climatological and meteorological factors that could significantly influence
  output in a future, highly renewable energy dependent, Australian electricity
  network.
@@ -567,9 +567,9 @@ This thesis is made up of two parts.
  region and explores the association between common weather regimes and
  the wind and solar potential that co-occurs with each regime.
  Part 2 presents an alternative approach for examining the influence of
- synoptic regimes by first optimising the wind and solar energy as part
- of an energy model (whose aim is to increase the reliance of the electricity
- network on wind and solar).
+ synoptic regimes by first optimising the location and amount of wind and
+ solar energy as part of an energy model (whose aim is to increase the reliance
+ of the electricity network on wind and solar).
  Part 2 then goes on to explore the synoptic regimes that lead to poor and/or
  favourable large-scale renewable output from the optimised system.
  The sensitivity of the results from the optimisation are tested by varying
