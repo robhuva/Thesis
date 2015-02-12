@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -65,17 +67,18 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -106,9 +109,15 @@ Summary
 
 \begin_layout Standard
 \noindent
-This chapter examines the Self-Organising Map (SOM) and how it is utilised
- in climatology in general, and then how it has been applied in the context
- of Australia.
+This chapter examines the Self-Organising Map (SOM) technique and how it
+ is utilised in climatology in general, and how it has been applied in the
+ context of Australia.
+
+\change_inserted -1458100629 1416185995
+ The SOM algorithm is described in full and previous research comparing
+ the preformance of the SOM to other commonly used techniques is presented.
+
+\change_unchanged
  This chapter also introduces the reanalysis data used for Part 1 and the
  performance of the data in comparison to other data sets.
  
@@ -144,9 +153,17 @@ key "Kohonen1990"
 \end_inset
 
 ).
- By successively showing the data to the SOM array and then altering the
- 2D array to look more like the data, the SOM technique aims to identify
- specific patterns from within the data that are the most common.
+ By successively 
+\begin_inset Quotes eld
+\end_inset
+
+showing
+\begin_inset Quotes erd
+\end_inset
+
+ the data to the SOM array and then altering the 2D array to look more like
+ the data, the SOM technique aims to identify specific patterns from within
+ the data that are the most common.
  
 \end_layout
 
@@ -198,7 +215,7 @@ key "Sheridan2011"
 
 ).
  Specifically, the SOM has been widely used for the study of pressure patterns
- that co- occur with precipitation events (
+ that co-occur with precipitation events (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Sheridan2011"
@@ -207,6 +224,369 @@ key "Sheridan2011"
 
 ).
  
+\change_inserted -1458100629 1415864191
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted -1458100629 1415864256
+SOM Methodology
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SOM-Methodology"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1418104995
+The training of the SOM in the current study occurred in two main phases,
+ in accordance with the suggestions from the software and the works of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hewitson2002"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+.
+ The first phase involved a random initialisation of each SOM node, followed
+ by training with the data.
+ The training in the SOM algorithm is conducted by sequentially presenting
+ the time-steps from the data to be mapped (in this case the ERA-Interim
+ MSLP data), followed by a search for the SOM node that best matches each
+ data sample.
+ The node that best matches (hereafter referred to as the Best Matching
+ Unit 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BMU"
+description "Best Matching Unit"
+
+\end_inset
+
+(BMU)) is determined by the Euclidean distance measurement; shown here in
+ Eq.
+ 1 from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohonen1995"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray}
+\text{ǁ}x-m_{c}\text{ǁ} & = & \underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \text{{,\,\,\,\ or}}\nonumber \\
+c & = & arg\,\underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \label{eq:1-BMU}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1415864391
+where 
+\begin_inset Formula $c$
+\end_inset
+
+ is the argument of the winning node, 
+\begin_inset Formula $x$
+\end_inset
+
+ is the data sample and 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ is the node that 
+\begin_inset Formula $x$
+\end_inset
+
+ is being compared with; indicating that 
+\begin_inset Formula $m_{c}$
+\end_inset
+
+ would be the BMU.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1423014903
+The BMU and the nodes that surround the BMU are then altered to look more
+ like the data.
+ The amount the nodes are altered by is determined by two parameters: namely,
+ the alpha value and radius value.
+ The alpha value decreases linearly from an initial value to zero during
+ training and the radius value is given the value of the smallest dimension
+ size of the SOM in training phase one.
+ In this thesis the choice was made to utilise a Gaussian approach to node
+ alteration (Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3-Gaussian-Function"
+
+\end_inset
+
+).
+ In the Gaussian approach the alpha and radius values control the decay
+ rate of the Gaussian function, centred on the BMU, such that nodes immediately
+ surrounding the BMU are altered much more than those further away in the
+ SOM space.
+ An alternative approach to the Gaussian utilises just a monotonically decreasin
+g function of 
+\begin_inset Formula $t$
+\end_inset
+
+ (
+\begin_inset Formula $h_{ci}(t)=\alpha(t)$
+\end_inset
+
+ only) and is termed the 'Bubble' approach.
+ In this thesis the Gaussian approach was selected because it was found
+ to produce SOMs with consistently smaller Euclidean distances to the original
+ data (not shown).
+ The amount that each node is altered can be described by Eqs.
+ 2 and 3 from 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohonen1995"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1415864391
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{cccc}
+m_{i}(t+1)=m_{i}(t) & + & h_{c}(t)\,[\, x(t)-m_{i}(t)] & ,\,\, and\,\,\end{array}\label{eq:2-Node-Alteration}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1415864391
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccccc}
+h_{ci}(t)=\alpha(t) & \cdot & \exp(-\frac{\parallel r_{c}-r_{i}\parallel^{2}}{2\sigma^{2}(t)})\end{array}\label{eq:3-Gaussian-Function}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\change_inserted -1458100629 1415864391
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+where 
+\begin_inset Formula $c$
+\end_inset
+
+, 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+, and 
+\begin_inset Formula $m$
+\end_inset
+
+ are as before, 
+\begin_inset Formula $t$
+\end_inset
+
+ is an integer value between 
+\begin_inset Formula $0$
+\end_inset
+
+ and the run length, 
+\begin_inset Formula $\alpha(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma(t)$
+\end_inset
+
+ are monotonically decreasing functions of 
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\begin_inset Formula $(0<\alpha(t)<initial\,\, alpha)$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{c}$
+\end_inset
+
+ are the neighbourhood array points around node 
+\begin_inset Formula $c$
+\end_inset
+
+ that are contained within the initial radius, 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ The run length describes how many times the data are shown to the SOM and
+ in the first phase was equal to the number of time steps in the ERA-Interim
+ data (i.e.
+ each time step was shown once and hence 
+\begin_inset Formula $t$
+\end_inset
+
+ from Eqs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2-Node-Alteration"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3-Gaussian-Function"
+
+\end_inset
+
+ can represent the time-steps in the data).
+ Each successive pass of the data alters the BMU and surrounding nodes,
+ according to the above equations, such that the SOM nodes start to resemble
+ the data.
+ Various initial alpha values were tested in the current study---in accordance
+ with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+initial\,\, alpha=(0.001,0.002,...,0.01,0.02,...,0.1,0.15,0.2,...,1)
+\]
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+The second training phase is conducted in a similar manner to that of the
+ first phase, with the exception that the starting point of the SOM is the
+ state of the SOM at the end of the first training phase.
+ In the second phase the run length is also increased to be 10 times the
+ number of time steps in the data, the radius value is reduced to one and
+ the alpha value is half that of the initial alpha value.
+ The second training phase could therefore be thought of as a process for
+ adding in the finer detail that is missed from the initial training phase.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1415864391
+The outcome of the SOM procedure is a matrix of related MSLP distributions.
+ The size of the matrix (number of nodes in the SOM space) is predetermined
+ by the user and once established the SOM nodes can be mapped back onto
+ the original data (assigning a SOM node to each time step via the BMU method).
+ The mapping of the SOM nodes back onto the original data converts the data
+ into a time series of SOM nodes (weather types), allowing for the time-wise
+ behaviour of common weather types to be examined.
+ In the case of this thesis, the SOM method enables the identification of
+ common characteristics in an otherwise complicated MSLP dataset, which
+ in turn also enables a study of related variables (wind and solar) and
+ how they vary in association with the common weather types.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -239,15 +619,86 @@ reference "fig:Alexander-SOM"
 \end_inset
 
 ).
- Other notable studies using the SOM technique in the Australian region
- include 
+
+\change_inserted -1458100629 1422944903
+ Comparibly the works of
+\change_unchanged
+ 
+\change_inserted -1458100629 1423010556
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brown2010"
+
+\end_inset
+
+ (Fig.
+ ) and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Nicholls2009"
+
+\end_inset
+
+ (Fig.
+ ) produced SOMs with very similar features.
+ As opposed to the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Nicholls2009"
+
+\end_inset
+
+ studies the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brown2010"
+
+\end_inset
+
+ study used National Centre for Environmental Prediction MSLP data for the
+ Australian region.
+ Importantly though the SOM from the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brown2010"
+
+\end_inset
+
+ paper contains many of the same features to the ERA-40 derived SOMs in
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Nicholls2009"
+
+\end_inset
+
+.
+ 
+\change_unchanged
+Other notable studies using the SOM technique in the Australian region include
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hope2006"
 
 \end_inset
 
-, which utilised a 20 member SOM of Western Australian MSLP, and 
+, which utilised a 20 member SOM of Western Australian MSLP and 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Verdon-Kidd2009"
@@ -257,6 +708,7 @@ key "Verdon-Kidd2009"
 , which implemented a 20 member SOM of Victorian MSLP.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -276,8 +728,29 @@ status collapsed
 
 \begin_layout Plain Layout
 SOM nodes for the winter months of 1958-2001 using Mean Sea-Level Pressure
- data (hPa) from ERA- 40.
- Adapted from 
+ data (hPa) from ERA-
+\change_deleted -1458100629 1416458843
+ 
+\change_unchanged
+40.
+ 
+\change_inserted -1458100629 1416459184
+Numbers in brackets represent percentage occurrence for 1907-2006 and 
+\begin_inset Quotes eld
+\end_inset
+
+m
+\begin_inset Quotes erd
+\end_inset
+
+ represents the decadal trend in that node.
+ 
+\change_deleted -1458100629 1416459194
+Adapted from
+\change_inserted -1458100629 1416459246
+Figure originally presented in
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Alexander2010"
@@ -303,13 +776,132 @@ name "fig:Alexander-SOM"
 \end_inset
 
 
+\change_inserted -1458100629 1423010643
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted -1458100629 1423010621
+\begin_inset Graphics
+	filename Figures/Brown SOM.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1423012048
+20 member SOM of 1979-2008 National Centre for Environmental Prediction
+ reanalysis MSLP.
+ F values represent the frequency occurrence of the SOM node.
+ Figure originally presented in the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brown2010"
+
+\end_inset
+
+ study.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Brown-SOM"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted -1458100629 1423010666
+\begin_inset Graphics
+	filename Figures/Nicholls SOM.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1423012032
+20 member SOM of 1979-2001 ERA-40 MSLP.
+ Figure originally presented in the 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Nicholls2009"
+
+\end_inset
+
+ study.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Nicholls-SOM"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 With the results from previous studies in mind it was decided that the SOM
  would also be a suitable technique for the current study.
- Substituting precipitation for wind speed or solar irradiance gives a simple
- indication as to how the use of SOMs from the studies of 
+ The SOM's ability to summarise large data sets into a limited number of
+ commonly occurring weather types (via the MSLP field) was identified as
+ being useful for analysing the common wind and solar distributions, as
+ well.
+ In a similar manner to the studies of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Alexander2010"
@@ -330,7 +922,179 @@ key "Verdon-Kidd2009"
 
 \end_inset
 
- could be adapted to the current study.
+ later chapters identify common MSLP patterns.
+ However, instead of analysing the co-occurrence of precipitation, the wind
+ speed or solar irradiance fields are analysed for how they relate to the
+ common weather regimes.
+\change_inserted -1458100629 1415936469
+
+\end_layout
+
+\begin_layout Section
+
+\change_inserted -1458100629 1415938017
+The SOM Compared to Other Techniques
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1418105075
+Synthesis of a large data set into a limited number of commonly occuring
+ features of that data set is a process frequently utilised in science,
+ and in particular climatology.
+ While the SOM technique has only recently been applied to the field of
+ climatology there are other techniques, for the purposes of data synthesis,
+ that have been in use for much longer.
+ One such technique is Principle Component Analysis 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PCA"
+description "Principle Component Analysis"
+
+\end_inset
+
+(PCA).
+ A study comparing the PCA technique to the SOM was recently conducted for
+ eastern Australia by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+ used PCA analysis to estimate the number of weather types needed for eastern
+ Australia (12) and then use k-means clustering to form 12 clusters/synoptic
+ types of the 1958-2009 NCEP/NCAR reanlysis 100hPa geopotential height.
+ For the SOM 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+ use the standard procedure of two-phase training, like that outlined above.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+ then utilised a 12-node SOM for comparison with the 12 clusters from the
+ PCA analysis (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+ also tests a 20-node SOM).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+ found that in general the SOM technique had more advantages than the PCA-cluste
+ring approach.
+ In particular it was highlighted that the SOM can be used as a clustering
+ tool if the radius (
+\begin_inset Formula $r$
+\end_inset
+
+) is set to zero, and when utilised in this way the SOM had similar performance
+ to the k-means clustering approach.
+ Where the SOM differed was in its ability to produce transition patterns---geop
+otential height patterns that fall between the dominant features.
+ By spanning the data space the SOM is more useful for studies that want
+ to analyse weather pattern trajectories, as well as studies that wish to
+ understand the influence of more subtle features (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1416190032
+In a similar study, but for the European region, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rousi2013"
+
+\end_inset
+
+ also found the SOM to be more advantageous than the PCA approach.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rousi2013"
+
+\end_inset
+
+ found that the both the SOM and the PCA were able to identify the main
+ mode of variability for the region (the North Atlantic Oscillation), but
+ that the SOM was able to also identify smaller features that the PCA missed
+ because of its more discrete representation---a similar finding to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jiang2012"
+
+\end_inset
+
+.
+ Other techniques also exist for the purposes of data synthesis, including
+ simmulated annealing clustering.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Philipp2007"
+
+\end_inset
+
+ presented a comprehensive study of simmulated annnealing clustering in
+ comparison to k-means clustering for the north Atlantic.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Philipp2007"
+
+\end_inset
+
+ found the simmulated annealing clustering to be a far more robust technique,
+ however, a direct comparison of this technique with the SOM appears not
+ to exist yet.
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1417571555
+It has been shown that for the purposes of this thesis the SOM technique
+ will be an appropriate tool for classifying the major, as well as the transitio
+nal, modes of variability for the Australian region.
+ By capturing both the major modes of variability, as well as transitions
+ therein, the SOM will provide a comprehensive assessment of synoptic scale
+ variance over Australia.
+ The SOM will therefore also enable a comprehensive assessment of the synoptic
+ scale influences on wind speed and solar iradiance.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -351,7 +1115,11 @@ The data used in the current study are from the European Centre for Medium-range
  of the Australian region.
  ERA-Interim is a global reanalysis product that spans the period 1989 to
  almost current day and which is freely available to non-ECMWF members at
- 1.5ºLatitude/Longitude spatial resolution (
+ 1.5º Latitude/Longitude
+\change_inserted -1458100629 1423183599
+ (~166km)
+\change_unchanged
+ spatial resolution (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Berrisford2009"
@@ -393,6 +1161,20 @@ key "Dee2011"
 
 ).
  
+\change_inserted -1458100629 1416288883
+Having said that, reanalysis products are far from fault-free.
+ Indeed the analysis systems suffer from model biases, limits to and changes
+ in the coverage of observations and thus for some variables the analysis
+ of long-term trends can produce spurious results (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Trenberth2011"
+
+\end_inset
+
+).
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -418,7 +1200,7 @@ key "Berrisford2009"
 ).
  ERA-Interim also includes the introduction of 4-dimensional variational
  analysis (4D-Var) and a variational bias correction scheme for satellite-derive
-d radiances--both of which were not included in ERA-40.
+d radiances---both of which were not included in ERA-40.
  As a consequence, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -426,10 +1208,24 @@ key "Dee2011"
 
 \end_inset
 
- were able to show that the background departures are smaller in ERA-Interim,
- which in turn has allowed for improved temporal consistency on synoptic
- time-scales.
- In terms of the performance of ECMWF products in comparison observations
+ were able to show improved temporal consistency on synoptic time-scales.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ were also able to show that the background departures, defined as being
+ the difference between the forecast of the next observation and the observation
+, are smaller in ERA-Interim.
+ 
+\change_inserted -1458100629 1416203872
+
+\end_layout
+
+\begin_layout Standard
+In terms of the performance of ECMWF products in comparison to observations
  it was found by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -441,12 +1237,203 @@ key "Kiss2009"
  the appropriate dynamics seen in observations from two wind turbines in
  Hungary.
  
+\change_inserted -1458100629 1416288131
+Unfortunately, published comparisons between the ERA-Interim near-surface
+ wind speeds and observations are, and in particular for the Australian
+ region, limited in number.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ noted that the background departures for globally averaged ERA-Interim
+ surface winds are smaller than ERA-40.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ also reported some decreasing trends in surface winds for ERA-Interim for
+ the period 1992-2002 when compared to the European Remote Sensing sattelite
+ and QuickScat data---although the trends then reveresed after 2002, noted
+ as likely due to the evolution in the observing system.
+ Some analysis presented below shows that the relatively coarse resolution
+ of the ERA-Interim model (~80km spatially) compares well to the former
+ regional model of the Bureau of Meteorology (MesoLAPS_125, 12.5km spatially)
+ for the same dates (Fig, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U10-comp-ERA-Meso"
+
+\end_inset
+
+).
+ While Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:U10-comp-ERA-Meso"
+
+\end_inset
+
+ is not a comparison with observations it does test model resolution dependence-
+--showing that for large scale features the ERA-Interim resolution captures
+ that which a finer model resolution can capture.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted -1458100629 1416281079
+\begin_inset Graphics
+	filename Figures/U10_average_comp_era_meso.eps
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1416204399
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1416286612
+Comparison of average 10m wind speed for MesoLAPS_125 (top panel) and ERA-Interi
+m (bottom panel), for the months of a) January, b) July and c) October during
+ 2004-2008.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:U10-comp-ERA-Meso"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -1458100629 1417578587
+In terms of the surface solar radiation fields from ERA-Interim 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ examined the energy balance at the surface.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dee2011"
+
+\end_inset
+
+ showed that while there was a larger positive bias in the net solar radiation
+ at the surface for ERA-Interim when compared to ERA-40, these biases were
+ most prevelant over the ocean.
+ Over land areas---the primary concern of this thesis is the Australian
+ continent---the surface energy balance has improved in ERA-Interim (0.5
+ Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1416286430
+-2
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+, from 1.3Wm
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1416286445
+-2
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ in ERA-40).
+ Indeed, while the surface energy balance over the ocean might be poor in
+ ERA-Interim when compared to ERA-40, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Balmaseda2010"
+
+\end_inset
+
+ were able to show that the ERA-Interim spatial structures and the representatio
+n of seasonal and interannual variability in surface fluxes (over the ocean)
+ have improved from ERA-40.
+ While analysis systems are not designed to conserve quantities like energy,
+ mass and angular momentum, in general the ERA-Interim budget closure is
+ better than ERA-40 (
+\begin_inset CommandInset citation
+LatexCommand citealp
+key "Dee2011"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1422945123
+While there are noted model biases and innevitable flaws in the process
+ of running a global model with inconsistent observational coverage, it
+ should be stressed that such challenges are present for all reanalysis
+ systems, not just ERA-Interim.
+ In previous paragraphs the ERA-interim reanalysis archive has been shown
+ to perform well in a number of relevant variables for this thesis.
+ As such, for the purposes of Part 1---synoptic typing of MSLP and the large-sca
+le interpretation of coincident DSR and near-surface wind speed for Australia---
+the ERA-Interim reanalysis will be used.
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1422945204
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
+bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/library"
 options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
 
 \end_inset
