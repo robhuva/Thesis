@@ -57,11 +57,12 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle empty
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -71,36 +72,152 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-Sometime in the future Australia will undoubtedly need to rely on significant
- amounts of Renewable Energy (RE) for electricity.
+Sometime in the future Australia
+\change_inserted -1458100629 1423199984
+'s demand for electricity
+\change_unchanged
+ will undoubtedly need to rely on significant amounts of Renewable 
+\change_deleted -1458100629 1418777046
+Energy
+\change_inserted -1458100629 1418777046
+Electricity
+\change_unchanged
+ 
+\change_inserted -1458100629 1418102825
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RE"
+description "Renewable Electricity"
+
+\end_inset
+
+
+\change_unchanged
+(RE)
+\change_deleted -1458100629 1423199992
+ for electricity
+\change_unchanged
+.
  Fossil fuels are inherently non-renewable and their dwindling supply will
  force investment in alternatives.
  There is therefore a need to research how such increased penetrations of
  RE resources will be managed.
- Installed across large areas, a National Electricity Market (NEM) with
- increased contributions from RE will be affected by large-scale meteorological
- variability.
+ Installed across large areas, a National Electricity Market 
+\change_inserted -1458100629 1418102966
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NEM"
+description "National Electricity Market"
+
+\end_inset
+
+
+\change_unchanged
+(NEM) with increased contributions from RE will be affected by large-scale
+ meteorological variability.
  The synoptic scale (100s-1,000s of km and days-weeks) weather systems are
  of particular interest.
  This thesis examines how synoptic scale weather variability might affect
  a future highly RE dependent Australia using two approaches.
  Approach one (Part 1 of the thesis) identifies the common synoptic scale
- weather systems from a reanalysis data set (ERA-Interim) and then analyses
- the availability of wind and solar energy associated with each weather
- type.
- Approach two (Part 2) utilises data from a regional model (ACCESS-A) as
- part of an energy model that maximises the contribution of wind and solar
- energy in meeting the demand of Australia.
+ weather systems from a reanalysis data set 
+\change_inserted -1458100629 1418103199
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ERA-Interim"
+description "Ecmwf Interim ReAnalysis"
+
+\end_inset
+
+
+\change_unchanged
+(ERA-Interim) and then analyses the availability of wind and solar 
+\change_deleted -1458100629 1418777078
+energy
+\change_inserted -1458100629 1418777078
+electricity
+\change_unchanged
+ associated with each weather type.
+ Approach two (Part 2) utilises data from a regional model 
+\change_inserted -1458100629 1418103298
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ACCESS-A"
+description "Australian Community Climate and Earth-System Simulator - Australia"
+
+\end_inset
+
+
+\change_unchanged
+(ACCESS-A) as part of an 
+\change_deleted -1458100629 1418777080
+energy
+\change_inserted -1458100629 1418777080
+electricity
+\change_unchanged
+ model that maximises the contribution of wind and solar 
+\change_deleted -1458100629 1418777083
+energy
+\change_inserted -1458100629 1418777083
+electricity
+\change_unchanged
+ in meeting the demand of Australia.
  The influence of the weather systems identified in Part 1 on the optimised
- energy network is then analysed.
+ 
+\change_deleted -1458100629 1418777086
+energy
+\change_inserted -1458100629 1418777086
+electricity
+\change_unchanged
+ network is then analysed.
 \end_layout
 
 \begin_layout Standard
 Part 1 of this thesis utilises the European Centre for Medium Range Weather
- Forecasting (ECMWF) reanalysis product ERA-Interim from 1989-2009 and for
- the Austral region (6ºS,105ºE) → (49.5ºS,165ºE).
- The Self-Organising Map (SOM) technique is then used to identify commonly
- occurring features in the ERA-Interim Mean Sea-Level Pressure (MSLP) field.
+ Forecasting 
+\change_inserted -1458100629 1418103421
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ECMWF"
+description "European Centre for Medium-Range Weather Forecasts"
+
+\end_inset
+
+
+\change_unchanged
+(ECMWF) reanalysis product ERA-Interim from 1989-2009 and for the Austral
+ region (6ºS,105ºE) → (49.5ºS,165ºE).
+ The Self-Organising Map 
+\change_inserted -1458100629 1418103453
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SOM"
+description "Self Organising Map"
+
+\end_inset
+
+
+\change_unchanged
+(SOM) technique is then used to identify commonly occurring features in
+ the ERA-Interim Mean Sea-Level Pressure 
+\change_inserted -1458100629 1418103493
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MSLP"
+description "Mean Sea-Level Pressure"
+
+\end_inset
+
+
+\change_unchanged
+(MSLP) field.
  The SOM technique converts the time series of MSLP to a time series of
  commonly occurring MSLP patterns, or weather types.
  The weather types are then analysed for their tendency to be associated
@@ -108,24 +225,98 @@ Part 1 of this thesis utilises the European Centre for Medium Range Weather
  Some autumnal MSLP patterns are shown to be associated with very low wind
  speeds and solar irradiance for most of the Australian continent, while
  other summertime patterns show good potential for extracting wind and solar
- energy.
+ 
+\change_deleted -1458100629 1418777091
+energy
+\change_inserted -1458100629 1418777091
+electricity
+\change_unchanged
+.
  Following this an analysis of just the wind field demonstrates that decorrelati
 on in the wind field is reached at a distance of approximately 1,300km.
 \end_layout
 
 \begin_layout Standard
-Part 2 of this thesis focuses on optimising renewable energy capacity to
- meet electrical demand, using data from the Bureau of Meteorology’s high-resolu
-tion regional weather model, ACCESS-A, for the period 2010-2011.
+Part 2 of this thesis focuses on optimising renewable 
+\change_deleted -1458100629 1418777101
+energy
+\change_inserted -1458100629 1418777101
+electricity
+\change_unchanged
+ capacity to meet electrical demand, using data from the Bureau of Meteorology’s
+ high-resolution regional weather model, ACCESS-A, for the period 2010-2011.
  The ACCESS-A data, in tandem with electrical demand data from the Australian
  Electricity Market Operator and a Genetic Algorithm, are utilised to investigat
-e the influence of synoptic scale variability on a RE network.
- By optimising generation to meet electrical demand the output of both wind
- and solar installations from locations across the ACCESS-A grid it is shown
- that some of the weather types identified in Part 1 either adversely or
- favourably affect net output.
- A late autumn and a summer weather type are shown to be significantly associate
-d with very low RE output.
+e the influence of synoptic scale variability on a
+\change_inserted -1458100629 1423200146
+ largely
+\change_unchanged
+ RE
+\change_inserted -1458100629 1423200152
+-based
+\change_unchanged
+ network.
+ 
+\change_inserted -1458100629 1423193200
+The
+\change_deleted -1458100629 1423193232
+By optimising generation to meet electrical demand the
+\change_unchanged
+ output of both wind and solar installations from locations across the ACCESS-A
+ grid 
+\change_inserted -1458100629 1423199467
+are optimally placed to maximise their contribution to meeting the electrical
+ demand of 2010-2011.
+ A gas-fired back-up system is deployed to cover moments when the combination
+ of wind and solar cannot meet demand.
+ The gas usage is made expensive to minimise its use, yet it is found that
+ gas is still needed throughout the 2010-2011 period to cover moments when
+ both the wind and solar are low.
+ An investigation is then undertaken to determine any large-scale links
+ to the minima in renewable generation.
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted -1458100629 1423199703
+it is shown that some of t
+\change_inserted -1458100629 1423199698
+T
+\change_unchanged
+he 
+\change_inserted -1458100629 1423199755
+common 
+\change_unchanged
+weather types identified in Part 1
+\change_inserted -1458100629 1423199780
+ are utilised in Part 2.
+ By assigning SOM weather types to the 2010-2011 period
+\change_unchanged
+ 
+\change_inserted -1458100629 1423199799
+it is shown that some regimes 
+\change_unchanged
+either adversely or favourably affect 
+\change_inserted -1458100629 1423199775
+the 
+\change_unchanged
+net output
+\change_inserted -1458100629 1423199775
+ of the optimised system
+\change_unchanged
+.
+ 
+\change_inserted -1458100629 1423199811
+In particular,
+\change_deleted -1458100629 1423199806
+A
+\change_unchanged
+ 
+\change_inserted -1458100629 1423199813
+a 
+\change_unchanged
+late autumn and a summer weather type are shown to be significantly associated
+ with very low RE output.
  The persistence and re-occurrence of low RE events shows that most episodes
  of low RE last for less than six hours and such low RE events have a mean
  return period of more than a week.
@@ -142,8 +333,14 @@ In combination, Parts 1 and 2 of this thesis illustrate some of the issues
  that a future high penetration RE network might need to overcome.
  Knowledge of the influence of detrimental/favourable weather phenomena
  will be critical when designing and/or maintaining a large-scale renewable
- energy network for Australia---in particular, knowledge of the decorrelation
- length-scale in the wind field.
+ 
+\change_deleted -1458100629 1418777105
+energy
+\change_inserted -1458100629 1418777105
+electricity
+\change_unchanged
+ network for Australia---in particular, knowledge of the decorrelation length-sc
+ale in the wind field.
 \end_layout
 
 \end_body

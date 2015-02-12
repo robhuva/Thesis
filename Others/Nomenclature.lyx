@@ -3,6 +3,22 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[RE]{\bfseries \nouppercase\leftmark}
+\fancyhead[LO]{\bfseries \nouppercase \rightmark}
+
+\renewcommand{\chaptermark}[1]{%
+\markboth{\chaptername 
+\ \thechapter\ }{}}
+
+ 
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -51,109 +67,29 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
 \paperpagestyle empty
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
 
 \begin_layout Standard
-\align center
-\begin_inset VSpace 1.5cm*
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size huge
-Covariances in the Weather and the Influence on Large-Scale Renewable E
-\change_inserted -1458100629 1418776887
-lectricity
-\change_deleted -1458100629 1418776885
-nergy
-\change_unchanged
- Systems 
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size larger
-Robert Huva
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm*
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\shape slanted
-\size large
-Submitted in total fulfilment of the requirements of the degree of Doctor
- of Philosophy
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2cm*
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size large
-School of Earth Sciences
-\begin_inset Newline newline
-\end_inset
-
-The University of Melbourne
-\begin_inset Newline newline
-\end_inset
-
-Melbourne, Australia
-\end_layout
-
-\begin_layout Standard
-
-\size large
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size large
-August 2014
 \end_layout
 
 \end_body
