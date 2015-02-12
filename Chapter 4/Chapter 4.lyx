@@ -73,11 +73,12 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -166,7 +167,7 @@ reference "sec:SOM-method"
  outlines the dataset and methods used in this study while section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:SOM-Results"
+reference "sec:Creating-the-SOM"
 
 \end_inset
 
@@ -179,10 +180,14 @@ reference "sec:SOM-Conclusion"
 \end_inset
 
 .
+
+\change_deleted -1458100629 1415864620
  
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+
+\change_deleted -1458100629 1415864418
 Methods 
 \begin_inset CommandInset label
 LatexCommand label
@@ -194,6 +199,8 @@ name "sec:SOM-method"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 The training of the SOM in the current study occurred in two main phases,
  in accordance with the suggestions from the software and the works of 
 \begin_inset CommandInset citation
@@ -246,6 +253,8 @@ c & = & arg\,\underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \label{e
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 where 
 \begin_inset Formula $c$
 \end_inset
@@ -270,6 +279,8 @@ where
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 The BMU and the nodes that surround the BMU are then altered to look more
  like the data.
  The amount the nodes are altered by is determined by two parameters: namely,
@@ -295,6 +306,8 @@ key "Kohonen1995"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{cccc}
@@ -307,6 +320,8 @@ m_{i}(t+1)=m_{i}(t) & + & h_{c}(t)\,[\, x(t)-m_{i}(t)] & ,\,\, and\,\,\end{array
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{ccccc}
@@ -322,6 +337,8 @@ i\notin Nc\end{array}\end{array}\label{eq:3-Gaussian-Function}
 
 \begin_layout Standard
 \noindent
+
+\change_deleted -1458100629 1415864383
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -492,6 +509,8 @@ The second training phase is conducted in a similar manner to that of the
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -1458100629 1415864383
 The outcome of the SOM procedure is a matrix of related MSLP distributions.
  The size of the matrix (number of nodes in the SOM space) is predetermined
  by the user and once established the SOM nodes can be mapped back onto
@@ -503,20 +522,34 @@ The outcome of the SOM procedure is a matrix of related MSLP distributions.
  common characteristics in an otherwise complicated MSLP dataset, which
  in turn also enables a study of related variables (wind and solar) and
  how they vary in association with the common weather types.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
-Results 
+
+\change_inserted -1458100629 1415864447
+Creating the 
+\change_deleted -1458100629 1415864450
+Results
+\change_inserted -1458100629 1415864451
+SOM
+\change_unchanged
+ 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:SOM-Results"
+name "sec:Creating-the-SOM"
 
 \end_inset
 
 
+\change_deleted -1458100629 1415864460
+
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+
+\change_deleted -1458100629 1415864459
 Creating the SOM
 \begin_inset CommandInset label
 LatexCommand label
@@ -524,6 +557,8 @@ name "sub:Creating-the-SOM"
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -591,9 +626,21 @@ name "fig:Map-Continent"
 \begin_layout Standard
 The mask used for filtering out the ocean variability was an altered version
  of the land-sea mask variable supplied by ECMWF.
- When compared to the Interactive Data Language (IDL) map of the Australian
- continent, the ECMWF-supplied land-sea mask variable appeared not to include
- some areas of the Australian continent as land.
+ When compared to the Interactive Data Language 
+\change_inserted -1458100629 1418105288
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IDL"
+description "Interactive Data Language"
+
+\end_inset
+
+
+\change_unchanged
+(IDL) map of the Australian continent, the ECMWF-supplied land-sea mask
+ variable appeared not to include some areas of the Australian continent
+ as land.
  The decision was then made to extended the ECMWF land-sea mask variable
  to include all grid-boxes that appeared to contain land in the IDL map,
  which was of finer detail.
@@ -618,10 +665,36 @@ reference "tab:SOM-Init-Params"
 
  the continental domain results following the two phases of training described
  earlier.
- The term “averaged quantised error” refers to the Euclidean distance between
- each time step in the data and its respective Best Matching SOM node (BMU),
- averaged over all time steps.
- The SOM dimensions listed in Tables.
+ The term “averaged quantised error” refers to the Euclidean distance
+\change_inserted -1458100629 1423108206
+ (sum of squared differences---the equivalent of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:ERA-RMSE-BMU"
+
+\end_inset
+
+ multiplied by 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+)
+\change_unchanged
+ between each time step in the data and its respective Best Matching SOM
+ node (BMU), averaged over all time steps.
+ 
+\change_inserted -1458100629 1423113453
+Throughout the thesis the quantised error measurement is used to compare
+ time steps with their closest matching SOM node.
+ The pattern correlation technique was tested for this purpose, however
+ was not seen to perform any better than quantised error/Euclidean distance
+ measure (not shown).
+ The main weakness of the pattern correlation technique was its insensitivity
+ to magnitude.
+ 
+\change_unchanged
+The SOM dimensions listed in Tables.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2187,13 +2260,236 @@ reference "fig:6x5-SOM-space-Cont"
  continental version.
  In some sense the SOMs in the continental version are cut-outs, in the
  shape of the Australian continent, of the whole domain SOM.
+\change_inserted -1458100629 1418377751
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -1458100629 1418377881
+Alternative SOMs
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Alternative-SOMs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1418705547
+For regions that exhibit large seasonality in meteorological conditions
+ it might make more sense to conduct the training of the SOM with seasonally
+ partitioned data (consequently also one SOM for each season).
+ For the Australian region there are indeed some previous studies in which
+ the seasonal partitioning is undertaken (see 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Huva2014"
+
+\end_inset
+
+).
+ In such studies the SOM is used to study characteristics of the MSLP field,
+ and related fields, solely from that season.
+ Indeed the southern regions of Australia exhibit seasonality in pressure
+ such that certain phenomena (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gallant-SE-Aus-Teleconnetions"
+
+\end_inset
+
+) occur more commonly in winter as opposed to summer, and vice versa.
+ However, what was found in this thesis was little difference in the resulting
+ SOM when the data was partitioned into seasons.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:JJA-6x4-SOM"
+
+\end_inset
+
+ illustrates this relative insensitivity to season by using the same domain
+ and time period from the previous regional example (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space"
+
+\end_inset
+
+), except using only wintertime data.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted -1458100629 1418379840
+\begin_inset Graphics
+	filename Figures/SOM_MSLP_JJA_6x4_alpha0.06_bubble-journal.eps
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1418705641
+A SOM of wintertime (June, July and August) MSLP for 1989-2009 ERA-Interim.
+ Optimum parameters were 24 nodes with initial alpha of 0.06.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:JJA-6x4-SOM"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1418707179
+The size and optimum parameter combination utilised in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:JJA-6x4-SOM"
+
+\end_inset
+
+ was determined using the same processes outlined in the previous section
+ (Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Creating-the-SOM"
+
+\end_inset
+
+).
+ What is seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:JJA-6x4-SOM"
+
+\end_inset
+
+ are very similar features to the version of the SOM using all available
+ data.
+ The features seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:JJA-6x4-SOM"
+
+\end_inset
+
+ are also similar to the previous studies of the Australian region using
+ only wintertime data (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Huva2014"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
+).
+ Unfortunately though the use of just the wintertime data has not made a
+ drastic difference to the level of low pressure intrusion into the domain.
+ Instead the wintertime SOM contains just the more northerly centred high
+ pressure systems, along with the transition states (ridging high pressure)
+ at latitude ~35-40ºS and cold fronts with a more upright structure (nodes
+ 12, 15-16 and 19-24).
+ It is suggested that the time period used (21 years) is sufficiently long
+ enough to smoothen the influence of even predominantly winter-only synoptic
+ weather types (for instance, cut-off lows).
+ It is therefore a reasonable expectation for the wintertime SOM to struggle
+ capturing the fast moving and intense low pressure systems that the annual
+ SOM also has no closely resembling node for (cut-off and east coast lows).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1418707233
+The intention with this thesis is to study the year-round influential synoptic
+ weather types for RE production over Australia.
+ The infrastracture needed to capture the RE output analysed in this thesis
+ would also be subject to the full annual array of weather types and not
+ available to be moved with the seasons.
+ In this instance splitting the SOM typing into seasons would make less
+ sense.
+ It is also overhelmingly more common in the literature to conduct the training
+ of the SOM for the Austrlian region with all available data (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brown2010,Hope2006,Jiang2011,Nicholls2009,Verdon-Kidd2009"
+
+\end_inset
+
+).Thus the remainder of this thesis will focus on just the occurrence of
+ the annual SOM nodes seen in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+.
+
+\change_deleted -1458100629 1418377696
  With the SOMs created it was possible to go back through the original data-set
  and look at the characteristics of the SOM nodes through time and their
  implications for other atmospheric variables like wind speed and solar
  irradiance.
+\change_unchanged
+
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Mapping the SOM
 \begin_inset CommandInset label
 LatexCommand label
@@ -2205,6 +2501,14 @@ name "sub:Mapping-the-SOM"
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -1458100629 1418377682
+With the SOMs created it was possible to go back through the original data-set
+ and look at the characteristics of the SOM nodes through time and their
+ implications for other atmospheric variables like wind speed and solar
+ irradiance.
+ 
+\change_unchanged
 In order to map the SOM nodes back onto the original data-set a program
  from the SOM_PAK described in 
 \begin_inset CommandInset citation
@@ -2241,7 +2545,11 @@ on, any process for checking the matching of SOM nodes back onto the original
  should be used as an investigation of this sort appears not to have been
  undertaken before with SOMs.
  To give an indication as to how well or poor the SOM nodes map onto the
- ERA- Interim reanalysis Fig.
+ ERA-
+\change_deleted -1458100629 1418105363
+ 
+\change_unchanged
+Interim reanalysis Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2692,9 +3000,20 @@ key "Dee2011"
 
 \end_inset
 
- shows that the maximum Root Mean Square Error (RMSE) of southern hemisphere
- surface pressure in the ERA-Interim reanalysis is approximately 1.75hPa
- in the early 1990’s (not shown).
+ shows that the maximum Root Mean Square Error 
+\change_inserted -1458100629 1418106100
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RMSE"
+description "Root Mean Square Error"
+
+\end_inset
+
+
+\change_unchanged
+(RMSE) of southern hemisphere surface pressure in the ERA-Interim reanalysis
+ is approximately 1.75hPa in the early 1990’s (not shown).
  Assuming a similar error in MSLP (which is derived using the surface pressure,
  average virtual temperature and constants) and considering the equation
  for RMSE in pressure, it was possible to equate the RMSE using observations
@@ -3436,8 +3755,15 @@ reference "fig:MSLP-12day-SOM-Failure"
 
 \end_inset
 
- there was a rather deep and stationary high pressure centre south-west
- of Perth for almost the entirety of 12B90.
+ there 
+\change_inserted -1458100629 1418710984
+were several cut-off low pressure systems that affected southern parts of
+ Australia, as well as
+\change_deleted -1458100629 1418710985
+was
+\change_unchanged
+ a rather deep and stationary high pressure centre south-west of Perth for
+ almost the entirety of 12B90.
  The position of the high pressure centre in Fig.
  
 \begin_inset CommandInset ref
@@ -3665,7 +3991,7 @@ key "Ashcroft2009"
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Analysis of Regional and Continental SOMs
 \begin_inset CommandInset label
 LatexCommand label
@@ -3716,7 +4042,7 @@ status collapsed
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4223,6 +4549,616 @@ name "tab:SOM-Total-Occ"
 \end_inset
 
 
+\change_inserted -1458100629 1417568401
+
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\change_inserted -1458100629 1417568550
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Total occurrences (%)
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Row 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568565
+3.29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568615
+2.84
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568625
+3.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568635
+3.51
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569371
+2.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569375
+2.18
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Row 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568730
+3.43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569397
+2.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569390
+3.70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569384
+3.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568752
+2.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569377
+2.73
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Row 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568762
+3.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569408
+3.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569414
+3.59
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568774
+4.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568778
+3.52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568781
+3.31
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Row 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569436
+3.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568801
+3.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569430
+3.48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569427
+3.85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569425
+3.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568785
+2.55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Row 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569440
+3.27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569443
+3.13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568823
+3.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568827
+4.56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569452
+3.76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569454
+2.71
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417568550
+Column 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\change_inserted -1458100629 1417569499
+As per Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SOM-Total-Occ"
+
+\end_inset
+
+ except for the contintal SOM, and where the total number of BMUs after
+ filtering is 28,572.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:SOM-Cont-Total-Occ"
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -4246,6 +5182,7 @@ reference "fig:SOM-Cont-Surf-Total-Occ"
  (continental domain).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -4401,6 +5338,7 @@ key "Sturman2005"
  was able to identify the seasonality of the Australian region.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -4594,6 +5532,7 @@ a) and it was thought this could have been because the SOM used was too
  large and therefore containing too many intermediate synoptic states.
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -4728,6 +5667,8 @@ b).
  by the continental SOM a more comprehensive analysis of the concurrent
  wind and solar conditions associated with each SOM node is possible.
  
+\change_inserted -1458100629 1423716970
+
 \end_layout
 
 \end_body
