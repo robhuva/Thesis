@@ -53,6 +53,9 @@
 %Letting text flow over the page
 \raggedbottom
 \setlength{\parindent}{8mm}
+
+%Set page break for ToC:
+\newcommand{\tocclearpage}{\addtocontents{toc}{\protect\clearpage}}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -137,24 +140,7 @@ filename "Others/1. Title.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Others/2. Preface.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Others/3. Abstract.lyx"
+filename "Others/2. Abstract.lyx"
 
 \end_inset
 
@@ -171,7 +157,24 @@ filename "Others/3. Abstract.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Others/4. Declaration.lyx"
+filename "Others/3. Declaration.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Others/4. Preface.lyx"
 
 \end_inset
 
@@ -203,23 +206,6 @@ filename "Others/5. Acknowledgment.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Others/6. Publications.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -229,7 +215,24 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage cleardoublepage
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -479,25 +482,8 @@ filename "Chapter 11/Chapter 11.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "Bibliography/My Collection"
+bibfiles "Bibliography/library"
 options "bibtotoc,Bibliography/ametsoc"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Appendix/Appendix.lyx"
 
 \end_inset
 
