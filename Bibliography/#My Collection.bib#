@@ -13,21 +13,21 @@ url = {http://www.iea.org/publications/freepublications/publication/KeyWorld2013
 volume = {2013},
 year = {2013}
 }
+@article{AEMO2013a,
+author = {Aemo},
+file = {:home/rhuva/Documents/Journals and Resources/South\_Australian\_Wind\_Study\_Report\_2013\_2.pdf:pdf},
+pages = {38},
+title = {{South Australian Wind Study Report}},
+year = {2013}
+}
 @techreport{AEMO2013,
 address = {Melbourne},
-author = {AEMO},
+author = {Aemo},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/AEMO - 2013 - 100 PER CENT RENEWABLES STUDY MODELLING OUTCOMES.pdf:pdf},
 number = {July},
 pages = {111 pages},
 title = {{100 Per Cent Renewables Study--Modelling Outcomes}},
 url = {http://www.climatechange.gov.au/sites/climatechange/files/documents/08\_2013/100-percent-renewables-study-modelling-outcomes-report.pdf},
-year = {2013}
-}
-@article{AEMO2013a,
-author = {AEMO},
-file = {:home/rhuva/Documents/Journals and Resources/South\_Australian\_Wind\_Study\_Report\_2013\_2.pdf:pdf},
-pages = {38},
-title = {{South Australian Wind Study Report}},
 year = {2013}
 }
 @article{Alexander2011,
@@ -60,11 +60,12 @@ year = {2010}
 abstract = {As the renewable energy industry continues to grow so does the requirement for atmospheric modeling and analysis tools to maximize both wind and solar power. Renewable energy generation is variable however; presenting challenges for electrical grid operation and requires a variety of measures to adequately firm power. These measures include the production of non-renewable generation during times when renewables are not available. One strategy for minimizing the variability of renewable energy production is site diversity. Assuming that a network of renewable energy systems feed a common electrical grid, site diversity ensures that when one system on the network has a reduction in generation others on the same grid make up the difference. Part one of this paper introduced ReNOT and its capabilities. This paper presents two case studies on applying ReNOT to the wind and solar farm industry, respectively. As part of collaboration with Rocky Mountain Supercomputing Center (RMSC) and the State of Montana a study was performed to estimate the optimal locations of a network of wind farms. Comparisons were made to four existing wind farm locations in Montana including Glacier with a 210 MW name plate capacity, Horseshoe Bend with a total capacity of 9 MW, Diamond Willow with a capacity of 20MW and Judith Gap with a total capacity of 135 MW. The goal of this study was to see if ReNOT could find a four site network that made more effective use of the existing four site network of wind farms' 374 MW nameplate capacity. We developed three different metrics in which to pick sites. Metric 1 (M1) picks sites that converges on the single best location for power production, on average. Metric 2 (M2) picks sites that maximizes geographical diversity, even at the expense of very poor aggregate power. Metric 3 (M3) picks sites based on the previous day's mean power, and accounts for short-term variability (i.e., 1 hour). In a sense M3 attempts to approximate usable power by minimizing ramping events which are so important to industry. In addition we investigated several performance metrics including Mean Power, Usable Power, and ramping event frequency. A ramping event is defined as an increase or decrease in power production over the course of one hour. Of interest was the frequency of ramping events that exceeded 10\% of total capacity for the network. Networks with few ramping events are markedly superior to networks producing otherwise identical aggregate power. The optimization was run over the 15 year period (1995-2009) of hub-height wind data (40 meters AGL). Figure 1 indicates the existing wind farms in white while the optimized network is shown in yellow. The ReNOT derived network produces 58\% more usable power than the four existing and operating wind farms denoted in white. In addition, the optimized four site network produces three times fewer significant ramping events. The solar study was performed over south Florida. The goal of this study was to see if ReNOT could find four optimal locations that exceed the peformance of a randomly picked four site solar farm network. The optimization was performed over a 15 year period (1995-2009) using a GOES derived cloud analysis at 4km and 15 minute resolution, respectively. As with the wind study we developed a cost function that emphasizes network stability, total power and day ahead forecastability. Networks with more consistent day to day cloud cover and are more accurately forecastable by a day in advance will be favored by ReNOT. Figure 2 shows the results of the optimization. The white x's represent the randomly picked solar farms while the red, yellow and white dots represent the top three networks from the ReNOT run. ReNOT prefers sites on the west coast of Florida due to favorable cloud conditions. However the optimized networks only produce 10\% additional power than the existing/proposed sites. This is due to the limited area within which the optimization was artificially constrained (yellow box). The runs performed in this study were made with out regard to other practicle restrictions for example, building in state parks, population centers or within proximity to electrical grid infrastructure. However, we are currently adding this capability into ReNOT. Additional detailed results will be presented at the conference.},
 address = {Seattle, WA},
 author = {Alliss, Randall and Link, Robert and Apling, Duane and Mason, Michael and Kiley, Heather and Higgins, G.},
+booktitle = {As the renewable energy industry continues to grow so does the requirement for atmospheric modeling and analysis tools to maximize both wind and solar power. Renewable energy generation is variable however; presenting challenges for electrical grid operat},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Optimisation/Applications of the ReNOT tool for the USA, Alliss-2011.pdf:pdf},
 keywords = {renewable energy,solar power,wind power},
 pages = {1--5},
 publisher = {American Meteorological Society},
-title = {{758 : Applications of the Renewable Energy Network Optimization Tool ( ReNOT ) for use by Wind \& Solar Developers : Part II}},
+title = {{758 : Applications of the Renewable Energy Network Optimization Tool ( ReNOT ) for use by Wind \& Solar Developers : Part II . Northrop Grumman Information Systems 3975 Virginia Mallory Drive}},
 url = {https://ams.confex.com/ams/91Annual/webprogram/Paper178281.html},
 year = {2011}
 }
@@ -87,7 +88,7 @@ year = {2012}
 }
 @article{Andresen2014,
 abstract = {We have recently developed a simple yet powerful method to identify key properties of electricity systems with a high share of renewables. Here, our weather-driven methodology is described and applied to model the Danish power system with combined wind and solar energy gross shares of up to 100\% of the total demand. We show that in a wind only scenario, surplus energy grows rapidly beyond gross shares of about 50\%, while the potential for arbitrage of surplus renewable energy, i.e. demand-side management or high-efficiency storage, is very limited in this case. A scenario with a wind-solar energy mix of 80/20, on the other hand, both decreases??the total amount of surplus and has a significantly higher potential for arbitrage of the remaining surplus. However, beyond gross shares of about 75\%, only large-scale seasonal storage of, e.g. hydrogen, enables the use of Danish surplus wind and solar energy to cover the residual Danish electricity demand in both scenarios. ?? 2014 Elsevier Ltd. All rights reserved.},
-author = {Andresen, Gorm B. and Rodriguez, Rolando A. and Becker, Sarah and Greiner, Martin},
+author = {Andresen, Gorm B. and Rodriguez, Rolando a. and Becker, Sarah and Greiner, Martin},
 doi = {10.1016/j.energy.2014.03.033},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Large Scale/Arbitrage of wind and solar surplus for Denmark, Andersen-2014.pdf:pdf},
 issn = {03605442},
@@ -102,7 +103,7 @@ year = {2014}
 }
 @article{Arakawa1977,
 abstract = {The 12-layer UCLA general circulation model encompassing troposphere and stratosphere (and superjacent 'sponge layer') is described. Prognostic variables are: surface pressure, horizontal velocity, temperature, water vapor and ozone in each layer, planetary boundary layer (PBL) depth, temperature, moisture and momentum discontinuities at PBL top, ground temperature and water storage, and mass of snow on ground. Selection of space finite-difference schemes for homogeneous incompressible flow, with/without a free surface, nonlinear two-dimensional nondivergent flow, enstrophy conserving schemes, momentum advection schemes, vertical and horizontal difference schemes, and time differencing schemes are discussed.},
-author = {Arakawa, A. and Lamb, V. R.},
+author = {Arakawa, a. and Lamb, V. R.},
 doi = {10.1016/B978-0-12-460817-7.50009-4},
 isbn = {978-0-12-460817-7},
 journal = {Methods in Computational Physics},
@@ -172,23 +173,7 @@ url = {http://doi.wiley.com/10.1002/joc.3812},
 volume = {34},
 year = {2014}
 }
-@misc{Meteorology2011b,
-author = {{Australian Bureau of Meteorology}},
-booktitle = {Website Reference},
-keywords = {Climate,Riverina,weather},
-title = {{Climate Data Online}},
-url = {http://reg.bom.gov.au/climate/data/},
-year = {2012}
-}
 @misc{Meteorology2009,
-author = {{Australian Bureau of Meteorology}},
-booktitle = {Website Reference},
-keywords = {Climate,Riverina,weather},
-title = {{Climate Data Online}},
-url = {http://reg.bom.gov.au/climate/data/},
-year = {2012}
-}
-@misc{Meteorology2011a,
 author = {{Australian Bureau of Meteorology}},
 booktitle = {Website Reference},
 keywords = {Climate,Riverina,weather},
@@ -204,12 +189,21 @@ title = {{Climate Data Online}},
 url = {http://reg.bom.gov.au/climate/data/},
 year = {2012}
 }
-@misc{Meteorology2011,
+@misc{Meteorology2011b,
 author = {{Australian Bureau of Meteorology}},
-booktitle = {Australia - Climate of our Continent},
-title = {{Climate Education Update}},
-url = {http://www.bom.gov.au/lam/climate/levelthree/ausclim/zones.htm},
-year = {2005}
+booktitle = {Website Reference},
+keywords = {Climate,Riverina,weather},
+title = {{Climate Data Online}},
+url = {http://reg.bom.gov.au/climate/data/},
+year = {2012}
+}
+@misc{Meteorology2011a,
+author = {{Australian Bureau of Meteorology}},
+booktitle = {Website Reference},
+keywords = {Climate,Riverina,weather},
+title = {{Climate Data Online}},
+url = {http://reg.bom.gov.au/climate/data/},
+year = {2012}
 }
 @techreport{Balmaseda2010,
 author = {Balmaseda, M.a. and Mogensen, K.},
@@ -270,7 +264,7 @@ year = {2012}
 }
 @article{Barnes2013,
 abstract = {This work documents how the midlatitude, eddy-driven jets respond to climate change using model output from phase 5 of the Coupled Model Intercomparison Project (CMIP5). The authors consider separately the North Atlantic, the North Pacific, and the Southern Hemisphere jets. The analysis is not limited to annual- mean changes in the latitude and speed of the jets, but also explores how the variability of each jet changes with increased greenhouse gases. All jets are found to migrate poleward with climate change: the Southern Hemisphere jet shifts poleward by 28 of latitude between the historical period and the end of the twenty-first century in the representative concentration pathway 8.5 (RCP8.5) scenario, whereas both Northern Hemisphere jets shift by only 18.In addition, the speed of the Southern Hemisphere jet is found to increase markedly (by 1.2ms21 between 850 and 700 hPa), while the speed remains nearly constant for both jets in the Northern Hemisphere. More importantly, it is found that the patterns of jet variability are a strong function of the jet position in all three sectors of the globe, and as the jets shift poleward the patterns of variability change. Specifically, for the Southern Hemisphere and the North Atlantic jets, the variability becomes less of a north–south wobbling and more of a pulsing (i.e., variation in jet speed). In contrast, for the North Pacific jet, the variability becomes less of a pulsing and more of a north–south wobbling. These different responses can be understood in terms of Rossby wave breaking, allowing the authors to explain most of the projected jet changes within a single dynamical framework.},
-author = {Barnes, Elizabeth A. and Polvani, Lorenzo},
+author = {Barnes, Elizabeth a. and Polvani, Lorenzo},
 doi = {10.1175/JCLI-D-12-00536.1},
 file = {:home/rhuva/Documents/Journals and Resources/Synoptic Analysis \& ERA/Midlats jet response in CMIP5, Barnes-2014.pdf:pdf},
 isbn = {0894-8755},
@@ -322,7 +316,7 @@ year = {2010}
 abstract = {Wind and solar PV generation data for the entire contiguous US are calculated, on the basis of 32 years of weather data with temporal resolution of one hour and spatial resolution of 40×40 km2 , assuming site-suitability-based as well as stochastic wind and solar PV capacity distributions throughout the country. These data are used to investigate a fully renewable electricity system, resting primarily upon wind and solar PV power. We find that the seasonal optimal mix of wind and solar PV comes at around 80\% solar PV share, owing to the US summer load peak. By picking this mix, long-term storage requirements can be more than halved compared to a wind only mix. The daily optimal mix lies at about 80\% wind share due to the nightly gap in solar PV production. Picking this mix instead of solar only reduces backup energy needs by about 50\%. Furthermore, we calculate shifts in FERC (Federal Energy Regulatory Commission)-level LCOE (Levelized Costs Of Electricity) for wind and solar PV due to their differing resource quality and fluctuation patterns. LCOE vary by up to 35\% due to regional conditions, and LCOE-optimal mixes turn out to largely follow resource quality. A transmission network enhancement among FERC regions is constructed to transfer high penetrations of solar and wind across FERC boundaries, based on a novel least-cost optimization approach.},
 archivePrefix = {arXiv},
 arxivId = {arXiv:1402.2833v1},
-author = {Becker, Sarah and Frew, Bethany A and Andresen, Gorm B and Zeyer, Timo and Schramm, Stefan and Greiner, Martin and Jacobson, Mark Z},
+author = {Becker, Sarah and Frew, Bethany a and Andresen, Gorm B and Zeyer, Timo and Schramm, Stefan and Greiner, Martin and Jacobson, Mark Z},
 eprint = {arXiv:1402.2833v1},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Large Scale/100 Perc RE for USA optimising wind and solar, Becker-2014.pdf:pdf},
 journal = {Energy},
@@ -351,7 +345,7 @@ year = {2013}
 @techreport{Dee2009,
 abstract = {This document describes the ERA-Interim Archive at ECMWF. ERA-Interim is a reanalysis of the global atmosphere covering the data-rich period since 1989, and continuing in real time. As ERA-Interim continues forward in time, updates of the Archive will take place on a monthly basis},
 address = {Reading},
-author = {Berrisford, Paul and Dee, Dick and Fielding, Keith and Fuentes, Manuel and Kallberg, Per and Kobayashi, Shinya and Uppala, Sakari},
+author = {Berrisford, Paul and Dee, Dick and Fielding, Keith and Fuentes, Manuel and K\aa llberg, Per and Kobayashi, Shinya and Uppala, Sakari},
 booktitle = {Weather},
 file = {:home/rhuva/Documents/Journals and Resources/Synoptic Analysis \& ERA/ERA/Printed/ERA-interim description, Berrisford-2009.pdf:pdf},
 pages = {16},
@@ -363,7 +357,7 @@ year = {2009}
 }
 @techreport{Berrisford2009,
 abstract = {This document describes the ERA-Interim Archive at ECMWF. ERA-Interim is a reanalysis of the global atmosphere covering the data-rich period since 1989, and continuing in real time. As ERA-Interim continues forward in time, updates of the Archive will take place on a monthly basis},
-author = {Berrisford, Paul and Dee, Dick and Fielding, Keith and Fuentes, Manuel and Kallberg, Per and Kobayashi, Shinya and Uppala, Sakari},
+author = {Berrisford, Paul and Dee, Dick and Fielding, Keith and Fuentes, Manuel and K\aa llberg, Per and Kobayashi, Shinya and Uppala, Sakari},
 booktitle = {Weather},
 file = {:home/rhuva/Documents/Journals and Resources/Synoptic Analysis \& ERA/ERA/Printed/ERA-interim description, Berrisford-2009.pdf:pdf},
 pages = {16},
@@ -391,7 +385,7 @@ year = {1998}
 }
 @article{Bi2013,
 abstract = {The Australian Community Climate and Earth System Simulator coupled model (ACCESS-CM) has been developed at the Centre for Australian Weather and Climate Research (CAWCR), a partnership between CSIRO1 and the Bureau of Meteorology. It is built by coupling the UK Met Office atmospheric unified model (UM), and other sub-models as required, to the ACCESS ocean model, which consists of the NOAA/GFDL2 ocean model MOM4p1 and the LANL3 sea-ice model CICE4.1, under the CERFACS4 OASIS3.2-5 coupling framework. The primary goal of the ACCESS-CM development is to provide the Australian climate community with a new generation fully coupled climate model for climate research, and to participate in phase five of the Coupled Model Inter-comparison Project (CMIP5). This paper describes the ACCESS-CM framework and components, and presents the control climates from two versions of the ACCESS-CM, ACCESS1.0 and ACCESS1.3, together with some fields from the 20th century historical experiments, as part of model evaluation. While sharing the same ocean sea-ice model (except different setups for a few parameters), ACCESS1.0 and ACCESS1.3 differ from each other in their atmospheric and land surface components: the former is configured with the UK Met Office HadGEM2 (r1.1) atmospheric physics and the Met Office Surface Exchange Scheme land surface model version 2, and the latter with atmospheric physics similar to the UK Met Office Global Atmosphere 1.0 including modifications performed at CAWCR and the CSIRO Community Atmosphere Biosphere Land Exchange land surface model version 1.8. The global average annual mean surface air temperature across the 500-year preindustrial control integrations show a warming drift of 0.35 °C in ACCESS1.0 and 0.04 °C in ACCESS1.3. The overall skills of ACCESS-CM in simulating a set of key climatic fields both globally and over Australia significantly surpass those from the preceding CSIRO Mk3.5 model delivered to the previous coupled model inter-comparison. However, ACCESS-CM, like other CMIP5 models, has deficiencies in various aspects, and these are also discussed. Copyright © 2013, Common wealth of Australia.},
-author = {Bi, Daohua and Dix, Martin and Marsland, Simon J and O`Farrell, Siobhan and Rashid, Harun a and Uotila, Petteri and Hirst, Anthony C and Kowalczyk, Eva and Golebiewski, Maciej and Sullivan, Arnold and Yan, Hailin and Hannah, Nicholas and Franklin, Charmaine and Sun, Zhian and Vohralik, Peter and Watterson, Ian and Zhou, Xiaobing and Fiedler, Russell and Collier, Mark and Ma, Yimin and Noonan, Julie and Stevens, Lauren and Uhe, Peter and Zhu, Hongyan and Griffies, Stephen M and Hill, Richard and Harris, Chris and Puri, Kamal},
+author = {Bi, Daohua and Dix, Martin and Marsland, Simon J and O'Farrell, Siobhan and Rashid, Harun a and Uotila, Petteri and Hirst, Anthony C and Kowalczyk, Eva and Golebiewski, Maciej and Sullivan, Arnold and Yan, Hailin and Hannah, Nicholas and Franklin, Charmaine and Sun, Zhian and Vohralik, Peter and Watterson, Ian and Zhou, Xiaobing and Fiedler, Russell and Collier, Mark and Ma, Yimin and Noonan, Julie and Stevens, Lauren and Uhe, Peter and Zhu, Hongyan and Griffies, Stephen M and Hill, Richard and Harris, Chris and Puri, Kamal and Farrell, Siobhan O},
 file = {:home/rhuva/Documents/Journals and Resources/ACCESS/ACCESS model evaluation, Bi-2013.pdf:pdf},
 issn = {1836716X (ISSN)},
 journal = {Australian Meteorological and Oceanographic Journal},
@@ -474,7 +468,7 @@ year = {2010}
 }
 @article{Budischak2013,
 abstract = {We model many combinations of renewable electricity sources (inland wind, offshore wind, and photovoltaics) with electrochemical storage (batteries and fuel cells), incorporated into a large grid system (72 GW). The purpose is twofold: 1) although a single renewable generator at one site produces intermittent power, we seek combinations of diverse renewables at diverse sites, with storage, that are not intermittent and satisfy need a given fraction of hours. And 2) we seek minimal cost, calculating true cost of electricity without subsidies and with inclusion of external costs. Our model evaluated over 28 billion combinations of renewables and storage, each tested over 35,040 h (four years) of load and weather data. We find that the least cost solutions yield seemingly-excessive generation capacity - at times, almost three times the electricity needed to meet electrical load. This is because diverse renewable generation and the excess capacity together meet electric load with less storage, lowering total system cost. At 2030 technology costs and with excess electricity displacing natural gas, we find that the electric system can be powered 90\%-99.9\% of hours entirely on renewable electricity, at costs comparable to today's - but only if we optimize the mix of generation and storage technologies. ?? 2012 Elsevier B.V. All rights reserved.},
-author = {Budischak, Cory and Sewell, Deanna and Thomson, Heather and Mach, Leon and Veron, Dana E. and Kempton, Willett},
+author = {Budischak, Cory and Sewell, Deanna and Thomson, Heather and MacH, Leon and Veron, Dana E. and Kempton, Willett},
 doi = {10.1016/j.jpowsour.2012.09.054},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Optimisation/Printed/Cost-minimised 99.9 per cent renewables for the USA, Budischak-2013.pdf:pdf},
 isbn = {0378-7753},
@@ -508,7 +502,7 @@ year = {2014}
 @article{Chen2010,
 abstract = {Because of the pressing need for maintaining a healthy environment with reasonable costs, China is moving toward the trend for generating electricity from renewable resources. Both solar energy and wind power have received a tremendous attention from private associations, political groups, and electric power companies to generate power on a large scale. A drawback is their unpredictable nature and dependence on weather. Fortunately, the problems can be partially tackled by using the strengths of one source to overcome the weakness of the other. Especially, a large fraction of the solar resource is available at times of peak electrical load. However, the complexity of using two different resources together makes the hybrid solar-wind generation systems more difficult to analyze. Accordingly, this paper first briefly introduces the solar-wind generation system and next develops its critical success criteria. Then, a fuzzy analytic hierarchy process associated with benefits, opportunities, costs and risks, is proposed to help select a suitable solar-wind power generation project. ?? 2009 Elsevier Ltd. All rights reserved.},
 annote = {Chen, Hsing Hung Kang, He-Yau Lee, Amy H. I.},
-author = {Chen, Hsing Hung and Kang, He Y. and Lee, A H I},
+author = {Chen, Hsing Hung and Kang, He Y. and Lee, a. H I},
 doi = {10.1016/j.rser.2009.08.004},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Chen, Kang, Lee - 2010 - Strategic selection of suitable projects for hybrid solar-wind power generation systems.pdf:pdf},
 isbn = {1364-0321},
@@ -526,7 +520,7 @@ year = {2010}
 @article{Chen2010,
 abstract = {Because of the pressing need for maintaining a healthy environment with reasonable costs, China is moving toward the trend for generating electricity from renewable resources. Both solar energy and wind power have received a tremendous attention from private associations, political groups, and electric power companies to generate power on a large scale. A drawback is their unpredictable nature and dependence on weather. Fortunately, the problems can be partially tackled by using the strengths of one source to overcome the weakness of the other. Especially, a large fraction of the solar resource is available at times of peak electrical load. However, the complexity of using two different resources together makes the hybrid solar-wind generation systems more difficult to analyze. Accordingly, this paper first briefly introduces the solar-wind generation system and next develops its critical success criteria. Then, a fuzzy analytic hierarchy process associated with benefits, opportunities, costs and risks, is proposed to help select a suitable solar-wind power generation project. ?? 2009 Elsevier Ltd. All rights reserved.},
 annote = {Chen, Hsing Hung Kang, He-Yau Lee, Amy H. I.},
-author = {Chen, Hsing Hung and Kang, He Y. and Lee, A.H.I},
+author = {Chen, Hsing Hung and Kang, He Y. and Lee, a. H I},
 doi = {10.1016/j.rser.2009.08.004},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Chen, Kang, Lee - 2010 - Strategic selection of suitable projects for hybrid solar-wind power generation systems.pdf:pdf},
 isbn = {1364-0321},
@@ -573,13 +567,6 @@ url = {http://dx.doi.org/10.1016/j.ijepes.2014.12.049},
 volume = {68},
 year = {2015}
 }
-@techreport{Council2012a,
-author = {{Clean Energy Council}},
-file = {:home/rhuva/Documents/Journals and Resources/Clean Energy Council List\_sorted\_UPDATED.xls:xls},
-pages = {19},
-title = {{Power Plant Report}},
-year = {2013}
-}
 @techreport{CleanEnergyCouncil2010,
 address = {Melbourne},
 author = {{Clean Energy Council}},
@@ -596,6 +583,20 @@ file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/
 pages = {80},
 title = {{Clean Energy Australia 2012}},
 year = {2012}
+}
+@techreport{Council2012a,
+author = {{Clean Energy Council}},
+file = {:home/rhuva/Documents/Journals and Resources/Clean Energy Council List\_sorted\_UPDATED.xls:xls},
+pages = {19},
+title = {{Power Plant Report}},
+year = {2013}
+}
+@misc{Meteorology2011,
+author = {Climate, a R M},
+booktitle = {Australia - Climate of our Continent},
+title = {{Climate Education Update}},
+url = {http://www.bom.gov.au/lam/climate/levelthree/ausclim/zones.htm},
+year = {2005}
 }
 @article{Connolly2010,
 abstract = {This paper includes a review of the different computer tools that can be used to analyse the integration of renewable energy. Initially 68 tools were considered, but 37 were included in the final analysis which was carried out in collaboration with the tool developers or recommended points of contact. The results in this paper provide the information necessary to identify a suitable energy tool for analysing the integration of renewable energy into various energy-systems under different objectives. It is evident from this paper that there is no energy tool that addresses all issues related to integrating renewable energy, but instead the 'ideal' energy tool is highly dependent on the specific objectives that must be fulfilled. The typical applications for the 37 tools reviewed (from analysing single-building systems to national energy-systems), combined with numerous other factors such as the energy-sectors considered, technologies accounted for, time parameters used, tool availability, and previous studies, will alter the perception of the 'ideal' energy tool. In conclusion, this paper provides the information necessary to direct the decision-maker towards a suitable energy tool for an analysis that must be completed. ?? 2009 Elsevier Ltd. All rights reserved.},
@@ -615,22 +616,6 @@ url = {http://linkinghub.elsevier.com/retrieve/pii/S0306261909004188},
 volume = {87},
 year = {2010}
 }
-@article{Dai1999,
-abstract = {Global surface pressure data from 1976 to 1997 from over 7500 land stations and the Comprehensive Ocean-Atmosphere Data Set have been analyzed using harmonic and zonal harmonic methods. It is found that the diurnal pressure oscillation (S-1) is comparable to the semidiurnal pressure oscillation (S-2) in magnitude over much of the globe except for the low-latitude open oceans, where S-2 is about twice as strong as S-1. Over many land areas, such as the western United States, the Tibetan Plateau, and eastern Africa, S-1 is even stronger than S-2. This is in contrast to the conventional notion that S-2 predominates over much of the globe. The highest amplitudes (similar to 1.3 mb) of S-1 are found over northern South America and eastern Africa close to the equator. Here S-1 is also strong (similar to 1.1 mb) over high terrain such as the Rockies and the Tibetan Plateau. The largest amplitudes of S-2 (similar to 1.0-1.3 mb) are in the Tropics over South America, the eastern and western Pacific. and the Indian Ocean. Here S-1 peaks around 0600-0800 LST at low latitudes and around 1000-1200 LST over most of midlatitudes. while S-2 peaks around 1000 and 2200 LST over low- and midlatitudes. Here S-1 is much stronger over the land than over the ocean and its amplitude distribution is strongly influenced by landmasses, while the land-sea differences of S-2 are small. The spatial variations of S-1 correlate significantly with spatial variations in the diurnal temperature range at the surface, suggesting that sensible heating from the ground is a major forcing for S-1. Although S-2 is much more homogeneous zonally than S-1, there are considerable zonal variations in the amplitude of S-2 which cannot be explained by zonal variations in ozone and water vapor. Other forcings such as those through clouds' reflection and absorption of solar radiation and latent hearing in convective precipitation are needed to explain the observed regional and zonal variations in S-2. The migrating rides S-1 and S-2 predominate over other zonal wave components. However, the nonmigrating tides are substantially stronger than previously reported. The amplitudes of both the migrating and nonmigrating tides decrease rapidly poleward with a slower pace at middle and high latitudes.},
-annote = {Dai, A Wang, JH},
-author = {Dai, Aiguo and Wang, Junhong},
-doi = {10.1175/1520-0469(1999)056<3874:DASTIG>2.0.CO;2},
-file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kong - 1995 - DIURNAL PRESSURE VARIATIONS OVER CONTINENTAL AUSTRALIA.pdf:pdf},
-isbn = {0022-4928},
-issn = {0022-4928},
-journal = {Journal of the Atmospheric Sciences},
-number = {22},
-pages = {3874--3891},
-title = {{Diurnal and Semidiurnal Tides in Global Surface Pressure Fields}},
-url = {<Go to ISI>://WOS:000083594800004},
-volume = {56},
-year = {1999}
-}
 @article{Kong1995,
 abstract = {Global surface pressure data from 1976 to 1997 from over 7500 land stations and the Comprehensive Ocean-Atmosphere Data Set have been analyzed using harmonic and zonal harmonic methods. It is found that the diurnal pressure oscillation (S-1) is comparable to the semidiurnal pressure oscillation (S-2) in magnitude over much of the globe except for the low-latitude open oceans, where S-2 is about twice as strong as S-1. Over many land areas, such as the western United States, the Tibetan Plateau, and eastern Africa, S-1 is even stronger than S-2. This is in contrast to the conventional notion that S-2 predominates over much of the globe. The highest amplitudes (similar to 1.3 mb) of S-1 are found over northern South America and eastern Africa close to the equator. Here S-1 is also strong (similar to 1.1 mb) over high terrain such as the Rockies and the Tibetan Plateau. The largest amplitudes of S-2 (similar to 1.0-1.3 mb) are in the Tropics over South America, the eastern and western Pacific. and the Indian Ocean. Here S-1 peaks around 0600-0800 LST at low latitudes and around 1000-1200 LST over most of midlatitudes. while S-2 peaks around 1000 and 2200 LST over low- and midlatitudes. Here S-1 is much stronger over the land than over the ocean and its amplitude distribution is strongly influenced by landmasses, while the land-sea differences of S-2 are small. The spatial variations of S-1 correlate significantly with spatial variations in the diurnal temperature range at the surface, suggesting that sensible heating from the ground is a major forcing for S-1. Although S-2 is much more homogeneous zonally than S-1, there are considerable zonal variations in the amplitude of S-2 which cannot be explained by zonal variations in ozone and water vapor. Other forcings such as those through clouds' reflection and absorption of solar radiation and latent hearing in convective precipitation are needed to explain the observed regional and zonal variations in S-2. The migrating rides S-1 and S-2 predominate over other zonal wave components. However, the nonmigrating tides are substantially stronger than previously reported. The amplitudes of both the migrating and nonmigrating tides decrease rapidly poleward with a slower pace at middle and high latitudes.},
 annote = {Times Cited: 4},
@@ -644,6 +629,22 @@ number = {3},
 pages = {3874--3891},
 title = {{Diurnal and Semidiurnal Tides in Global Surface Pressure Fields}},
 url = {<Go to ISI>://WOS:A1995RZ68500001},
+volume = {56},
+year = {1999}
+}
+@article{Dai1999,
+abstract = {Global surface pressure data from 1976 to 1997 from over 7500 land stations and the Comprehensive Ocean-Atmosphere Data Set have been analyzed using harmonic and zonal harmonic methods. It is found that the diurnal pressure oscillation (S-1) is comparable to the semidiurnal pressure oscillation (S-2) in magnitude over much of the globe except for the low-latitude open oceans, where S-2 is about twice as strong as S-1. Over many land areas, such as the western United States, the Tibetan Plateau, and eastern Africa, S-1 is even stronger than S-2. This is in contrast to the conventional notion that S-2 predominates over much of the globe. The highest amplitudes (similar to 1.3 mb) of S-1 are found over northern South America and eastern Africa close to the equator. Here S-1 is also strong (similar to 1.1 mb) over high terrain such as the Rockies and the Tibetan Plateau. The largest amplitudes of S-2 (similar to 1.0-1.3 mb) are in the Tropics over South America, the eastern and western Pacific. and the Indian Ocean. Here S-1 peaks around 0600-0800 LST at low latitudes and around 1000-1200 LST over most of midlatitudes. while S-2 peaks around 1000 and 2200 LST over low- and midlatitudes. Here S-1 is much stronger over the land than over the ocean and its amplitude distribution is strongly influenced by landmasses, while the land-sea differences of S-2 are small. The spatial variations of S-1 correlate significantly with spatial variations in the diurnal temperature range at the surface, suggesting that sensible heating from the ground is a major forcing for S-1. Although S-2 is much more homogeneous zonally than S-1, there are considerable zonal variations in the amplitude of S-2 which cannot be explained by zonal variations in ozone and water vapor. Other forcings such as those through clouds' reflection and absorption of solar radiation and latent hearing in convective precipitation are needed to explain the observed regional and zonal variations in S-2. The migrating rides S-1 and S-2 predominate over other zonal wave components. However, the nonmigrating tides are substantially stronger than previously reported. The amplitudes of both the migrating and nonmigrating tides decrease rapidly poleward with a slower pace at middle and high latitudes.},
+annote = {Dai, A Wang, JH},
+author = {Dai, Aiguo and Wang, Junhong},
+doi = {10.1175/1520-0469(1999)056<3874:DASTIG>2.0.CO;2},
+file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kong - 1995 - DIURNAL PRESSURE VARIATIONS OVER CONTINENTAL AUSTRALIA.pdf:pdf},
+isbn = {0022-4928},
+issn = {0022-4928},
+journal = {Journal of the Atmospheric Sciences},
+number = {22},
+pages = {3874--3891},
+title = {{Diurnal and Semidiurnal Tides in Global Surface Pressure Fields}},
+url = {<Go to ISI>://WOS:000083594800004},
 volume = {56},
 year = {1999}
 }
@@ -815,7 +816,7 @@ volume = {140},
 year = {2014}
 }
 @article{Gallant2012,
-author = {Gallant, A.J.E and Kiem, A.S. and Verdon-Kidd, D.C. and Stone, R.C. and Karoly, D.J.},
+author = {Gallant, a. J E and Kiem, a. S. and Verdon-Kidd, D. C. and Stone, R. C. and Karoly, D. J.},
 doi = {10.5194/hess-16-2049-2012},
 file = {:home/rhuva/Documents/Journals and Resources/Synoptic Analysis \& ERA/Telleconections in SE-Aus, Gallant-2012.pdf:pdf},
 isbn = {1607-7938},
@@ -860,7 +861,7 @@ volume = {40},
 year = {2003}
 }
 @techreport{Gordon2002,
-author = {Gordon, H.B. and LD, Rotstayn and McGregor, JL and Dix, MR and Kowalczyk, E.A. and O`Farrell, S.P. and Waterman, L.J. and Hirst, A.C. and Wilson, S.G. and Collier, M.A. and Watterson, I.G. and Elliott, Ti},
+author = {Gordon, H.B. and {Rotstayn LD, McGregor JL, Dix MR, Kowalczyk, O’Farrell SP, Waterman LJ, HirstAC, Wilson SG, Collier MA, Watterson IG}, Elliott Ti},
 booktitle = {Asoendale: CSIRO Atmospheric Research Technical Paper},
 file = {:home/rhuva/Documents/Journals and Resources/mk3 model description gordon\_etal\_csiroTR\_2002.pdf:pdf},
 isbn = {0643068783},
@@ -873,7 +874,7 @@ year = {2002}
 @article{Gupta1999,
 abstract = {Climatological averages of surface radiation budget parameters, namely, the shortwave and longwave surface radiative fluxes, have been derived for each month of the year on a global scale. These climatological averages were derived from an 8-yr (96 month) time series of monthly average fluxes. The monthly averages were computed using fast radiation parameterizations and satellite data from the International Satellite Cloud Climatology Project and the Earth Radiation Budget Experiment. Results are presented as time series of hemispheric and global averages and as geographical distributions and time-latitude cross sections of climatological averages. The spatial/temporal variabilities of the results were found to be clearly related to the corresponding variabilities of meteorological and other inputs to the parameterizations. Numerous comparisons of the present results were made with available surface measurements for the purpose of validation. In most cases, the differences were found to be within the uncertainties of the measurements. In some cases, where they were large, the differences were attributable to identifiable deficiencies in the meteorological inputs and/or the surface measurements. However, large differences remained unexplained in a few cases. Anomalies of shortwave and longwave surface fluxes during the 1986/87 El Nino-Southern Oscillation episode show a strong relationship with corresponding top-of-atmosphere anomalies derived from an independent data source. Comparisons with results from several general circulation models showed large differences, but, in most cases, these were attributable to well-recognized deficiencies in model simulations. Global annual average downward and net shortwave fluxes were found to be about 185 and 161 W m(-2), respectively. These values are 10-20 W m(-2) lower than those obtained from the general circulation models, bur they are in good agreement with other satellite-derived estimates. Global annual average downward and net longwave fluxes were found to be about 348 and -48 W m(-2), respectively, which are about 10-15 W m(-2) higher than corresponding values from general circulation models. Atmospheric shortwave absorption derived from the present results is 10-15 W m(-2) larger than from the general circulation models, but it is in good agreement with another estimate based on satellite data.},
 annote = {Part 2},
-author = {Gupta, S.K and Ritchey, N.A and Wilber, A.C and Whitlock, C.H and Gibson, G.G and Stackhouse, P.W},
+author = {Gupta, S K and Ritchey, N a and Wilber, a C and Whitlock, C H and Gibson, G G and Stackhouse, P W},
 doi = {10.1175/1520-0442(1999)012<2691:ACOSRB>2.0.CO;2},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Gupta et al. - 1999 - A climatology of surface radiation budget derived from satellite data.pdf:pdf},
 isbn = {0894-8755},
@@ -941,14 +942,14 @@ year = {2008}
 }
 @article{Hatzianastassiou2005,
 abstract = {The monthly mean shortwave (SW) radiation budget at the Earth's surface (SRB) was computed on 2.5-degree longitude-latitude resolution for the 17-year period from 1984 to 2000, using a radiative transfer model accounting for the key physical parameters that determine the surface SRB, and long-term climatological data from the International Satellite Cloud Climatology Project (ISCCP-D2). The model input data were supplemented by data from the National Centers for Environmental Prediction - National Center for Atmospheric Research (NCEP-NCAR) and European Center for Medium Range Weather Forecasts (ECMWF) Global Reanalysis projects, and other global data bases such as TIROS Operational Vertical Sounder (TOVS) and Global Aerosol Data Set (GADS). The model surface radiative fluxes were validated against surface measurements from 22 stations of the Baseline Surface Radiation Network (BSRN) covering the years 1992-2000, and from 700 stations of the Global Energy Balance Archive (GEBA), covering the period 1984-2000. The model is in good agreement with BSRN and GEBA, with a negative bias of 14 and 6.5 Wm-2, respectively. The model is able to reproduce interesting features of the seasonal and geographical variation of the surface SW fluxes at global scale. Based on the 17-year average model results, the global mean SW downward surface radiation (DSR) is equal to 171.6 Wm-2, whereas the net downward (or absorbed) surface SW radiation is equal to 149.4 Wm-2, values that correspond to 50.2 and 43.7\% of the incoming SW radiation at the top of the Earth's atmosphere. These values involve a long-term surface albedo equal to 12.9\%. Significant increasing trends in DSR and net DSR fluxes were found, equal to 4.1 and 3.7 Wm-2, respectively, over the 1984-2000 period (equivalent to 2.4 and 2.2 Wm-2 per decade), indicating an increasing surface solar radiative heating. This surface SW radiative heating is primarily attributed to clouds, especially low-level, and secondarily to other parameters such as total precipitable water. The surface solar heating occurs mainly in the period starting from the early 1990s, in contrast to decreasing trend in DSR through the late 1980s. The computed global mean DSR and net DSR flux anomalies were found to range within 8 and 6 Wm-2, respectively, with signals from El Ni\~{n}o and La Ni\~{n}a events, and the Pinatubo eruption, whereas significant positive anomalies have occurred in the period 1992-2000.},
-author = {Hatzianastassiou, N. and Matsoukas, C. and Fotiadi, A. and Pavlakis, K. G. and Drakakis, E. and Hatzidimitriou, D. and Vardavas, I.},
+author = {Hatzianastassiou, N. and Matsoukas, C. and Fotiadi, a. and Pavlakis, K. G. and Drakakis, E. and Hatzidimitriou, D. and Vardavas, I.},
 doi = {10.5194/acpd-5-4545-2005},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Hatzianastassiou et al. - 2005 - Global distribution of Earth's surface shortwave radiation budget.pdf:pdf},
 isbn = {1680-7324},
 issn = {1680-7375},
 journal = {Atmospheric Chemistry and Physics Discussions},
 pages = {4545--4597},
-title = {{Global distribution of Earth`s surface shortwave radiation budget}},
+title = {{Global distribution of Earth’s surface shortwave radiation budget}},
 url = {<Go to ISI>://000232962700001},
 volume = {5},
 year = {2005}
@@ -988,7 +989,7 @@ year = {2002}
 }
 @article{Hoevenaars2012,
 abstract = {It is common in quasi-steady-state models of renewable power systems to use a 1??h time step despite the variability of the load and renewable sources within the hour. The purpose of this study was to examine the efficacy of this level of temporal resolution for a model that includes variable residential loads, wind, solar, diesel generator, and batteries. The component models were analyzed individually and as a complete system to develop an understanding of how each is affected by the temporal resolution. With higher resolution, the wind energy output and the fuel consumption of the genset increased. The PV and battery simulations were unaffected by temporal resolution. Agreement between optimization results was found to greatly depend on system configuration. Systems with only diesel for backup were found to increase in cost with higher temporal resolution. Those with battery backup were much less affected by the time step. For systems with both diesel and battery backup, the optimal system costs were fairly close but the optimal component sizes differed. Because of the many factors that affect the results of these systems, it is not yet possible to determine a general recommendation for choosing a time step prior to a simulation. ?? 2011 Elsevier Ltd.},
-author = {Hoevenaars, E.J. and Crawford, C.A.},
+author = {Hoevenaars, Eric J. and Crawford, Curran a.},
 doi = {10.1016/j.renene.2011.11.013},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Optimisation/Printed/Implication of temporal resolution for energy modelling, Hoevenaars-2012.pdf:pdf},
 isbn = {0960-1481},
@@ -1144,7 +1145,7 @@ year = {2014}
 }
 @techreport{InternationalEnergyAgency2009,
 address = {Paris},
-author = {IEA},
+author = {Iea},
 booktitle = {International Energy Agency},
 doi = {10.1787/weo-2011-en},
 file = {:home/rhuva/Documents/Journals and Resources/IEA/WEO2011\_WEB.pdf:pdf},
@@ -1189,7 +1190,7 @@ year = {2011}
 }
 @incollection{Stocker2013,
 address = {Cambridge},
-author = {IPCC},
+author = {Ipcc},
 booktitle = {Climate change 2013: The Physical Science Basis},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/IPCC - 2013 - Summary for Policymakers.pdf:pdf},
 pages = {28},
@@ -1274,7 +1275,7 @@ year = {2012}
 }
 @article{Jones1993,
 abstract = {A climatology of extratropical cyclones determined by an objective automatic scheme applied to 15 years (1975-89) of once-daily Australian Bureau of Meteorology hemispheric analyses is presented. Contour maps of the positions of formation (cyclogenesis), dissipation (cyclolysis) together with other cyclone statistics are presented. The distribution of cyclones through the hemisphere was found to be dominated by a permanent high latitude core coincident with the circumpolar trough. During the winter and intermediate seasons, two mid latitude branches are evident in the cyclone density originating in the Tasman Sea and South American sectors, both spiraling poleward and merging with the circumpolar core in the Southern Oceans. Systems were observed to move in an east-south-east direction, away from their location of formation, exhibiting peak speeds of migration in the mid latitudes. Little seasonality was evident in the density distribution of cyclones through the Southern Oceans, but a considerable amount was found in their central pressure.},
-author = {Jones, D.A and Simmonds, I},
+author = {Jones, D a and Simmonds, I},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Jones, Simmonds - 1993 - A CLIMATOLOGY OF SOUTHERN-HEMISPHERE EXTRATROPICAL CYCLONES.pdf:pdf},
 isbn = {0930-7575},
 journal = {Climate Dynamics},
@@ -1299,7 +1300,7 @@ year = {1987}
 }
 @incollection{Katsigiannis2010,
 abstract = {The optimal sizing of a small autonomous hybrid power system can be a very challenging task, clue to the large number of design settings and the uncertainty in key parameters. This problem belongs to the category of combinatorial optimization, and its solution based on the traditional method of exhaustive enumeration can be proved extremely time-consuming. This paper proposes a binary genetic algorithm in order to solve the optimal sizing problem. Genetic algorithms are popular optimization metaheuristic techniques based on the principles of genetics and natural selection and evolution, and can be applied to discrete or continuous solution space problems. The obtained results prove the performance of the proposed methodology in terms of solution quality and computational time.},
-author = {Katsigiannis, Y.A and Georgilakis, P.S and Karapidakis, E.S},
+author = {Katsigiannis, Y a and Georgilakis, P S and Karapidakis, E S},
 booktitle = {Artificial Intelligence: Theories, Models and Applications, Proceedings},
 editor = {Konstantopoulos, S and Perantonis, S and Karkaletsis, V and Spyropoulos, C D and Vouros, G},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Katsigiannis, Georgilakis, Karapidakis - 2010 - Genetic Algorithm Solution to Optimal Sizing Problem of Small Autonomous Hybrid Power Systems.pdf:pdf},
@@ -1313,7 +1314,7 @@ year = {2010}
 }
 @article{Kiss2009,
 abstract = {Reanalysis data are rarely used for wind power estimates because of the limited spatial and temporal resolution. Here we report on a detailed comparison of wind speed and electric power time series recorded at a continental location in Hungary and estimates provided by the European Centre for Medium-Range Weather Forecasts (ECMWF) ERA-40 and Interim databases at nearby grid points. The results show that the temporal behavior is adequately represented in reanalysis records with damped magnitudes, as expected. However, characteristic shape differences in the wind speed histograms for turbine measurements and reanalysis hinder a perfect match of statistics.Asatisfying agreement of histograms for measured and modeled output powers is achieved by scaling up surface wind speeds to have the same long time average value as for the turbine records. The presented calibration permits us to provide wind power estimates for large geographic areas, where the wind field is similarly coherent as around the test site.},
-author = {Kiss, Peter and Varga, Laszlo and Janosi, Imre M.},
+author = {Kiss, Péter and Varga, László and Jánosi, Imre M.},
 doi = {10.1063/1.3153903},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Kiss, Varga, Janosi - 2009 - Comparison of wind power estimates from the ECMWF reanalyses with direct turbine measurements.pdf:pdf},
 isbn = {1941-7012},
@@ -1544,7 +1545,7 @@ year = {2013}
 }
 @article{Mason2010,
 abstract = {The New Zealand electricity generation system is dominated by hydro generation at approximately 60\% of installed capacity between 2005 and 2007, augmented with approximately 32\% fossil-fuelled generation, plus minor contributions from geothermal, wind and biomass resources. In order to explore the potential for a 100\% renewable electricity generation system with substantially increased levels of wind penetration, fossil-fuelled electricity production was removed from an historic 3-year data set, and replaced by modelled electricity production from wind, geothermal and additional peaking options. Generation mixes comprising 53-60\% hydro, 22-25\% wind, 12-14\% geothermal, 1\% biomass and 0-12\% additional peaking generation were found to be feasible on an energy and power basis, whilst maintaining net hydro storage. Wind capacity credits ranged from 47\% to 105\% depending upon the incorporation of demand management, and the manner of operation of the hydro system. Wind spillage was minimised, however, a degree of residual spillage was considered to be an inevitable part of incorporating non-dispatchable generation into a stand-alone grid system. Load shifting was shown to have considerable advantages over installation of new peaking plant. Application of the approach applied in this research to countries with different energy resource mixes is discussed, and options for further research are outlined. © 2010 Elsevier Ltd.},
-author = {Mason, I.G. and Page, S.C. and Williamson, A.G.},
+author = {Mason, I. G. and Page, S. C. and Williamson, a. G.},
 doi = {10.1016/j.enpol.2010.03.022},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Large Scale/RE combinations for 100 perc NZ, Mason-2010.pdf:pdf},
 isbn = {0301-4215},
@@ -1592,7 +1593,7 @@ year = {2011}
 @article{Mendes2008,
 abstract = {This work presents an updated climatology of blocking episodes for the Southern Hemisphere between 1960 and 2000, based on data from NCEP/NCAR reanalysis. Five contiguous areas of blocking activity are considered; Southeastern Pacific, Southwestern Pacific, Atlantic, Indian and Oceania. The impact of the three most important areas of onset blocking episodes (Southeastern Pacific, Atlantic and Oceania) upon the climate of the adjacent continental areas (South America and Australia) was evaluated. Composites of the meteorological variables (temperature and precipitation) were obtained for periods of diagnosed blockings. The impact of the blocking episodes over the climate of South America and Australia is highlighted whenever anomaly fields of temperature and precipitation are significant at the 5\% and 10\% levels, respectively. Impacts of Southeastern Pacific and Atlantic blockings are observed on the temperature field over several regions of South America. Significantly higher (lower) temperatures than climatology occur in southern Brazil, northern Argentina, Uruguay and Paraguay, and lower (higher) than climatology in the extreme south of South America for the Southeastern Pacific (Atlantic) blocking episodes. Precipitation over South America is also affected by the Southeastern Pacific and Atlantic blockings in different ways. The Southeastern Pacific blocking has higher impact on precipitation in summer (dry conditions in northeast Brazil) and spring (wet conditions in central and southern Brazil), while the Atlantic blocking affects precipitation in autumn and winter (wet conditions in parts of central and southern Brazil). The blocking cases over Oceania affect southeastern Australia with normal to higher than climatological precipitation and with negative temperature anomalies in that region. Finally we provide a detailed analysis of a South Atlantic blocking episode, which occurred between the 4th and the 8th of June 1997. This event shows clearly the split of the jet stream into two branches (subtropical and polar) surrounding the anticyclonic sector, and satellite imagery revealed the presence of transient systems in the periphery of the blocking anticyclone responsible for high values of precipitation in the southeastern sector of South America. [ABSTRACT FROM AUTHOR] Copyright of Pure \& Applied Geophysics is the property of Springer Science \& Business Media B.V. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)},
 annote = {Mendes, Monica Cristina Dami\~{a}o 1 Trigo, Ricardo Machado 1,2; Email Address: rmtrigo@fc.ul.pt Cavalcanti, Iracema F. A. 3 DaCamara, Carlos C. 1; Affiliation: 1: CGUL, IDL , University of Lisbon , Lisbon Portugal 2: Departamento de Engenharias da Universidade Lus\'{o}fona, Lisbon, Portugal 3: Centro de Previs\~{a}o de Tempo e Estudos Clim\'{a}ticos , INPE , S\~{a}o Paulo Brazil; Source Info: Sep2008, Vol. 165 Issue 9/10, p1941; Subject Term: CLIMATOLOGY; Subject Term: BLOCKING (Meteorology); Subject Term: ATMOSPHERIC circulation; Subject Term: SOUTHERN Hemisphere; Subject Term: AUSTRALIA; Subject Term: URUGUAY; Subject Term: PARAGUAY; Subject Term: SOUTH America; Author-Supplied Keyword: Australia; Author-Supplied Keyword: Blocking; Author-Supplied Keyword: climate impacts; Author-Supplied Keyword: precipitation; Author-Supplied Keyword: South America; Author-Supplied Keyword: Southern Hemisphere; Author-Supplied Keyword: temperature; Number of Pages: 22p; Illustrations: 3 Charts, 9 Maps; Document Type: Article},
-author = {Mendes, M.C.D and Trigo, R.M and Cavalcanti, I.F.A. and DaCamara, C.C.},
+author = {Mendes, Monica Cristina Dami\~{a}o and Trigo, Ricardo Machado and Cavalcanti, Iracema F a and DaCamara, Carlos C.},
 doi = {10.1007/s00024-008-0409-4},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Mendes et al. - 2008 - Blocking Episodes in the Southern Hemisphere Impact on the Climate of Adjacent Continental Areas.pdf:pdf},
 isbn = {00334553},
@@ -1640,7 +1641,7 @@ author = {Nelson, James H},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Optimisation/SWITCH model California study, Wei-2012.pdf:pdf},
 institution = {Lawrence Berkeley National Laboratory},
 pages = {266},
-title = {{California`s Carbon Challenge: Scenarios for Achieving 80\% Emissions Reduction in 2050 (Ph.D.)}},
+title = {{California’s Carbon Challenge: Scenarios for Achieving 80\% Emissions Reduction in 2050 (Ph.D.)}},
 url = {http://rael.berkeley.edu/publications/californiaco2report},
 year = {2013}
 }
@@ -1711,7 +1712,7 @@ year = {2014}
 }
 @article{Perpinan2008,
 abstract = {Several authors have analysed the changes of the probability density function of the solar radiation with different time resolutions. Some others have approached to study the significance of these changes when produced energy calculations are attempted. We have undertaken different transformations to four Spanish databases in order to clarify the interrelationship between radiation models and produced energy estimations. Our contribution is straightforward: the complexity of a solar radiation model needed for yearly energy calculations, is very low. Twelve values of monthly mean of solar radiation are enough to estimate energy with errors below 3\%. Time resolutions better than hourly samples do not improve significantly the result of energy estimations. © 2007 Elsevier Ltd. All rights reserved.},
-author = {Perpi\~{n}an, O. and Lorenzo, E. and Castro, M.A. and Eyras, R.},
+author = {Perpi\~{n}an, O. and Lorenzo, E. and Castro, M. a. and Eyras, R.},
 doi = {10.1016/j.solener.2007.06.007},
 file = {:home/rhuva/Robert/Final Thesis/DSR support article, Perpinan-2008.pdf:pdf},
 isbn = {0038-092X},
@@ -1814,7 +1815,7 @@ volume = {24},
 year = {2011}
 }
 @article{Rashid2013,
-author = {Rashid, H.A and Hirst, A.C and Dix, Martin},
+author = {Rashid, Harun a and Hirst, Anthony C and Dix, Martin},
 file = {:home/rhuva/Documents/Journals and Resources/ACCESS/ACCESS atmospheric circulation features performance, Rashid-2013.pdf:pdf},
 issn = {1836716X},
 journal = {Australian Meteorological and Oceanographic Journal},
@@ -1835,7 +1836,7 @@ title = {{Optimizing CO<sub>2</sub> observing networks in the presence of model 
 volume = {3},
 year = {2003}
 }
-@techreport{Council2011,
+@techreport{REN212013,
 abstract = {Renewable energy markets, industries, and policy frameworks have evolved rapidly in recent years. The Renewables Global Status Report provides a comprehensive and timely overview of renewable energy market, industry, investment, and policy developments worldwide. It relies on the most recent data available, provided by a network of more than 500 contributors and researchers from around the world, all of which is brought together by a multi-disciplinary authoring team. The report covers recent developments, current status, and key trends; by design, it does not provide analysis or forecasts},
 author = {Ren21},
 booktitle = {Production},
@@ -1848,7 +1849,7 @@ title = {{Renewables 2013 Global Status Report}},
 url = {www.ren21.net/gsr},
 year = {2013}
 }
-@techreport{REN212013,
+@techreport{Council2011,
 abstract = {Renewable energy markets, industries, and policy frameworks have evolved rapidly in recent years. The Renewables Global Status Report provides a comprehensive and timely overview of renewable energy market, industry, investment, and policy developments worldwide. It relies on the most recent data available, provided by a network of more than 500 contributors and researchers from around the world, all of which is brought together by a multi-disciplinary authoring team. The report covers recent developments, current status, and key trends; by design, it does not provide analysis or forecasts},
 author = {Ren21},
 booktitle = {Production},
@@ -1942,7 +1943,7 @@ volume = {68},
 year = {2014}
 }
 @article{Santos-Alamillos2012,
-author = {Santos-Alamillos, F.J. and Pozo-V\'{a}zquez, D. and Ruiz-Arias, J.A. and Lara-Fanego, V. and Tovar-Pescador, J.},
+author = {Santos-Alamillos, F. J. and Pozo-V\'{a}zquez, D. and Ruiz-Arias, J. a. and Lara-Fanego, V. and Tovar-Pescador, J.},
 doi = {10.1175/JAMC-D-11-0189.1},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Printed/Spatiotemporal balancing of wind and solar for southern Spain, Pozo-2012.pdf:pdf},
 issn = {15588424},
@@ -1976,7 +1977,7 @@ year = {2012}
 }
 @article{Schiffer1983,
 abstract = {The first project of the World Climate Research Program is the International Satellite Cloud Climatology Project, (ISCCP) whose objective is the collection and analysis of satellite radiance data in order to infer the global distribution of cloud radiative properties and improve the modeling of cloud effects on climate. The operational component of ISCCP takes advantage of the global coverage provided by the current and planned international array of geostationary and polar-orbiting meteorological satellites in the 1980s. It will produce a five-year global radiance and cloud data set. The research component of ISCCP will coordinate studies to validate climatology, improve cloud analysis algorithms, improve cloud effects modelling, and investigate the role of clouds in the atmospheric radiation budget and hydrologic cycle.},
-author = {Schiffer, R.A. and Rossow, W.B.},
+author = {Schiffer, R. a. and Rossow, W. B.},
 doi = {10.1175/1520-0477(1991)072<0002:ICDP>2.0.CO;2},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Schiffer, Rossow - 1983 - THE INTERNATIONAL-SATELLITE-CLOUD-CLIMATOLOGY-PROJECT (ISCCP) - THE 1ST PROJECT OF THE WORLD-CLIMATE-RESEARCH-PROGRAMME.pdf:pdf},
 isbn = {0003-0007},
@@ -2022,7 +2023,7 @@ year = {2012}
 @article{Shafiullah2012,
 abstract = {Given the recent increasing public focus on climate change issues, there is a need for robust, sustainable and climate friendly power transmission and distribution systems that are intelligent, reliable, and green. Current power systems create environmental impacts as well as contributing to global warming due to their utilization of fossil fuels, especially coal, as carbon dioxide is emitted into the atmosphere. In contrast to fossil fuels, renewable energy is starting to be used as the panacea for solving climate change or global warming problems. This paper describes a feasibility study undertaken to investigate the potentialities of renewable energy including the prospective locations in Australia for renewable energy generation, in particular solar and wind energy. Initially, a hybrid model has been developed to investigate the prospects of wind energy for typical Australian region considering production cost, cost of energy, emission production and contribution from renewable energy using the Hybrid Optimization Model for Electric Renewable (HOMER), a computer model developed by the USA's National Renewable Energy Laboratory (NREL). This model also explores suitable places around Australia for wind energy generation using statistical analysis. Subsequently, the usefulness of solar energy in the Australian context and suitable locations for solar energy generation are also investigated using a similar hybrid model. Finally, the model has been developed to investigate the prospects of renewable energy in particular wind and solar energy including specific locations in Australia that would be suitable for both wind and solar energy generation. From simulation analysis it is clearly observed that Australia has enormous potentialities for substantially increased use of renewable energy; a large penetration of renewable energy sources into the national power system would reduce CO2 emissions significantly, contributing to the reduction of global warming. © 2011 Elsevier Ltd.},
 annote = {Shafiullah, G. M. Amanullah, M. T. O. Ali, A. B. M. Shawkat Jarvis, Dennis Wolfs, Peter},
-author = {Shafiullah, G.M. and Amanullah, M.T.O and {Shawkat Ali}, A.B.M and Jarvis, Dennis and Wolfs, Peter},
+author = {Shafiullah, G. M. and Amanullah, M. T O and {Shawkat Ali}, a. B M and Jarvis, Dennis and Wolfs, Peter},
 doi = {10.1016/j.renene.2011.08.016},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Shafiullah et al. - 2012 - Prospects of renewable energy - a feasibility study in the Australian context.pdf:pdf},
 isbn = {0960-1481},
@@ -2070,7 +2071,7 @@ year = {2000}
 }
 @article{Simmons2006,
 abstract = {Over the past decade, reanalyses of multi-decadal series of past observations$\backslash$nhave become established as an important and widely utilized resource$\backslash$nfor the study of atmospheric and oceanic processes and predictability.$\backslash$nProduced using fixed, modern versions of the data assimilation systems$\backslash$ndeveloped for numerical weather prediction, they also are being applied$\backslash$nincreasingly in many other fields that require a record of the state$\backslash$nof either the atmosphere or its underlying land and ocean surfaces.$\backslash$nEstimation of renewable energy resources, calculation of microwave$\backslash$ntelecommunication signal losses and study of bird migration are just$\backslash$nthree examples. High-resolution operational forecasting systems provide$\backslash$ngood quality analyses for study of recent conditions. However, the$\backslash$npace of improvement of these systems is such that lower-resolution$\backslash$nreanalyses produced using up-to-date assimilation systems provide$\backslash$nproducts for all but the last few years that are generally superior$\backslash$nto those available from the archives of past operational products.$\backslash$nReanalysis products are, by design, more suitable than their operational$\backslash$ncounterparts for use in studies of longer-term variability in climate,$\backslash$nalthough they remain susceptible to changes in the observing system$\backslash$nthat can make accurate depiction of long-term trends problematic.$\backslash$n$\backslash$nTwo major ECMWF reanalyses have exploited the substantial advances$\backslash$nmade in the ECMWF forecasting system and technical infrastructure$\backslash$nsince operations began in 1979. The first project, ERA-15 (1979�1993),$\backslash$nwas launched in 1993 and the second �extended� reanalysis project,$\backslash$nERA-40 (1957�2002), in 1998; for details see ECMWF Newsletters No.$\backslash$n73 and No. 101. The products of these reanalyses have been used extensively$\backslash$nwithin the Member States and by the wider user community. They have$\backslash$nalso been used extensively within ECMWF in support of other activities,$\backslash$nparticularly for validating long-term model simulations, helping$\backslash$ndevelop seasonal forecasting (enabling the DEMETER hindcasts, for$\backslash$nexample) and establishing the �climate� of EPS (Ensemble Prediction$\backslash$nSystem) forecasts needed for construction of forecaster-aids such$\backslash$nas the Extreme Forecast Index.},
-author = {Simmons, A and Uppala, S and Dee, D and Kobayashi, S},
+author = {Simmons, a and Uppala, S and Dee, D and Kobayashi, S},
 doi = {ECMWF Newsletter n.110},
 file = {:home/rhuva/Documents/Journals and Resources/Synoptic Analysis \& ERA/ERA/ERA-Interim newsletter 110.pdf:pdf},
 isbn = {110},
@@ -2225,7 +2226,7 @@ year = {2007}
 }
 @book{Sturman2005,
 address = {South Melbourne},
-author = {Sturman, A. and Tapper, N.},
+author = {Sturman, a. and Tapper, N.},
 edition = {2},
 pages = {541},
 publisher = {Oxford University Press},
@@ -2245,7 +2246,7 @@ year = {1998}
 @article{Teuling2011,
 abstract = {The increasing availability of gridded, high-resolution, multivariate$\backslash$nclimatological data sets calls for innovative approaches to visualize$\backslash$ninter-variable relations. In this study, we present a methodology,$\backslash$nbased on properties of common colour schemes, to plot two variables$\backslash$nin a single colour map by using a two-dimensional colour legend for$\backslash$nboth sequential and diverging data. This is especially suited for$\backslash$nclimate data as the spatial distribution of the relation between$\backslash$ndifferent variables is often as important as the distribution of$\backslash$nvariables individually. Two example applications are given to illustrate$\backslash$nthe use of the method: one that shows the global distribution of$\backslash$nclimate based on observed temperature and relative humidity, and$\backslash$nthe other showing the distribution of recent changes in observed$\backslash$ntemperature and precipitation over Europe. A flexible and easy-to-implement$\backslash$nmethod is provided to construct different colour legends for sequential$\backslash$nand diverging data. Copyright (C) 2010 Royal Meteorological Society},
 annote = {Teuling, A. J. Stoeckli, R. Seneviratne, S. I.},
-author = {Teuling, A.J. and St\"{o}ckli, R. and Seneviratne, S.I.},
+author = {Teuling, a. J. and St\"{o}ckli, R. and Seneviratne, S. I.},
 doi = {10.1002/joc.2153},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Teuling, Stockli, Seneviratne - 2011 - Bivariate colour maps for visualizing climate data.pdf:pdf},
 isbn = {0899-8418},
@@ -2395,7 +2396,7 @@ year = {2012}
 }
 @article{Short2013,
 abstract = {A simple model for including the influence of the atmospheric boundary layer in connection with large eddy simulations of wind turbine wakes is presented and validated by comparing computed results with measurements as well as with direct numerical simulations. The model is based on an immersed boundary type technique where volume forces are used to intro- duce wind shear and atmospheric turbulence. The application of the model for wake studies is demonstrated by combining it with the actuator line method, and predictions are compared with field measurements. Copyright © 2013 JohnWiley \& Sons, Ltd.},
-author = {Troldborg, Niels and Sorensen, Jn},
+author = {Troldborg, Niels and S\o rensen, Jn},
 doi = {10.1002/we},
 file = {:home/rhuva/Documents/Journals and Resources/Hybrid Resources/Large Scale/Load matching with wind and solar for western USA, Short-2013.pdf:pdf},
 journal = {Wind Energy},
@@ -2426,7 +2427,7 @@ year = {2013}
 }
 @article{Verdon-Kidd2009,
 abstract = {In this paper regional (synoptic) and large-scale climate drivers of rainfall are investigated for Victoria, Australia. A non-linear classification methodology known as self-organizing maps (SOM) is used to identify 20 key regional synoptic patterns, which are shown to capture a range of significant synoptic features known to influence the climate of the region. Rainfall distributions are assigned to each of the 20 patterns for nine rainfall stations located across Victoria, resulting in a clear distinction between wet and dry synoptic types at each station. The influence of large-scale climate modes on the frequency and timing of the regional synoptic patterns is also investigated. This analysis revealed that phase changes in the El Ni\~{n}o Southern Oscillation (ENSO), the Indian Ocean Dipole (IOD) and/or the Southern Annular Mode (SAM) are associated with a shift in the relative frequency of wet and dry synoptic types on an annual to interannual timescale. In addition, the relative frequency of synoptic types is shown to vary on a multi-decadal timescale, associated with changes in the Inter-decadal Pacific Oscillation (IPO). Importantly, these results highlight the potential to utilise the link between the regional synoptic patterns derived in this study and large-scale climate modes to improve rainfall forecasting for Victoria, both in the short- (i.e. seasonal) and long-term (i.e. decadal/multi-decadal scale). In addition, the regional and large-scale climate drivers identified in this study provide a benchmark by which the performance of Global Climate Models (GCMs) may be assessed. [ABSTRACT FROM AUTHOR] Copyright of Hydrology \& Earth System Sciences is the property of Copernicus Gesellschaft mbH and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)},
-author = {Verdon-Kidd, D. and Kiem, A.S.},
+author = {Verdon-Kidd, D. and Kiem, a. S.},
 doi = {10.5194/hessd-5-2791-2008},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Verdon-Kidd, Kiem - 2009 - On the relationship between large-scale climate modes and regional synoptic patterns that drive Victorian rainfall.pdf:pdf},
 isbn = {10275606},
@@ -2442,20 +2443,6 @@ url = {https://ezp.lib.unimelb.edu.au/login?url=https://search.ebscohost.com/log
 volume = {5},
 year = {2008}
 }
-@misc{Vestas2014a,
-author = {Vestas},
-booktitle = {Products and Services},
-title = {{SiteHunt}},
-url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitehunt},
-year = {2014}
-}
-@misc{Vestas2014,
-author = {Vestas},
-booktitle = {Products and Services},
-title = {{SiteDesign}},
-url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitedesign},
-year = {2014}
-}
 @misc{Vestas2014,
 author = {Vestas},
 booktitle = {Products and Services},
@@ -2475,6 +2462,41 @@ author = {Vestas},
 booktitle = {Products and Services},
 title = {{SiteDesign}},
 url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitedesign},
+year = {2014}
+}
+@misc{Vestas2014a,
+author = {Vestas},
+booktitle = {Products and Services},
+title = {{SiteHunt}},
+url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitehunt},
+year = {2014}
+}
+@misc{Vestas2014,
+author = {Vestas},
+booktitle = {Products and Services},
+title = {{SiteDesign}},
+url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitedesign},
+year = {2014}
+}
+@misc{Vestas2014a,
+author = {Vestas},
+booktitle = {Products and Services},
+title = {{SiteHunt}},
+url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitehunt},
+year = {2014}
+}
+@misc{Vestas2014,
+author = {Vestas},
+booktitle = {Products and Services},
+title = {{SiteDesign}},
+url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitedesign},
+year = {2014}
+}
+@misc{Vestas2014a,
+author = {Vestas},
+booktitle = {Products and Services},
+title = {{SiteHunt}},
+url = {http://www.vestas.com/en/products\_and\_services/options\_and\_solutions\#!sitehunt},
 year = {2014}
 }
 @article{Villalva2009,
@@ -2546,7 +2568,7 @@ isbn = {0022-4928},
 issn = {0022-4928},
 journal = {Journal of the Atmospheric Sciences},
 pages = {3113--3131},
-title = {{Southern "Annular Modes" Simulated by a Climate Model--Patterns, Mechanisms, and Uses}},
+title = {{Southern “Annular Modes” Simulated by a Climate Model—Patterns, Mechanisms, and Uses}},
 url = {<Go to ISI>://WOS:000249455000007},
 volume = {64},
 year = {2007}
@@ -2567,7 +2589,7 @@ year = {2011}
 }
 @article{Wiedenmann2002,
 abstract = {A 30-yr climatology of blocking events was compiled by stratifying the data into seasonal and three regional categories for both the Northern and Southern Hemispheres using the NCEP–NCAR reanalyses. Several characteristics of blocking anticyclones were included in the study and these were frequency of occurrence, preferred formation regions, duration, blocking days, and intensity. The block intensity (BI) calculation was modified successfully from a previous study in order to automate the procedure for use with large datasets, and it is applied for the first time to derive a long-term observational record of this quantity. This modification also makes BI suitable for use as a diagnostic tool. Blocking events in the Northern (Southern) Hemisphere were the most persistent and strongest during the cold season and over the Atlantic (Pacific) region, as found using BI to measure intensity. The characteristics of blocking events derived in this study were compared to previous long-term climatological studies and across each hemisphere. It was found that the temporal and spatial distributions in both hemispheres were similar to those of longer-term studies. The interannual variability of blocking was also examined with respect to ENSO-related variability for the entire blocking year. It was found that Northern (Southern) Hemisphere blocking events were stronger and more frequent during La Ni\~{n}a (El Ni\~{n}o) years, a result that is consistent with cyclone variability in each hemisphere. Additionally, these results were compared with previously published studies of interannual variability in blocking occurrence.},
-author = {Wiedenmann, J.M. and Lupo, A.R. and Mokhov, I.I. and Tikhonova, E.A.},
+author = {Wiedenmann, Jason M. and Lupo, Anthony R. and Mokhov, Igor I. and Tikhonova, Elena a.},
 doi = {10.1175/1520-0442(2002)015<3459:TCOBAF>2.0.CO;2},
 file = {:home/rhuva/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Wiedenmann et al. - 2002 - The Climatology of Blocking Anticyclones for the Northern and Southern Hemispheres Block Intensity as a Diagnostic.pdf:pdf},
 isbn = {0894-8755},
@@ -2605,6 +2627,7 @@ issn = {00746142},
 pages = {648},
 publisher = {Elsevier},
 title = {{Statistical methods in the atmospheric sciences}},
+url = {http://books.google.com/books?id=\_b4R9j2Iy7EC\&pgis=1$\backslash$nhttp://books.google.com/books?hl=en\&lr=\&id=IJuCVtQ0ySIC\&oi=fnd\&pg=PP2\&dq=Statistical+methods+in+the+atmospheric+sciences\&ots=amMksQwPP0\&sig=s\_TJ8K0VCCmKy7ZIM9pq2x8ANp4},
 year = {2005}
 }
 @misc{TheMendeleySupportTeam2011,
@@ -2624,7 +2647,7 @@ pages = {e54--130},
 pmid = {17515473},
 publisher = {Mendeley Ltd.},
 title = {{2011 ASA/ACCF/AHA/AANN/AANS/ACR/ASNR/CNS/SAIP/SCAI/SIR/SNIS/SVM/SVS guideline on the management of patients with extracranial carotid and vertebral artery disease. A report of the American College of Cardiology Foundation/American Heart Association Task F}},
-url = {http://www.ncbi.nlm.nih.gov/pubmed/17515473$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/21282504$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/16186516$\backslash$nhttp://doi.wiley.com/10.1002/9780470994801$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/23712108$\backslash$nhttp://www.pubmedcentral.nih.go},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/17515473$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/21282504$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/16186516$\backslash$nhttp://doi.wiley.com/10.1002/9780470994801$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/23712108$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3295536\&tool=pmcentrez\&rendertype=abstract$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/16432246$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2905927\&tool=pmcentrez\&rendertype=abstract$\backslash$nhttp://www.ncbi.nlm.nih.gov/pubmed/},
 volume = {35},
 year = {2011}
 }

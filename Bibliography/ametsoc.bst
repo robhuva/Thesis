@@ -78,6 +78,7 @@ ENTRY
     title
     type
     url
+    urldate
     volume
     year
   }
@@ -593,6 +594,20 @@ FUNCTION {format.note}
         }
       if$
       note #2 global.max$ substring$ * "note" bibinfo.check
+    }
+  if$
+}
+
+FUNCTION {format.urldate}
+{ urldate duplicate$ empty$ 'pop$
+    { swap$ duplicate$ empty$
+        { pop$ pop$ format.pages }
+	{
+	  ", <Accessed " *
+	  swap$
+	  "urldate" bibinfo.check * ">" *
+	 }
+      if$
     }
   if$
 }
@@ -1127,7 +1142,7 @@ FUNCTION {article}
       format.pages output
     }
   if$
-  format.note output
+  %format.note output
   format.eprint output
   fin.entry
 }
@@ -1275,7 +1290,7 @@ FUNCTION {inproceedings}
     }
   if$
   format.doi output
-  format.note output
+  %format.note output
   format.eprint output
   fin.entry
 }
@@ -1292,7 +1307,7 @@ FUNCTION {manual}
   organization "organization" bibinfo.check output
   format.edition output
   format.doi output
-  format.note output
+  %format.note output
   format.eprint output
   fin.entry
 }
@@ -1328,11 +1343,12 @@ FUNCTION {misc}
   format.title output
   new.sentence
   format.publisher.address output
-  format.note output
+  %format.note output
   format.book.pages output
   howpublished "howpublished" bibinfo.check output
   format.doi output
   format.note output
+  format.urldate output
   format.eprint output
   fin.entry
 }
@@ -1387,7 +1403,7 @@ FUNCTION {proceedings}
     }
   if$
   format.doi output
-  format.note output
+  %format.note output
   format.eprint output
   fin.entry
 }
