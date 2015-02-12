@@ -16,6 +16,8 @@
  
 \fancyhead[LE,RO]{\bfseries\thepage}
 \fancyfoot{}
+\raggedbottom
+\setlength{\parindent}{8mm}
 \end_preamble
 \use_default_options true
 \master ../Master.lyx
@@ -66,8 +68,8 @@
 \footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip medskip
 \quotes_language english
 \papercolumns 1
 \papersides 2
@@ -136,10 +138,11 @@ name "sec:Som-Cont-Intro"
 \begin_layout Standard
 The mask used for filtering out the ocean variability was an altered version
  of the land-sea mask variable supplied by ECMWF.
- Using the coastline information available within the Interactive Data Language
- (IDL) libraries the initial land-sea mask variable, which seemed to not
- include some parts of the Australian continent as land, was extended to
- include all grid-boxes that appeared to contain land.
+ When compared to the Interactive Data Language (IDL) map of the Australian
+ continent, the ECMWF-supplied land-sea mask variable appeared not to include
+ some areas of the Australian continent as land.
+ The decision was then made to extended the ECMWF land-sea mask variable
+ to include all grid-boxes that appeared to contain land in IDL.
  Fig.
  
 \begin_inset CommandInset ref
@@ -843,49 +846,6 @@ n=max\left\{ \frac{(88hPa-qerror_{n})\cdot(48-n)^{2}}{(qerror_{n}-55.3hPa)\cdot 
 \end_inset
 
 
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/SOM_MSLP_cont_6x5_alpha0.5_bubble_large.eps
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-6x5 SOM space of ERA-Interim MSLP over the Australian continent.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:6x5-SOM-space-Cont"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -933,6 +893,49 @@ reference "fig:6x5-SOM-space"
 
 .
  
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Figures/SOM_MSLP_cont_6x5_alpha0.5_bubble_large.eps
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+6x5 SOM space of ERA-Interim MSLP over the Australian continent.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6x5-SOM-space-Cont"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1585,12 +1588,19 @@ reference "fig:SOM-Cont-Surf-Seasnl-Occ"
 \end_inset
 
  b) also showed a strong accordance with the regional analysis.
- Thus the continental analysis, despite the limited domain, was able to
- produce a set of SOM nodes that corresponded well with the physical reality
- of the Australian region (see earlier comparison between region SOM and
- findings from the literature) while at the same time achieved a much more
- continuous representation of the ERA-Interim data (93% of time-steps had
- a BMU).
+ 
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+The continental analysis, despite the limited domain, was able to produce
+ a set of SOM nodes that corresponded well with the physical reality of
+ the Australian region (see earlier comparison between region SOM and findings
+ from the literature) while at the same time achieved a much more continuous
+ representation of the ERA-Interim data (93% of time-steps had a BMU).
  With a vastly more complete representation of the data from ERA-interim
  by the continental SOM a more comprehensive analysis of the concurrent
  wind and solar conditions associated with each SOM node was possible.
