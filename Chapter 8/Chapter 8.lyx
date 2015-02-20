@@ -124,10 +124,19 @@ electricity
  model utilised in Part 2 of this thesis.
  The components of the model, some of the costs used and the locations from
  within the ACCESS-A model grid utilised are outlined.
- A quasi transmission model is also presented, and the chapter concludes
- by explaining how the individual components are combined and what the specific
- combinations imply about the preferred solutions to the electricity system
- configuration.
+ A
+\change_deleted -1458100629 1424046748
+ quasi
+\change_unchanged
+ transmission 
+\change_inserted -1458100629 1424046755
+cost
+\change_deleted -1458100629 1424046754
+model
+\change_unchanged
+ is also presented, and the chapter concludes by explaining how the individual
+ components are combined and what the specific combinations imply about
+ the preferred solutions to the electricity system configuration.
 \end_layout
 
 \begin_layout Standard
@@ -176,7 +185,13 @@ electricity
 \change_unchanged
  model in this thesis balances the output of each given technology, combines
  the costs involved into a single dollar amount and then informs an optimisation
- algorithm of the total cost of each guess at the solution space.
+ algorithm of the total cost of each 
+\change_inserted -1458100629 1424403650
+iteration of
+\change_deleted -1458100629 1424306266
+guess at
+\change_unchanged
+ the solution space.
  The 
 \change_deleted -1458100629 1418778453
 energy
@@ -201,12 +216,19 @@ reference "fig:Huva-etal-2012-Model-Output"
 \end_inset
 
  illustrates how the resources can be combined).
- The optimisation technique used in this thesis (the Genetic Algorithm (GA)),
+ 
+\change_deleted -1458100629 1424233380
+The optimisation technique used in this thesis (the Genetic Algorithm (GA)),
  like all optimisation techniques, aims to minimise a cost function.
- In the case of the current study the cost function is a combination of
- costs assigned to each of the available technologies (in this case onshore
- wind, large-scale concentrating solar, pumped hydro storage and gas fired
- back-up).
+
+\change_unchanged
+ In the case of the current study the cost function
+\change_inserted -1458100629 1424233492
+ to be minimised
+\change_unchanged
+ is a combination of costs assigned to each of the available technologies
+ (in this case onshore wind, large-scale concentrating solar, pumped hydro
+ storage and gas fired back-up).
  The costs for each technology define the order in which the technologies
  are favoured---the dispatch order.
  For all simulations examined in this thesis the effective dispatch order
@@ -284,12 +306,135 @@ name "fig:Huva-etal-2012-Model-Output"
 \end_inset
 
 
+\change_inserted -1458100629 1424230560
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -1458100629 1424403659
+The optimisation technique used in the electricity model is a Genetic Algorithm
+ (GA).
+ The GA is one possible tool for optimisation of complex (non-linear) problems.
+ The specific implementation of the GA in the thesis is outlined in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rayner2003"
+
+\end_inset
+
+.
+ The GA is a population-based meta-heuristic that, as described earlier,
+ will have a population of parameter combinations evolve/change over successive
+ iterations of the solution space.
+ In general terms the GA behaves much like a biological system on Earth.
+ The evolution of the population is based on values of the cost function
+ (fitness) and user-defined control parameters that govern rates of breeding,
+ mutating, culling and cloning.
+ Breeding involves making new members of the population from pairwise combinatio
+ns of current members, mutating involves randomly changing elements of populatio
+n members and culling involves removing members of the population, which
+ are then filled-in by cloning remaining members of the population (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rayner2003"
+
+\end_inset
+
+).
+ The propagation of fitter members over generations is aided by selection
+ of less fit members at the cull stage (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rayner2003"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1424403854
+Compared to other advanced techniques 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Fadaee2012"
+
+\end_inset
+
+ found the GA, along with the Particle Swarm Optimisation 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PSO"
+description "Particle Swarm Optimisation"
+
+\end_inset
+
+(PSO) technique, to be a useful and promising technique for optimisation
+ of hybrid renewable energy based systems.
+ The PSO technique searches the solution space by sending out 'particles',
+ which change their position over time based on information gained from
+ neighbouring particles and by incorporating some memory of where it has
+ been.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Angeline1998"
+
+\end_inset
+
+ compared the GA and PSO techniques and found both to perform well.
+ The PSO was seen to equilibrate on near optima more quickly than the GA,
+ but was also less able to explore the solution space any further due to
+ a lack of adaptability.
+ The GA was seen to be more adaptive in these final stages of searching,
+ despite taking more time to get to that point (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Angeline1998"
+
+\end_inset
+
+).
+ An advantage of the population-based algorithms is the ability to trade-off
+ between many parameters and analyse several near-optimal solutions 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Banos2011"
+
+\end_inset
+
+.
+ This flexibility reduces the likelihood of the algorithm becoming stuck
+ in local minima.
+ However, depending on the problem at hand it is possible for their to exist
+ many near optimal solutions that contain vastly different parameters but
+ have similar cost function values.
+ As stated earlier, the flexibility of a population-based technique comes
+ at the price of ambiguity.
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -1458100629 1424403875
+As was mentioned in the previous chapter it was not seen as possible to
+ utilise one of the many pre-built electricity/energy models.
+ Further, with a lack of specific evidence to suggest that one particular
+ optimisation technique will be best suited for the problem at hand it was
+ decided to utilise the GA.
+ The following sections describe the components of the electricity model,
+ as well as a pre-optimisation site selection process.
+ The optimisation problem is more amenable to optimisation if it is given
+ to the GA in a succinct version.
+\change_deleted -1458100629 1424307185
 A pre-optimisation site selection process is also undertaken.
  The optimisation problem is more amenable to optimisation if it can be
  given to the GA in a succinct version.
+
+\change_unchanged
  In the site selection process a sub-selection of all available locations
  is made.
  A completely unrestricted optimisation would involve searching the solution-spa
@@ -778,10 +923,16 @@ Gas\,\, Cost=cost_{var}\cdot cost_{var\_mult}+capex\cdot max\_cap\label{eq:Gas-C
 \end_layout
 
 \begin_layout Subsection
-Transmission Model
+Transmission 
+\change_inserted -1458100629 1424046771
+Cost
+\change_deleted -1458100629 1424046769
+Model
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Transmission-Model-Description"
+name "sub:Transmission-Cost-Description"
 
 \end_inset
 
@@ -831,8 +982,13 @@ reference "fig:Sites_Wind11_Dsr21"
 \end_inset
 
 b).
- In this way the transmission model penalises remote locations with an additiona
-l higher cost of installation.
+ In this way the transmission 
+\change_inserted -1458100629 1424046823
+cost
+\change_deleted -1458100629 1424046822
+model
+\change_unchanged
+ penalises remote locations with an additional higher cost of installation.
 \end_layout
 
 \begin_layout Subsection
@@ -1072,8 +1228,13 @@ energy
 electricity
 \change_unchanged
  model used in Part 2 of the current study, its components and also the
- site selection process and transmission model used to narrow the search
- for viable RE locations around Australia.
+ site selection process and transmission 
+\change_inserted -1458100629 1424046840
+cost
+\change_deleted -1458100629 1424046838
+model
+\change_unchanged
+ used to narrow the search for viable RE locations around Australia.
  In combination, the cost function components (the individual resource models)
  and the sites selected form the degrees of freedom by which the model as
  a whole is able to move and explore the solution space.
@@ -1083,6 +1244,8 @@ electricity
  the NEM region are presented and analysed for what they reveal regarding
  the covariance of wind and solar across Australia.
  
+\change_inserted -1458100629 1424233571
+
 \end_layout
 
 \end_body
