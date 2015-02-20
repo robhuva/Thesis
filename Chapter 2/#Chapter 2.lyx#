@@ -109,8 +109,13 @@ Summary
 \end_layout
 
 \begin_layout Standard
-This chapter presents an introduction to the general circulation of theStandarde
-re and Australia's regional teleconnections.
+This chapter presents an introduction to the general circulation of the
+\change_deleted -1458100629 1424309711
+Standardere
+\change_inserted -1458100629 1424309716
+ atmosphere
+\change_unchanged
+ and Australia's regional teleconnections.
  Following this there is a literature review of the synoptic climatology
  of the Australian region.
  Included in the literature review are studies that examine variability
@@ -257,8 +262,19 @@ key "Holton2004"
 \end_layout
 
 \begin_layout Standard
-In Australia, very contrasting synoptic conditions can often occur simultaneousl
- for blocking motinent.
+In Australia, very contrasting synoptic conditions can often occur 
+\change_deleted -1458100629 1424397373
+simultaneousl
+\change_inserted -1458100629 1424397373
+simultaneously
+\change_unchanged
+ 
+\change_deleted -1458100629 1424397389
+for blocking mo
+\change_inserted -1458100629 1424397396
+across the con
+\change_unchanged
+tinent.
  Stretching from about 10ºS to 44ºS the Australian continent is subject
  to both tropical weather systems as well as ‘polar outbreaks’ from cold
  fronts associated with cyclones from the southern hemisphere storm track
@@ -354,10 +370,16 @@ name "fig:Gallant-SE-Aus-Teleconnetions"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1423721665
-A recent study by Ashcroft et al.
- (2014) examined an extended (back to 1860) climatological record of South-Easte
-rn Australia 
+\change_inserted -1458100629 1424397539
+A recent study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ashcroft2014"
+
+\end_inset
+
+ examined an extended (back to 1860) climatological record of South-Eastern
+ Australia 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SEA"
@@ -366,11 +388,17 @@ description "South-East Australia"
 \end_inset
 
 (SEA)---the region of Australia with the first British colonies.
- Ashcroft et al.
- (2014) found there to be considerable fluctuation in the climatological
- parameters of SEA.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ashcroft2014"
+
+\end_inset
+
+ found there to be considerable fluctuation in the climatological parameters
+ of SEA.
  In particular the relationship between rainfall for SEA and large-scale
- climate drivers, including the El Nino Southern Ocscillation 
+ climate drivers, including the El Nino Southern Oscillation 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ENSO"
@@ -378,9 +406,9 @@ description "El Niño/Southern Oscillation"
 
 \end_inset
 
- depending on seasont 150 years.
+ depending on season 150 years.
  For instance, a drop in ENSO variability during the 1920-1959 period when
- compared to the preceeding and following decades resulted in a break-down
+ compared to the preceding and following decades resulted in a break-down
  in the ENSO-rainfall relationship of SEA.
  The 1920-1959 period instead saw more influence from other factors including
  the Southern Annular Mode 
@@ -392,15 +420,40 @@ description "Southern Annular Mode"
 \end_inset
 
 (SAM) and local pressure variations.
- Over a similar time-frame Alexander et al.
- (2011) found there to be a significant decline in the storminess (defined
- as 95 and 99 percentiles of a geostrophically derived wind speed) for SEA.
- Since the late 19th century Alexander et al.
- (2011) also found strong decadal variability in storminess.
- Alexander et al.
- (2011) found that the drop-off in storminess was consistent with a southward
- shift in the southern hemisphere storm tracks---a similar finding to that
- of Frederiksen and Frederiksen (2011).
+ Over a similar time-frame 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2011"
+
+\end_inset
+
+ found there to be a significant decline in the storminess (defined as 95
+ and 99 percentiles of a geostrophically derived wind speed) for SEA.
+ Since the late 19th century 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2011"
+
+\end_inset
+
+ also found strong decadal variability in storminess.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2011"
+
+\end_inset
+
+ found that the drop-off in storminess was consistent with a southward shift
+ in the southern hemisphere storm tracks---a similar finding to that of
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frederiksen2011"
+
+\end_inset
+
+.
 \change_deleted -1458100629 1415757425
 
 \end_layout
@@ -413,10 +466,17 @@ description "Southern Annular Mode"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1415861957
+\change_inserted -1458100629 1424316947
 In recent decades such a shift in the southern hemispheric storm tracks
  also coincides with the southward migration of the subtropical ridge---found
- in Timbal and Drodowski (2013).
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Timbal2013"
+
+\end_inset
+
+.
  The subtropical ridge is a ridge of high pressure that commonly
 \change_deleted -1458100629 1415756467
 Running
@@ -500,13 +560,26 @@ key "Sinclair1996"
 , while there were large numbers of anticyclones in the Tasman Sea for most
  of the year.
  
-\change_inserted -1458100629 1423721783
-More recently Timbal and Drodowski (2013) found that a strengthening in
- the subtropical ridge to be linked to two thirds of the 1997-2009 decline
- in SEA rainfall.
- In fact, a strengthening in the subtropical ridge was seen to preceed the
+\change_inserted -1458100629 1424397560
+More recently 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Timbal2013"
+
+\end_inset
+
+ found that a strengthening in the subtropical ridge to be linked to two
+ thirds of the 1997-2009 decline in SEA rainfall.
+ In fact, a strengthening in the subtropical ridge was seen to precede the
  two most recent droughts for southern Australia (1935-1945 and 1997-2009;
- Timbal and Drodowski, 2013).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Timbal2013"
+
+\end_inset
+
+).
 \change_unchanged
 
 \end_layout
@@ -544,9 +617,15 @@ key "Sinclair1996"
  indicate stable conditions over much of the eastern and central Australian
  continent instead).
  
-\change_inserted -1458100629 1415861987
-Frederiksen and Frederiksen (2011) studied synoptic precursers to blocking
- in the southern hemisphere.
+\change_inserted -1458100629 1424316985
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frederiksen2011"
+
+\end_inset
+
+ studied synoptic precursers to blocking in the southern hemisphere.
  The authors found that recent increases in the growth rate of onset-of-blocking
  regimes was at least partially reflective of a general reduction in the
  baroclinicity of the southern hemisphere subtropical regions (comparing
@@ -838,18 +917,37 @@ key "Trenberth1991"
  from the storm track will reach the southern part of the Australian continent
  during this time.
 
-\change_inserted -1458100629 1415855136
- However, a more recent study by Frederiksen and Frederiksen (2011) has
- shown a reduction in the growth rate of storm track related synoptic modes
- explicitly decades (where growth rates indicate the likelihood of a mode
- to develop into a mature system).
- Frederiksen and Frederiksen (2011) found recent reductions in rainfall
- for the southern parts of Australia to be consistent with the observed
- reductions in growth rate of cyclogenisis and storm track modes.
+\change_inserted -1458100629 1424317024
+ However, a more recent study by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frederiksen2011"
+
+\end_inset
+
+ has shown a reduction in the growth rate of storm track related synoptic
+ modes explicitly decades (where growth rates indicate the likelihood of
+ a mode to develop into a mature system).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frederiksen2011"
+
+\end_inset
+
+ found recent reductions in rainfall for the southern parts of Australia
+ to be consistent with the observed reductions in growth rate of cyclogenisis
+ and storm track modes.
  Further, significant decreases in growth rate of onset-of-blocking modes
  to be related to reduced rainfall over the east coast because of the tendency
- for blocking modes to spawn East Coast Lows (Frederiksen and Frederisken,
- 2011).
+ for blocking modes to spawn East Coast Lows (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frederiksen2011"
+
+\end_inset
+
+).
 
 \change_deleted -1458100629 1415851561
  
@@ -859,7 +957,7 @@ key "Trenberth1991"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1423723182
+\change_inserted -1458100629 1424317105
 East Coast Lows 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -872,15 +970,32 @@ description "East Coast Low"
  on the weather of the east coast of Australia, where the vast majority
  of Australians live.
  ECLs form through various processes that include inland troughs, following
- waves of a mid-latitude front and also from ex-tropical cyclones (Speer
- et al.
- 2009).
+ waves of a mid-latitude front and also from ex-tropical cyclones (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Speer2010"
+
+\end_inset
+
+).
  ECLs are most common during cooler months for southern regions and warmer
- months for northern regions of the eastern seaboard (Pepler et al.
- 2014).
+ months for northern regions of the eastern seaboard (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pepler2014"
+
+\end_inset
+
+).
  ECLs bring high wind speeds and are responsible for 35-45% of all rainfall
- along the eastern seaboard during winter (Pepler et al.
- 2014).
+ along the eastern seaboard during winter (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pepler2014"
+
+\end_inset
+
+).
  ECLs also have little relationship with the large-scale climate drivers
  (including ENSO and the Indian Ocean Dipole (IOD)
 \begin_inset CommandInset nomenclature
@@ -892,16 +1007,41 @@ description "Indian Ocean Dipole"
 
 ).
  As such the rainfall of the eastern seaboard has a limited correlation
- with ENSO and IOD (Pepler et al.
- 2014).
+ with ENSO and IOD (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pepler2014"
+
+\end_inset
+
+).
  More significant for the formation of ECLs is the position of the subtropical
- ridge (Timbal 2010).
+ ridge (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Timbal2010"
+
+\end_inset
+
+).
  A more southerly position to the subtropical ridge is likely to favour
  rainfall for the northern eastern seaboard due to the easterly flow, which
  then favours the formation of easterly and inland throughs lows---such
- lows account for 71% of significant rainfall for the NSW coast (Timbal
- 2010; Speer et al.
- 2009).
+ lows account for 71% of significant rainfall for the NSW coast (
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Timbal2010"
+
+\end_inset
+
+; 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Speer2010"
+
+\end_inset
+
+).
 \change_unchanged
 
 \end_layout
@@ -1493,12 +1633,18 @@ key "Klink2007"
 \end_inset
 
 )
-\change_inserted -1458100629 1423723899
+\change_inserted -1458100629 1424317133
 .
  Some insight can be gained by examining proxies for wind speed.
- Alexander et al.
- (2011) examined the decreasing trend in high wind speed (storminess) over
- the 19
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2011"
+
+\end_inset
+
+ examined the decreasing trend in high wind speed (storminess) over the
+ 19
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -2432,19 +2578,6 @@ al wind speed/power and solar irradiance over Australia; the term covariance,
  mentioned throughout, suggests a time-wise comparison of the fields that
  is not directly addressed in this thesis.
 \change_inserted -1458100629 1423722389
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1458100629 1423722416
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/library"
-options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
-
-\end_inset
-
 
 \end_layout
 
