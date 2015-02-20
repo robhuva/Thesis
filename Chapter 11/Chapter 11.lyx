@@ -143,6 +143,15 @@ Point 1 will allow for an increase in the reliance on RE without the further
  exposure to atmospheric variability.
  This is an important consideration if the aim of a future Australian electricit
 y network is to rely heavily---potentially 100%---on RE resources.
+
+\change_inserted -1458100629 1424404252
+ In general, a more sophisticated electricity model should be considered
+ for future work.
+ Such a model would include these weather independent RE resources, but
+ would also consider conversions of the solar data to power output and power
+ flow constraints on network design.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
