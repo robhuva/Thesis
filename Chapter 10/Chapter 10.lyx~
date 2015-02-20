@@ -162,6 +162,9 @@ In principle this thesis was split into two parts because of the the known
  And that despite the NEM-only simulation being purposefully simplistic
  (for instance, there was no consideration given to power flow across the
  transmission network) there would have been no possible optimised network,
+\change_inserted -1458100629 1423460976
+ without significantly more storage capacity and
+\change_unchanged
  using just wind and PV power, capable of producing enough electricity during
  the instances of large-scale low wind speeds.
  
