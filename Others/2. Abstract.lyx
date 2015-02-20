@@ -115,8 +115,12 @@ description "National Electricity Market"
 
 
 \change_unchanged
-(NEM) with increased contributions from RE will be affected by large-scale
- meteorological variability.
+(
+\lang british
+NEM
+\lang english
+) with increased contributions from RE will be affected by large-scale meteorolo
+gical variability.
  The synoptic scale (100s-1,000s of km and days-weeks) weather systems are
  of particular interest.
  This thesis examines how synoptic scale weather variability might affect
@@ -137,8 +141,6 @@ description "Ecmwf Interim ReAnalysis"
 (ERA-Interim) and then analyses the availability of wind and solar 
 \change_deleted -1458100629 1418777078
 energy
-\change_inserted -1458100629 1418777078
-electricity
 \change_unchanged
  associated with each weather type.
  Approach two (Part 2) utilises data from a regional model 
@@ -257,13 +259,14 @@ e the influence of synoptic scale variability on a
 \change_unchanged
  network.
  
-\change_inserted -1458100629 1423193200
-The
-\change_deleted -1458100629 1423193232
-By optimising generation to meet electrical demand the
+\change_deleted -1458100629 1424407904
+By optimising generation to meet electrical demand the output of both 
+\change_inserted -1458100629 1424407899
+W
+\change_deleted -1458100629 1424407899
+w
 \change_unchanged
- output of both wind and solar installations from locations across the ACCESS-A
- grid 
+ind and solar installations from locations across the ACCESS-A grid 
 \change_inserted -1458100629 1423199467
 are optimally placed to maximise their contribution to meeting the electrical
  demand of 2010-2011.
