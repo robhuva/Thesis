@@ -2274,20 +2274,5 @@ key "Elliston2012"
 
 \end_layout
 
-\begin_layout Standard
-
-\change_inserted -1458100629 1422155408
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/library"
-options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
 \end_body
 \end_document
