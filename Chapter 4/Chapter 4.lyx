@@ -158,6 +158,8 @@ key "Diesendorf2006"
  original data.
  This chapter is structured as follows.
  Section 
+\change_deleted -1458100629 1424663338
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:SOM-method"
@@ -165,13 +167,42 @@ reference "sec:SOM-method"
 \end_inset
 
  outlines the dataset and methods used in this study while section 
+\change_unchanged
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Creating-the-SOM"
 
 \end_inset
 
- describes the results (both whole and continental domains).
+ describes the results (both whole and continental domains)
+\change_inserted -1458100629 1424663551
+, section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Alternative-SOMs"
+
+\end_inset
+
+ presents an alternative SOM formulation, mapping of the SOM back onto the
+ data is described in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Mapping-the-SOM"
+
+\end_inset
+
+ and following the filtering of the mapping the tendencies of the SOM created
+ are explored in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Analysis-of-Regional"
+
+\end_inset
+
+
+\change_unchanged
+.
  Finally, a discussion and summary are given in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2253,8 +2284,12 @@ reference "fig:6x5-SOM-space-Cont"
 ) also displays one corner of the SOM space occupied by higher pressure,
  consistent with the subtropical ridge, with the opposite corner dominated
  by lower pressure.
- In the case of the continental SOM the SOM nodes that represent the low
- pressure systems to the south are not readily discernible.
+ In the case of the continental SOM
+\change_inserted -1458100629 1424665135
+,
+\change_unchanged
+ the SOM nodes that represent the low pressure systems to the south are
+ not readily discernible.
  However, it is still clear that the general characteristics of the Australian
  region (like that seen in the whole domain version) are captured in the
  continental version.
@@ -2453,16 +2488,16 @@ key "Alexander2010"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1418707233
+\change_inserted -1458100629 1424402898
 The intention with this thesis is to study the year-round influential synoptic
  weather types for RE production over Australia.
- The infrastracture needed to capture the RE output analysed in this thesis
+ The infrastructure needed to capture the RE output analysed in this thesis
  would also be subject to the full annual array of weather types and not
  available to be moved with the seasons.
  In this instance splitting the SOM typing into seasons would make less
  sense.
- It is also overhelmingly more common in the literature to conduct the training
- of the SOM for the Austrlian region with all available data (
+ It is also overwhelmingly more common in the literature to conduct the
+ training of the SOM for the Australian region with all available data (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Brown2010,Hope2006,Jiang2011,Nicholls2009,Verdon-Kidd2009"
@@ -2598,11 +2633,40 @@ reference "fig:6x5-SOM-space"
 \end_inset
 
 .
- a) is a comparison between node 10 and conditions at 1800UTC on November
- 3 2008 while b) is a comparison between node 25 and conditions at 0600UTC
- on June 11 1994.
+ a) is a comparison between node 10 and conditions at 1800UTC on 
+\change_inserted -1458100629 1424151363
+March
+\change_deleted -1458100629 1424151361
+November
+\change_unchanged
+ 
+\change_inserted -1458100629 1424151359
+11
+\change_deleted -1458100629 1424151358
+3
+\change_unchanged
+ 2008 while b) is a comparison between node 25 and conditions at 0600UTC
+ on 
+\change_inserted -1458100629 1424155086
+November
+\change_deleted -1458100629 1424155084
+June
+\change_unchanged
+ 
+\change_inserted -1458100629 1424155090
+6
+\change_deleted -1458100629 1424155090
+11
+\change_unchanged
+ 1994.
  The quantised error for a) is 59.2hPa, for b) is 428.6hPa and the horizontal
  and vertical axes are in units of degrees longitude and latitude, respectively.
+
+\change_inserted -1458100629 1424230160
+ The bottom panel shows the difference between the time step and its BMU
+ (time step - BMU).
+\change_unchanged
+
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SOM-comp-worst-before"
@@ -2625,7 +2689,7 @@ name "fig:SOM-comp-worst-before"
 
 
 \begin_inset Float figure
-placement H
+placement h
 wide false
 sideways false
 status collapsed
@@ -2659,6 +2723,12 @@ reference "fig:6x5-SOM-space-Cont"
  on September 29 1996.
  The quantised error for a) is 16.6hPa, for b) is 216.4hPa and the horizontal
  and vertical axes are in units of degrees longitude and latitude, respectively.
+
+\change_inserted -1458100629 1424230204
+ The bottom panel shows the difference between the time step and its BMU
+ (time step - BMU).
+
+\change_unchanged
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2695,8 +2765,17 @@ reference "fig:SOM-Comp-Cont-Worst-Best"
 
 \end_inset
 
- the ‘best’ BMUs match the pressure distribution of its respective time
- step very well.
+ the ‘best’ BMUs match the pressure distribution of 
+\change_inserted -1458100629 1424665189
+their
+\change_deleted -1458100629 1424665187
+its
+\change_unchanged
+ respective time step
+\change_inserted -1458100629 1424665194
+s
+\change_unchanged
+ very well.
  However, the `worst’ BMU for the whole domain (Fig.
  
 \begin_inset CommandInset ref
@@ -2748,8 +2827,12 @@ b), while still miss-matching the pressure distribution over south-eastern
  Australia had a quantitative advantage by not including variability over
  the ocean.
  This advantage was expected given the more southerly nature of intense
- low pressure systems (those that do not represent enough of data to have
- a SOM node that matches them closely).
+ low pressure systems (those
+\change_inserted -1458100629 1424665219
+ lows
+\change_unchanged
+ that do not represent enough of data to have a SOM node that matches them
+ closely).
  However, as can be seen from Fig.
  
 \begin_inset CommandInset ref
@@ -2805,7 +2888,11 @@ It is, of course, possible to set an upper limit on the quantised error
  But without the direct knowledge of the state of the atmosphere suggested
  by each SOM node, the cut-off point for considering whether or not the
  pressure distribution from a BMU is not accurate enough is potentially
- fraught with subjectivity.
+ fraught with subjectivity
+\change_inserted -1458100629 1424148782
+ (comparing each time step with its best matching SOM node)
+\change_unchanged
+.
  Thus an investigation was undertaken to understand the disparity between
  ‘good’ and ‘poor’ matches through time and, in particular, to reveal whether
  it was possible to define a relatively easy set of criteria that ensured
@@ -2971,7 +3058,11 @@ reference "fig:SOM-Cont-Ordered-Histo"
  reveal, the distribution of quantised error is quite positively skewed
  and has only a small portion of BMUs with error greater than about 200hPa
  for the whole domain and 100hPa for the continental domain (less than half
- the respective maxima).
+ the respective maxima
+\change_inserted -1458100629 1424665454
+ in quantised error
+\change_unchanged
+).
  Thus Figs.
  
 \begin_inset CommandInset ref
@@ -3093,7 +3184,8 @@ where
  to the location of the observation.
 \begin_inset Formula 
 \begin{equation}
-RMSE_{BMU}=\frac{\sqrt{\overset{n}{\underset{i=0}{\sum}}(P_{ERA,\, i}-P_{BMU,\, i})^{2}}}{\sqrt{n}}\label{eq:ERA-RMSE-BMU}
+\begin{array}{ccc}
+RMSE_{BMU} & = & \frac{\sqrt{\overset{n}{\underset{i=0}{\sum}}(P_{ERA,\, i}-P_{BMU,\, i})^{2}}}{\sqrt{n}}\end{array}\label{eq:ERA-RMSE-BMU}
 \end{equation}
 
 \end_inset
@@ -3116,6 +3208,27 @@ where
 \end_inset
 
  grid-point in each BMU.
+
+\change_inserted -1458100629 1424145967
+ The conversion from ERA-Interim error to BMU quantised error is thus:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\change_inserted -1458100629 1424145580
+\begin_inset Formula $\begin{array}{cccc}
+if\,\,\,\,1.75hPa & = & \frac{\sqrt{\overset{n}{\underset{i=0}{\sum}}(P_{ERA,\, i}-P_{BMU,\, i})^{2}}}{\sqrt{n}}\\
+\\
+1.75hPa\cdot\sqrt{n} & = & \sqrt{\overset{n}{\underset{i=0}{\sum}}(P_{ERA,\, i}-P_{BMU,\, i})^{2}}\,\,\,\,\,= & Quantised\,\,\, error\\
+then\,\,\,1.75hPa\cdot\sqrt{1230} & = & Quantised\,\,\, error\,=\,\,61.4hPa
+\end{array}$
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -3124,9 +3237,13 @@ With nearly all BMUs having a quantised error larger than the error of the
  single grid-point error) across the domain for each BMU and its respective
  time-step was conducted in order to help determine how many BMUs to discount
  as ‘matches’.
- The analysis of the maximum discrepancy for all whole domain BMUs revealed
- a mean maximum discrepancy of 16.9hPa---the smallest maximum discrepancy
- was 5hPa and the largest maximum discrepancy was 52.1hPa.
+ The analysis of the maximum discrepancy
+\change_inserted -1458100629 1424137888
+ (single grid-point errors)
+\change_unchanged
+ for all whole domain BMUs revealed a mean maximum discrepancy of 16.9hPa---the
+ smallest maximum discrepancy was 5hPa and the largest maximum discrepancy
+ was 52.1hPa.
  As per the distribution in Fig.
  
 \begin_inset CommandInset ref
@@ -3350,7 +3467,13 @@ reference "fig:SOM-Cont-Ordered-Histo"
 \end_inset
 
 , and thus the decision was made to eliminate BMUs with quantised errors
- in the highest 5% (the 'worst' 5%).
+ in the highest 5% (the 
+\change_inserted -1458100629 1424665502
+`
+\change_deleted -1458100629 1424665494
+'
+\change_unchanged
+worst' 5%).
  The amount of BMUs left after this second filtering was 21,814 for the
  whole domain and 28,602 for the continental domain.
  Obvious, already, was the fact that the continental domain was far out-performi
@@ -3361,6 +3484,7 @@ ng the whole domain SOM in terms of the number of matches that were surviving
  less low pressure intrusions), thus also enhancing later statistical analysis
  involving the occurrence of SOM nodes.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -3891,6 +4015,7 @@ reference "fig:12B90-Precip-Temp-Anom"
  centre) and Melbourne (away from the blocking centre).
  
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -5121,7 +5246,7 @@ Column 5
 
 \begin_layout Plain Layout
 
-\change_inserted -1458100629 1417569499
+\change_inserted -1458100629 1424402926
 As per Table.
  
 \begin_inset CommandInset ref
@@ -5130,7 +5255,7 @@ reference "tab:SOM-Total-Occ"
 
 \end_inset
 
- except for the contintal SOM, and where the total number of BMUs after
+ except for the continental SOM, and where the total number of BMUs after
  filtering is 28,572.
 \begin_inset CommandInset label
 LatexCommand label
@@ -5400,7 +5525,6 @@ name "fig:SOM-Surf-Seasnl-Occ"
 
 
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
