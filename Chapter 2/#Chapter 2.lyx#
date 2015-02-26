@@ -333,7 +333,7 @@ Large-scale dynamical influences on, and teleconnections to, south-eastern
 \change_deleted -1458100629 1416459800
 Adapted from
 \change_inserted -1458100629 1423721015
- 2010; Figure originally presented in
+ Figure originally presented in
 \change_unchanged
  
 \begin_inset CommandInset citation
@@ -370,7 +370,7 @@ name "fig:Gallant-SE-Aus-Teleconnetions"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1424397539
+\change_inserted -1458100629 1424661629
 A recent study by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -398,7 +398,7 @@ key "Ashcroft2014"
  found there to be considerable fluctuation in the climatological parameters
  of SEA.
  In particular the relationship between rainfall for SEA and large-scale
- climate drivers, including the El Nino Southern Oscillation 
+ climate drivers, including the El Nino Southern Oscillation, 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ENSO"
@@ -406,7 +406,7 @@ description "El Niño/Southern Oscillation"
 
 \end_inset
 
- depending on season 150 years.
+ depending on season over the last 150 years.
  For instance, a drop in ENSO variability during the 1920-1959 period when
  compared to the preceding and following decades resulted in a break-down
  in the ENSO-rainfall relationship of SEA.
@@ -428,7 +428,7 @@ key "Alexander2011"
 \end_inset
 
  found there to be a significant decline in the storminess (defined as 95
- and 99 percentiles of a geostrophically derived wind speed) for SEA.
+ and 99 percentiles of geostrophically derived wind speed) for SEA.
  Since the late 19th century 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -467,8 +467,8 @@ key "Frederiksen2011"
 \begin_layout Standard
 
 \change_inserted -1458100629 1424316947
-In recent decades such a shift in the southern hemispheric storm tracks
- also coincides with the southward migration of the subtropical ridge---found
+In recent decades such a shift in the southern hemispheric storm track also
+ coincides with the southward migration of the subtropical ridge---found
  in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -617,7 +617,7 @@ key "Sinclair1996"
  indicate stable conditions over much of the eastern and central Australian
  continent instead).
  
-\change_inserted -1458100629 1424316985
+\change_inserted -1458100629 1424397573
 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -625,13 +625,12 @@ key "Frederiksen2011"
 
 \end_inset
 
- studied synoptic precursers to blocking in the southern hemisphere.
+ studied synoptic precursors to blocking in the southern hemisphere.
  The authors found that recent increases in the growth rate of onset-of-blocking
  regimes was at least partially reflective of a general reduction in the
- baroclinicity of the southern hemisphere subtropical regions (comparing
- and wind speed/power in Australia, ding decades).
+ baroclinicity of the southern hemisphere subtropical regions.
  Such a decline in the baroclinicity of the subtropical jet was also seen
- to lead to reductions in the prevelance of storm-track synoptic modes.
+ to lead to reductions in the prevalence of storm-track synoptic modes.
  
 \change_unchanged
 
@@ -676,8 +675,23 @@ reference "fig:Alexander-SOM"
 .
  Further evidence is provided to suggest that large sections of the Australian
  continent are commonly under the influence of high pressure systems, and
- Consequently the synoptic classes that produce the most power the Australian
- region.
+ 
+\change_inserted -1458100629 1424661803
+that c
+\change_deleted -1458100629 1424661802
+C
+\change_unchanged
+onsequently the
+\change_inserted -1458100629 1424661813
+re
+\change_unchanged
+ 
+\change_deleted -1458100629 1424661823
+synoptic classes that produce the most power the Australian region
+\change_inserted -1458100629 1424661846
+is a dominant stable weather regime for the Australian region
+\change_unchanged
+.
  
 \end_layout
 
@@ -775,7 +789,11 @@ key "Hassim2008"
 Standarde
 \change_unchanged
  (likely to be due to an increased occurrence of the more severe (category
- four and five storms).
+ four and five storms)
+\change_inserted -1458100629 1424661907
+)
+\change_unchanged
+.
  The potential for useful 
 \change_deleted -1458100629 1418777819
 energy
@@ -830,8 +848,8 @@ key "Wiser2011"
 \end_inset
 
  would likely result in damage
-\change_inserted -1458100629 1423722583
- 
+\change_inserted -1458100629 1424661915
+ (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Jacobson2014"
@@ -957,7 +975,7 @@ key "Frederiksen2011"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1424317105
+\change_inserted -1458100629 1424397741
 East Coast Lows 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1025,8 +1043,8 @@ key "Timbal2010"
 
 ).
  A more southerly position to the subtropical ridge is likely to favour
- rainfall for the northern eastern seaboard due to the easterly flow, which
- then favours the formation of easterly and inland throughs lows---such
+ rainfall for the north eastern seaboard due to the easterly flow, which
+ then favours the formation of easterly and inland troughs, and lows---such
  lows account for 71% of significant rainfall for the NSW coast (
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1633,7 +1651,7 @@ key "Klink2007"
 \end_inset
 
 )
-\change_inserted -1458100629 1424317133
+\change_inserted -1458100629 1424397769
 .
  Some insight can be gained by examining proxies for wind speed.
  
@@ -1659,7 +1677,7 @@ th
 
  century by calculating geostrophic wind speed from surface pressure gradients.
  Inference regarding wind speed variability might also be made by examining
- the aforementioned studies whose focus is on the prevelance of low pressure
+ the aforementioned studies whose focus is on the prevalence of low pressure
  systems off the coast of eastern Australia.
 
 \change_unchanged
