@@ -241,7 +241,11 @@ key "Barnes2013"
 
  note a similar shift in the mid-latitude storm track.
  With these points in mind it is reasonable to suggest that some of the
- weather regimes analysed in this thesis also exhibit changes in their 
+ weather regimes analysed in this thesis 
+\change_inserted -1458100629 1424824574
+might 
+\change_unchanged
+also exhibit changes in their 
 \change_inserted -1458100629 1423631139
 mean 
 \change_unchanged
@@ -268,8 +272,8 @@ Another consequence of climate change is the
  increase
 \change_deleted -1458100629 1423631182
 d likelihood of
-\change_inserted -1458100629 1423631201
-in some
+\change_inserted -1458100629 1424824581
+ in some
 \change_unchanged
  extremes (
 \change_inserted -1458100629 1423633633
@@ -507,7 +511,10 @@ By conducting optimisations using data from either the Austral summer and
  base scenario.
  In particular, the non-use of north Queensland in the summer-only optimisation
  showed that the north Queensland wind resources is a wintertime (dry season)
- only phenomenon.
+\change_deleted -1458100629 1424824620
+ only
+\change_unchanged
+ phenomenon.
  The lack of installed solar capacity in the wintertime optimisation also
  showed that the standard transmission cost was too large a cost impediment
  to justify any use of solar photovoltaics in the wintertime.
