@@ -988,18 +988,5 @@ goes on to explore
 
 \end_layout
 
-\begin_layout Standard
-
-\change_inserted -1458100629 1422159206
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
-options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
-
-\end_inset
-
-
-\end_layout
-
 \end_body
 \end_document

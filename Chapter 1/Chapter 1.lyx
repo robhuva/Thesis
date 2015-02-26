@@ -631,7 +631,7 @@ key "Murata2009"
 \end_inset
 
  found decorrelation at either 2km for one minute data or 9km using five
- minute data for PV systems across that spanned the country.
+ minute data for PV systems that spanned the country.
  However,
 \change_unchanged
  
@@ -702,9 +702,9 @@ key "AEMO2013a"
 \end_inset
 
 )
-\change_inserted -1458100629 1422920728
----with the exception of desert regions that can experience night-time maxima
- in wind speed due to the nocturnal jet
+\change_inserted -1458100629 1424651946
+---with the exception of desert regions, which can experience night-time
+ maxima in wind speed due to the nocturnal jet
 \change_unchanged
 .
  
@@ -982,8 +982,11 @@ goes on to explore
  the inputs and cost assumptions.
  Following this, there is a discussion of the results from Parts 1 and 2,
  how they compare/contrast, as well as reasons for any similarities/differences.
- Finally, conclusion from the thesis are made, including recommendations
- of future work.
+ Finally, conclusion
+\change_inserted -1458100629 1424651976
+s
+\change_unchanged
+ from the thesis are made, including recommendations of future work.
 \change_inserted -1458100629 1422159185
 
 \end_layout
