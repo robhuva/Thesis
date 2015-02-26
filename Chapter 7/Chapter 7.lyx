@@ -233,11 +233,11 @@ The cost function is an aggregation of objectives, each with their own user-defi
 ned importance and will typically give one value for each guess of the solution
  space.
 
-\change_inserted -1458100629 1424403294
+\change_inserted -1458100629 1424758022
  The cost function also has parallels with Systems Thinking whereby the
  overall system is divided into several interrelated sub-systems.
  In the application of microgrid optimisation (small isolated energy networks---
-including islands or small towns) it is possible to break down the system-wide
+including islands or small towns) it is possible to divide the system-wide
  aim (for instance, providing energy to the whole grid) into its components---in
 cluding the different types of energy (electricity, building heating/cooling,
  gas and even hot water) and the different end users (businesses, homes
@@ -472,9 +472,9 @@ edu/switch), US-REGEN (U.S Regional Economy, Greenhouse gas and ENergy, which
  simulates the USA region utilising hourly resolved wind and solar data
  from AWS Truepower to high levels of RE penetration---http://eea.epri.com/models.h
 tml) and ReNOT (Renewable energy Network Optimisation Tool, which is also
- USA-only, also utilises high resolution numerical model output of wind
- and solar and is designed to minimise intermittency in combinations of
- wind and solar---https://ams.confex.com/ams/91Annual
+ USA-only, utilises high resolution numerical model output of wind and solar
+ and is designed to minimise intermittency in combinations of wind and solar---h
+ttps://ams.confex.com/ams/91Annual
 \begin_inset ERT
 status open
 
@@ -498,7 +498,7 @@ status open
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1424403406
+\change_inserted -1458100629 1424758113
 The ReNOT tool, for instance, was used by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -581,9 +581,15 @@ key "Lew2013"
 \end_inset
 
  ReEDS was used to optimally site wind and solar installations.
- The authors found that the reduction in emissions by including more RE
- far outweighed the increased emissions from cycling of coal-fired power
- plants.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Lew2013"
+
+\end_inset
+
+ found that the reduction in emissions by including more RE far outweighed
+ the increased emissions from cycling of coal-fired power plants.
  US-REGEN has also recently been used to study future electricity generation
  configurations for the USA (
 \begin_inset CommandInset citation
@@ -711,7 +717,7 @@ like
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "NREL"
-description "National Renewable Energy Agency"
+description "National Renewable Energy Laboratory"
 
 \end_inset
 
@@ -2001,7 +2007,13 @@ This process of combining the u and v components was completed for all levels
  and the knowledge of the height above sea-level of the topography from
  the surface files.
  A record of the 80m wind speed at each continental location of interest
- (those defined in Fig.
+ (
+\change_inserted -1458100629 1424758178
+the domain
+\change_deleted -1458100629 1424758176
+those
+\change_unchanged
+ defined in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2099,8 +2111,17 @@ key "Hoevenaars2012"
 \end_inset
 
  noted that observations at the surface can provide a good estimate of the
- best-case scenario photo-voltaic installation fitted with multi-point power
- tracking technology.
+ best-case scenario photo-voltaic installation fitted with 
+\change_inserted -1458100629 1424758199
+maximum
+\change_deleted -1458100629 1424758197
+multi-point
+\change_unchanged
+ power 
+\change_inserted -1458100629 1424758203
+point 
+\change_unchanged
+tracking technology.
  
 \end_layout
 
