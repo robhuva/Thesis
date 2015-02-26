@@ -113,9 +113,9 @@ This chapter examines the Self-Organising Map (SOM) technique and how it
  is utilised in climatology in general, and how it has been applied in the
  context of Australia.
 
-\change_inserted -1458100629 1416185995
+\change_inserted -1458100629 1424402661
  The SOM algorithm is described in full and previous research comparing
- the preformance of the SOM to other commonly used techniques is presented.
+ the performance of the SOM to other commonly used techniques is presented.
 
 \change_unchanged
  This chapter also introduces the reanalysis data used for Part 1 and the
@@ -620,11 +620,11 @@ reference "fig:Alexander-SOM"
 
 ).
 
-\change_inserted -1458100629 1422944903
- Comparibly the works of
+\change_inserted -1458100629 1424402707
+ Comparably the works of
 \change_unchanged
  
-\change_inserted -1458100629 1423010556
+\change_inserted -1458100629 1424662896
 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -633,7 +633,14 @@ key "Brown2010"
 \end_inset
 
  (Fig.
- ) and 
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Brown-SOM"
+
+\end_inset
+
+) and 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Nicholls2009"
@@ -641,7 +648,14 @@ key "Nicholls2009"
 \end_inset
 
  (Fig.
- ) produced SOMs with very similar features.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Nicholls-SOM"
+
+\end_inset
+
+) produced SOMs with very similar features.
  As opposed to the 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -924,8 +938,14 @@ key "Verdon-Kidd2009"
 
  later chapters identify common MSLP patterns.
  However, instead of analysing the co-occurrence of precipitation, the wind
- speed or solar irradiance fields are analysed for how they relate to the
- common weather regimes.
+ speed 
+\change_inserted -1458100629 1424662930
+and
+\change_deleted -1458100629 1424662928
+or
+\change_unchanged
+ solar irradiance fields are analysed for how they relate to the common
+ weather regimes.
 \change_inserted -1458100629 1415936469
 
 \end_layout
@@ -938,8 +958,8 @@ The SOM Compared to Other Techniques
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1418105075
-Synthesis of a large data set into a limited number of commonly occuring
+\change_inserted -1458100629 1424402729
+Synthesis of a large data set into a limited number of commonly occurring
  features of that data set is a process frequently utilised in science,
  and in particular climatology.
  While the SOM technique has only recently been applied to the field of
@@ -972,7 +992,7 @@ key "Jiang2012"
 
  used PCA analysis to estimate the number of weather types needed for eastern
  Australia (12) and then use k-means clustering to form 12 clusters/synoptic
- types of the 1958-2009 NCEP/NCAR reanlysis 100hPa geopotential height.
+ types of the 1958-2009 NCEP/NCAR reanalysis 100hPa geopotential height.
  For the SOM 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1029,7 +1049,7 @@ key "Jiang2012"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1416190032
+\change_inserted -1458100629 1424402749
 In a similar study, but for the European region, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1057,7 +1077,7 @@ key "Jiang2012"
 
 .
  Other techniques also exist for the purposes of data synthesis, including
- simmulated annealing clustering.
+ simulated annealing clustering.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1065,8 +1085,8 @@ key "Philipp2007"
 
 \end_inset
 
- presented a comprehensive study of simmulated annnealing clustering in
- comparison to k-means clustering for the north Atlantic.
+ presented a comprehensive study of simulated annealing clustering in comparison
+ to k-means clustering for the north Atlantic.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1074,7 +1094,7 @@ key "Philipp2007"
 
 \end_inset
 
- found the simmulated annealing clustering to be a far more robust technique,
+ found the simulated annealing clustering to be a far more robust technique,
  however, a direct comparison of this technique with the SOM appears not
  to exist yet.
  
@@ -1084,7 +1104,7 @@ key "Philipp2007"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1417571555
+\change_inserted -1458100629 1424402759
 It has been shown that for the purposes of this thesis the SOM technique
  will be an appropriate tool for classifying the major, as well as the transitio
 nal, modes of variability for the Australian region.
@@ -1092,7 +1112,7 @@ nal, modes of variability for the Australian region.
  therein, the SOM will provide a comprehensive assessment of synoptic scale
  variance over Australia.
  The SOM will therefore also enable a comprehensive assessment of the synoptic
- scale influences on wind speed and solar iradiance.
+ scale influences on wind speed and solar irradiance.
 \change_unchanged
 
 \end_layout
@@ -1237,7 +1257,7 @@ key "Kiss2009"
  the appropriate dynamics seen in observations from two wind turbines in
  Hungary.
  
-\change_inserted -1458100629 1416288131
+\change_inserted -1458100629 1424662998
 Unfortunately, published comparisons between the ERA-Interim near-surface
  wind speeds and observations are, and in particular for the Australian
  region, limited in number.
@@ -1258,11 +1278,11 @@ key "Dee2011"
 \end_inset
 
  also reported some decreasing trends in surface winds for ERA-Interim for
- the period 1992-2002 when compared to the European Remote Sensing sattelite
- and QuickScat data---although the trends then reveresed after 2002, noted
+ the period 1992-2002 when compared to the European Remote Sensing satellite
+ and QuickScat data---although the trends then reversed after 2002, noted
  as likely due to the evolution in the observing system.
  Some analysis presented below shows that the relatively coarse resolution
- of the ERA-Interim model (~80km spatially) compares well to the former
+ of the ERA-Interim model (~80km spatially) compares well with the former
  regional model of the Bureau of Meteorology (MesoLAPS_125, 12.5km spatially)
  for the same dates (Fig, 
 \begin_inset CommandInset ref
@@ -1343,7 +1363,7 @@ name "fig:U10-comp-ERA-Meso"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1417578587
+\change_inserted -1458100629 1424663039
 In terms of the surface solar radiation fields from ERA-Interim 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1361,7 +1381,7 @@ key "Dee2011"
 
  showed that while there was a larger positive bias in the net solar radiation
  at the surface for ERA-Interim when compared to ERA-40, these biases were
- most prevelant over the ocean.
+ most prevalent over the ocean.
  Over land areas---the primary concern of this thesis is the Australian
  continent---the surface energy balance has improved in ERA-Interim (0.5
  Wm
@@ -1402,9 +1422,9 @@ key "Balmaseda2010"
  were able to show that the ERA-Interim spatial structures and the representatio
 n of seasonal and interannual variability in surface fluxes (over the ocean)
  have improved from ERA-40.
- While analysis systems are not designed to conserve quantities like energy,
- mass and angular momentum, in general the ERA-Interim budget closure is
- better than ERA-40 (
+ Despite analysis systems not being designed to conserve quantities like
+ energy, mass and angular momentum, in general the ERA-Interim budget closure
+ is better than ERA-40 (
 \begin_inset CommandInset citation
 LatexCommand citealp
 key "Dee2011"
@@ -1416,11 +1436,11 @@ key "Dee2011"
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1422945123
-While there are noted model biases and innevitable flaws in the process
- of running a global model with inconsistent observational coverage, it
- should be stressed that such challenges are present for all reanalysis
- systems, not just ERA-Interim.
+\change_inserted -1458100629 1424402791
+While there are noted model biases and inevitable flaws in the process of
+ running a global model with inconsistent observational coverage, it should
+ be stressed that such challenges are present for all reanalysis systems,
+ not just ERA-Interim.
  In previous paragraphs the ERA-interim reanalysis archive has been shown
  to perform well in a number of relevant variables for this thesis.
  As such, for the purposes of Part 1---synoptic typing of MSLP and the large-sca
