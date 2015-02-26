@@ -341,7 +341,13 @@ reference "fig:U80-Decorrelation-Major-Locations"
 
 \end_inset
 
-) suggest very similar spatial correlation characterictics.
+) suggest very similar spatial correlation characteri
+\change_inserted -1458100629 1424404202
+s
+\change_deleted -1458100629 1424404200
+c
+\change_unchanged
+tics.
  The difference in these two figures is likely due to a couple of considerations.
  Firstly, the domain for Part 2 is restricted to the NEM region.
  A separation distance of 1,400km for the NEM would likely exclude many

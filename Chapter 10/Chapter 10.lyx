@@ -200,7 +200,11 @@ electricity
  from all of the common synoptic weather regimes.
  In fact some of the common synoptic weather patterns are heavily biased
  towards oversupply in the NEM-only simulation (including those seen in
- Sec.
+ Sec
+\change_inserted -1458100629 1424824487
+tion
+\change_unchanged
+.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -324,8 +328,12 @@ Of the four large wind installations in the 8X scenario the average distance
  to the nearest wind installations was 884km.
  This separation distance is much smaller than the comparative figure from
  Part 1 of 1,300-1,400km.
- Further to this comparison of the 80m wind field point correlation maps
- from ERA-Interim (Fig.
+ Further to this
+\change_inserted -1458100629 1424824510
+,
+\change_unchanged
+ comparison of the 80m wind field point correlation maps from ERA-Interim
+ (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -410,7 +418,15 @@ An important consideration yet to be discussed in this thesis is the fact
  reverse is true for a good forecast.
  Thus a NEM that has the configuration of wind and solar suggested by the
  NEM-only simulation would in reality rely more heavily on storage and gas
- back-up than is seen in Chpt.
+ back-up than is seen in Ch
+\change_inserted -1458100629 1424824527
+a
+\change_unchanged
+pt
+\change_inserted -1458100629 1424824530
+er
+\change_unchanged
+.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -419,7 +435,15 @@ reference "chap:Optimised-Solutions-for-NEM"
 \end_inset
 
 .
- To this end the results in Chpt.
+ To this end the results in Ch
+\change_inserted -1458100629 1424824533
+a
+\change_unchanged
+pt
+\change_inserted -1458100629 1424824536
+er
+\change_unchanged
+.
  
 \begin_inset CommandInset ref
 LatexCommand ref
