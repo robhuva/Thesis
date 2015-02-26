@@ -170,13 +170,12 @@ electricity
  installation at each location without a pre-determination about the size
  or type of installation.
  
-\change_inserted -1458100629 1422935396
+\change_inserted -1458100629 1424403147
 It should be noted that the Singular Value Decomposition (SVD) method for
  simultaneously analysing the wind and solar fields was examined but not
  included.
  SVD is the two variable extension to Principle Component Analysis and produces
- simulatenousely co-occurring patterns (spatial patterns and their time
- series).
+ simultaneously co-occurring patterns (spatial patterns and their time series).
  However, the ERA-Interim solar irradiance data contained very limited temporal
  information beyond the seasonal and diurnal cycles, which dominate.
  Thus the results from the SVD investigation of ERA-Interim data were not
@@ -412,7 +411,7 @@ at all times.
 
 \begin_layout Standard
 
-\change_inserted -1458100629 1423106944
+\change_inserted -1458100629 1423544438
 Further, it was also decided not to convert the DSR data to an equivalent
  power output.
  DSR is the global shortwave radiation falling on a horizontal plane at
@@ -426,8 +425,8 @@ key "Villalva2009"
 
 \end_inset
 
-), however, it has also been shown over longer periods of time (yearly)
- to make little difference (
+), however, it has also been shown over longer periods of time (yearly,
+ and therefore also longer) to make little difference (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Perpinan2008"
@@ -2863,9 +2862,13 @@ name "sec:Cov-Conclusion"
 \end_layout
 
 \begin_layout Standard
-This chapter examined the covariance of the wind and solar fields from ERA-Inter
-im by categorising the weather of the Australian region into SOM nodes and
- analysing the wind and solar conditions that co-occurred with the regimes.
+This chapter examined
+\change_inserted -1458100629 1424136428
+ aspects of
+\change_unchanged
+ the covariance of the wind and solar fields from ERA-Interim by categorising
+ the weather of the Australian region into SOM nodes and analysing the wind
+ and solar conditions that co-occurred with the regimes.
  Node 20 (high pressure centred east of Victoria) was identified as being
  associated with low capacity of both wind and solar, node 24 (high pressure
  centred well south of Perth) associated with co-located high capacity of
@@ -2908,8 +2911,11 @@ s, it was found that the average separation needed for two locations to
 \end_layout
 
 \begin_layout Standard
-In the next part to this thesis the covariance of wind and solar is explored
- via an optimised 
+In the next part to this thesis the covariance of wind and solar is
+\change_inserted -1458100629 1424136440
+ further
+\change_unchanged
+ explored via an optimised 
 \change_deleted -1458100629 1418778185
 energy
 \change_inserted -1458100629 1418778185
@@ -2928,21 +2934,6 @@ electricity
  The influence of the larger synoptic scale systems on the NEM-wide variability
  in wind and solar is then analysed.
 \change_inserted -1458100629 1423029787
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1458100629 1423029806
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "/home/rhuva/Robert/Final Thesis/Bibliography/My Collection"
-options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
