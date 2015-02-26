@@ -224,7 +224,8 @@ LatexCommand tableofcontents
 \begin_layout Standard
 \begin_inset CommandInset nomencl_print
 LatexCommand printnomenclature
-set_width "auto"
+set_width "custom"
+width "3.5cm"
 
 \end_inset
 
