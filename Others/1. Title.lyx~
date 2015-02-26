@@ -57,11 +57,12 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle empty
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -78,7 +79,12 @@
 \align center
 
 \size huge
-Covariances in the Weather and the Influence on Large-Scale Renewable Energy
+Covariances in the Weather and the Influence on Large-Scale Renewable E
+\change_inserted -1458100629 1418776887
+lectricity
+\change_deleted -1458100629 1418776885
+nergy
+\change_unchanged
  Systems 
 \end_layout
 
