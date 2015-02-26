@@ -753,7 +753,7 @@ electricity
  The costs 
 \change_deleted -1458100629 1424067619
  
-\change_inserted -1458100629 1424134680
+\change_inserted -1458100629 1424758432
 are of the same order as those used in the 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -772,8 +772,9 @@ key "Elliston2013"
  while the gas costs increased in order to maximise the contribution from
  renewables---an aim of this thesis.
  As such, the simulations presented in this chapter are cost-dependent.
- Had very different costs been used (an order of magnitude or more) this
- no doubt would have lead to quite different results.
+ Had very different costs been used (i.e.
+ an order of magnitude or more) this no doubt would have lead to quite different
+ results.
  Some sensitivity analysis to cost is conducted later in the chapter.
  
 \change_unchanged
@@ -1886,9 +1887,14 @@ reference "fig:NEM-Only-Installed-Cap"
  is the choice of some remote locations in spite of the extra transmission
  cost of connecting these sites.
  The largest wind site (17.3GW in northern Queensland) is a long distance
- from the nearest capital city (Brisbane) and the largest solar installation
- (5.4GW in south-west Queensland) is also quite a distance from the nearest
- capital city (Brisbane).
+ from the nearest capital city (
+\change_inserted -1458100629 1424758886
+Townsville
+\change_deleted -1458100629 1424758882
+Brisbane
+\change_unchanged
+) and the largest solar installation (5.4GW in south-west Queensland) is
+ also quite a distance from the nearest capital city (Brisbane).
  Thus there still appears to be a tendency by the GA to prefer locations
  with decent/complementary resources over those that might be closer to
  a capital city, but whose resources are not as optimal.
@@ -2083,8 +2089,25 @@ reference "fig:Low-RE-SOM-Percentage-Plot"
 
 \end_inset
 
-) showed more clearly the regions of the SOM/synoptic types that are problematic
-, as well as those regions that are not problematic.
+) showed more clearly the regions of the SOM/synoptic types that 
+\change_inserted -1458100629 1424759085
+were
+\change_deleted -1458100629 1424759084
+are
+\change_unchanged
+ problematic, as well as those regions that 
+\change_inserted -1458100629 1424759093
+were
+\change_deleted -1458100629 1424759092
+are
+\change_unchanged
+ not problemati
+\change_inserted -1458100629 1424759214
+que
+\change_deleted -1458100629 1424759213
+c
+\change_unchanged
+.
  Fig.
  
 \begin_inset CommandInset ref
@@ -2093,13 +2116,18 @@ reference "fig:Low-RE-SOM-Percentage-Plot"
 
 \end_inset
 
- indicates that there are
-\change_deleted -1458100629 1421373209
- quite
+ indicates that there 
+\change_inserted -1458100629 1424759259
+were
+\change_deleted -1458100629 1424759257
+are quite
 \change_unchanged
- a few SOM nodes that either significantly associated (significantly high
- percentage) or significantly unassociated (significantly low percentage)
- with low RE time steps.
+ a few SOM nodes that 
+\change_inserted -1458100629 1424759404
+were 
+\change_unchanged
+either significantly associated (significantly high percentage) or significantly
+ unassociated (significantly low percentage) with low RE time steps.
 \begin_inset Float figure
 placement H
 wide false
@@ -2194,8 +2222,12 @@ a new time series of SOM node occurrences
 \change_unchanged
 .
  The new time series was then filtered such that the same moments in time
- that were eliminated in the original filtering process were also eliminated
- in the randomised
+ 
+\change_deleted -1458100629 1424759453
+that were 
+\change_unchanged
+eliminated in the original filtering process were also eliminated in the
+ randomised
 \change_inserted -1458100629 1421370960
 , or altered,
 \change_unchanged
@@ -2213,7 +2245,19 @@ altered
 \change_deleted -1458100629 1421370977
 random
 \change_unchanged
- version) of the percentage occurrence with low RE time steps.
+ version) of the percentage occurrence with low RE time steps
+\change_inserted -1458100629 1424759491
+ (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Low-RE-SOM-Percentage-Plot"
+
+\end_inset
+
+)
+\change_unchanged
+.
  If the measured percentage occurrence was in either tail of the distribution
  (2.5% of the distribution in each tail) the actual occurrence was said to
  be significant at the 5% level.
@@ -2221,18 +2265,50 @@ random
 \end_layout
 
 \begin_layout Standard
-In particular, there are some SOM nodes that appear to never co-occur with
- very low RE for the NEM-only simulation.
- Nodes six and 25 significantly never co-occur with the lowest RE output.
- However, of more interest are perhaps those nodes that are significantly
- associated with very low RE output.
- For instance, there is a region of the SOM (nodes eight, nine, 10, 15)
- that represents almost half of all of the very low RE time steps.
+In particular, there 
+\change_inserted -1458100629 1424759534
+were
+\change_deleted -1458100629 1424759533
+are
+\change_unchanged
+ some SOM nodes that appear
+\change_inserted -1458100629 1424759541
+ed
+\change_unchanged
+ to never co-occur with very low RE for the NEM-only simulation.
+ Nodes six and 25 significantly never co-occur
+\change_inserted -1458100629 1424759548
+ed
+\change_unchanged
+ with the lowest RE output.
+ However, of more interest 
+\change_inserted -1458100629 1424759557
+were
+\change_deleted -1458100629 1424759556
+are
+\change_unchanged
+ perhaps those nodes that 
+\change_inserted -1458100629 1424759567
+were
+\change_deleted -1458100629 1424759566
+are
+\change_unchanged
+ significantly associated with very low RE output.
+ For instance, there 
+\change_inserted -1458100629 1424759581
+was
+\change_deleted -1458100629 1424759580
+is
+\change_unchanged
+ a region of the SOM (nodes eight, nine, 10, 15) that represents almost
+ half of all of the very low RE time steps.
  Given the smooth nature of the SOM these nodes represent similar MSLP distribut
 ions and therefore represent a sub-set of similar synoptic regimes from
- within the SOM that are
-\change_deleted -1458100629 1421373283
- significantly
+ within the SOM that 
+\change_inserted -1458100629 1424759604
+were
+\change_deleted -1458100629 1424759603
+are significantly
 \change_unchanged
  associated with 
 \change_inserted -1458100629 1421372267
@@ -2255,15 +2331,25 @@ reference "fig:Low-RE-SOM-Percentage-Plot"
 
 \end_inset
 
- is that of node 30, which at 
+ 
+\change_inserted -1458100629 1424759613
+was
+\change_deleted -1458100629 1424759612
+is
+\change_unchanged
+ that of node 30, which at 
 \change_inserted -1458100629 1421372282
 8.5
 \change_deleted -1458100629 1421372279
 9.1
 \change_unchanged
-% of the lowest RE time steps is also 
-\change_inserted -1458100629 1421372405
-represents a notable cluster, despite not passing the 5% test
+% of the lowest RE time steps
+\change_deleted -1458100629 1424759638
+ is
+\change_unchanged
+ also 
+\change_inserted -1458100629 1424759641
+represented a notable cluster, despite not passing the 5% test
 \change_deleted -1458100629 1421372319
 statistically significant
 \change_unchanged
@@ -3158,10 +3244,15 @@ icularly at peak times.
  in excess of two days---the definition of an event is a collection of days
  where the RE output is more than 20% below demand---but it does suggest
  that there is limited supply in some instances for prolonged periods.
- In fact, the hydro reserves would likely run out during the 52 hour event
- and the system would then have to rely on expensive gas back-up to meet
- demand (during the 52 hour event gas peaks at 12.7GW and operates at a capacity
- factor of 22%).
+ In fact, the hydro reserves would likely run out during 
+\change_inserted -1458100629 1424759688
+a
+\change_deleted -1458100629 1424759687
+the
+\change_unchanged
+ 52 hour event and the system would then have to rely on expensive gas back-up
+ to meet demand (during the 52 hour event gas peaks at 12.7GW and operates
+ at a capacity factor of 22%).
  
 \begin_inset Float figure
 placement H
@@ -3326,7 +3417,11 @@ reference "fig:Low-RE-SOM-Transition-Plot"
 ion of synoptic regimes that are linked to very low RE output.
  The persistence of a weather type within a very low RE event could indicate
  a bias.
- Such a biases are not indentifiable using statistics, including the Fig.
+ Such 
+\change_deleted -1458100629 1424759706
+a 
+\change_unchanged
+biases are not indentifiable using statistics, including the Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3785,8 +3880,19 @@ are significantly associated with
  very low RE and have the potential to produce large areas of very low wind
  speeds across the NEM region.
  A prediction of nodes nine or 30, however does not guarantee very low RE
- as 9.1% of node nine and 6.5% of node 30 occurrences were associated with
- very low RE.
+ as 
+\change_inserted -1458100629 1424759729
+13
+\change_deleted -1458100629 1424759728
+9.1
+\change_unchanged
+% of node nine and 
+\change_inserted -1458100629 1424759740
+8
+\change_deleted -1458100629 1424759740
+6.5
+\change_unchanged
+% of node 30 occurrences were associated with very low RE.
  Alternatively, it was shown that a prediction of nodes 25 and six is far
  more likely than not to produce conditions that result in oversupply of
  wind power in the NEM region.
@@ -5540,7 +5646,13 @@ Hydro
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424834727
+Gas
+\change_deleted -1458100629 1424834726
 Oversupply
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5549,7 +5661,13 @@ Oversupply
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424823324
+17.5
+\change_deleted -1458100629 1424823322
 48
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -5558,7 +5676,13 @@ Oversupply
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424823754
+5.3
+\change_deleted -1458100629 1424823752
 12.8
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -6049,7 +6173,13 @@ Hydro
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424834714
+Gas
+\change_deleted -1458100629 1424834713
 Oversupply
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -6058,7 +6188,13 @@ Oversupply
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424823854
+20.9
+\change_deleted -1458100629 1424823770
 46.5
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -6067,7 +6203,13 @@ Oversupply
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\change_inserted -1458100629 1424823896
+5.3
+\change_deleted -1458100629 1424823858
 12.2
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -7025,8 +7167,13 @@ Further comparison between the base NEM-only scenario and the 8X scenario
  also utilised, but to a lesser extent, in the NEM-only scenario.
  This finding suggests that the optimisation was able to identify the independen
 t wind regions in the standard transmission cost scenario, but that it took
- a large increase in transmission costs before the model was 'willing' to
- sample those regions at only one location each.
+ a large increase in transmission costs before the model was 
+\change_inserted -1458100629 1424824433
+`
+\change_deleted -1458100629 1424823996
+'
+\change_unchanged
+willing' to sample those regions at only one location each.
  Similar decorrelation characteristics can be found if the installations
  utilised in the NEM-only scenario are group together to form one time series
  for each 8X region.
