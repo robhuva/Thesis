@@ -74,12 +74,11 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -127,14 +126,9 @@ reference "sec:Creating-the-SOM"
  the common synoptic weather types of the Australian region.
  Following this, an in depth analysis of particular weather types that lead
  to both favourable and detrimental wind and solar power conditions is undertake
-n, with conclusions about how an interconnected renewable 
-\change_deleted -1458100629 1418778155
-energy
-\change_inserted -1458100629 1418778155
-electricity
-\change_unchanged
- based power system for Australia might be affected by large-scale synoptic
- weather phenomena.
+n, with conclusions about how an interconnected renewable electricity based
+ power system for Australia might be affected by large-scale synoptic weather
+ phenomena.
 \end_layout
 
 \begin_layout Standard
@@ -161,35 +155,30 @@ In the current study the decision was made to analyse wind and solar capacities
  (instantaneous or average percentage of maximum), rather than analyse the
  raw fields, as this was seen as the easiest way to compare the two variables.
  Wind and solar capacities were used as an indicative measure of the likely
- operating percentage of a renewable 
-\change_deleted -1458100629 1418778162
-energy
-\change_inserted -1458100629 1418778162
-electricity
-\change_unchanged
- installation at each location without a pre-determination about the size
- or type of installation.
- 
-\change_inserted -1458100629 1424403147
-It should be noted that the Singular Value Decomposition (SVD) method for
- simultaneously analysing the wind and solar fields was examined but not
- included.
+ operating percentage of a renewable electricity installation at each location
+ without a pre-determination about the size or type of installation.
+ It should be noted that the Singular Value Decomposition (SVD
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SVD"
+description "Singular Value Decomposition"
+
+\end_inset
+
+) method for simultaneously analysing the wind and solar fields was examined
+ but not included.
  SVD is the two variable extension to Principle Component Analysis and produces
  simultaneously co-occurring patterns (spatial patterns and their time series).
  However, the ERA-Interim solar irradiance data contained very limited temporal
  information beyond the seasonal and diurnal cycles, which dominate.
  Thus the results from the SVD investigation of ERA-Interim data were not
  included in the thesis.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 Wind capacity was calculated by first determining the equivalent power output.
  Wind power has a non-linear relationship with wind speed and in the current
  study the wind power curve for a General Electric 
-\change_inserted -1458100629 1418106647
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "GE"
@@ -197,8 +186,6 @@ description "General Electric"
 
 \end_inset
 
-
-\change_unchanged
 (GE) 2.5MW turbine (Fig.
  
 \begin_inset CommandInset ref
@@ -210,7 +197,7 @@ reference "fig:GE-2.5-Power-Curve"
 ) was used to convert wind speed to potential wind power output.
  GE is the single largest manufacturer of wind turbines in the world (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "REN212013"
 
 \end_inset
@@ -218,7 +205,7 @@ key "REN212013"
 ) and most of the land-based turbines installed around the world have a
  rating of between 1.5 and 3.5MW (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "REN212013"
 
 \end_inset
@@ -260,10 +247,6 @@ name "fig:GE-2.5-Power-Curve"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -333,25 +316,8 @@ reference "fig:GE-2.5-Power-Curve"
 
 \begin_layout Standard
 For the current study, solar capacity was not calculated as a percentage
- of maximum power output, but as a percentage of maximum 
-\change_inserted -1458100629 1418106668
-D
-\change_deleted -1458100629 1418106668
-d
-\change_unchanged
-ownward 
-\change_inserted -1458100629 1418106671
-S
-\change_deleted -1458100629 1418106670
-s
-\change_unchanged
-hortwave 
-\change_inserted -1458100629 1418106675
-R
-\change_deleted -1458100629 1418106675
-r
-\change_unchanged
-adiation (DSR) levels instead.
+ of maximum power output, but as a percentage of maximum Downward Shortwave
+ Radiation (DSR) levels instead.
  Maximum irradiance was taken as the maximum solar irradiance value for
  all time and space (980 Wm
 \begin_inset script superscript
@@ -405,13 +371,9 @@ at all times.
  as the measure of capacity was a useful first guess of solar availability
  at each location.
  
-\change_inserted -1458100629 1423028925
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1423544438
 Further, it was also decided not to convert the DSR data to an equivalent
  power output.
  DSR is the global shortwave radiation falling on a horizontal plane at
@@ -452,8 +414,6 @@ key "Perpinan2008"
  output it would not be a more accurate description of the spatial variance
  of the solar potential and how it varies in relation to wind power potential
  (as well as the influence of particular synoptic weather types).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -520,43 +480,16 @@ reference "fig:6x5-SOM-space-Cont"
 \end_inset
 
 .
- 
-\change_inserted -1458100629 1416807139
-Average capacity refers to the average wind power/DSR value at each location
+ Average capacity refers to the average wind power/DSR value at each location
  when that SOM node is said to occur, as a percentage of maximum for each
  location.
-\change_deleted -1458100629 1416806815
-Map positions correspond between the current figure and Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:6x5-SOM-space-Cont"
-
-\end_inset
-
-.
-
-\change_unchanged
  Colours are from the colour table, which has an increasing blue component
  for larger wind capacities and a larger red component for increasing DSR
  capacities
-\change_inserted -1458100629 1416806978
-
 \lang british
----
-\change_deleted -1458100629 1416806977
-
-\lang english
-.
-
-\lang british
- 
-\change_inserted -1458100629 1416806984
-for instance purple indicates a location with both high average wind and
- solar capacity.
- 
-\change_unchanged
-Colour
+---for instance purple indicates a location with both high average wind
+ and solar capacity.
+ Colour
 \lang english
  scheme adapted from 
 \begin_inset CommandInset citation
@@ -578,10 +511,6 @@ name "fig:SOM-Bivar-Wind-Solar"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -650,13 +579,8 @@ reference "fig:SOM-Bivar-Wind-Solar"
 
 , some important considerations for the spatial relationship between the
  wind power and DSR capacities across the Australian continent (and therefore
- potentially a renewable 
-\change_deleted -1458100629 1418778164
-energy
-\change_inserted -1458100629 1418778164
-electricity
-\change_unchanged
- network that encompasses the same area) could be highlighted.
+ potentially a renewable electricity network that encompasses the same area)
+ could be highlighted.
  In particular some SOM nodes appeared to be associated with both concurrently
  low or high wind and solar capacities.
  Such nodes included node 20 (low capacity of both wind and solar), node
@@ -730,10 +654,6 @@ name "fig:Nodes-of-Interest-MSLP"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -759,8 +679,6 @@ status collapsed
 \begin_layout Plain Layout
 Average capacity when continental SOM node 20 occurs for a) wind power and
  b) DSR.
-
-\change_inserted -1458100629 1417413316
  Average capacity for wind and DSR is as defined in Fig.
  
 \begin_inset CommandInset ref
@@ -771,8 +689,6 @@ reference "fig:SOM-Bivar-Wind-Solar"
 
 .
  Values are average decimal percentage and are thus unitless.
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Node-20-Wind-Dsr-Cap"
@@ -784,10 +700,6 @@ name "fig:Node-20-Wind-Dsr-Cap"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -809,15 +721,8 @@ reference "fig:Node-20-Wind-Dsr-Cap"
 
 \end_inset
 
- is 
-\change_deleted -1458100629 1417502277
-of course only 
-\change_unchanged
-the average of all 
-\change_deleted -1458100629 1417502286
-daytime 
-\change_unchanged
-occurrences for node 20, indicating that the two maps in Fig.
+ is the average of all occurrences for node 20, indicating that the two
+ maps in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -829,7 +734,15 @@ reference "fig:Node-20-Wind-Dsr-Cap"
  throughout the data.
  To examine how variable the wind power conditions were for node 20---and
  thus also how detrimental for wind power node 20 can be---a plot of the
- Coefficient of Variance (CoV) is shown in Fig.
+ Coefficient of Variance (CoV
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CoV"
+description "Coefficient of Variance"
+
+\end_inset
+
+) is shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -838,32 +751,9 @@ reference "fig:Node20-CoV-Wind-Dsr"
 \end_inset
 
 .
- The CoV is the 
-\change_deleted -1458100629 1417502338
-mean
-\change_inserted -1458100629 1417502342
-standard deviation
-\change_unchanged
- of a time series divided by the 
-\change_deleted -1458100629 1417502350
-standard deviation
-\change_inserted -1458100629 1417502351
-mean
-\change_unchanged
-, which for 
-\change_deleted -1458100629 1417502355
-low
-\change_inserted -1458100629 1417502358
-high
-\change_unchanged
- values would indicate regions that have high variability relative to the
- mean, and vice versa for 
-\change_inserted -1458100629 1417502369
-lower
-\change_deleted -1458100629 1417502367
-higher
-\change_unchanged
- CoV.
+ The CoV is the standard deviation of a time series divided by the mean,
+ which for high values would indicate regions that have high variability
+ relative to the mean, and vice versa for lower CoV.
  Fig.
  
 \begin_inset CommandInset ref
@@ -906,10 +796,6 @@ name "fig:Node20-CoV-Wind-Dsr"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1002,10 +888,6 @@ name "fig:Node20-Lowest-Combined-Cap"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1021,13 +903,7 @@ reference "fig:Node20-Lowest-Combined-Cap"
 \end_inset
 
  also demonstrates the type of synoptic regime that perhaps cannot be planned
- for when designing a large-scale renewable 
-\change_deleted -1458100629 1418778166
-energy
-\change_inserted -1458100629 1418778166
-electricity
-\change_unchanged
- network across Australia.
+ for when designing a large-scale renewable electricity network across Australia.
  However, knowledge of the possibility of very low wind and solar availability
  for the node 20 synoptic regime could also prove to be useful for forecasting
  purposes.
@@ -1050,14 +926,8 @@ reference "fig:Node20-Min-day-Comp-MSLP"
 
 b.
  Planning ahead of time for such low capacities would allow a more sophisticated
- 
-\change_deleted -1458100629 1418778171
-energy
-\change_inserted -1458100629 1418778171
-electricity
-\change_unchanged
- system that incorporates other renewables, storage options and back-ups
- to still meet the demand for electricity.
+ electricity system that incorporates other renewables, storage options
+ and back-ups to still meet the demand for electricity.
  In reality, an electricity network would be designed to include such back-ups
  and varied resources, rather than simply relying on wind and solar PV power.
  To ensure that 0600UTC on May 15 1997 was indeed an accurate occurrence
@@ -1105,10 +975,6 @@ name "fig:Node20-Min-day-Comp-MSLP"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1180,15 +1046,8 @@ status collapsed
 
 \begin_layout Plain Layout
 a) Wind power capacity and b) DSR capacity for the occurrence of continental
- SOM node 20 that le
-\change_deleted -1458100629 1424666416
-a
-\change_unchanged
-d
-\change_deleted -1458100629 1424666417
-s
-\change_unchanged
- to the highest combined capacity (0000UTC November 24 1996).
+ SOM node 20 that led to the highest combined capacity (0000UTC November
+ 24 1996).
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1204,10 +1063,6 @@ name "fig:Node20-Highest-Combined-Cap"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1215,11 +1070,8 @@ name "fig:Node20-Highest-Combined-Cap"
 
 \begin_layout Standard
 An unfortunate consequence of the SOM technique, along with most other data
- synthesis techniques, is the fact that the SOM nodes never occurr
-\change_deleted -1458100629 1424666429
-ed
-\change_unchanged
- exactly.
+ synthesis techniques, is the fact that the technique does not produce synoptic
+ systems exactly as they appear in reality.
  Pressure distributions that were different but closely related were said
  to belong to each SOM node, which then allowed for the quite different
  wind and solar capacities (seen in Fig.
@@ -1358,10 +1210,6 @@ name "fig:Node24-Wind-Dsr-Cap"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1547,10 +1395,6 @@ name "fig:Node24-Max-day-Comp-MSLP"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1586,11 +1430,7 @@ reference "fig:Node24-Highest-Combined-Cap"
 
 \end_inset
 
-a
-\change_inserted -1458100629 1424666476
-,
-\change_unchanged
- high wind power capacities for the central coast of WA were a persistent
+a, high wind power capacities for the central coast of WA were a persistent
  pattern for the majority of node 24 occurrences.
  For the central coast of WA 89% of node 24 occurrences had a peak wind
  power capacity value greater than 0.7 and 79% had an average wind power
@@ -1647,10 +1487,6 @@ name "fig:Node24-Lowest-Combined-Cap"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1739,10 +1575,6 @@ name "fig:Node24-Min-day-Comp-MSLP"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1799,10 +1631,6 @@ name "fig:Node18-Wind-Dsr-Cap"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1864,10 +1692,6 @@ name "fig:Node18-High-Regions"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1966,10 +1790,6 @@ name "fig:Node18-High-Cap-Regions"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2007,10 +1827,6 @@ name "fig:Node18-Max-day-Comp-MSLP"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2122,10 +1938,6 @@ name "fig:Node18-Lowest-Combined-Cap-Regions"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2166,10 +1978,6 @@ name "fig:Node18-Min-day-Comp-MSLP"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
  
@@ -2177,15 +1985,10 @@ name "fig:Node18-Min-day-Comp-MSLP"
 
 \begin_layout Standard
 The analysis of some of the SOM nodes that appeared either favourable or
- detrimental for the simultaneous wind and solar 
-\change_deleted -1458100629 1418778175
-energy
-\change_inserted -1458100629 1418778175
-electricity
-\change_unchanged
- production of the Australian region highlighted an important aspect of
- the variability of the wind and solar fields that was independent of the
- SOM classification process.
+ detrimental for the simultaneous wind and solar electricity production
+ of the Australian region highlighted an important aspect of the variability
+ of the wind and solar fields that was independent of the SOM classification
+ process.
  That despite the advantages of the SOM technique it will seemingly always
  be possible to have time steps that pass the BMU filtering process, which
  are then classed as belonging to the same SOM node, but whose MSLP distribution
@@ -2205,7 +2008,7 @@ The SOM node analysis also highlighted some potentially advantageous persistent
  be utilised---only one wind farm of significant size has been built in
  this area of the WA coast (89MW Alinta wind farm, near Geraldton; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Council2012a"
 
 \end_inset
@@ -2300,14 +2103,8 @@ reference "fig:6x5-SOM-space-Cont"
 
 ) at a) 0000UTC, b) 0600UTC, c) 1200UTC and d) 1800UTC.
  Numbers in orange represent significant values using a two-tailed Monte-Carlo
- simulation at the one percent confidence range
-\change_deleted -1458100629 1416471168
-.
-
-\change_inserted -1458100629 1416471172
- and darker grey indicates larger values.
-
-\change_unchanged
+ simulation at the one percent confidence range and darker grey indicates
+ larger values.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2320,10 +2117,6 @@ name "fig:Time-of-Day-SOM-Occ"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2460,17 +2253,13 @@ In this section the ERA-Interim data were analysed for how well, or not,
  the data were correlated with each other.
  The term decorrelation relates to the distance at which two points in the
  domain have a significantly different time series to be considered unrelated.
- 
-\change_inserted -1458100629 1418778179
-The length at which such a decorrelation occurs could, in particular for
+ The length at which such a decorrelation occurs could, in particular for
  the wind field, indicate inherent features of the synoptic scale variability
  over Australia (i.e.
  the width of a high pressure system).
  Such information could be exploited in the design of a large-scale renewable
  electricity network for Australia and thus deserves further investigation.
- 
-\change_unchanged
-Here, certain locations were correlated with the rest of the domain and
+ Here, certain locations were correlated with the rest of the domain and
  then statistical significance was obtained for each correlation value in
  the domain.
  A type of Monte-Carlo simulation, described in 
@@ -2496,15 +2285,11 @@ key "Ebisuzaki1997"
  The representation of DSR in ERA-Interim, even at three-hourly intervals,
  was too smooth to obtain significantly different time series anywhere in
  the continental domain (not shown).
- 
-\change_inserted -1458100629 1423204889
-For instance, a lot of the variability introduced by clouds and aerosols
+ For instance, a lot of the variability introduced by clouds and aerosols
  is not resolved at 3-hourly averaged values and at ~166km spatial resolution.
  Instead, the solar variability captured by ERA-Interim is heavily influenced
  by diurnal and seasonal cycles, which do not vary enough across the continent
  to result in uncorrelated time series.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -2729,14 +2514,9 @@ reference "fig:Decorrel-Point-Correlation-Cities"
 
  shows maps of point correlations of the 80m wind speed where the points
  were chosen based on major population centres (the likely location of renewable
- 
-\change_deleted -1458100629 1418778182
-energy
-\change_inserted -1458100629 1418778182
-electricity
-\change_unchanged
- infrastructure) and where the stippling indicates areas of either negative
- correlation or locations that are considered significantly different.
+ electricity infrastructure) and where the stippling indicates areas of
+ either negative correlation or locations that are considered significantly
+ different.
  Statistical significance is calculated based on a 10,000 member bootstrap
  of the 
 \begin_inset CommandInset citation
@@ -2809,10 +2589,6 @@ name "fig:Decorrel-Point-Correlation-Cities"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2877,13 +2653,10 @@ name "sec:Cov-Conclusion"
 \end_layout
 
 \begin_layout Standard
-This chapter examined
-\change_inserted -1458100629 1424136428
- aspects of
-\change_unchanged
- the covariance of the wind and solar fields from ERA-Interim by categorising
- the weather of the Australian region into SOM nodes and analysing the wind
- and solar conditions that co-occurred with the regimes.
+This chapter examined aspects of the covariance of the wind and solar fields
+ from ERA-Interim by categorising the weather of the Australian region into
+ SOM nodes and analysing the wind and solar conditions that co-occurred
+ with the regimes.
  Node 20 (high pressure centred east of Victoria) was identified as being
  associated with low capacity of both wind and solar, node 24 (high pressure
  centred well south of Perth) associated with co-located high capacity of
@@ -2926,17 +2699,8 @@ s, it was found that the average separation needed for two locations to
 \end_layout
 
 \begin_layout Standard
-In the next part to this thesis the covariance of wind and solar is
-\change_inserted -1458100629 1424136440
- further
-\change_unchanged
- explored via an optimised 
-\change_deleted -1458100629 1418778185
-energy
-\change_inserted -1458100629 1418778185
-electricity
-\change_unchanged
- system.
+In the next part to this thesis the covariance of wind and solar is further
+ explored via an optimised electricity system.
  For the majority of Part 2 the focus is on just the eastern states of Australia
  (the National Electricity Network (NEM) region), as opposed to the whole
  country.
@@ -2948,8 +2712,6 @@ electricity
  because this is the likely location for future wind and solar capacities.
  The influence of the larger synoptic scale systems on the NEM-wide variability
  in wind and solar is then analysed.
-\change_inserted -1458100629 1423029787
-
 \end_layout
 
 \end_body
