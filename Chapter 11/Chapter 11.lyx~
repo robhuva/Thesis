@@ -73,12 +73,11 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -129,12 +128,7 @@ There are some key research questions not addressed in this thesis that
 \end_inset
 
 1.
- Simulations that include the use of non-weather-dependent Renewable 
-\change_deleted -1458100629 1418779936
-Energy
-\change_inserted -1458100629 1418779936
-Electricity
-\change_unchanged
+ Simulations that include the use of non-weather-dependent Renewable Electricity
  (RE) resources (for instance, geothermal, biomass and pumped hydro).
 \end_layout
 
@@ -143,15 +137,11 @@ Point 1 will allow for an increase in the reliance on RE without the further
  exposure to atmospheric variability.
  This is an important consideration if the aim of a future Australian electricit
 y network is to rely heavily---potentially 100%---on RE resources.
-
-\change_inserted -1458100629 1424404252
  In general, a more sophisticated electricity model should be considered
  for future work.
  Such a model would include these weather independent RE resources, but
  would also consider conversions of the solar data to power output and power
  flow constraints on network design.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -241,11 +231,8 @@ key "Barnes2013"
 
  note a similar shift in the mid-latitude storm track.
  With these points in mind it is reasonable to suggest that some of the
- weather regimes analysed in this thesis also exhibit changes in their 
-\change_inserted -1458100629 1423631139
-mean 
-\change_unchanged
-positioning.
+ weather regimes analysed in this thesis might also exhibit changes in their
+ mean positioning.
  A question that arises from this point would be: does this type of latitudinal
  shift in the climatological positioning of weather systems then alter the
  resource availability in the NEM region? And if so, how quickly this happens
@@ -261,40 +248,16 @@ positioning.
 \end_layout
 
 \begin_layout Standard
-Another consequence of climate change is the
-\change_inserted -1458100629 1423631173
- possible
-\change_unchanged
- increase
-\change_deleted -1458100629 1423631182
-d likelihood of
-\change_inserted -1458100629 1423631201
-in some
-\change_unchanged
- extremes (
-\change_inserted -1458100629 1423633633
-
+Another consequence of climate change is the possible increase in some extremes
+ (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "C.B.2012"
 
 \end_inset
 
-
-\change_deleted -1458100629 1423631752
-
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "C.B.2012"
-
-\end_inset
-
-
-\change_unchanged
 ).
- 
-\change_inserted -1458100629 1423633643
-Although confidence is low for a lot of atmospheric extremes one possible
+ Although confidence is low for a lot of atmospheric extremes one possible
  change is a likely increase in tropical cyclone average maximum wind speed
  (
 \begin_inset CommandInset citation
@@ -304,24 +267,17 @@ key "C.B.2012"
 \end_inset
 
 ).
- 
-\change_unchanged
-It would be important to investigate the implication of having more extreme
+ It would be important to investigate the implication of having more extreme
  behaviour in RE output on an electrical network that relies on RE to meet
  demand.
  In particular, similar to point 2, if the extremes in the weather also
- cause more demand for electricity
-\change_inserted -1458100629 1423633649
- (it is considered very likely that over most land areas the length, frequency
- and/or intensity of heat waves to increase by the end of the 21
+ cause more demand for electricity (it is considered very likely that over
+ most land areas the length, frequency and/or intensity of heat waves to
+ increase by the end of the 21
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1423632173
 st
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -333,23 +289,9 @@ key "C.B.2012"
 
 \end_inset
 
-)
-\change_unchanged
-.
- 
-\change_inserted -1458100629 1423632189
-More e
-\change_deleted -1458100629 1423632189
-E
-\change_unchanged
-xtreme 
-\change_deleted -1458100629 1423632205
-cold or warm
-\change_inserted -1458100629 1423632208
-heat
-\change_unchanged
- would likely to result in much higher demand for electricity in order to
- keep homes and businesses at comfortable temperatures.
+).
+ More extreme heat would likely to result in much higher demand for electricity
+ in order to keep homes and businesses at comfortable temperatures.
  Furthermore, would an increase in extreme RE output put new and significant
  stresses on the electrical network? This too could be costly and thus requires
  investigation.
@@ -460,36 +402,14 @@ By utilising a Self-Organising Map (SOM) of the ERA-Interim 1989-2009 Mean
 \end_layout
 
 \begin_layout Standard
-Following this an 
-\change_deleted -1458100629 1418779941
-energy
-\change_inserted -1458100629 1418779941
-electricity
-\change_unchanged
- model was built.
- The 
-\change_deleted -1458100629 1418779942
-energy
-\change_inserted -1458100629 1418779942
-electricity
-\change_unchanged
- model was given wind and solar data for 2010-2011 from the ACCESS-A regional
- model and historical demand data from the Australian Electricity Market
- Operator.
- When given the chance to optimise the whole of Australia the 
-\change_deleted -1458100629 1418779942
-energy
-\change_inserted -1458100629 1418779942
-electricity
-\change_unchanged
+Following this an electricity model was built.
+ The electricity model was given wind and solar data for 2010-2011 from
+ the ACCESS-R regional model and historical demand data from the Australian
+ Electricity Market Operator.
+ When given the chance to optimise the whole of Australia the electricity
  model chose to install most of the RE in remote Western Australia (WA).
  Available locations to be optimised were then limited to the NEM region
- because no realistic penalty could be applied to deter the 
-\change_deleted -1458100629 1418779943
-energy
-\change_inserted -1458100629 1418779943
-electricity
-\change_unchanged
+ because no realistic penalty could be applied to deter the electricity
  model from using such unrealistic WA locations.
  A base NEM-only scenario was then produced.
  The NEM-only scenario with standard transmission costs showed some preference
@@ -507,7 +427,7 @@ By conducting optimisations using data from either the Austral summer and
  base scenario.
  In particular, the non-use of north Queensland in the summer-only optimisation
  showed that the north Queensland wind resources is a wintertime (dry season)
- only phenomenon.
+ phenomenon.
  The lack of installed solar capacity in the wintertime optimisation also
  showed that the standard transmission cost was too large a cost impediment
  to justify any use of solar photovoltaics in the wintertime.
@@ -519,7 +439,7 @@ By conducting optimisations using data from either the Austral summer and
  north-west Tasmania and South Australia).
  The four wind regimes were then shown to be highly uncorrelated, reinforcing
  their usefulness in combining to meet demand, but also providing an optimisatio
-n-based decorrelation length scale of approximately 884km.
+n-based decorrelation length scale of approximately 1400km.
 \end_layout
 
 \begin_layout Standard
@@ -536,13 +456,7 @@ While it was possible to conclude from just the analysis in Part 1 that
 
 \begin_layout Standard
 In this thesis it has been shown that the potential for Australia to extract
- useful 
-\change_deleted -1458100629 1418779944
-energy
-\change_inserted -1458100629 1418779944
-electricity
-\change_unchanged
- from the wind and solar fields is high.
+ useful electricity from the wind and solar fields is high.
  By approaching the question of how the wind and solar resources vary at
  various spatio-temporal resolutions from two different approaches it was
  concluded that a high reliance on RE in the National Electricity Market
@@ -551,8 +465,6 @@ electricity
  Australia that need to be taken into account when designing and operating
  such an RE-based network.
  
-\change_inserted -1458100629 1423633571
-
 \end_layout
 
 \end_body
