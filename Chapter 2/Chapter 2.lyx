@@ -74,7 +74,7 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -110,12 +110,7 @@ Summary
 
 \begin_layout Standard
 This chapter presents an introduction to the general circulation of the
-\change_deleted -1458100629 1424309711
-Standardere
-\change_inserted -1458100629 1424309716
- atmosphere
-\change_unchanged
- and Australia's regional teleconnections.
+ atmosphere and Australia's regional teleconnections.
  Following this there is a literature review of the synoptic climatology
  of the Australian region.
  Included in the literature review are studies that examine variability
@@ -144,16 +139,10 @@ name "sec:Lit-Synptic-Clim-Aus"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1423719839
-On contine
-\change_deleted -1458100629 1423719829
-Hassim2008
-\change_unchanged
-ntal spatial scales (i.e.
- the size of Australia) the synoptic systems have the largest affect on
- the day-to-day variability of atmospheric variables like wind speed and
- solar irradiance; the synoptic scale encompasses spatial scales from 100s-1000s
+On continental spatial scales (i.e.
+ the size of Australia) synoptic systems have the largest affect on the
+ day-to-day variability of atmospheric variables like wind speed and solar
+ irradiance; the synoptic scale encompasses spatial scales from 100s-1000s
  of kilometres and temporal scales from days to weeks.
  More commonly visualised by the distribution of high and low pressure centres,
  the synoptic scale describes the continuity of weather systems that stretch
@@ -162,7 +151,7 @@ ntal spatial scales (i.e.
  dynamics like the Hadley cell and the pressure systems that affect local
  weather conditions (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sturman2005"
 
 \end_inset
@@ -172,41 +161,17 @@ key "Sturman2005"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1423720178
-The Hadley cell is a thermally direct circulation and is driven by t
-\change_deleted -1458100629 1415685273
-T
-\change_unchanged
-hermal energy generated in large quantities at the equator
-\change_inserted -1458100629 1415685464
-.
- The production of thermal energy at the equator is a result of
-\change_deleted -1458100629 1423720301
- by of large-scale convection an
-\change_inserted -1458100629 1423720318
- radiative transfer from the 
-\change_unchanged
-Sun
-\change_deleted -1458100629 1423720327
-, and through)
-\change_inserted -1458100629 1423720330
- and 
-\change_deleted -1458100629 1423720333
-the 
-\change_unchanged
-latent heat release of water vapour in clouds
-\change_deleted -1458100629 1415685373
-, drives thermally direct circulations, including the Hadley cell
-\change_unchanged
-.
+The Hadley cell is a thermally direct circulation and is driven by thermal
+ energy generated in large quantities at the equator.
+ The production of thermal energy at the equator is a result of radiative
+ transfer from the Sun and latent heat release of water vapour in clouds.
  In essence, circulations like the Hadley cell are formed through the need
  to balance energy and momentum across the Earth.
  The potential energy gained by the uplift of the Hadley circulation at
  the equator is converted to kinetic energy and largely dispersed into horizonta
 l flows including the trade winds and mid-latitude westerlies (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Holton2003"
 
 \end_inset
@@ -217,15 +182,13 @@ key "Holton2003"
  and this eddy momentum flux is greatest near the mid-latitude jet around
  30ºS (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Holton2003"
 
 \end_inset
 
 ).
  
-\change_inserted -1458100629 1415757148
-
 \end_layout
 
 \begin_layout Standard
@@ -235,13 +198,10 @@ The mid-latitude jet is generated as a result of the meridional temperature
  (along with planetary Rossby waves generated through friction with the
  surface of the Earth).
  The restoring force for a Rossby wave is the background meridional gradient
- in absolute vorticity-
-\change_inserted -1458100629 1415684757
--
-\change_unchanged
--a result of the change in Coriolis force with latitude (
+ in absolute vorticity---a result of the change in Coriolis force with latitude
+ (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Holton2004"
 
 \end_inset
@@ -251,7 +211,7 @@ key "Holton2004"
  vorticity field, which then propagate in a westward direction with the
  mean flow (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Holton2004"
 
 \end_inset
@@ -262,19 +222,8 @@ key "Holton2004"
 \end_layout
 
 \begin_layout Standard
-In Australia, very contrasting synoptic conditions can often occur 
-\change_deleted -1458100629 1424397373
-simultaneousl
-\change_inserted -1458100629 1424397373
-simultaneously
-\change_unchanged
- 
-\change_deleted -1458100629 1424397389
-for blocking mo
-\change_inserted -1458100629 1424397396
-across the con
-\change_unchanged
-tinent.
+In Australia, very contrasting synoptic conditions can often occur simultaneousl
+y across the continent.
  Stretching from about 10ºS to 44ºS the Australian continent is subject
  to both tropical weather systems as well as ‘polar outbreaks’ from cold
  fronts associated with cyclones from the southern hemisphere storm track
@@ -291,7 +240,7 @@ e prolonged periods of fine/sunny weather while some regions of northern
  Australia (as well as the west coast of Tasmania) can experience in excess
  of three metres of rain each year (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Meteorology2009"
 
 \end_inset
@@ -301,7 +250,7 @@ key "Meteorology2009"
  each year (wet and dry---according to the position of the monsoon belt)
  and can often have quite invariant weather during the dry season (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Meteorology2011b"
 
 \end_inset
@@ -329,13 +278,11 @@ status collapsed
 \begin_layout Plain Layout
 Large-scale dynamical influences on, and teleconnections to, south-eastern
  Australia.
+
+\change_deleted -1458100629 1433210173
  
-\change_deleted -1458100629 1416459800
-Adapted from
-\change_inserted -1458100629 1423721015
- Figure originally presented in
 \change_unchanged
- 
+ Figure originally presented in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Gallant2012"
@@ -357,20 +304,12 @@ name "fig:Gallant-SE-Aus-Teleconnetions"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
  
-\change_inserted -1458100629 1415685699
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424661629
 A recent study by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -398,7 +337,7 @@ key "Ashcroft2014"
  found there to be considerable fluctuation in the climatological parameters
  of SEA.
  In particular the relationship between rainfall for SEA and large-scale
- climate drivers, including the El Nino Southern Oscillation, 
+ climate drivers, including the El Niño/Southern Oscillation, 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ENSO"
@@ -454,19 +393,9 @@ key "Frederiksen2011"
 \end_inset
 
 .
-\change_deleted -1458100629 1415757425
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1415685666
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1458100629 1424316947
 In recent decades such a shift in the southern hemispheric storm track also
  coincides with the southward migration of the subtropical ridge---found
  in 
@@ -477,21 +406,8 @@ key "Timbal2013"
 \end_inset
 
 .
- The subtropical ridge is a ridge of high pressure that commonly
-\change_deleted -1458100629 1415756467
-Running
-\change_unchanged
- 
-\change_inserted -1458100629 1415756512
-runs 
-\change_unchanged
-through the middle of the continent of Australia
-\change_inserted -1458100629 1415757495
- 
-\change_deleted -1458100629 1415756519
- is often a ridge of high pressure called the subtropical ridge 
-\change_unchanged
-(Fig.
+ The subtropical ridge is a ridge of high pressure that commonly runs through
+ the middle of the continent of Australia (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -499,42 +415,26 @@ reference "fig:Gallant-SE-Aus-Teleconnetions"
 
 \end_inset
 
-
-\change_deleted -1458100629 1423721728
- 
-\change_inserted -1458100629 1423721727
-)
-\change_unchanged
-.
+).
  The subtropical ridge is responsible for largely fine and sunny weather
  to regions beneath it and is associated with the descending branch of the
  Hadley cell (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sturman2005"
 
 \end_inset
 
 ).
- 
-\change_inserted -1458100629 1415756778
-In an early study 
-\change_unchanged
-
+ In an early study 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Sinclair1996"
 
 \end_inset
 
- 
-\change_deleted -1458100629 1415756792
-studied
-\change_inserted -1458100629 1415756795
-examined
-\change_unchanged
- the climatology of such high pressure systems and their prevalence in the
- southern hemisphere.
+ examined the climatology of such high pressure systems and their prevalence
+ in the southern hemisphere.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -543,25 +443,9 @@ key "Sinclair1996"
 \end_inset
 
  found that there tended to be a wintertime maximum in anticyclonic distribution
- over the Great Australian Bight
-\change_deleted -1458100629 1415756828
-.
- The anticyclones from the Bight then tend to migrate north-eastward over
- the Australian continent.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Sinclair1996"
-
-\end_inset
-
- also found that high pressure systems often migrated quicker in summer
-\change_unchanged
-, while there were large numbers of anticyclones in the Tasman Sea for most
- of the year.
- 
-\change_inserted -1458100629 1424397560
-More recently 
+ over the Great Australian Bight, while there were large numbers of anticyclones
+ in the Tasman Sea for most of the year.
+ More recently 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Timbal2013"
@@ -580,8 +464,6 @@ key "Timbal2013"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -596,14 +478,8 @@ key "Sinclair1996"
 
 \end_inset
 
-).
-\change_deleted -1458100629 1423721912
-Iijima2009
-\change_inserted -1458100629 1423721917
-The decay
-\change_unchanged
- of the blocking high can also be followed by a re-intensification shortly
- thereafter (
+).The decay of the blocking high can also be followed by a re-intensification
+ shortly thereafter (
 \begin_inset CommandInset citation
 LatexCommand citealt
 key "Sinclair1996"
@@ -617,8 +493,6 @@ key "Sinclair1996"
  indicate stable conditions over much of the eastern and central Australian
  continent instead).
  
-\change_inserted -1458100629 1424397573
-
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Frederiksen2011"
@@ -632,16 +506,11 @@ key "Frederiksen2011"
  Such a decline in the baroclinicity of the subtropical jet was also seen
  to lead to reductions in the prevalence of storm-track synoptic modes.
  
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-The tendencies of high pressure systems over Australia was also
-\change_deleted -1458100629 1415843146
- more
-\change_unchanged
- recently examined using a Self-Organising Map (SOM) by 
+The tendencies of high pressure systems over Australia was also recently
+ examined using a Self-Organising Map (SOM) by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Alexander2010"
@@ -662,62 +531,81 @@ key "Alexander2010"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Alexander-SOM"
+reference "fig:Alexander-SOM-1"
+
+\end_inset
+
+).
+ Further evidence is provided to suggest that large sections of the Australian
+ continent are commonly under the influence of high pressure systems, and
+ that consequently there is a dominant stable weather regime for the Australian
+ region.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/rhuva/Robert/Final Thesis/Chapter 3/Figures/Alexander SOM.eps
 
 \end_inset
 
 
-\change_inserted -1458100629 1423721956
-)
-\change_deleted -1458100629 1423721956
- 
-\change_unchanged
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+SOM nodes for the winter months of 1958-2001 using Mean Sea-Level Pressure
+ data (hPa) from ERA-40.
+ Numbers in brackets represent percentage occurrence for 1907-2006 and 
+\begin_inset Quotes eld
+\end_inset
+
+m
+\begin_inset Quotes erd
+\end_inset
+
+ represents the decadal trend in that node.
+ Figure originally presented in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Alexander2010"
+
+\end_inset
+
 .
- Further evidence is provided to suggest that large sections of the Australian
- continent are commonly under the influence of high pressure systems, and
  
-\change_inserted -1458100629 1424661803
-that c
-\change_deleted -1458100629 1424661802
-C
-\change_unchanged
-onsequently the
-\change_inserted -1458100629 1424661813
-re
-\change_unchanged
- 
-\change_deleted -1458100629 1424661823
-synoptic classes that produce the most power the Australian region
-\change_inserted -1458100629 1424661846
-is a dominant stable weather regime for the Australian region
-\change_unchanged
-.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Alexander-SOM-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1458100629 1423722159
- ridging of high pressure is directly a
-\change_inserted -1458100629 1423722167
-The more unstable regimes common to the
-\change_unchanged
- Australian region are
-\change_deleted -1458100629 1415843180
- normally
-\change_unchanged
- linked to the passage of low pressure systems and associated cold fronts
- or troughs.
+The more unstable regimes common to the Australian region are linked to
+ the passage of low pressure systems and associated cold fronts or troughs.
  In terms of wind speed, the unstable regimes are potentially more advantageous
- for the production of wind 
-\change_deleted -1458100629 1418777813
-energy
-\change_inserted -1458100629 1418777813
-electricity
-\change_unchanged
- as low pressure systems are inherently associated with higher wind speeds---lar
-ge pressure gradients near the centre of low pressure systems drive higher
- geostrophic wind speeds.
+ for the production of wind electricity as low pressure systems are inherently
+ associated with higher wind speeds---large pressure gradients near the
+ centre of low pressure systems drive higher geostrophic wind speeds.
  In Australia there are two main types of low pressure systems that affect
  the weather: tropical and extra-tropical or mid-latitude cyclones (although
  transitions between the two types are not uncommon (
@@ -730,8 +618,6 @@ key "Pezza2008"
 )).
  Tropical systems are normally associated with the Inter-Tropical Convergence
  Zone 
-\change_inserted -1458100629 1418103972
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ITCZ"
@@ -739,16 +625,8 @@ description "InterTropical Convergence Zone"
 
 \end_inset
 
-
-\change_unchanged
 (ITCZ) and form in bands either side of the convergence zone where factors
- 
-\change_inserted -1458100629 1423722203
-inc
-\change_deleted -1458100629 1423722201
-(-0
-\change_unchanged
-luding low Coriolis force and vertical wind shear are favourable (
+ including low Coriolis force and vertical wind shear are favourable (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Sturman2005"
@@ -756,11 +634,6 @@ key "Sturman2005"
 \end_inset
 
 ).
-
-\change_deleted -1458100629 1418777813
- 
-\change_inserted -1458100629 1415768808
-
 \end_layout
 
 \begin_layout Standard
@@ -783,42 +656,19 @@ key "Hassim2008"
 \end_inset
 
  also found statistically significant downward trends in minimum central
-\change_inserted -1458100629 1423722551
- pressure
-\change_deleted -1458100629 1423722549
-Standarde
-\change_unchanged
- (likely to be due to an increased occurrence of the more severe (category
- four and five storms)
-\change_inserted -1458100629 1424661907
-)
-\change_unchanged
-.
- The potential for useful 
-\change_deleted -1458100629 1418777819
-energy
-\change_inserted -1458100629 1418777819
-electricity
-\change_unchanged
- to be produced from locations under the influence of tropical cyclones
- is questionable though as, in particular, wind turbines are shut down at
- wind speeds beyond about 25 ms
+ pressure (likely to be due to an increased occurrence of the more severe
+ category four and five storms).
+ The potential for useful electricity to be produced from locations under
+ the influence of tropical cyclones is questionable though as, in particular,
+ wind turbines are shut down at wind speeds beyond about 25 ms
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1423722591
 -1
-\change_deleted -1458100629 1423722590
-(M
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_inserted -1458100629 1422849713
 (
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -826,19 +676,7 @@ key "Wiser2011"
 
 \end_inset
 
-)
-\change_unchanged
-, while
-\change_inserted -1458100629 1422849722
- sustained
-\change_unchanged
- wind speeds beyond 
-\change_inserted -1458100629 1422849728
-50
-\change_deleted -1458100629 1422849726
-35
-\change_unchanged
- ms
+), while sustained wind speeds beyond 50 ms
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -847,41 +685,30 @@ key "Wiser2011"
 
 \end_inset
 
- would likely result in damage
-\change_inserted -1458100629 1424661915
- (
+ would likely result in damage (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Jacobson2014"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
  Solar irradiance is also likely to be negatively impacted by the presence
  of large-scale convection and cloud formation associated with tropical
  storms.
  In the northern regions of Australia heat lows, which form as a result
  of continental heating, are also common in summer (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Simmonds2000"
 
 \end_inset
 
 ).
  However, heat lows generally do not have as large a pressure gradient as
-\change_inserted -1458100629 1423722684
- tropical cyclones (
-\change_deleted -1458100629 1423722690
-Unfortunately, the extent of publicati
-\change_inserted -1458100629 1423722696
-a proxy for wind s
-\change_unchanged
-peed) (
+ tropical cyclones (a proxy for wind speed) (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Simmonds2000"
 
 \end_inset
@@ -895,30 +722,12 @@ key "Simmonds2000"
 The other more common type of cyclone likely to affect wind speed and solar
  irradiance in Australia is the extratropical cyclone.
  Extratropical cyclones that affect the Australian continent are commonly
- linked to the southern hemisphere storm track
-\change_deleted -1458100629 1415850457
-, which was extensively studied by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Trenberth1991"
-
-\end_inset
-
-Brayshaw2011ean Centre for Medium-range Weather Forecasting (ECMWF) reanalysis
- data
-\change_unchanged
-.
+ linked to the southern hemisphere storm track.
  Closely related to meridional temperature gradients, the southern hemisphere
  storm track is stronger in summer than winter but is always close to 50°S
- 
-\change_deleted -1458100629 1423722792
-A
-\change_inserted -1458100629 1423722806
-(
-\change_unchanged
-
+ (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Trenberth1991"
 
 \end_inset
@@ -926,7 +735,7 @@ key "Trenberth1991"
 ).
  In winter there tends to be a broader storm track (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Trenberth1991"
 
 \end_inset
@@ -934,8 +743,6 @@ key "Trenberth1991"
 ) indicating a higher likelihood (when compared to summer) that cyclones
  from the storm track will reach the southern part of the Australian continent
  during this time.
-
-\change_inserted -1458100629 1424662366
  However, a more recent study by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -966,16 +773,9 @@ key "Frederiksen2011"
 \end_inset
 
 ).
-
-\change_deleted -1458100629 1415851561
- 
-\change_inserted -1458100629 1415855084
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424662393
 East Coast Lows 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1060,110 +860,12 @@ key "Speer2010"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -1458100629 1415855535
-In addition to the study of 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Trenberth1991"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Jones1993"
-
-\end_inset
-
- have shown very similar cyclone characteristics using data from the BoM
- in conjunction with an automated cyclone tracking scheme.
- The authors found that the Australian continent is dominated by heat lowsIntern
-ational Satellite Cloud Climatology Project and spring there tended to be
- a transition to higher occurrences of extratropical cyclones.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Jones1993"
-
-\end_inset
-
- Modelling for the period 1984-2000, position for blocking highs in summer
- through the Tasman Sea is often replaced by extratropical cyclones in winter.
- In a follow-up study to 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Jones1993"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Simmonds2000"
-
-\end_inset
-
-Southern Hemispherenalysis and the Melbourne University cyclone tracking
- scheme to study the behaviour of extratropical cyclones in the southern
- hemisphere.nQualitatively similar to that of the 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Jones1993"
-
-\end_inset
-
- study, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Simmonds2000"
-
-\end_inset
-
- also found the position of maximum cyclone density to lie between 50º-70ºS,
- depending on season.
- Quantitatively though, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Simmonds2000"
-
-\end_inset
-
- found double the amount of cyclones as previous studies (like 
-\begin_inset CommandInset citation
-LatexCommand citealp
-key "Jones1993"
-
-\end_inset
-
-), noted as being due to higher resolution data.
- Given then, the numerous studies all suggesting a storm track or cyclone
- density maximum at about 50º-60ºS, it is not surprising that there exist
- studies proposing a significant synoptic mode of variability in this region.
- 
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -1458100629 1415855486
 Related to the storm track and its varying latitude throughout the year
- is 
-\change_deleted -1458100629 1415855504
-Commonly referred to as SAM, 
-\change_unchanged
-the Southern Annular Mode
-\change_inserted -1458100629 1415855518
-, which
-\change_unchanged
- describes a large portion of the variability in sea-level pressure for
- the southern hemisphere.
+ is the Southern Annular Mode, which describes a large portion of the variabilit
+y in sea-level pressure for the southern hemisphere.
  Depicted in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1172,8 +874,6 @@ key "Thompson2000"
 \end_inset
 
  as being the first Empirical Orthogonal Function 
-\change_inserted -1458100629 1423723256
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "EOF"
@@ -1181,16 +881,8 @@ description "Emperical Orthogonal Function"
 
 \end_inset
 
- of the
-\change_deleted -1458100629 1423723254
-With respect to
-\change_unchanged
- 
-\change_inserted -1458100629 1423723242
-l
-\change_unchanged
-ower-tropospheric geopotential height fields, SAM also manifests in the
- wind field.
+ of the lower-tropospheric geopotential height fields, SAM also manifests
+ in the wind field.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1198,17 +890,9 @@ key "Watterson2007"
 
 \end_inset
 
-
-\change_deleted -1458100629 1423723297
-Hatzianastassiou2005ence
-\change_inserted -1458100629 1424662415
- presented the existence
-\change_unchanged
- of such a SAM-like mode in the wind by using vertically integrated zonal
- winds, simulated from 1871-1970 by the Commonwealth Scientific and Industrial
- Research Organisation 
-\change_inserted -1458100629 1418104180
-
+ presented the existence of such a SAM-like mode in the wind by using vertically
+ integrated zonal winds, simulated from 1871-1970 by the Commonwealth Scientific
+ and Industrial Research Organisation 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CSIRO"
@@ -1216,30 +900,18 @@ description "Commonwealth Scientific and Industrial Research Organisation"
 
 \end_inset
 
-
-\change_unchanged
-(CSIRO) mk3 model
-\change_inserted -1458100629 1423723359
- (
+(CSIRO) mk3 model (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Gordon2002"
 
 \end_inset
 
-)
-\change_unchanged
-.
+).
  Labeled as a high-latitude mode, EOF-1 of the monthly mean vertically integrate
 d zonal wind showed a distinct peak at about 60ºS which explained 53% of
  the monthly variance; suggesting a close association with the previously
- 
-\change_deleted -1458100629 1423723401
-was foundtorm
-\change_inserted -1458100629 1423723406
-defined storm
-\change_unchanged
- track (
+ defined storm track (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Watterson2007"
@@ -1253,7 +925,7 @@ key "Watterson2007"
  significantly annular at all, but rather, more closely linked to the subtropica
 l jet (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Watterson2007"
 
 \end_inset
@@ -1300,13 +972,7 @@ status collapsed
 Comparison between a) QuikSCAT wind speeds and b) NCEP-derived wind speeds
  of the SAM mode.
  Colouring represents a) wind curl and b) 750hPa level heights.
- 
-\change_deleted -1458100629 1416459877
-Adapted from
-\change_inserted -1458100629 1416459885
-Figure originally presented in
-\change_unchanged
- 
+ Figure originally presented in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Iijima2009"
@@ -1325,10 +991,6 @@ name "fig:SAM-wind_curl"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1375,11 +1037,7 @@ key "Lyons1989"
 \end_inset
 
  analysed daily synoptic maps from the BoM.
- For the period 1976-1986
-\change_inserted -1458100629 1424662436
-.
-
-\change_unchanged
+ For the period 1976-1986.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1402,8 +1060,6 @@ key "Lyons1989"
  The authors found that the most common synoptic states related to high
  pressure systems either to the west, east, or ridging directly above the
  region of concern (south-west Western Australia 
-\change_inserted -1458100629 1418104346
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "WA"
@@ -1411,14 +1067,12 @@ description "Western Australia"
 
 \end_inset
 
-
-\change_unchanged
 (WA)).
  Consequently the synoptic classes that produce the most power throughout
  the year were those where an anticyclone is situated to the west and where
  ridging of high pressure is directly above (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Lyons1989"
 
 \end_inset
@@ -1473,19 +1127,8 @@ key "Troccoli2011"
 \end_inset
 
  showed that there have been slight negative trends in wind speeds at 2m
- (-0.16±0.01% p.a.) and larger positive trends at 10m (0.
-\change_inserted -1458100629 1424662633
-89
-\change_deleted -1458100629 1424662631
--2
-\change_unchanged
-±0.02% p.a.) for the
-\change_inserted -1458100629 1423723605
- period 1975-2006
-\change_deleted -1458100629 1423723596
-fig:solar-avg-bom
-\change_unchanged
-; a study by 
+ (-0.16±0.01% p.a.) and larger positive trends at 10m (0.89±0.02% p.a.) for the
+ period 1975-2006; a study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "McVicar2008"
@@ -1502,15 +1145,7 @@ key "Troccoli2011"
 \end_inset
 
  also investigated links between wind speed variability and the large scale
- climatic patterns of ENSO and the 
-\change_deleted -1458100629 1423723639
-Indian Ocean Dipole (
-\change_unchanged
-IOD
-\change_deleted -1458100629 1423723641
-)
-\change_unchanged
-.
+ climatic patterns of ENSO and the IOD.
  The authors found that there were only weak statistical links between either
  ENSO or IOD and surface wind speeds (although IOD was shown to be slightly
  more significant), noting that further investigation is needed to determine
@@ -1521,8 +1156,6 @@ IOD
 \begin_layout Standard
 Analysis by the BoM of the Australian Meso-scale Limited Area Prediction
  System 
-\change_inserted -1458100629 1418104457
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "MesoLAPS"
@@ -1530,8 +1163,6 @@ description "Mesoscale Limited Area Prediction System"
 
 \end_inset
 
-
-\change_unchanged
 (MesoLAPSPT_125) 10m wind data between 2004 to 2008 can give further insights
  into the types of average wind conditions expected in the Australian region
  (Fig.
@@ -1599,33 +1230,17 @@ name "fig:Average-wind-velocity"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Unfortunately, the extent of publication 
-\change_inserted -1458100629 1415863070
-explicitly 
-\change_unchanged
-examining wind speed variability in Australia is quite limited---especially
- with respect to any links to the large scale variability in the atmosphere.
- 
-\change_inserted -1458100629 1423723796
-There are more comprehensive studies overseas linking 
-\change_deleted -1458100629 1423723802
-radiation variability the depth of research is still poor
-\change_inserted -1458100629 1423723804
-pat
-\change_unchanged
-terns like the North Atlantic Oscillation 
-\change_inserted -1458100629 1418104526
-
+Unfortunately, the extent of publication explicitly examining wind speed
+ variability in Australia is quite limited---especially with respect to
+ any links to the large scale variability in the atmosphere.
+ There are more comprehensive studies overseas linking patterns like the
+ North Atlantic Oscillation 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "NAO"
@@ -1633,11 +1248,7 @@ description "North Atlantic Oscillation"
 
 \end_inset
 
-
-\change_unchanged
 (NAO) and the Pacific North-American pattern 
-\change_inserted -1458100629 1418104576
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PNA"
@@ -1645,25 +1256,21 @@ description "Pacific North-American"
 
 \end_inset
 
-
-\change_unchanged
 (PNA) to wind speed and wind power variability (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Brayshaw2011"
 
 \end_inset
 
  and 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Klink2007"
 
 \end_inset
 
-)
-\change_inserted -1458100629 1424397769
-.
+).
  Some insight can be gained by examining proxies for wind speed.
  
 \begin_inset CommandInset citation
@@ -1677,11 +1284,7 @@ key "Alexander2011"
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1423723899
 th
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1690,34 +1293,9 @@ th
  Inference regarding wind speed variability might also be made by examining
  the aforementioned studies whose focus is on the prevalence of low pressure
  systems off the coast of eastern Australia.
-
-\change_unchanged
- 
-\change_inserted -1458100629 1415863708
-However,
-\change_deleted -1458100629 1415863704
-but
-\change_unchanged
- the extent to which wind speed over the entire Australian continent is
-\change_inserted -1458100629 1415863727
- explicitly
-\change_unchanged
- 
-\change_inserted -1458100629 1423723873
-influe
-\change_deleted -1458100629 1423723872
-system
-\change_unchanged
-nced by the large scale atmospheric process
-\change_inserted -1458100629 1415863731
-es
-\change_unchanged
- remains largely undetermined.
-
-\change_deleted -1458100629 1415863740
- 
-\change_unchanged
-
+ However, the extent to which wind speed over the entire Australian continent
+ is explicitly influenced by the large scale atmospheric processes remains
+ largely undetermined.
 \end_layout
 
 \begin_layout Section
@@ -1759,27 +1337,8 @@ key "Liu2001"
 
 \begin_layout Standard
 The components of the total solar radiation reaching the surface of the
- Earth that are of interest to solar power generation are the 
-\change_inserted -1458100629 1418104600
-D
-\change_deleted -1458100629 1418104600
-d
-\change_unchanged
-irect 
-\change_inserted -1458100629 1418104602
-N
-\change_deleted -1458100629 1418104602
-n
-\change_unchanged
-ormal 
-\change_inserted -1458100629 1418104605
-I
-\change_deleted -1458100629 1418104605
-i
-\change_unchanged
-rradiance 
-\change_inserted -1458100629 1418104631
-
+ Earth that are of interest to solar power generation are the Direct Normal
+ Irradiance 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DNI"
@@ -1787,49 +1346,11 @@ description "Direct Normal Irradiance"
 
 \end_inset
 
-
-\change_unchanged
-(DNI) (needed for 
-\change_inserted -1458100629 1418104702
-C
-\change_deleted -1458100629 1418104702
-c
-\change_unchanged
-oncentrating 
-\change_inserted -1458100629 1418104700
-S
-\change_deleted -1458100629 1418104700
-s
-\change_unchanged
-olar 
-\change_inserted -1458100629 1418104695
-Thermal
-\change_deleted -1458100629 1418104693
-power
-\change_unchanged
- (CS
-\change_inserted -1458100629 1418104705
-T
-\change_deleted -1458100629 1418104705
-P
-\change_unchanged
-) and also utilised by Photo-Voltaic (PV) panels) and diffuse radiation
- (utilised by PV installations, but not CS
-\change_inserted -1458100629 1418104716
-T
-\change_deleted -1458100629 1418104716
-P
-\change_unchanged
-).
- 
-\change_inserted -1458100629 1423724041
-A comprehensive investigation into the global surface ra
-\change_deleted -1458100629 1423724010
-for regions under the influence of such cyclonic systems
-\change_unchanged
-diation budget (using Downward Shortwave Radiation 
-\change_inserted -1458100629 1418104742
-
+(DNI) (needed for Concentrating Solar Thermal (CST) and also utilised by
+ Photo-Voltaic (PV) panels) and diffuse radiation (utilised by PV installations,
+ but not CST).
+ A comprehensive investigation into the global surface radiation budget
+ (using Downward Shortwave Radiation 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "DSR"
@@ -1837,8 +1358,6 @@ description "Downward Shortwave Radiation"
 
 \end_inset
 
-
-\change_unchanged
 (DSR), the combination of direct and diffuse irradiance) was conducted by
  
 \begin_inset CommandInset citation
@@ -1848,8 +1367,6 @@ key "Hatzianastassiou2005"
 \end_inset
 
  using data from the International Satellite Cloud Climatology Project 
-\change_inserted -1458100629 1418104790
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ISCCP"
@@ -1857,11 +1374,9 @@ description "International Satellite Cloud Climatology Project"
 
 \end_inset
 
-
-\change_unchanged
 (ISCCP) (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Schiffer1983"
 
 \end_inset
@@ -1874,21 +1389,7 @@ key "Hatzianastassiou2005"
 
 \end_inset
 
- found that DSR in the 
-\change_inserted -1458100629 1418104812
-S
-\change_deleted -1458100629 1418104812
-s
-\change_unchanged
-outhern 
-\change_inserted -1458100629 1418104816
-H
-\change_deleted -1458100629 1418104815
-h
-\change_unchanged
-emisphere 
-\change_inserted -1458100629 1418104831
-
+ found that DSR in the Southern Hemisphere 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SH"
@@ -1896,23 +1397,7 @@ description "Southern Hemisphere"
 
 \end_inset
 
-
-\change_unchanged
-(SH) tended to vary much more than the 
-\change_inserted -1458100629 1418104845
-N
-\change_deleted -1458100629 1418104845
-n
-\change_unchanged
-orthern 
-\change_inserted -1458100629 1418104848
-H
-\change_deleted -1458100629 1418104847
-h
-\change_unchanged
-emisphere 
-\change_inserted -1458100629 1418104873
-
+(SH) tended to vary much more than the Northern Hemisphere 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "NH"
@@ -1920,26 +1405,18 @@ description "Northern Hemisphere"
 
 \end_inset
 
-
-\change_unchanged
 (NH).
  The authors noted that this larger amplitude was primarily due to the earth-sun
  distance being a minimum in the SH summer and a maximum in the SH winter.
  However, the annual cycle is also modulated by subsidence regions and storm
  track positioning in the SH (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Hatzianastassiou2005"
 
 \end_inset
 
-
-\change_inserted -1458100629 1423716795
-)
-\change_deleted -1458100629 1423716794
- 
-\change_unchanged
-.
+).
  
 \begin_inset Float figure
 placement H
@@ -1991,10 +1468,6 @@ name "fig:solar-avg-hatz"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2012,20 +1485,14 @@ reference "fig:solar-avg-hatz"
  shows the average surface DSR from four months (one for each season from
  
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Hatzianastassiou2005"
 
 \end_inset
 
 ).
-
-\change_inserted -1458100629 1423724091
- For 
-\change_deleted -1458100629 1423724090
-bibto
-\change_unchanged
-most of the year it appears as if monthly averaged radiation values greater
- than 250 Wm
+ For most of the year it appears as if monthly averaged radiation values
+ greater than 250 Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -2138,10 +1605,6 @@ name "fig:solar-avg-bom"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2190,15 +1653,7 @@ reference "fig:solar-avg-bom"
 
 \end_inset
 
-a represents 
-\change_deleted -1458100629 1422926199
-312-
-\change_unchanged
-347
-\change_inserted -1458100629 1422926206
--382
-\change_unchanged
-Wm
+a represents 347-382Wm
 \begin_inset script superscript
 
 \begin_layout Plain Layout
@@ -2207,15 +1662,11 @@ Wm
 
 \end_inset
 
-
-\change_inserted -1458100629 1422926959
  (
 \begin_inset Formula $30MJm^{-2}day^{-1}=\frac{30\times10^{6}J}{m^{2}}\times\frac{1}{86400s}\cong347Wm^{-2}$
 \end_inset
 
-)
-\change_unchanged
-, which for much of Western Australia in January is the amount suggested
+), which for much of Western Australia in January is the amount suggested
  in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2263,7 +1714,7 @@ key "Gupta1999"
 
 \end_inset
 
- suggested that El Nino is associated with slightly positive DSR anomalies
+ suggested that El Niño is associated with slightly positive DSR anomalies
  over Australia.
  Trends in DSR over the last few decades of the 20th century suggest that
  global DSR has been increasing by 2.4 Wm
@@ -2277,7 +1728,7 @@ key "Gupta1999"
 
 /decade (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Hatzianastassiou2005"
 
 \end_inset
@@ -2288,14 +1739,14 @@ key "Hatzianastassiou2005"
  suggesting circulations like the Hadley cell have been increasing in strength
  in recent decades (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Chen2002"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sohn2010"
 
 \end_inset
@@ -2317,19 +1768,13 @@ e, however, little mention was made as to the characteristics of solar radiation
  for the continent.
  For Australia it is therefore possible to conclude that there is a large
  intra-annual cycle in solar radiation across the continent, that DSR could
- be enhanced under El Nino conditions and that over recent decades the amount
+ be enhanced under El Niño conditions and that over recent decades the amount
  of surface DSR may have increased.
  To make more specific assessments about the variability of solar radiation
  in Australia would, however, require a much more in-depth investigation.
  It is part of the purpose of the current study to undertake such a detailed
  investigation and to thus reveal the potential for Australia to extract
- 
-\change_deleted -1458100629 1418777824
-energy
-\change_inserted -1458100629 1418777824
-electricity
-\change_unchanged
- from solar radiation.
+ electricity from solar radiation.
  
 \end_layout
 
@@ -2378,21 +1823,10 @@ key "Lyons1989"
  is that under the influence of a ridging anticyclone coastal regions can
  have a positive covariance between wind speed and solar irradiance (or
  rather, that sunny conditions can coincide with windy conditions).
- This type of positive covariance could be advantageous for an hybrid 
-\change_deleted -1458100629 1418777826
-energy
-\change_inserted -1458100629 1418777826
-electricity
-\change_unchanged
- system.
+ This type of positive covariance could be advantageous for an hybrid electricit
+y system.
  For instance, an hybrid system exposed to a sunny and windy day could disperse
- excess 
-\change_deleted -1458100629 1418777838
-energy
-\change_inserted -1458100629 1418777838
-electricity
-\change_unchanged
- into nighttime hours if it incorporated storage.
+ excess electricity into nighttime hours if it incorporated storage.
  
 \end_layout
 
@@ -2444,14 +1878,14 @@ key "Simmonds2000"
  cyclone density of close to one cyclone for the whole region during both
  summer and winter (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Jones1993"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Simmonds2000"
 
 \end_inset
@@ -2461,14 +1895,14 @@ key "Simmonds2000"
  (most likely tropical and thermal systems) commonly exceed double that
  of the southern regions (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Jones1993"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Simmonds2000"
 
 \end_inset
@@ -2490,30 +1924,13 @@ Analysing some of the literature into the potential synoptic influences
  responsible for a negative covariance.
  Under anticyclonic regimes, coastal regions may experience both sunny weather
  and relatively high wind speeds due to local effects and that such a covariance
- could be advantageous to a hybrid 
-\change_deleted -1458100629 1418777840
-energy
-\change_inserted -1458100629 1418777840
-electricity
-\change_unchanged
- system if storage was incorporated and excess 
-\change_deleted -1458100629 1418777847
-energy
-\change_inserted -1458100629 1418777847
-electricity
-\change_unchanged
- dispersed into the nighttime.
+ could be advantageous to a hybrid electricity system if storage was incorporate
+d and excess electricity dispersed into the nighttime.
  However, this analysis of some of the literature is far from being quantitative
 ly robust.
  A more comprehensive study would still be needed in order to quantify the
  general covariance of wind speed and solar irradiance over Australia; enabling
- the determination of the likely effects on renewable 
-\change_deleted -1458100629 1418777851
-energy
-\change_inserted -1458100629 1418777851
-electricity
-\change_unchanged
- production.
+ the determination of the likely effects on renewable electricity production.
  
 \end_layout
 
@@ -2529,15 +1946,10 @@ name "sec:Lit-Conclusion"
 \end_layout
 
 \begin_layout Standard
-Given the important contribution that renewable 
-\change_deleted -1458100629 1418777855
-energy
-\change_inserted -1458100629 1418777855
-electricity
-\change_unchanged
- is likely to have in Australia (and world-wide) in the future (
+Given the important contribution that renewable electricity is likely to
+ have in Australia (and world-wide) in the future (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "InternationalEnergyAgency2009"
 
 \end_inset
@@ -2545,40 +1957,34 @@ key "InternationalEnergyAgency2009"
 ), and given the important advantages achieved by combining renewable resources
  (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Wright2010"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Elliston2013"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Shafiullah2012"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Liu2011"
 
 \end_inset
 
 ), it seems pertinent that studies of the complementarity (covariance) of
- wind and solar 
-\change_deleted -1458100629 1418777857
-energy
-\change_inserted -1458100629 1418777857
-electricity
-\change_unchanged
- be conducted.
+ wind and solar electricity be conducted.
  It is thus the aim of the current study to undertake such an investigation
  for Australia.
  In particular, the current study aims to focus on the simultaneous wind
@@ -2606,8 +2012,6 @@ In the following sections of this thesis an introduction to the methods
 al wind speed/power and solar irradiance over Australia; the term covariance,
  mentioned throughout, suggests a time-wise comparison of the fields that
  is not directly addressed in this thesis.
-\change_inserted -1458100629 1423722389
-
 \end_layout
 
 \end_body
