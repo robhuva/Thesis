@@ -483,7 +483,7 @@ filename "Chapter 11/Chapter 11.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "Bibliography/library"
+bibfiles "Bibliography/Thesis_temp"
 options "bibtotoc,Bibliography/ametsoc"
 
 \end_inset
