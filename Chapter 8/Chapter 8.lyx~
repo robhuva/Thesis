@@ -73,7 +73,7 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
@@ -84,13 +84,7 @@
 \begin_body
 
 \begin_layout Chapter
-The 
-\change_deleted -1458100629 1418778433
-Energy
-\change_inserted -1458100629 1418778433
-Electricity
-\change_unchanged
- Model
+The Electricity Model
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:The-Energy-Model"
@@ -115,28 +109,13 @@ Summary
 
 \begin_layout Standard
 \noindent
-This chapter presents the development of the 
-\change_deleted -1458100629 1418778442
-energy
-\change_inserted -1458100629 1418778442
-electricity
-\change_unchanged
- model utilised in Part 2 of this thesis.
+This chapter presents the development of the electricity model utilised
+ in Part 2 of this thesis.
  The components of the model, some of the costs used and the locations from
- within the ACCESS-A model grid utilised are outlined.
- A
-\change_deleted -1458100629 1424046748
- quasi
-\change_unchanged
- transmission 
-\change_inserted -1458100629 1424046755
-cost
-\change_deleted -1458100629 1424046754
-model
-\change_unchanged
- is also presented, and the chapter concludes by explaining how the individual
- components are combined and what the specific combinations imply about
- the preferred solutions to the electricity system configuration.
+ within the ACCESS-R model grid utilised are outlined.
+ A transmission cost is also presented, and the chapter concludes by explaining
+ how the individual components are combined and what the specific combinations
+ imply about the preferred solutions to the electricity system configuration.
 \end_layout
 
 \begin_layout Standard
@@ -152,24 +131,14 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-The 
-\change_deleted -1458100629 1418778443
-energy
-\change_inserted -1458100629 1418778443
-electricity
-\change_unchanged
- model utilised in this thesis is part of a collaborative project that involves
- the Melbourne Energy Institute (University of Melbourne) and the Australian
- Energy Research Institute at the University of New South Wales.
+The electricity model utilised in this thesis is part of a collaborative
+ project that involves the Melbourne Energy Institute (University of Melbourne)
+ and the Australian Energy Research Institute at the University of New South
+ Wales.
  The aim of the model as a whole is to provide a least cost combination
  of technologies (primarily renewable technologies) that satisfy a particular
- target (carbon emission reduction, renewable 
-\change_deleted -1458100629 1418778450
-energy
-\change_inserted -1458100629 1418778450
-electricity
-\change_unchanged
- percentage, reliability, etc.).
+ target (carbon emission reduction, renewable electricity percentage, reliabilit
+y, etc.).
  The optimised problems in this thesis are, however, intentionally less
  focused on the feasibility of implementing the solutions, in order to maintain
  the focus on the regional influential meteorological factors.
@@ -177,30 +146,13 @@ electricity
 \end_layout
 
 \begin_layout Standard
-The 
-\change_deleted -1458100629 1418778452
-energy
-\change_inserted -1458100629 1418778452
-electricity
-\change_unchanged
- model in this thesis balances the output of each given technology, combines
- the costs involved into a single dollar amount and then informs an optimisation
- algorithm of the total cost of each 
-\change_inserted -1458100629 1424403650
-iteration of
-\change_deleted -1458100629 1424306266
-guess at
-\change_unchanged
- the solution space.
- The 
-\change_deleted -1458100629 1418778453
-energy
-\change_inserted -1458100629 1418778453
-electricity
-\change_unchanged
- model ensures that demand is met by each mixture of technologies and the
- total cost will vary based on the amount that each resource is utilised
- (a similar process was used in 
+The electricity model in this thesis balances the output of each given technolog
+y, combines the costs involved into a single dollar amount and then informs
+ an optimisation algorithm of the total cost of each iteration of the solution
+ space.
+ The electricity model ensures that demand is met by each mixture of technologie
+s and the total cost will vary based on the amount that each resource is
+ utilised (a similar process was used in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Huva2012"
@@ -216,19 +168,14 @@ reference "fig:Huva-etal-2012-Model-Output"
 \end_inset
 
  illustrates how the resources can be combined).
- 
-\change_deleted -1458100629 1424233380
-The optimisation technique used in this thesis (the Genetic Algorithm (GA)),
- like all optimisation techniques, aims to minimise a cost function.
 
+\change_deleted -1458100629 1433210210
+ 
 \change_unchanged
- In the case of the current study the cost function
-\change_inserted -1458100629 1424233492
- to be minimised
-\change_unchanged
- is a combination of costs assigned to each of the available technologies
- (in this case onshore wind, large-scale concentrating solar, pumped hydro
- storage and gas fired back-up).
+ In the case of the current study the cost function to be minimised is a
+ combination of costs assigned to each of the available technologies (in
+ this case onshore wind, large-scale concentrating solar, pumped hydro storage
+ and gas fired back-up).
  The costs for each technology define the order in which the technologies
  are favoured---the dispatch order.
  For all simulations examined in this thesis the effective dispatch order
@@ -255,29 +202,12 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Example 
-\change_deleted -1458100629 1418778456
-energy
-\change_inserted -1458100629 1418778456
-electricity
-\change_unchanged
- model output
-\change_inserted -1458100629 1416984050
-.
+Example electricity model output.
  The curves are additive such that the wind output (green) is built upon
  the solar output (red) with gas (orange) and then hydro (blue) to follow.
  Hydro output below the demand (black) curve indicates release of pumped
  storage, while above the curve indicates pumping up hill.
-\change_deleted -1458100629 1418778456
-,
-\change_unchanged
- 
-\change_deleted -1458100629 1418778456
-adapted from
-\change_inserted -1458100629 1416460603
-Figure originally presented in
-\change_unchanged
- 
+ Figure originally presented in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Huva2012"
@@ -299,20 +229,12 @@ name "fig:Huva-etal-2012-Model-Output"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\change_inserted -1458100629 1424230560
 
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424403659
 The optimisation technique used in the electricity model is a Genetic Algorithm
  (GA).
  The GA is one possible tool for optimisation of complex (non-linear) problems.
@@ -354,8 +276,6 @@ key "Rayner2003"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424403854
 Compared to other advanced techniques 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -413,13 +333,9 @@ key "Banos2011"
  have similar cost function values.
  As stated earlier, the flexibility of a population-based technique comes
  at the price of ambiguity.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424403875
 As was mentioned in the previous chapter it was not seen as possible to
  utilise one of the many pre-built electricity/energy models.
  Further, with a lack of specific evidence to suggest that one particular
@@ -429,12 +345,6 @@ As was mentioned in the previous chapter it was not seen as possible to
  as well as a pre-optimisation site selection process.
  The optimisation problem is more amenable to optimisation if it is given
  to the GA in a succinct version.
-\change_deleted -1458100629 1424307185
-A pre-optimisation site selection process is also undertaken.
- The optimisation problem is more amenable to optimisation if it can be
- given to the GA in a succinct version.
-
-\change_unchanged
  In the site selection process a sub-selection of all available locations
  is made.
  A completely unrestricted optimisation would involve searching the solution-spa
@@ -458,68 +368,31 @@ name "sec:Optim-Cost-Function"
 
 \begin_layout Standard
 In this thesis the cost function is defined as being made up of costs from
- the building and maintenance of renewable 
-\change_deleted -1458100629 1418778458
-energy
-\change_inserted -1458100629 1418778458
-electricity
-\change_unchanged
- resources, as well as costs associated with back-up 
-\change_deleted -1458100629 1418778493
-energy
-\change_inserted -1458100629 1418778493
-electricity
-\change_unchanged
- supply, and other costs involved in the maintenance of the 
-\change_deleted -1458100629 1418778495
-energy
-\change_inserted -1458100629 1418778495
-electricity
-\change_unchanged
- system.
+ the building and maintenance of renewable electricity resources, as well
+ as costs associated with back-up electricity supply, and other costs involved
+ in the maintenance of the electricity system.
  The goal of the GA is to minimise these costs, and in doing so provide
  information regarding the optimal combination of wind and solar to meet
  the electrical demand of Australia.
- Thus, in the optimisation process the 
-\change_deleted -1458100629 1418778496
-energy
-\change_inserted -1458100629 1418778496
-electricity
-\change_unchanged
- model is given not only the value of the cost function but also the installed
- capacity of the wind and solar resources.
+ Thus, in the optimisation process the electricity model is given not only
+ the value of the cost function but also the installed capacity of the wind
+ and solar resources.
  At each iteration of the optimisation process the GA determines whether
  or not it would be more/less cost effective to install more/less wind or
- solar resources at each available site selected from the ACCESS-A model
+ solar resources at each available site selected from the ACCESS-R model
  grid.
  As will become more evident later on in the thesis, and based on the costs
- used in each scenario, the aim of 
-\change_deleted -1458100629 1418778496
-energy
-\change_inserted -1458100629 1418778496
-electricity
-\change_unchanged
- model could be thought of as minimising gas usage.
+ used in each scenario, the aim of electricity model could be thought of
+ as minimising gas usage.
  Gas has the highest costs in all scenarios examined in this thesis and
- thus it is attractive in a cost-cutting sense for the 
-\change_deleted -1458100629 1418778497
-energy
-\change_inserted -1458100629 1418778497
-electricity
-\change_unchanged
- model to minimise gas usage wherever possible.
+ thus it is attractive in a cost-cutting sense for the electricity model
+ to minimise gas usage wherever possible.
  The details of the cost function components are outlined in the sections
  below.
 \end_layout
 
 \begin_layout Subsection
-Renewable 
-\change_deleted -1458100629 1418778500
-energy
-\change_inserted -1458100629 1418778500
-electricity
-\change_unchanged
- costs
+Renewable electricity costs
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Renewable-energy-costs"
@@ -673,8 +546,6 @@ reference "eq:Cost-Function-Solution"
  of a turbine for wind at approximately 15 Turbines (Cowling P., Pers.
  Comm., Jan 23 2013) and for solar at approximately five large-scale concentratin
 g units.
-
-\change_inserted -1458100629 1423460562
  While such asymptotic behaviour might weaken at much larger numbers of
  turbines/solar stations (for instance, the cost of additional infrastructure
  including new substations at large numbers might alter the relationship),
@@ -704,8 +575,6 @@ reference "eq:Cost-Function-Solution"
 \end_inset
 
  was necessary.
-\change_unchanged
-
 \begin_inset Float figure
 placement H
 wide false
@@ -751,14 +620,8 @@ name "fig:Cost-Function-Example"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\change_inserted -1458100629 1423455317
 
 \end_layout
 
@@ -774,49 +637,19 @@ name "sub:Hydro-Model-Description"
 \end_layout
 
 \begin_layout Standard
-The first form of back-up 
-\change_deleted -1458100629 1418778503
-energy
-\change_inserted -1458100629 1418778503
-electricity
-\change_unchanged
- supply in the 
-\change_deleted -1458100629 1418778504
-energy
-\change_inserted -1458100629 1418778504
-electricity
-\change_unchanged
- model was via pumped hydro power.
- The hydro model in its simplest form utilises excess 
-\change_deleted -1458100629 1418778505
-energy
-\change_inserted -1458100629 1418778505
-electricity
-\change_unchanged
- from the renewable resources and pumps it up
-\change_deleted -1458100629 1424758328
- 
-\change_unchanged
-hill for later use.
+The first form of back-up electricity supply in the electricity model was
+ via pumped hydro power.
+ The hydro model in its simplest form utilises excess electricity from the
+ renewable resources and pumps it uphill for later use.
  By pumping the water uphill the potential energy of the system is increased.
- If, in subsequent hours, the renewable resources cannot supply enough 
-\change_deleted -1458100629 1418778524
-energy
-\change_inserted -1458100629 1418778524
-electricity
-\change_unchanged
- to meet demand the hydro model will release the water downhill.
+ If, in subsequent hours, the renewable resources cannot supply enough electrici
+ty to meet demand the hydro model will release the water downhill.
  By releasing the water downhill the stored potential energy is converted
  to kinetic energy.
  Electrical energy is then produced from the spinning of large turbines
  immersed in the downhill pipes.
- At each iteration of the optimisation of the 
-\change_deleted -1458100629 1418778534
-energy
-\change_inserted -1458100629 1418778534
-electricity
-\change_unchanged
- model the hydro model is deployed in a post-facto manner.
+ At each iteration of the optimisation of the electricity model the hydro
+ model is deployed in a post-facto manner.
  For each iteration of the optimisation a time series of output from the
  selected wind and solar installations is produced and thus a time series
  of the difference between renewable output and demand is also formed.
@@ -834,15 +667,7 @@ ned maximum rate.
  Thus, a time series of hydro electrical output or storage of excess (negative
  output) is also determined.
  The cost of the hydro system needed is then a multiple of the maximum capacity
- needed and pre-determined capital cost in the units of 
-\change_deleted -1458100629 1424758346
-(
-\change_unchanged
-$M/MW
-\change_deleted -1458100629 1424758343
-)
-\change_unchanged
-.
+ needed and pre-determined capital cost in the units of $M/MW.
  It should also be noted that the round-trip efficiency of the pumping system
  utilised in this thesis was 0.8.
  This efficiency is in accordance with that used by 
@@ -867,19 +692,8 @@ name "sub:Gas-Model-Description"
 \end_layout
 
 \begin_layout Standard
-The final 
-\change_deleted -1458100629 1418778537
-energy
-\change_inserted -1458100629 1418778537
-electricity
-\change_unchanged
- source available in the 
-\change_deleted -1458100629 1418778538
-energy
-\change_inserted -1458100629 1418778538
-electricity
-\change_unchanged
- model is the gas-fired back-up system.
+The final electricity source available in the electricity model is the gas-fired
+ back-up system.
  The gas model is intentionally last in the dispatch order of resources
  due to the nature of this study, which is focused on determining the likelihood
  of Australia relying heavily on renewable resources in the future.
@@ -899,13 +713,8 @@ reference "eq:Gas-Cost-Formula"
 \begin_inset Formula $cost_{var}$
 \end_inset
 
- is the
-\change_inserted -1458100629 1423446453
- sum of the gas output (MW) multiplied by a
-\change_deleted -1458100629 1423446463
- linear
-\change_unchanged
- combination of pre-defined fuel and carbon prices, 
+ is the sum of the gas output (MW) multiplied by a combination of pre-defined
+ fuel and carbon prices, 
 \begin_inset Formula $cost_{var\_mult}$
 \end_inset
 
@@ -935,13 +744,7 @@ Gas\,\, Cost=cost_{var}\cdot cost_{var\_mult}+capex\cdot max\_cap\label{eq:Gas-C
 \end_layout
 
 \begin_layout Subsection
-Transmission 
-\change_inserted -1458100629 1424046771
-Cost
-\change_deleted -1458100629 1424046769
-Model
-\change_unchanged
-
+Transmission Cost
 \begin_inset CommandInset label
 LatexCommand label
 name "sub:Transmission-Cost-Description"
@@ -967,6 +770,8 @@ A transmission cost is utilised in parts of this study in order to reflect
  Instead, the transmission model utilised in this thesis is simply a capital
  cost that relates to the distance of each wind/solar site to the nearest
  capital city.
+ Based on population size and for the sake of geographical diversity the
+ capital cities used were Adelaide, Melbourne, Sydney, Brisbane and Townsville.
  The capital cost utilised was in accordance with 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -994,13 +799,8 @@ reference "fig:Sites_Wind11_Dsr21"
 \end_inset
 
 b).
- In this way the transmission 
-\change_inserted -1458100629 1424046823
-cost
-\change_deleted -1458100629 1424046822
-model
-\change_unchanged
- penalises remote locations with an additional higher cost of installation.
+ In this way the transmission cost penalises remote locations with an additional
+ higher cost of installation.
 \end_layout
 
 \begin_layout Subsection
@@ -1015,12 +815,7 @@ name "sub:Cost-Function-Evaluation"
 \end_layout
 
 \begin_layout Standard
-The total cost of the whole system at each iteration of the 
-\change_deleted -1458100629 1418778540
-energy
-\change_inserted -1458100629 1418778540
-electricity
-\change_unchanged
+The total cost of the whole system at each iteration of the electricity
  model is a combination of installation, connection, manufacturing and fuel
  costs, as is applicable to each technology.
  The total cost, to be minimised by the model, is therefore also in dollars.
@@ -1028,24 +823,12 @@ electricity
  later) are not necessarily intended to be realistic.
  In terms of the optimisation by the GA the most important consideration
  is whether or not the costs are relatively in proportion and achieve the
- final goal of also maximising the use of renewable 
-\change_deleted -1458100629 1418778542
-energy
-\change_inserted -1458100629 1418778542
-electricity
-\change_unchanged
- in the system.
+ final goal of also maximising the use of renewable electricity in the system.
  What is important for the optimiser is the effect on the total cost when
  additional capacity is installed or removed.
  The relative change in system cost and the advantage/disadvantage in adding/rem
 oving capacity is what determines the competitiveness of such an alternative
- solution, rather than the total cost of the previous
-\change_deleted -1458100629 1424758369
-ly guess
-\change_inserted -1458100629 1424758377
- iteration
-\change_unchanged
-.
+ solution, rather than the total cost of the previous iteration.
 \end_layout
 
 \begin_layout Section
@@ -1060,8 +843,6 @@ name "sec:Site-Selection-Process"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1423460685
 This section describes the site selection process for the wind and solar
  technologies.
  Power flow is not modelled in this thesis and as such the hydroelectric
@@ -1069,14 +850,11 @@ This section describes the site selection process for the wind and solar
  Rather, the back-up resources are dispatched instantaneously to the amount
  that is needed at the time for across the network (the so-called 'copper
  plate' model).
- In terms of the wind and solar siting i
-\change_deleted -1458100629 1423460042
-I
-\change_unchanged
-t is sensible for a study that involves large meteorological data sets to
- be mindful of limitations, both in a time-management and computation sense.
+ In terms of the wind and solar siting it is sensible for a study that involves
+ large meteorological data sets to be mindful of limitations, both in a
+ time-management and computation sense.
  In particular, the optimisation in this thesis of all continental locations
- within the ACCESS-A domain would be infeasible.
+ within the ACCESS-R domain would be infeasible.
  It is also not necessary to optimise all locations that contain meteorological
  data.
  As seen in Part 1 there are decorrelation lengths that exist in the atmosphere
@@ -1115,14 +893,14 @@ Following the determination of the minimum separation distances in the DSR
  Knowledge of the existing land-usages across Australia was sourced from
  the Geoscience Australia GIS data-base.
  Land-usage that included national parks and urban areas were combined and
- mapped onto the ACCESS-A grid.
+ mapped onto the ACCESS-R grid.
  These unavailable locations were then utilised in the site selection process
  such that a regular grid of locations was formed.
  The regular grid included the minimum separation distance and did not include
  an unavailable site---in accordance with a similar process outlined in
  (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "AEMO2013"
 
 \end_inset
@@ -1153,9 +931,7 @@ reference "fig:Sites_Wind11_Dsr21"
 \end_inset
 
 b).
- 
-\change_inserted -1458100629 1424758396
-The total number of locations utilised for the wind field (Fig.
+ The total number of locations utilised for the wind field (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1172,10 +948,8 @@ reference "fig:Sites_Wind11_Dsr21"
 \end_inset
 
 b) 58.
- 
-\change_unchanged
-These locations will then be used in the next section as part of the optimisatio
-n.
+ These locations will then be used in the next section as part of the optimisati
+on.
 \begin_inset Float figure
 placement H
 wide false
@@ -1197,12 +971,7 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Locations from within the ACCESS-A grid chosen for input into the 
-\change_deleted -1458100629 1418778551
-energy
-\change_inserted -1458100629 1418778551
-electricity
-\change_unchanged
+Locations from within the ACCESS-R grid chosen for input into the electricity
  model.
  Red dots in a) represent the wind sites and in b) represent the solar sites.
 \begin_inset CommandInset label
@@ -1216,10 +985,6 @@ name "fig:Sites_Wind11_Dsr21"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1240,20 +1005,9 @@ name "sec:Energy-Model-Conclusion"
 \end_layout
 
 \begin_layout Standard
-This chapter presented the 
-\change_deleted -1458100629 1418778553
-energy
-\change_inserted -1458100629 1418778553
-electricity
-\change_unchanged
- model used in Part 2 of the current study, its components and also the
- site selection process and transmission 
-\change_inserted -1458100629 1424046840
-cost
-\change_deleted -1458100629 1424046838
-model
-\change_unchanged
- used to narrow the search for viable RE locations around Australia.
+This chapter presented the electricity model used in Part 2 of the current
+ study, its components and also the site selection process and transmission
+ cost used to narrow the search for viable RE locations around Australia.
  In combination, the cost function components (the individual resource models)
  and the sites selected form the degrees of freedom by which the model as
  a whole is able to move and explore the solution space.
@@ -1263,7 +1017,13 @@ model
  the NEM region are presented and analysed for what they reveal regarding
  the covariance of wind and solar across Australia.
  
-\change_inserted -1458100629 1424233571
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "glsbase,/home/rhuva/Robert/Final Thesis/Bibliography/library"
+options "bibtotoc,/home/rhuva/Robert/Final Thesis/Bibliography/ametsoc"
+
+\end_inset
+
 
 \end_layout
 
