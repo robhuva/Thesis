@@ -73,12 +73,11 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -146,7 +145,7 @@ This chapter presents the results from training SOMs of various sizes and
  be utilised for wind or solar power as the vast majority of the Australian
  coastline has steep ocean floor gradients (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Diesendorf2006"
 
 \end_inset
@@ -158,26 +157,13 @@ key "Diesendorf2006"
  original data.
  This chapter is structured as follows.
  Section 
-\change_deleted -1458100629 1424663338
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:SOM-method"
-
-\end_inset
-
- outlines the dataset and methods used in this study while section 
-\change_unchanged
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Creating-the-SOM"
 
 \end_inset
 
- describes the results (both whole and continental domains)
-\change_inserted -1458100629 1424663551
-, section 
+ describes the results (both whole and continental domains), section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Alternative-SOMs"
@@ -200,8 +186,6 @@ reference "sub:Analysis-of-Regional"
 
 \end_inset
 
-
-\change_unchanged
 .
  Finally, a discussion and summary are given in section 
 \begin_inset CommandInset ref
@@ -211,385 +195,16 @@ reference "sec:SOM-Conclusion"
 \end_inset
 
 .
-
-\change_deleted -1458100629 1415864620
- 
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864418
-Methods 
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:SOM-method"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-The training of the SOM in the current study occurred in two main phases,
- in accordance with the suggestions from the software and the works of 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Hewitson2002"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Alexander2010"
-
-\end_inset
-
-.
- The first phase involved a random initialisation of each SOM node, followed
- by training with the data.
- The training in the SOM algorithm (see 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kohonen1995"
-
-\end_inset
-
- for a more rigorous derivation of the algorithm) is conducted by sequentially
- presenting the time-steps from the data to be mapped (in this case the
- ERA-Interim MSLP data), followed by a search for the SOM node that best
- matches each data sample.
- The node that best matches (hereafter referred to as the Best Matching
- Unit (BMU)) is determined by the Euclidean distance measurement; shown
- here in Eq.
- 1 from 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kohonen1995"
-
-\end_inset
-
-: 
-\begin_inset Formula 
-\begin{eqnarray}
-\text{ǁ}x-m_{c}\text{ǁ} & = & \underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \text{{,\,\,\,\ or}}\nonumber \\
-c & = & arg\,\underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \label{eq:1-BMU}
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-where 
-\begin_inset Formula $c$
-\end_inset
-
- is the argument of the winning node, 
-\begin_inset Formula $x$
-\end_inset
-
- is the data sample and 
-\begin_inset Formula $m_{i}$
-\end_inset
-
- is the node that 
-\begin_inset Formula $x$
-\end_inset
-
- is being compared with; indicating that 
-\begin_inset Formula $m_{c}$
-\end_inset
-
- would be the BMU.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-The BMU and the nodes that surround the BMU are then altered to look more
- like the data.
- The amount the nodes are altered by is determined by two parameters: namely,
- the alpha value and radius value.
- The alpha value decreases linearly from an initial value to zero during
- training and the radius value is given the value of the smallest dimension
- size of the SOM in training phase one.
- In this thesis the choice was made to utilise a Gaussian approach to node
- alteration.
- In the Gaussian approach the alpha and radius values control the decay
- rate of a Gaussian function, centred on the BMU, such that nodes immediately
- surrounding the BMU are altered much more than those further away in the
- SOM space.
- The amount that each node is altered can be described by Eqs.
- 2 and 3 from 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kohonen1995"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-\begin_inset Formula 
-\begin{equation}
-\begin{array}{cccc}
-m_{i}(t+1)=m_{i}(t) & + & h_{c}(t)\,[\, x(t)-m_{i}(t)] & ,\,\, and\,\,\end{array}\label{eq:2-Node-Alteration}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-\begin_inset Formula 
-\begin{equation}
-\begin{array}{ccccc}
-h_{ci}(t)=\alpha(t) & \cdot & \exp(-\frac{\parallel r_{c}-r_{i}\parallel^{2}}{2\sigma^{2}(t)}) & if & i\in N_{c}\begin{array}{ccc}
-and & h_{ci=0} & if\end{array}\begin{array}{c}
-i\notin Nc\end{array}\end{array}\label{eq:3-Gaussian-Function}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\change_deleted -1458100629 1415864383
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-where 
-\begin_inset Formula $c$
-\end_inset
-
-, 
-\begin_inset Formula $i$
-\end_inset
-
-, 
-\begin_inset Formula $x$
-\end_inset
-
-, and 
-\begin_inset Formula $m$
-\end_inset
-
- are as before, 
-\begin_inset Formula $t$
-\end_inset
-
- is an integer value between 
-\begin_inset Formula $0$
-\end_inset
-
- and the run length, 
-\begin_inset Formula $\alpha(t)$
-\end_inset
-
- and 
-\begin_inset Formula $\sigma(t)$
-\end_inset
-
- are monotonically decreasing functions of 
-\begin_inset Formula $t$
-\end_inset
-
- 
-\begin_inset Formula $(0<\alpha(t)<initial\,\, alpha)$
-\end_inset
-
- and 
-\begin_inset Formula $N_{c}$
-\end_inset
-
- are the neighbourhood array points around node 
-\begin_inset Formula $c$
-\end_inset
-
- that are contained within the initial radius, 
-\begin_inset Formula $r$
-\end_inset
-
-.
- The run length describes how many times the data are shown to the SOM and
- in the first phase was equal to the number of time steps in the ERA-Interim
- data (i.e.
- each time step was shown once and hence 
-\begin_inset Formula $t$
-\end_inset
-
- from Eqs.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:2-Node-Alteration"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:3-Gaussian-Function"
-
-\end_inset
-
- can represent the time-steps in the data).
- Each successive pass of the data alters the BMU and surrounding nodes,
- according to the above equations, such that the SOM nodes start to resemble
- the data.
- Various initial alpha values were tested in the current study---in accordance
- with 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Alexander2010"
-
-\end_inset
-
-: 
-\begin_inset Formula 
-\[
-initial\,\, alpha=(0.001,0.002,...,0.01,0.02,...,0.1,0.15,0.2,...,1)
-\]
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-The second training phase is conducted in a similar manner to that of the
- first phase, with the exception that the starting point of the SOM is the
- state of the SOM at the end of the first training phase.
- In the second phase the run length is also increased to be 10 times the
- number of time steps in the data, the radius value is reduced to one and
- the alpha value is half that of the initial alpha value.
- The second training phase could therefore be thought of as a process for
- adding in the finer detail that is missed from the initial training phase.
- 
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864383
-The outcome of the SOM procedure is a matrix of related MSLP distributions.
- The size of the matrix (number of nodes in the SOM space) is predetermined
- by the user and once established the SOM nodes can be mapped back onto
- the original data (assigning a SOM node to each time step via the BMU method).
- The mapping of the SOM nodes back onto the original data converts the data
- into a time series of SOM nodes (weather types), allowing for the time-wise
- behaviour of common weather types to be examined.
- In the case of this thesis, the SOM method enables the identification of
- common characteristics in an otherwise complicated MSLP dataset, which
- in turn also enables a study of related variables (wind and solar) and
- how they vary in association with the common weather types.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -1458100629 1415864447
-Creating the 
-\change_deleted -1458100629 1415864450
-Results
-\change_inserted -1458100629 1415864451
-SOM
-\change_unchanged
- 
+Creating the SOM 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Creating-the-SOM"
 
 \end_inset
 
-
-\change_deleted -1458100629 1415864460
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1458100629 1415864459
-Creating the SOM
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Creating-the-SOM"
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -658,8 +273,6 @@ name "fig:Map-Continent"
 The mask used for filtering out the ocean variability was an altered version
  of the land-sea mask variable supplied by ECMWF.
  When compared to the Interactive Data Language 
-\change_inserted -1458100629 1418105288
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IDL"
@@ -667,8 +280,6 @@ description "Interactive Data Language"
 
 \end_inset
 
-
-\change_unchanged
 (IDL) map of the Australian continent, the ECMWF-supplied land-sea mask
  variable appeared not to include some areas of the Australian continent
  as land.
@@ -696,9 +307,8 @@ reference "tab:SOM-Init-Params"
 
  the continental domain results following the two phases of training described
  earlier.
- The term “averaged quantised error” refers to the Euclidean distance
-\change_inserted -1458100629 1423108206
- (sum of squared differences---the equivalent of Eq.
+ The term “averaged quantised error” refers to the Euclidean distance (sum
+ of squared differences---the equivalent of Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -710,22 +320,16 @@ reference "eq:ERA-RMSE-BMU"
 \begin_inset Formula $\sqrt{n}$
 \end_inset
 
-)
-\change_unchanged
- between each time step in the data and its respective Best Matching SOM
+) between each time step in the data and its respective Best Matching SOM
  node (BMU), averaged over all time steps.
- 
-\change_inserted -1458100629 1423113453
-Throughout the thesis the quantised error measurement is used to compare
+ Throughout the thesis the quantised error measurement is used to compare
  time steps with their closest matching SOM node.
  The pattern correlation technique was tested for this purpose, however
  was not seen to perform any better than quantised error/Euclidean distance
  measure (not shown).
  The main weakness of the pattern correlation technique was its insensitivity
  to magnitude.
- 
-\change_unchanged
-The SOM dimensions listed in Tables.
+ The SOM dimensions listed in Tables.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -744,7 +348,7 @@ reference "tab:SOM-Init-Params"
 --that the extent of one spatial dimension always be bigger than the other
  (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Kohonen1995"
 
 \end_inset
@@ -1180,10 +784,6 @@ name "tab:SOM-training-list"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1693,7 +1293,7 @@ key "Hewitson2002"
  determining how many sub-groupings of a data set is the optimal amount
  (see 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Tibshirani2001"
 
 \end_inset
@@ -1770,10 +1370,6 @@ name "fig:Decay-of-average"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1801,21 +1397,21 @@ reference "fig:Decay-of-average"
 
 a, other studies from the Australian region (for instance 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Alexander2010"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Hope2006"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Verdon-Kidd2009"
 
 \end_inset
@@ -2011,6 +1607,26 @@ reference "fig:Graph-of-Equation"
 \end_inset
 
 b).
+ What is also clearly visible from these figures is the drop-off in ratio
+ values for SOMs exceeding 30 nodes.
+ While the limit of 48 nodes was chosen initially for aesthetic reasons
+ it is evident from Figs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Graph-of-Equation"
+
+\end_inset
+
+a and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Graph-of-Equation"
+
+\end_inset
+
+b that a new maximum for a SOM with 54+ nodes would have been unlikely.
+ 
 \begin_inset Float figure
 placement H
 wide false
@@ -2171,10 +1787,6 @@ name "fig:6x5-SOM-space"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2284,24 +1896,16 @@ reference "fig:6x5-SOM-space-Cont"
 ) also displays one corner of the SOM space occupied by higher pressure,
  consistent with the subtropical ridge, with the opposite corner dominated
  by lower pressure.
- In the case of the continental SOM
-\change_inserted -1458100629 1424665135
-,
-\change_unchanged
- the SOM nodes that represent the low pressure systems to the south are
- not readily discernible.
+ In the case of the continental SOM, the SOM nodes that represent the low
+ pressure systems to the south are not readily discernible.
  However, it is still clear that the general characteristics of the Australian
  region (like that seen in the whole domain version) are captured in the
  continental version.
  In some sense the SOMs in the continental version are cut-outs, in the
  shape of the Australian continent, of the whole domain SOM.
-\change_inserted -1458100629 1418377751
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -1458100629 1418377881
 Alternative SOMs
 \begin_inset CommandInset label
 LatexCommand label
@@ -2313,8 +1917,6 @@ name "sub:Alternative-SOMs"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1418705547
 For regions that exhibit large seasonality in meteorological conditions
  it might make more sense to conduct the training of the SOM with seasonally
  partitioned data (consequently also one SOM for each season).
@@ -2375,8 +1977,6 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted -1458100629 1418379840
 \begin_inset Graphics
 	filename Figures/SOM_MSLP_JJA_6x4_alpha0.06_bubble-journal.eps
 
@@ -2386,8 +1986,6 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1418705641
 A SOM of wintertime (June, July and August) MSLP for 1989-2009 ERA-Interim.
  Optimum parameters were 24 nodes with initial alpha of 0.06.
 \begin_inset CommandInset label
@@ -2397,18 +1995,10 @@ name "fig:JJA-6x4-SOM"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2418,8 +2008,6 @@ name "fig:JJA-6x4-SOM"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1418707179
 The size and optimum parameter combination utilised in Fig.
  
 \begin_inset CommandInset ref
@@ -2487,8 +2075,6 @@ key "Alexander2010"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424402898
 The intention with this thesis is to study the year-round influential synoptic
  weather types for RE production over Australia.
  The infrastructure needed to capture the RE output analysed in this thesis
@@ -2496,16 +2082,10 @@ The intention with this thesis is to study the year-round influential synoptic
  available to be moved with the seasons.
  In this instance splitting the SOM typing into seasons would make less
  sense.
- It is also overwhelmingly more common in the literature to conduct the
- training of the SOM for the Australian region with all available data (
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Brown2010,Hope2006,Jiang2011,Nicholls2009,Verdon-Kidd2009"
-
-\end_inset
-
-).Thus the remainder of this thesis will focus on just the occurrence of
- the annual SOM nodes seen in Fig.
+ It is for this reason, but also given the lack of difference in synoptic
+ regimes captured by the seasonal SOM when compared to the annual SOM, that
+ the remainder of this thesis will focus on just the occurrence of the annual
+ SOM nodes seen in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2514,14 +2094,50 @@ reference "fig:6x5-SOM-space-Cont"
 \end_inset
 
 .
+\end_layout
 
-\change_deleted -1458100629 1418377696
- With the SOMs created it was possible to go back through the original data-set
- and look at the characteristics of the SOM nodes through time and their
- implications for other atmospheric variables like wind speed and solar
- irradiance.
-\change_unchanged
+\begin_layout Standard
+It should also be noted that alternative SOM techniques also exist.
+ Adaptive/Growing SOMs (for instance, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Doan2013"
 
+\end_inset
+
+) help eliminate the user-defined aspects to the SOM procedure---that being
+ the size and shape of the SOM.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Astudillo2014"
+
+\end_inset
+
+ presented a comprehensive survey of such SOM variants.
+ The advantage of such tools like the Growing SOM (GSOM), Growing Neural
+ Gas (GNG) and other Hierarchical SOMs is the topology-based procedure for
+ determining the optimal shape and number of nodes.
+ The topology of the data base is identified by incrementally varying the
+ shape/size of the SOM array and keeping track of which shapes/sizes produce
+ a better fit.
+ A variant on these types of SOM procedures was utilised in this thesis,
+ although in a post-facto manner, rather than by a pre-built tool.
+ Incrementally larger SOM sizes were tested in the previous section, but
+ the shape of the SOM was not varied.
+ It is possible that a different SOM shape (not rectangular) could have
+ produced a better fit to the data.
+ However, given the many possible options for adaptive SOM procedures (see
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Astudillo2014"
+
+\end_inset
+
+) a study comparing the different techniques was considered periphery to
+ the aim of the thesis and not tested.
+ 
 \end_layout
 
 \begin_layout Section
@@ -2536,15 +2152,11 @@ name "sub:Mapping-the-SOM"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1418377682
 With the SOMs created it was possible to go back through the original data-set
  and look at the characteristics of the SOM nodes through time and their
  implications for other atmospheric variables like wind speed and solar
  irradiance.
- 
-\change_unchanged
-In order to map the SOM nodes back onto the original data-set a program
+ In order to map the SOM nodes back onto the original data-set a program
  from the SOM_PAK described in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2580,11 +2192,7 @@ on, any process for checking the matching of SOM nodes back onto the original
  should be used as an investigation of this sort appears not to have been
  undertaken before with SOMs.
  To give an indication as to how well or poor the SOM nodes map onto the
- ERA-
-\change_deleted -1458100629 1418105363
- 
-\change_unchanged
-Interim reanalysis Fig.
+ ERA-Interim reanalysis Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2633,40 +2241,13 @@ reference "fig:6x5-SOM-space"
 \end_inset
 
 .
- a) is a comparison between node 10 and conditions at 1800UTC on 
-\change_inserted -1458100629 1424151363
-March
-\change_deleted -1458100629 1424151361
-November
-\change_unchanged
- 
-\change_inserted -1458100629 1424151359
-11
-\change_deleted -1458100629 1424151358
-3
-\change_unchanged
+ a) is a comparison between node 10 and conditions at 1800UTC on March 11
  2008 while b) is a comparison between node 25 and conditions at 0600UTC
- on 
-\change_inserted -1458100629 1424155086
-November
-\change_deleted -1458100629 1424155084
-June
-\change_unchanged
- 
-\change_inserted -1458100629 1424155090
-6
-\change_deleted -1458100629 1424155090
-11
-\change_unchanged
- 1994.
+ on November 6 1994.
  The quantised error for a) is 59.2hPa, for b) is 428.6hPa and the horizontal
  and vertical axes are in units of degrees longitude and latitude, respectively.
-
-\change_inserted -1458100629 1424230160
  The bottom panel shows the difference between the time step and its BMU
  (time step - BMU).
-\change_unchanged
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:SOM-comp-worst-before"
@@ -2678,10 +2259,6 @@ name "fig:SOM-comp-worst-before"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2723,12 +2300,8 @@ reference "fig:6x5-SOM-space-Cont"
  on September 29 1996.
  The quantised error for a) is 16.6hPa, for b) is 216.4hPa and the horizontal
  and vertical axes are in units of degrees longitude and latitude, respectively.
-
-\change_inserted -1458100629 1424230204
  The bottom panel shows the difference between the time step and its BMU
  (time step - BMU).
-
-\change_unchanged
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -2765,17 +2338,8 @@ reference "fig:SOM-Comp-Cont-Worst-Best"
 
 \end_inset
 
- the ‘best’ BMUs match the pressure distribution of 
-\change_inserted -1458100629 1424665189
-their
-\change_deleted -1458100629 1424665187
-its
-\change_unchanged
- respective time step
-\change_inserted -1458100629 1424665194
-s
-\change_unchanged
- very well.
+ the ‘best’ BMUs match the pressure distribution of their respective time
+ steps very well.
  However, the `worst’ BMU for the whole domain (Fig.
  
 \begin_inset CommandInset ref
@@ -2827,12 +2391,8 @@ b), while still miss-matching the pressure distribution over south-eastern
  Australia had a quantitative advantage by not including variability over
  the ocean.
  This advantage was expected given the more southerly nature of intense
- low pressure systems (those
-\change_inserted -1458100629 1424665219
- lows
-\change_unchanged
- that do not represent enough of data to have a SOM node that matches them
- closely).
+ low pressure systems (those lows that do not represent enough of data to
+ have a SOM node that matches them closely).
  However, as can be seen from Fig.
  
 \begin_inset CommandInset ref
@@ -2888,11 +2448,8 @@ It is, of course, possible to set an upper limit on the quantised error
  But without the direct knowledge of the state of the atmosphere suggested
  by each SOM node, the cut-off point for considering whether or not the
  pressure distribution from a BMU is not accurate enough is potentially
- fraught with subjectivity
-\change_inserted -1458100629 1424148782
- (comparing each time step with its best matching SOM node)
-\change_unchanged
-.
+ fraught with subjectivity (comparing each time step with its best matching
+ SOM node).
  Thus an investigation was undertaken to understand the disparity between
  ‘good’ and ‘poor’ matches through time and, in particular, to reveal whether
  it was possible to define a relatively easy set of criteria that ensured
@@ -2980,10 +2537,6 @@ name "fig:SOM-ordered-histo"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -3030,10 +2583,6 @@ name "fig:SOM-Cont-Ordered-Histo"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -3058,11 +2607,7 @@ reference "fig:SOM-Cont-Ordered-Histo"
  reveal, the distribution of quantised error is quite positively skewed
  and has only a small portion of BMUs with error greater than about 200hPa
  for the whole domain and 100hPa for the continental domain (less than half
- the respective maxima
-\change_inserted -1458100629 1424665454
- in quantised error
-\change_unchanged
-).
+ the respective maxima in quantised error).
  Thus Figs.
  
 \begin_inset CommandInset ref
@@ -3092,8 +2637,6 @@ key "Dee2011"
 \end_inset
 
  shows that the maximum Root Mean Square Error 
-\change_inserted -1458100629 1418106100
-
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "RMSE"
@@ -3101,8 +2644,6 @@ description "Root Mean Square Error"
 
 \end_inset
 
-
-\change_unchanged
 (RMSE) of southern hemisphere surface pressure in the ERA-Interim reanalysis
  is approximately 1.75hPa in the early 1990’s (not shown).
  Assuming a similar error in MSLP (which is derived using the surface pressure,
@@ -3208,16 +2749,12 @@ where
 \end_inset
 
  grid-point in each BMU.
-
-\change_inserted -1458100629 1424145967
  The conversion from ERA-Interim error to BMU quantised error is thus:
 \end_layout
 
 \begin_layout Standard
 \noindent
 \align center
-
-\change_inserted -1458100629 1424145580
 \begin_inset Formula $\begin{array}{cccc}
 if\,\,\,\,1.75hPa & = & \frac{\sqrt{\overset{n}{\underset{i=0}{\sum}}(P_{ERA,\, i}-P_{BMU,\, i})^{2}}}{\sqrt{n}}\\
 \\
@@ -3227,8 +2764,6 @@ then\,\,\,1.75hPa\cdot\sqrt{1230} & = & Quantised\,\,\, error\,=\,\,61.4hPa
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -3237,11 +2772,8 @@ With nearly all BMUs having a quantised error larger than the error of the
  single grid-point error) across the domain for each BMU and its respective
  time-step was conducted in order to help determine how many BMUs to discount
  as ‘matches’.
- The analysis of the maximum discrepancy
-\change_inserted -1458100629 1424137888
- (single grid-point errors)
-\change_unchanged
- for all whole domain BMUs revealed a mean maximum discrepancy of 16.9hPa---the
+ The analysis of the maximum discrepancy (single grid-point errors) for
+ all whole domain BMUs revealed a mean maximum discrepancy of 16.9hPa---the
  smallest maximum discrepancy was 5hPa and the largest maximum discrepancy
  was 52.1hPa.
  As per the distribution in Fig.
@@ -3467,13 +2999,7 @@ reference "fig:SOM-Cont-Ordered-Histo"
 \end_inset
 
 , and thus the decision was made to eliminate BMUs with quantised errors
- in the highest 5% (the 
-\change_inserted -1458100629 1424665502
-`
-\change_deleted -1458100629 1424665494
-'
-\change_unchanged
-worst' 5%).
+ in the highest 5% (the `worst' 5%).
  The amount of BMUs left after this second filtering was 21,814 for the
  whole domain and 28,602 for the continental domain.
  Obvious, already, was the fact that the continental domain was far out-performi
@@ -3517,10 +3043,6 @@ name "fig:SOM-Ordered-histo-after-filt1"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3591,10 +3113,6 @@ name "fig:SOM-Comp-Aft-Filt2"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3851,10 +3369,6 @@ name "fig:MSLP-12day-SOM-Failure"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -3879,15 +3393,9 @@ reference "fig:MSLP-12day-SOM-Failure"
 
 \end_inset
 
- there 
-\change_inserted -1458100629 1418710984
-were several cut-off low pressure systems that affected southern parts of
- Australia, as well as
-\change_deleted -1458100629 1418710985
-was
-\change_unchanged
- a rather deep and stationary high pressure centre south-west of Perth for
- almost the entirety of 12B90.
+ there were several cut-off low pressure systems that affected southern
+ parts of Australia, as well as a rather deep and stationary high pressure
+ centre south-west of Perth for almost the entirety of 12B90.
  The position of the high pressure centre in Fig.
  
 \begin_inset CommandInset ref
@@ -3900,14 +3408,14 @@ reference "fig:MSLP-12day-SOM-Failure"
  is more common south-east of the continents in the southern hemisphere
  (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sinclair1996"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Mendes2008"
 
 \end_inset
@@ -3963,21 +3471,21 @@ The fact the high pressure centre was almost completely stationary for 12
  days during 12B90 also appears to be abnormal when compared to previous
  research for the southern hemisphere (see 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sinclair1996"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Mendes2008"
 
 \end_inset
 
 ; 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Wiedenmann2002"
 
 \end_inset
@@ -4050,10 +3558,6 @@ name "fig:12B90-Precip-Temp-Anom"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -4667,14 +4171,8 @@ name "tab:SOM-Total-Occ"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
-
-\change_inserted -1458100629 1417568401
 
 \begin_inset Float table
 wide false
@@ -4684,8 +4182,6 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted -1458100629 1417568550
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="7">
 <features tabularvalignment="middle">
@@ -4701,8 +4197,6 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Total occurrences (%)
 \end_layout
 
@@ -4768,8 +4262,6 @@ Total occurrences (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Row 0
 \end_layout
 
@@ -4779,8 +4271,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568565
 3.29
 \end_layout
 
@@ -4790,8 +4280,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568615
 2.84
 \end_layout
 
@@ -4801,8 +4289,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568625
 3.42
 \end_layout
 
@@ -4812,8 +4298,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568635
 3.51
 \end_layout
 
@@ -4823,8 +4307,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569371
 2.80
 \end_layout
 
@@ -4834,8 +4316,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569375
 2.18
 \end_layout
 
@@ -4847,8 +4327,6 @@ Row 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Row 1
 \end_layout
 
@@ -4858,8 +4336,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568730
 3.43
 \end_layout
 
@@ -4869,8 +4345,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569397
 2.99
 \end_layout
 
@@ -4880,8 +4354,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569390
 3.70
 \end_layout
 
@@ -4891,8 +4363,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569384
 3.78
 \end_layout
 
@@ -4902,8 +4372,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568752
 2.96
 \end_layout
 
@@ -4913,8 +4381,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569377
 2.73
 \end_layout
 
@@ -4926,8 +4392,6 @@ Row 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Row 2
 \end_layout
 
@@ -4937,8 +4401,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568762
 3.86
 \end_layout
 
@@ -4948,8 +4410,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569408
 3.06
 \end_layout
 
@@ -4959,8 +4419,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569414
 3.59
 \end_layout
 
@@ -4970,8 +4428,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568774
 4.18
 \end_layout
 
@@ -4981,8 +4437,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568778
 3.52
 \end_layout
 
@@ -4992,8 +4446,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568781
 3.31
 \end_layout
 
@@ -5005,8 +4457,6 @@ Row 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Row 3
 \end_layout
 
@@ -5016,8 +4466,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569436
 3.55
 \end_layout
 
@@ -5027,8 +4475,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568801
 3.01
 \end_layout
 
@@ -5038,8 +4484,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569430
 3.48
 \end_layout
 
@@ -5049,8 +4493,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569427
 3.85
 \end_layout
 
@@ -5060,8 +4502,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569425
 3.34
 \end_layout
 
@@ -5071,8 +4511,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568785
 2.55
 \end_layout
 
@@ -5084,8 +4522,6 @@ Row 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Row 4
 \end_layout
 
@@ -5095,8 +4531,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569440
 3.27
 \end_layout
 
@@ -5106,8 +4540,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569443
 3.13
 \end_layout
 
@@ -5117,8 +4549,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568823
 3.67
 \end_layout
 
@@ -5128,8 +4558,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568827
 4.56
 \end_layout
 
@@ -5139,8 +4567,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569452
 3.76
 \end_layout
 
@@ -5150,8 +4576,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417569454
 2.71
 \end_layout
 
@@ -5164,8 +4588,6 @@ Row 4
 
 \begin_layout Plain Layout
 
-\change_inserted -1458100629 1417568550
-
 \end_layout
 
 \end_inset
@@ -5174,8 +4596,6 @@ Row 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 0
 \end_layout
 
@@ -5185,8 +4605,6 @@ Column 0
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 1
 \end_layout
 
@@ -5196,8 +4614,6 @@ Column 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 2
 \end_layout
 
@@ -5207,8 +4623,6 @@ Column 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 3
 \end_layout
 
@@ -5218,8 +4632,6 @@ Column 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 4
 \end_layout
 
@@ -5229,8 +4641,6 @@ Column 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1417568550
 Column 5
 \end_layout
 
@@ -5245,8 +4655,6 @@ Column 5
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1424402926
 As per Table.
  
 \begin_inset CommandInset ref
@@ -5264,25 +4672,15 @@ name "tab:SOM-Cont-Total-Occ"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -5357,10 +4755,6 @@ name "fig:SOM-Surf-Total-Occ"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5453,7 +4847,7 @@ reference "tab:SOM-Total-Occ"
  this statistic was easily explained given the fast-moving nature of low
  pressure systems in comparison to high pressure systems (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sturman2005"
 
 \end_inset
@@ -5514,10 +4908,6 @@ name "fig:SOM-Surf-Seasnl-Occ"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5688,6 +5078,7 @@ reference "fig:6x5-SOM-space"
 \end_inset
 
  (whole domain).
+ Darker grey in b) indicates larger values.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -5700,10 +5091,6 @@ name "fig:SOM-Transition-and-Stationary"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5791,8 +5178,6 @@ b).
  by the continental SOM a more comprehensive analysis of the concurrent
  wind and solar conditions associated with each SOM node is possible.
  
-\change_inserted -1458100629 1423716970
-
 \end_layout
 
 \end_body
