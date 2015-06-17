@@ -73,12 +73,11 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -112,12 +111,8 @@ Summary
 This chapter examines the Self-Organising Map (SOM) technique and how it
  is utilised in climatology in general, and how it has been applied in the
  context of Australia.
-
-\change_inserted -1458100629 1424402661
  The SOM algorithm is described in full and previous research comparing
  the performance of the SOM to other commonly used techniques is presented.
-
-\change_unchanged
  This chapter also introduces the reanalysis data used for Part 1 and the
  performance of the data in comparison to other data sets.
  
@@ -147,7 +142,7 @@ First proposed by Teuvo Kohonen in the late 1980’s the SOM acts in a similar
  an artificial neural network due to its 2D grouping of cells that are specifica
 lly tuned by various input signals (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Kohonen1990"
 
 \end_inset
@@ -208,7 +203,7 @@ key "Hewitson2002"
  in which it is more popular to find Principle Component based clustering
  techniques (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sheridan2011"
 
 \end_inset
@@ -217,20 +212,16 @@ key "Sheridan2011"
  Specifically, the SOM has been widely used for the study of pressure patterns
  that co-occur with precipitation events (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Sheridan2011"
 
 \end_inset
 
 ).
  
-\change_inserted -1458100629 1415864191
-
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -1458100629 1415864256
 SOM Methodology
 \begin_inset CommandInset label
 LatexCommand label
@@ -242,8 +233,6 @@ name "sec:SOM-Methodology"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1418104995
 The training of the SOM in the current study occurred in two main phases,
  in accordance with the suggestions from the software and the works of 
 \begin_inset CommandInset citation
@@ -297,8 +286,6 @@ c & = & arg\,\underset{i}{min}\left\{ \text{ǁ}x-m_{i}\text{ǁ}\right\} \label{e
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1415864391
 where 
 \begin_inset Formula $c$
 \end_inset
@@ -323,8 +310,6 @@ where
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1423014903
 The BMU and the nodes that surround the BMU are then altered to look more
  like the data.
  The amount the nodes are altered by is determined by two parameters: namely,
@@ -371,8 +356,6 @@ key "Kohonen1995"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1415864391
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{cccc}
@@ -385,8 +368,6 @@ m_{i}(t+1)=m_{i}(t) & + & h_{c}(t)\,[\, x(t)-m_{i}(t)] & ,\,\, and\,\,\end{array
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1415864391
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{ccccc}
@@ -400,8 +381,6 @@ h_{ci}(t)=\alpha(t) & \cdot & \exp(-\frac{\parallel r_{c}-r_{i}\parallel^{2}}{2\
 
 \begin_layout Standard
 \noindent
-
-\change_inserted -1458100629 1415864391
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -572,8 +551,6 @@ The second training phase is conducted in a similar manner to that of the
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1415864391
 The outcome of the SOM procedure is a matrix of related MSLP distributions.
  The size of the matrix (number of nodes in the SOM space) is predetermined
  by the user and once established the SOM nodes can be mapped back onto
@@ -585,8 +562,6 @@ The outcome of the SOM procedure is a matrix of related MSLP distributions.
  common characteristics in an otherwise complicated MSLP dataset, which
  in turn also enables a study of related variables (wind and solar) and
  how they vary in association with the common weather types.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -614,18 +589,12 @@ key "Alexander2010"
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Alexander-SOM"
+reference "fig:Alexander-SOM-1"
 
 \end_inset
 
-).
-
-\change_inserted -1458100629 1424402707
- Comparably the works of
-\change_unchanged
- 
-\change_inserted -1458100629 1424662896
-
+ from earlier).
+ Comparably the works of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Brown2010"
@@ -702,10 +671,8 @@ key "Nicholls2009"
 \end_inset
 
 .
- 
-\change_unchanged
-Other notable studies using the SOM technique in the Australian region include
- 
+ Other notable studies using the SOM technique in the Australian region
+ include 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hope2006"
@@ -722,77 +689,6 @@ key "Verdon-Kidd2009"
 , which implemented a 20 member SOM of Victorian MSLP.
  
 \begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Figures/Alexander SOM.eps
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-SOM nodes for the winter months of 1958-2001 using Mean Sea-Level Pressure
- data (hPa) from ERA-
-\change_deleted -1458100629 1416458843
- 
-\change_unchanged
-40.
- 
-\change_inserted -1458100629 1416459184
-Numbers in brackets represent percentage occurrence for 1907-2006 and 
-\begin_inset Quotes eld
-\end_inset
-
-m
-\begin_inset Quotes erd
-\end_inset
-
- represents the decadal trend in that node.
- 
-\change_deleted -1458100629 1416459194
-Adapted from
-\change_inserted -1458100629 1416459246
-Figure originally presented in
-\change_unchanged
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Alexander2010"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Alexander-SOM"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_inserted -1458100629 1423010643
-
-\begin_inset Float figure
 wide false
 sideways false
 status collapsed
@@ -800,8 +696,6 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted -1458100629 1423010621
 \begin_inset Graphics
 	filename Figures/Brown SOM.eps
 
@@ -811,8 +705,6 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1423012048
 20 member SOM of 1979-2008 National Centre for Environmental Prediction
  reanalysis MSLP.
  F values represent the frequency occurrence of the SOM node.
@@ -831,18 +723,10 @@ name "fig:Brown-SOM"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -857,8 +741,6 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted -1458100629 1423010666
 \begin_inset Graphics
 	filename Figures/Nicholls SOM.eps
 
@@ -868,8 +750,6 @@ status collapsed
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1423012032
 20 member SOM of 1979-2001 ERA-40 MSLP.
  Figure originally presented in the 
 \begin_inset CommandInset citation
@@ -886,25 +766,15 @@ name "fig:Nicholls-SOM"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -938,27 +808,15 @@ key "Verdon-Kidd2009"
 
  later chapters identify common MSLP patterns.
  However, instead of analysing the co-occurrence of precipitation, the wind
- speed 
-\change_inserted -1458100629 1424662930
-and
-\change_deleted -1458100629 1424662928
-or
-\change_unchanged
- solar irradiance fields are analysed for how they relate to the common
- weather regimes.
-\change_inserted -1458100629 1415936469
-
+ speed and solar irradiance fields are analysed for how they relate to the
+ common weather regimes.
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -1458100629 1415938017
 The SOM Compared to Other Techniques
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424402729
 Synthesis of a large data set into a limited number of commonly occurring
  features of that data set is a process frequently utilised in science,
  and in particular climatology.
@@ -1048,8 +906,6 @@ key "Jiang2012"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424402749
 In a similar study, but for the European region, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1098,13 +954,9 @@ key "Philipp2007"
  however, a direct comparison of this technique with the SOM appears not
  to exist yet.
  
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424402759
 It has been shown that for the purposes of this thesis the SOM technique
  will be an appropriate tool for classifying the major, as well as the transitio
 nal, modes of variability for the Australian region.
@@ -1113,8 +965,6 @@ nal, modes of variability for the Australian region.
  variance over Australia.
  The SOM will therefore also enable a comprehensive assessment of the synoptic
  scale influences on wind speed and solar irradiance.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -1133,20 +983,16 @@ The data used in the current study are from the European Centre for Medium-range
  Weather Forecasts (ECMWF).
  Specifically, the ERA-Interim product was chosen to conduct the climatology
  of the Australian region.
- ERA-Interim is a global reanalysis product that spans the period 1989 to
+ ERA-Interim is a global reanalysis product that spans the period 1979 to
  almost current day and which is freely available to non-ECMWF members at
- 1.5º Latitude/Longitude
-\change_inserted -1458100629 1423183599
- (~166km)
-\change_unchanged
- spatial resolution (
+ 1.5º Latitude/Longitude (~166km) spatial resolution (
 \begin_inset CommandInset citation
-LatexCommand citealp
-key "Berrisford2009"
+LatexCommand citet
+key "Dee2011"
 
 \end_inset
 
-); although recently the ERA-Interim archive has been extended back to 1979.
+); although only the data from 1989 are utilised here.
  
 \end_layout
 
@@ -1165,7 +1011,7 @@ ion operational forecasting systems, for studies into the long-term climate
  Rather, reanalysis products offer a stable platform upon which a single
  version of the data assimilation system is used (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Dee2011"
 
 \end_inset
@@ -1174,15 +1020,13 @@ key "Dee2011"
  It is for this reason that reanalysis products are able to provide a long-term
  and coherent record of the global atmospheric circulation (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Dee2011"
 
 \end_inset
 
 ).
- 
-\change_inserted -1458100629 1416288883
-Having said that, reanalysis products are far from fault-free.
+ Having said that, reanalysis products are far from fault-free.
  Indeed the analysis systems suffer from model biases, limits to and changes
  in the coverage of observations and thus for some variables the analysis
  of long-term trends can produce spurious results (
@@ -1193,8 +1037,6 @@ key "Trenberth2011"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -1212,7 +1054,7 @@ key "Dee2011"
  For instance, in ERA-Interim the atmospheric model is coupled to an ocean-wave
  model, which was not the case in ERA-40 (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Berrisford2009"
 
 \end_inset
@@ -1240,27 +1082,12 @@ key "Dee2011"
  the difference between the forecast of the next observation and the observation
 , are smaller in ERA-Interim.
  
-\change_inserted -1458100629 1416203872
-
 \end_layout
 
 \begin_layout Standard
-In terms of the performance of ECMWF products in comparison to observations
- it was found by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kiss2009"
-
-\end_inset
-
- that low-level wind speeds from ERA-40 reanalysis and were able to reproduce
- the appropriate dynamics seen in observations from two wind turbines in
- Hungary.
- 
-\change_inserted -1458100629 1424662998
-Unfortunately, published comparisons between the ERA-Interim near-surface
- wind speeds and observations are, and in particular for the Australian
- region, limited in number.
+Published comparisons between the ERA-Interim near-surface wind speeds and
+ observations are, and in particular for the Australian region, limited
+ in number.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1281,7 +1108,78 @@ key "Dee2011"
  the period 1992-2002 when compared to the European Remote Sensing satellite
  and QuickScat data---although the trends then reversed after 2002, noted
  as likely due to the evolution in the observing system.
- Some analysis presented below shows that the relatively coarse resolution
+ 
+\end_layout
+
+\begin_layout Standard
+Of the studies that do compare ERA-Interim with observations it was found
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kiss2009"
+
+\end_inset
+
+ that low-level wind speeds from ERA-40 reanalysis and were able to reproduce
+ the appropriate dynamics seen in observations from two wind turbines in
+ Hungary.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Carvalho2014"
+
+\end_inset
+
+ also compared ERA-Interim with other reanalysis products (including NCEP
+ products) as forcing data for WRF
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "WRF"
+description "Weather Research and Forecasting model"
+
+\end_inset
+
+ model simulations of the Portugal region.
+ By using 13 wind measuring stations 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Carvalho2014"
+
+\end_inset
+
+ was able to show that ERA-Interim boundary conditions produced the best
+ estimates of wind energy production for the region.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stopa2014"
+
+\end_inset
+
+ also compared ERA-Interim with the NCEP reanalysis product CFSR
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CFSR"
+description "Climate Forecast System Reanalysis"
+
+\end_inset
+
+ (Climate Forecast System Reanalysis) with ocean buoys and altimeter measurement
+s from the Pacific and Atlantic oceans.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Stopa2014"
+
+\end_inset
+
+ showed that while CFSR provided a more accurate description of the variability
+ in wind speed measurements ERA-Interim had the most temporal consistency
+ and was better suited for the study of long-term processes.
+\end_layout
+
+\begin_layout Standard
+Some analysis presented below shows that the relatively coarse resolution
  of the ERA-Interim model (~80km spatially) compares well with the former
  regional model of the Bureau of Meteorology (MesoLAPS_125, 12.5km spatially)
  for the same dates (Fig, 
@@ -1304,6 +1202,7 @@ reference "fig:U10-comp-ERA-Meso"
 --showing that for large scale features the ERA-Interim resolution captures
  that which a finer model resolution can capture.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -1311,26 +1210,18 @@ status collapsed
 \begin_layout Plain Layout
 \noindent
 \align center
-
-\change_inserted -1458100629 1416281079
 \begin_inset Graphics
 	filename Figures/U10_average_comp_era_meso.eps
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1416204399
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1416286612
 Comparison of average 10m wind speed for MesoLAPS_125 (top panel) and ERA-Interi
 m (bottom panel), for the months of a) January, b) July and c) October during
  2004-2008.
@@ -1341,18 +1232,10 @@ name "fig:U10-comp-ERA-Meso"
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1362,8 +1245,6 @@ name "fig:U10-comp-ERA-Meso"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424663039
 In terms of the surface solar radiation fields from ERA-Interim 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1388,11 +1269,7 @@ key "Dee2011"
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1416286430
 -2
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1401,11 +1278,7 @@ key "Dee2011"
 \begin_inset script superscript
 
 \begin_layout Plain Layout
-
-\change_inserted -1458100629 1416286445
 -2
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1426,7 +1299,7 @@ n of seasonal and interannual variability in surface fluxes (over the ocean)
  energy, mass and angular momentum, in general the ERA-Interim budget closure
  is better than ERA-40 (
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citet
 key "Dee2011"
 
 \end_inset
@@ -1435,8 +1308,6 @@ key "Dee2011"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1458100629 1424402791
 While there are noted model biases and inevitable flaws in the process of
  running a global model with inconsistent observational coverage, it should
  be stressed that such challenges are present for all reanalysis systems,
