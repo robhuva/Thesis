@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/78/trunk/thermal
+END
+slowresponsethermal_beta.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/78/trunk/thermal/slowresponsethermal_beta.py
+END
+instantthermal.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/68/trunk/thermal/instantthermal.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/33/trunk/thermal/__init__.py
+END
+slowresponsethermal.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/72/trunk/thermal/slowresponsethermal.py
+END
+txmultiinstantthermal.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/74/trunk/thermal/txmultiinstantthermal.py
+END
+txmultislowthermal.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/74/trunk/thermal/txmultislowthermal.py
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/33/trunk/test_regression/mg_test1
+END
+mureil_sample.pkl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/22/trunk/test_regression/mg_test1/mureil_sample.pkl
+END
+sample_config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/27/trunk/test_regression/mg_test1/sample_config.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/33/trunk/test_regression/mg_test1/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/33/trunk/test_regression/mg_test1/test.py
+END

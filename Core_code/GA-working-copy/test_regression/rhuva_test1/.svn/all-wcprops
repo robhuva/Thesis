@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/65/trunk/test_regression/rhuva_test1
+END
+CoV_dsr_station_output_prox_penalty.nc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/18/trunk/test_regression/rhuva_test1/CoV_dsr_station_output_prox_penalty.nc
+END
+mureil_sample.pkl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/22/trunk/test_regression/rhuva_test1/mureil_sample.pkl
+END
+sample_config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/65/trunk/test_regression/rhuva_test1/sample_config.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/33/trunk/test_regression/rhuva_test1/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/33/trunk/test_regression/rhuva_test1/test.py
+END
+rhuva_data1.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/65/trunk/test_regression/rhuva_test1/rhuva_data1.py
+END
+Aus_demand_sample_raw.nc
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/18/trunk/test_regression/rhuva_test1/Aus_demand_sample_raw.nc
+END
+CoV_wind_station_output_prox_penalty.nc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/18/trunk/test_regression/rhuva_test1/CoV_wind_station_output_prox_penalty.nc
+END

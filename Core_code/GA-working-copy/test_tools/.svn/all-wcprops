@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/86/trunk/test_tools
+END
+test_config_spec.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/73/trunk/test_tools/test_config_spec.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/73/trunk/test_tools/__init__.py
+END
+test_global_config.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/86/trunk/test_tools/test_global_config.py
+END
+test_configurablebase.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/73/trunk/test_tools/test_configurablebase.py
+END

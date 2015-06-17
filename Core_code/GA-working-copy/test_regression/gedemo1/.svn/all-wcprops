@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/83/trunk/test_regression/gedemo1
+END
+GEconfig.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/83/trunk/test_regression/gedemo1/GEconfig.txt
+END
+new_values_to_model.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/66/trunk/test_regression/gedemo1/new_values_to_model.js
+END
+GEconfig.pkl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/83/trunk/test_regression/gedemo1/GEconfig.pkl
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/test_regression/gedemo1/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/66/trunk/test_regression/gedemo1/test.py
+END

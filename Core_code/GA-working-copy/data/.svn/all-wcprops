@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/93/trunk/data
+END
+sample_ge_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/65/trunk/data/sample_ge_data.py
+END
+ncdata.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/65/trunk/data/ncdata.py
+END
+rhuva_data_no-dist.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/93/trunk/data/rhuva_data_no-dist.py
+END
+mg_sample_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/80/trunk/data/mg_sample_data.py
+END
+datasinglepassbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/65/trunk/data/datasinglepassbase.py
+END
+rhuva_data0.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/65/trunk/data/rhuva_data0.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/33/trunk/data/__init__.py
+END
+rhuva_data1.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/65/trunk/data/rhuva_data1.py
+END
+rhuva_data2.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/65/trunk/data/rhuva_data2.py
+END
+rhuva_data_dist.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/93/trunk/data/rhuva_data_dist.py
+END
+extract_pickle.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/94/trunk/data/extract_pickle.py
+END

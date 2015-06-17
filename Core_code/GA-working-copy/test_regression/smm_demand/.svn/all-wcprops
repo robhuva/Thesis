@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/70/trunk/test_regression/smm_demand
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/70/trunk/test_regression/smm_demand/__init__.py
+END
+test.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/70/trunk/test_regression/smm_demand/test.py
+END
+smm_demand_config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/70/trunk/test_regression/smm_demand/smm_demand_config.txt
+END
+smm_demand.pkl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/70/trunk/test_regression/smm_demand/smm_demand.pkl
+END
