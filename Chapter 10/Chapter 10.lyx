@@ -73,12 +73,11 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author -1458100629 "Robert Huva,,," 
 \end_header
 
 \begin_body
@@ -162,11 +161,9 @@ In principle this thesis was split into two parts because of the the known
  And that despite the NEM-only simulation being purposefully simplistic
  (for instance, there was no consideration given to power flow across the
  transmission network) there would have been no possible optimised network,
-\change_inserted -1458100629 1423460976
- without significantly more storage capacity and
-\change_unchanged
- using just wind and PV power, capable of producing enough electricity during
- the instances of large-scale low wind speeds.
+ without significantly more storage capacity and using just wind and PV
+ power, capable of producing enough electricity during the instances of
+ large-scale low wind speeds.
  
 \end_layout
 
@@ -191,20 +188,10 @@ reference "fig:All-Nodes-RE-Demand-Hist"
  though is that none of the synoptic regimes have a large negative average
  RE - demand relationship.
  That is, on the whole the NEM-only optimisation is able to extract useful
- 
-\change_deleted -1458100629 1418779798
-energy
-\change_inserted -1458100629 1418779798
-electricity
-\change_unchanged
- from all of the common synoptic weather regimes.
+ electricity from all of the common synoptic weather regimes.
  In fact some of the common synoptic weather patterns are heavily biased
  towards oversupply in the NEM-only simulation (including those seen in
- Sec
-\change_inserted -1458100629 1424824487
-tion
-\change_unchanged
-.
+ Section.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -217,22 +204,15 @@ reference "sub:High-RE-Nodes6-25"
 
 \begin_layout Standard
 Part 2 of this thesis identified that the region of the SOM surrounding
- 
-\change_deleted -1458100629 1418358642
-node nine
-\change_inserted -1458100629 1418358642
-node nine (high centred south of WA)
-\change_unchanged
- was significantly associated with very low RE output.
+ node nine (high centred south of WA) was significantly associated with
+ very low RE output.
  It was stated then that node nine in conjunction with surrounding nodes
  presented a sub-grouping of similar looking MSLP patterns, responsible
  for occasions of large-scale low wind speed across much of the NEM region.
  Part 1 of this thesis in its examination of the long-term association between
- the SOM nodes and wind/solar availability examined in detail node 20
-\change_inserted -1458100629 1418359598
- (high centred west of Victoria)
-\change_unchanged
- as exhibiting low wind and solar potential for most of the Australian continent.
+ the SOM nodes and wind/solar availability examined in detail node 20 (high
+ centred west of Victoria) as exhibiting low wind and solar potential for
+ most of the Australian continent.
  However, analysis of node nine and surrounding nodes from Part 1 reveals
  that this region of the SOM also exhibits low wind and solar potential
  for the NEM states (not shown).
@@ -263,7 +243,7 @@ However, node nine wind capacity values average ~0.15 for the NEM region
  What the capacity values in Part 1 do indicate, however, is that the identifica
 tion of node nine as associated with low RE (specifically low wind power
  potential) was unlikely to be an artifact of the relatively small two year
- ACCESS-A sample.
+ ACCESS-R sample.
  
 \end_layout
 
@@ -281,13 +261,8 @@ Another link between Parts 1 and 2 of this thesis yet to be explored is
  to form a less variable net output than those whose time series are related
  and reach maxima/minima in output at the same times.
  This decorrelation length scale relates to the 8X scenario from Part 2.
- When pushed to contract resources by a very high connection cost the 
-\change_deleted -1458100629 1418779803
-energy
-\change_inserted -1458100629 1418779803
-electricity
-\change_unchanged
- model in Part 2 was able to determine that four large but distant wind
+ When pushed to contract resources by a very high connection cost the electricit
+y model in Part 2 was able to determine that four large but distant wind
  installations were sufficient to meet most of the demand for the NEM in
  2010-2011.
  Fig.
@@ -300,14 +275,8 @@ reference "fig:RE-Demand-Comparison-All-TransCosts"
 
  showed that most of the variability in wind output from across the NEM
  region was captured by these four large installations (by means of a comparison
- to the other simulations were the 
-\change_deleted -1458100629 1418779805
-energy
-\change_inserted -1458100629 1418779805
-electricity
-\change_unchanged
- model had smaller cost impediments to install resources in many different
- locations).
+ to the other simulations were the electricity model had smaller cost impediment
+s to install resources in many different locations).
  Moreover Table.
  
 \begin_inset CommandInset ref
@@ -325,14 +294,10 @@ ased decorrelation length scale.
 
 \begin_layout Standard
 Of the four large wind installations in the 8X scenario the average distance
- to the nearest wind installations was 884km.
- This separation distance is much smaller than the comparative figure from
- Part 1 of 1,300-1,400km.
- Further to this
-\change_inserted -1458100629 1424824510
-,
-\change_unchanged
- comparison of the 80m wind field point correlation maps from ERA-Interim
+ to the nearest wind installations was 1,400km.
+ This distance is the same as the wind field decorrelation distance found
+ in Part 1.
+ Comparison of the 80m wind field point correlation maps from ERA-Interim
  (Fig.
  
 \begin_inset CommandInset ref
@@ -341,7 +306,7 @@ reference "fig:Decorrel-Point-Correlation-Cities"
 
 \end_inset
 
-) and ACCESS-A (Fig.
+) and ACCESS-R (Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -349,38 +314,27 @@ reference "fig:U80-Decorrelation-Major-Locations"
 
 \end_inset
 
-) suggest very similar spatial correlation characteri
-\change_inserted -1458100629 1424404202
-s
-\change_deleted -1458100629 1424404200
-c
-\change_unchanged
-tics.
- The difference in these two figures is likely due to a couple of considerations.
- Firstly, the domain for Part 2 is restricted to the NEM region.
- A separation distance of 1,400km for the NEM would likely exclude many
- locations that are effective at meeting demand, thus why this was not seen
- in Part 2.
- Secondly, the relationship with demand of the optimised locations in Part
- 2 is important.
- A location that correlates well with demand is preferrable to a location
+) illustrates the similar spatial correlation characteristics.
+ However, a separation distance of 1,400km for the NEM is not easy to achieve,
+ physically, given the domain restrictions in Part 2.
+ Further, an important consideration in Part 2 is also the relationship
+ with demand of the optimised locations.
+ A location that correlates well with demand is preferable to a location
  that is further away from its neighbour but is less related to demand.
- Lastly, the difference in data set would have some impact on the relationship.
- However, the difference in data set is unlikely to consistently impact
- the spatial correlation of the wind field.
+ Thus, despite the physical limitations and the extra considerations in
+ Part 2 it is clear that 1,400km is an important distance for wind farm
+ separation in the NEM.
+ Not only can independence in output be achieved at this distance, but also
+ in combination wind farms separated by this amount can combine well to
+ meet a large portion of the NEM demand for electricity.
+ 
 \end_layout
 
 \begin_layout Standard
 One conclusion from this thesis might be that Australia could struggle to
- rely heavily on renewable 
-\change_deleted -1458100629 1418779806
-energy
-\change_inserted -1458100629 1418779806
-electricity
-\change_unchanged
- in the future because some of the common weather patterns represented by
- the SOM produced difficult conditions that even the optimised RE system
- in Part 2 could not cover.
+ rely heavily on renewable electricity in the future because some of the
+ common weather patterns represented by the SOM produced difficult conditions
+ that even the optimised RE system in Part 2 could not cover.
  However, this conclusion fails to take into account possibility that these
  potentially detrimental weather patterns might be quite predictable.
  Despite the scope of this thesis not including the predictability of low
@@ -388,13 +342,7 @@ electricity
  complement.
  Given an accurate forecast of MSLP it is possible that the results of Part
  2 be used to give a first-guess of the likely impact on wind and solar
- 
-\change_deleted -1458100629 1418779808
-energy
-\change_inserted -1458100629 1418779808
-electricity
-\change_unchanged
- across the NEM.
+ electricity across the NEM.
  Utilising the results in this way illustrates how the incorporation of
  a synoptic climatology (derivation of the SOM) and a short-term optimisation
  complement.
@@ -418,15 +366,7 @@ An important consideration yet to be discussed in this thesis is the fact
  reverse is true for a good forecast.
  Thus a NEM that has the configuration of wind and solar suggested by the
  NEM-only simulation would in reality rely more heavily on storage and gas
- back-up than is seen in Ch
-\change_inserted -1458100629 1424824527
-a
-\change_unchanged
-pt
-\change_inserted -1458100629 1424824530
-er
-\change_unchanged
-.
+ back-up than is seen in Chapter.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -435,15 +375,7 @@ reference "chap:Optimised-Solutions-for-NEM"
 \end_inset
 
 .
- To this end the results in Ch
-\change_inserted -1458100629 1424824533
-a
-\change_unchanged
-pt
-\change_inserted -1458100629 1424824536
-er
-\change_unchanged
-.
+ To this end the results in Chapter.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -462,15 +394,9 @@ Reductions in the amount of back-up storage needed would be possible with
  If the aim is to design a NEM network that has the highest possible penetration
  of RE then an important consideration would be the addition of weather
  independent RE resources.
- For instance, geothermal 
-\change_deleted -1458100629 1418779818
-energy
-\change_inserted -1458100629 1418779818
-electricity
-\change_unchanged
-, biomass and even solar thermal with storage are dispatchable RE resources
- that would need consideration in order to increase the percentage of demand
- met by RE.
+ For instance, geothermal electricity, biomass and even solar thermal with
+ storage are dispatchable RE resources that would need consideration in
+ order to increase the percentage of demand met by RE.
  It is entirely possible that the moments of large-scale RE unavailability
  seen in the NEM-only scenario could be avoided given the co-location of
  enough of these dispatchable RE alternatives.
